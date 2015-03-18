@@ -14,17 +14,15 @@ Check out WaM-DaM documentation and development at the GitHub Wiki
 Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM1.0/
 ). Last time updated: March 18, 2015 
 
-Please be aware that the earlier design concepts and documnetations have changed significantlry. However, the spirt of WaM-DaM and its priciples remain the same.
-
+Please be aware that the earlier design concepts and documnetations have changed significantlry. However, the spirt of WaM-DaM and its priciples remain the same. You may check earlier documentations here at [WaM-DaM0.1](https://github.com/amabdallah/WaMDaM
+)
 
 #### Publications:
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewd conference paper:
 [WaM-DaM:A Data Model to Organize and Synthesize Water Management Data](http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf)
 
-Please cite as:
+Please cite WaM-DaM as:
 Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthesize Water Management Data. In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2
-For now, you may check earlier progressing documentations here:
-https://github.com/amabdallah/WaMDaM
 
 #### Presentatons:
 1. Adel Abdallah, David E. Rosenberg (2014).[WaM-DaM: A Data Model to Organize and Synthesize Water Management Data](http://www.engr.usu.edu/cee/faculty/derosenberg/documents/WaM-DaM_UWUG.pptx)  Utah Water Data Users Group 2nd Meeting, Salt Lake City, Utah: Jan. 27, 2015.
