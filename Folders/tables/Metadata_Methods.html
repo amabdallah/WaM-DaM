@@ -1,0 +1,145 @@
+<HTML>
+<Header>
+<Title>Methods - Table</Title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<Link href="../css/doc.css" rel="stylesheet" type="text/css">
+</Header>
+<Body>
+<table class="logo">
+<tr>
+<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+</tr>
+</table>
+<table class="horzMenu">
+<tr>
+<td class="horzMenu"><a class="horzMenu" href="../index.html"> Home</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../tables/index.html">Tables</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../schemas/index.html">Schemas</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../diagrams/index.html">Diagrams</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../indexes/index.html">Indexes</a></td><td class="horzMenuFiller"></td>
+</tr>
+</table>
+<hr>
+<table class="pageTitle">
+<tr class="altRow">
+<td class="title_nm">Methods</td><td class="watermark_right">(Table)</td>
+</tr>
+</table>
+<br>
+<table class="flat">
+<tr>
+<td class="banner" colspan="8">Columns</td>
+</tr>
+<tr>
+<td class="Header">PK</td><td class="Header">Name</td><td class="Header">Data Type</td><td class="Header">NULLs</td><td class="Header">A/N</td><td class="Header">Default</td><td class="Header">Comment</td><td class="Header">FK</td>
+</tr>
+<tr>
+<td class="PkCol">
+<p class="boolImg">
+<img src="../images/pkb16.gif"></p>
+</td><td class="PkCol"><a href="../columns/Metadata_Methods_MethodID.html">MethodID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="PkCol">nextval('"Metadata"."Methods_MethodID_seq"'::regclass)</td><td class="PkCol">Primary key</td><td class="PkCol"> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Metadata_Methods_MethodName.html">MethodName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Full text name of the method	</td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Metadata_Methods_MethodWebpage.html">MethodWebpage</a></td><td>VarChar(255)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>A URL to a full description of the method	</td><td> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Metadata_Methods_MethodDescription.html">MethodDescription</a></td><td>Text</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>Full text description of the method	</td><td> </td>
+</tr>
+<tr>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeCV.html">MethodTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+<tr class="altRow">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">PrimaryKey</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+<tr>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_ModeID.html">ModeID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+<tr class="altRow">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_ParentMethodID.html">ParentMethodID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary key</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+</table>
+<br>
+<table class="flat">
+<tr>
+<td class="banner" colspan="1">Indexes<span class="plain"> (none)</span></td>
+</tr>
+</table>
+<br>
+<table class="flat">
+<tr>
+<td class="banner" colspan="5">Foreign Keys</td>
+</tr>
+<tr>
+<td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Methods.html">fk_Methods_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodID</td><td>ParentMethodID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodTypeCV.html">fk_Methods_MethodTypeCV</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Term</td><td>MethodTypeCV</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Models.html">fk_Methods_Models</a></td><td><a href="../tables/Metadata_Models.html">Metadata.Models</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>ModesID</td><td>ModeID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_People.html">fk_Methods_People</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>PersonID</td><td>PersonID</td>
+</tr>
+</table>
+<br>
+<table class="flat">
+<tr>
+<td class="banner" colspan="5">Parent Relations</td>
+</tr>
+<tr>
+<td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Core_MetadataMapping_fk_InstanceScenarioAttributes_Methods.html">fk_InstanceScenarioAttributes_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>MethodID</td><td>MethodID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Methods.html">fk_Methods_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodID</td><td>ParentMethodID</td>
+</tr>
+</table>
+<br>
+<table class="flat">
+<tr>
+<td class="banner" colspan="1">Used in Diagrams</td>
+</tr>
+<tr>
+<td class="Header">Diagram Name</td>
+</tr>
+<tr>
+<td><a href="../diagrams/Metadata.html">Metadata</a></td>
+</tr>
+<tr>
+<td><a href="../diagrams/Whole.html">Whole</a></td>
+</tr>
+</table>
+</Body>
+</HTML>
