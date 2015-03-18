@@ -1,17 +1,18 @@
 WaM-DaMv1.0
 ===========
 
-#### The Water Management Data Model 1.0 (WaM-DaM). Model Quicker, Publish Faster! 
+#### The Water Management Data Model 1.0 (WaM-DaM). 
 
+#### Model Quicker, Publish Faster! 
 
-Water Management Data Model (WaM-DaM) is proposed organize, describe, and manipulate network-based data with emphasis on water systems and water management data. The design of the WaM-DaM allows users to represent a node and link network of water management system components like reservoirs, canals, water use sites, and operations that involve those components. The data model also supports structured metadata fields that describe who collected data for the components, how and where the data were collected.
+Water Management Data Model (WaM-DaM) is an information model that is proposed to synthesize and integrate Fragmented and inconsistent water resources management data. The information model aimes to help scientists and water managers organize, query, and interpret their disparate and diverse data to save time plus facilitate modeling.
 
-Check out the up to date WaM-DaM documentation and development at the GitHub Wiki
+Check out WaM-DaM documentation and development at the GitHub Wiki
 
-Check out the current WaM-DaM logical data model schema
-http://amabdallah.github.io/WaM-DaM1.0/
+Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM1.0/
+). Last time updated: March 18, 2015 
 
-Publications:
+#### Publications:
 
 WaM-DaM: A Data Model to Organize and Synthesize Water Management Data
 
