@@ -14,6 +14,9 @@ Check out WaM-DaM documentation and development at the GitHub Wiki
 Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM1.0/
 ). Last time updated: March 18, 2015 
 
+Check out the use cases and their results at the WIKI pages [here](https://github.com/amabdallah/WaM-DaM1.0/wiki/Use-Cases)
+
+
 Please be aware that the earlier design concepts and documnetations have changed significantlry. However, the spirt of WaM-DaM and its priciples remain the same. You may check earlier documentations here at [WaM-DaM0.1](https://github.com/amabdallah/WaMDaM
 )
 
