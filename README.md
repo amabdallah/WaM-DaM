@@ -9,7 +9,7 @@ Water Management Data Model (WaM-DaM) is an information model that is proposed t
 
 This work is part of a large cyberinfrastructure project [(CI-WATER)](http://ci-water.org/) to advance water resources modeling that involves Utah State University, Brigham Young University, University of Utah and University of Wyoming. 
 
-Check out WaM-DaM documentation and development at the GitHub Wiki
+Check out WaM-DaM documentation and development at the [GitHub Wiki](https://github.com/amabdallah/WaM-DaM1.0/wiki)
 
 Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM1.0/
 ). Last time updated: March 18, 2015 
