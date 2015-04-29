@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">Functions</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Functions</td><td class="watermark_right">The function table stores relationships between attributes of instance...</td>
 </tr>
 </table>
 <br>
@@ -36,25 +36,25 @@
 </td><td class="PkCol"><a href="../columns/Storage_Functions_FunctionID.html">FunctionID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Storage"."FunctionData_FunctionID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Storage"."FunctionData_FunctionID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_Functions_FunctionVariableID.html">FunctionVariableID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Storage_Functions_FunctionVariableID.html">FunctionVariableID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td>Foreign key identifier that references the attributes that comprise the variables of the function</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Storage_Functions_FunctionVariableOrder.html">FunctionVariableOrder</a></td><td>Integer</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>an integer that indicates the ascending order of the variables (i.e., attribiutes) of a function</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Functions_SymbolCV.html">SymbolCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Functions_SymbolCV.html">SymbolCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for function symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Functions_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Functions_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -75,10 +75,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Functions_fk_FunctionData_Symbols.html">fk_FunctionData_Symbols</a></td><td><a href="../tables/CVs_Symbols.html">CVs.Symbols</a></td><td><a href="../tables/Storage_Functions.html">Storage.Functions</a></td><td>Term</td><td>SymbolCV</td>
+<td><a href="../foreignKeys/Storage_Functions_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Functions.html">Storage.Functions</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Functions_fk_MultiColumns_AttributeDataValues.html">fk_MultiColumns_AttributeDataValues</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Functions.html">Storage.Functions</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_Functions_fk_Functions_Symbols.html">fk_Functions_Symbols</a></td><td><a href="../tables/CVs_Symbols.html">CVs.Symbols</a></td><td><a href="../tables/Storage_Functions.html">Storage.Functions</a></td><td>Term</td><td>SymbolCV</td>
 </tr>
 </table>
 <br>

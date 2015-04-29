@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">ControlledText</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">ControlledText</td><td class="watermark_right">This table is similar to Text Free table but this one enforces control...</td>
 </tr>
 </table>
 <br>
@@ -36,16 +36,16 @@
 </td><td class="PkCol"><a href="../columns/Storage_ControlledText_ControlledTextID.html">ControlledTextID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Storage"."TextDescriptorControlledData_TextControlledID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Storage"."TextDescriptorControlledData_TextControlledID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_ControlledText_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_ControlledText_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_ControlledText_ControlledTextValueID.html">ControlledTextValueID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_ControlledText_ControlledTextValueID.html">ControlledTextValueID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier a controlled text value</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -66,10 +66,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_ControlledText_fk_TextDescriptorControlledData_ControlledText2.html">fk_TextDescriptorControlledData_ControlledText2</a></td><td><a href="../tables/CVs_ControlledTextValues.html">CVs.ControlledTextValues</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>ControlledTextValueID</td><td>ControlledTextValueID</td>
+<td><a href="../foreignKeys/Storage_ControlledText_fk_ControlledText_ControlledTextValues.html">fk_ControlledText_ControlledTextValues</a></td><td><a href="../tables/CVs_ControlledTextValues.html">CVs.ControlledTextValues</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>ControlledTextValueID</td><td>ControlledTextValueID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_ControlledText_fk_TextDescriptorControlledData_DataStorage.html">fk_TextDescriptorControlledData_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_ControlledText_fk_ControlledText_DataStorage.html">fk_ControlledText_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 </table>
 <br>

@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">Parameters</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Parameters</td><td class="watermark_right">This table stores data values of single numeric parameters like an ele...</td>
 </tr>
 </table>
 <br>
@@ -36,13 +36,13 @@
 </td><td class="PkCol"><a href="../columns/Storage_Parameters_ParameterID.html">ParameterID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Storage"."ParameterData_ParameterID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Storage"."ParameterData_ParameterID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Storage_Parameters_ParameterValue.html">ParameterValue</a></td><td>Float</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>real number as a value of the parameter </td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Storage_Parameters_ParameterSubName.html">ParameterSubName</a></td><td>VarChar(255)</td><td>
@@ -54,7 +54,7 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Parameters_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -75,7 +75,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Parameters_fk_ParameterData_AttributeDataValues.html">fk_ParameterData_AttributeDataValues</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Parameters.html">Storage.Parameters</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_Parameters_fk_Parameters_DataStorage.html">fk_Parameters_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Parameters.html">Storage.Parameters</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 </table>
 <br>

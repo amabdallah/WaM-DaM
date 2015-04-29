@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">CommonAttributeCategory</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">CommonAttributeCategory</td><td class="watermark_right">Controlled vocabulary for common attributes to organize them into hier...</td>
 </tr>
 </table>
 <br>
@@ -36,22 +36,25 @@
 </td><td class="PkCol"><a href="../columns/CVs_CommonAttributeCategory_CommonAttributeCategoryID.html">CommonAttributeCategoryID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"CVs"."CommonAttributeCategory_CommonAttributeCategoryID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"CVs"."CommonAttributeCategory_CommonAttributeCategoryID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_CommonAttributeCategory_CommonAttributeCategoryName.html">CommonAttributeCategoryName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_CommonAttributeCategory_CommonAttributeCategoryName.html">CommonAttributeCategoryName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Controlled vocabulary term</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_CommonAttributeCategory_CommonCategoryDefinition.html">CommonCategoryDefinition</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/CVs_CommonAttributeCategory_CommonCategoryDefinition.html">CommonCategoryDefinition</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td>Definition of vocabulary term</td><td> </td>
 </tr>
 <tr>
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/CVs_CommonAttributeCategory_ParentAttributeCategoryID.html">ParentAttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a ParentAttributeCategoty</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -87,7 +90,7 @@
 <td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_NodeAttributeCategory_NodeAttributeCategory.html">fk_NodeAttributeCategory_NodeAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentAttributeCategoryID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CommonAttributes_fk_ControlledAttributes_ControlledAttributeCategory.html">fk_ControlledAttributes_ControlledAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td>CommonAttributeCategoryID</td><td>CommonAttributeCategoryID</td>
+<td><a href="../foreignKeys/CVs_CommonAttributes_fk_CommonAttributes_CommonAttributeCategory.html">fk_CommonAttributes_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td>CommonAttributeCategoryID</td><td>CommonAttributeCategoryID</td>
 </tr>
 </table>
 <br>

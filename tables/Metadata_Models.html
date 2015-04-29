@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">Models</td><td class="watermark_right">Stores metadata about simulation resutls </td>
+<td class="title_nm">Models</td><td class="watermark_right">A Model refers to a statistical or mathematical representation of a wa...</td>
 </tr>
 </table>
 <br>
@@ -36,43 +36,43 @@
 </td><td class="PkCol"><a href="../columns/Metadata_Models_ModesID.html">ModesID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."Models_ModesID_seq"'::regclass)</td><td class="PkCol">Primary Key</td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."Models_ModesID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Models_ModelName.html">ModelName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Metadata_Models_ModelName.html">ModelName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>The full text name of the model (WEAP)</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Metadata_Models_ModelLink.html">ModelLink</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/Metadata_Models_ModelWebpage.html">ModelWebpage</a></td><td>VarChar(500)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A URL for the Model's website</td><td> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Models_ModelInstanceName.html">ModelInstanceName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Metadata_Models_ModelInstanceName.html">ModelInstanceName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Refers to a mathematical or statistical representation of a particular water system in a particular area and time span in a specific modeling software (e.g., Lower Bear River Water Management Model in WEAP). </td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_Models_ModelDateCreated.html">ModelDateCreated</a></td><td>Date</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Date when the model was created</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_Models_Description.html">Description</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Full text description of the method</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_Models_TimeStep.html">TimeStep</a></td><td>Float</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Time step of the model (1), the TimeStep Unit fields indicates if the time step is month, day, week, or year or so</td><td> </td>
 </tr>
 <tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Models_TimeStepUnit.html">TimeStepUnit</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary key</td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Unit</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -81,13 +81,13 @@
 <td> </td><td><a href="../columns/Metadata_Models_ModelStartDateTime.html">ModelStartDateTime</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Start date of the model e.g, 1965</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_Models_ModelEndDateTime.html">ModelEndDateTime</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>End date of the model e.g, 2000</td><td> </td>
 </tr>
 </table>
 <br>
@@ -117,7 +117,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Models.html">fk_Methods_Models</a></td><td><a href="../tables/Metadata_Models.html">Metadata.Models</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>ModesID</td><td>ModeID</td>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Models.html">fk_Methods_Models</a></td><td><a href="../tables/Metadata_Models.html">Metadata.Models</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>ModesID</td><td>ModelID</td>
 </tr>
 </table>
 <br>

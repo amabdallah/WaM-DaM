@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">MultiColumnValues</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">MultiColumnValues</td><td class="watermark_right">This table stores the data values for each column in the array along w...</td>
 </tr>
 </table>
 <br>
@@ -36,19 +36,19 @@
 </td><td class="PkCol"><a href="../columns/Storage_MultiColumnValues_MultiColumnValueID.html">MultiColumnValueID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Storage"."MultiColumnValues_MultiColumnValueID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Storage"."MultiColumnValues_MultiColumnValueID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_MultiColumnValues_MultiColumnID.html">MultiColumnID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_MultiColumnValues_MultiColumnID.html">MultiColumnID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreigh key identifier for a Multi-Column array</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_MultiColumnValues_Value.html">Value</a></td><td>Float</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Storage_MultiColumnValues_Value.html">Value</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a text of the value of the column. e.g., 100 or January</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_MultiColumnValues_ValueOrder.html">ValueOrder</a></td><td>Integer</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Storage_MultiColumnValues_ValueOrder.html">ValueOrder</a></td><td>Integer</td><td> </td><td> </td><td> </td><td>An integer as an ascending order that coresponds to the Values of the column. The order of the value preserves the pairing of data values across columns of the same MultiColumn array</td><td> </td>
 </tr>
 </table>
 <br>
@@ -66,7 +66,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_MultiColumnValues_fk_MultiColumnArray_MultiColumnValues.html">fk_MultiColumnArray_MultiColumnValues</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnValues.html">Storage.MultiColumnValues</a></td><td>MultiColumnID</td><td>MultiColumnID</td>
+<td><a href="../foreignKeys/Storage_MultiColumnValues_fk_MultiColumnValues_MultiColumnArray.html">fk_MultiColumnValues_MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnValues.html">Storage.MultiColumnValues</a></td><td>MultiColumnID</td><td>MultiColumnID</td>
 </tr>
 </table>
 <br>

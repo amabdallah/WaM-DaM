@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -17,8 +17,8 @@
 </table>
 <hr>
 <table class="pageTitle">
-<tr>
-<td class="title_nm">Instances</td><td class="watermark_right">A node instance is a relaization of a node object. The node instance h...</td>
+<tr class="altRow">
+<td class="title_nm">Instances</td><td class="watermark_right">An instance is a particular realization or implementation of an Object...</td>
 </tr>
 </table>
 <br>
@@ -36,25 +36,25 @@
 </td><td class="PkCol"><a href="../columns/Core_Instances_InstanceID.html">InstanceID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Core"."Instances_InstanceID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Core"."Instances_InstanceID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Core_Instances_InstanceName.html">InstanceName</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A text name for the Instance</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Core_Instances_InstanceCode.html">InstanceCode</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>This code comes from the original dataset uniqe identifier</td><td> </td>
+</td><td> </td><td> </td><td>A text code identifiying the Instance code in the original dataset (e.g., 100)</td><td> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_Instances_StatusCV.html">StatusCV</a></td><td class="FkCol">VarChar(55)</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_Instances_StatusCV.html">StatusCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Existing, Proposed, or past exisited </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for instance status like Existing, Proposed, or past exisited </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -63,19 +63,19 @@
 <td> </td><td><a href="../columns/Core_Instances_Longitude.html">Longitude</a></td><td>Float</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Longitude of the instance</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Core_Instances_Latitude.html">Latitude</a></td><td>Float</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Latitude of the instance </td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Core_Instances_Description.html">Description</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A text description of the organization</td><td> </td>
 </tr>
 <tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_Instances_RelatedInstanceID.html">RelatedInstanceID</a></td><td class="FkCol">Integer</td><td class="FkCol">
@@ -120,10 +120,10 @@
 <td><a href="../foreignKeys/Core_Instances_fk_Instances_Instances.html">fk_Instances_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td>InstanceID</td><td>RelatedInstanceID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_MetadataMapping_fk_InstanceScenarioAttributes_Instances.html">fk_InstanceScenarioAttributes_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>InstanceID</td><td>InstanceID</td>
+<td><a href="../foreignKeys/Core_MetadataMapping_fk_MetadataMapping_Instances.html">fk_MetadataMapping_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>InstanceID</td><td>InstanceID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Connections_Conn.html">Conn</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>LinkInstanceID</td>
+<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances.html">fk_Connections_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>LinkInstanceID</td>
 </tr>
 </table>
 <br>

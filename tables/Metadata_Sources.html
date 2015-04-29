@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">Sources</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Sources</td><td class="watermark_right">A data Source refers to the data provider and where quantitative or qu...</td>
 </tr>
 </table>
 <br>
@@ -39,34 +39,34 @@
 </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."Sources_SourceID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."Sources_SourceID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Sources_SourceName.html">SourceName</a></td><td>VarChar(500)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Metadata_Sources_SourceName.html">SourceName</a></td><td>VarChar(500)</td><td> </td><td> </td><td> </td><td>full text of the source name</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_Sources_SourceWebpage.html">SourceWebpage</a></td><td>VarChar(500)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A URL for the organization's website</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_Sources_SourceDescription.html">SourceDescription</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A text description of the organization</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_Sources_Citation.html">Citation</a></td><td>VarChar(500)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>a text of the proper citation of the source</td><td> </td>
 </tr>
 <tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Sources_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">PrimaryKey</td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Person</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -75,7 +75,7 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Sources_ParentSourceID.html">ParentSourceID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Parent Source</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -111,7 +111,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_MetadataMapping_fk_InstanceScenarioAttributes_Sources.html">fk_InstanceScenarioAttributes_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>SourceID</td><td>SourceID</td>
+<td><a href="../foreignKeys/Core_MetadataMapping_fk_MetadataMapping_Sources.html">fk_MetadataMapping_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>SourceID</td><td>SourceID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Metadata_Sources_fk_Sources_Sources.html">fk_Sources_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td>SourceID</td><td>ParentSourceID</td>

@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -17,8 +17,8 @@
 </table>
 <hr>
 <table class="pageTitle">
-<tr class="altRow">
-<td class="title_nm">SceanrioMetadata</td><td class="watermark_right">(Table)</td>
+<tr>
+<td class="title_nm">SceanrioMetadata</td><td class="watermark_right">The ScenarioMetadata is a bridge table that allows associating many Me...</td>
 </tr>
 </table>
 <br>
@@ -36,16 +36,16 @@
 </td><td class="PkCol"><a href="../columns/Core_SceanrioMetadata_SceanrioMetadataID.html">SceanrioMetadataID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Core"."SceanrioMetadata_SceanrioMetadataID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Core"."SceanrioMetadata_SceanrioMetadataID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_SceanrioMetadata_ScenarioID.html">ScenarioID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_SceanrioMetadata_ScenarioID.html">ScenarioID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Scenario</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_SceanrioMetadata_MetadataMappingID.html">MetadataMappingID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_SceanrioMetadata_MetadataMappingID.html">MetadataMappingID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a MetadataMapping record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -66,10 +66,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_SceanrioMetadata_fk_SceanriosMetadata_Metadata.html">fk_SceanriosMetadata_Metadata</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td><a href="../tables/Core_SceanrioMetadata.html">Core.SceanrioMetadata</a></td><td>MetadataMappingID</td><td>MetadataMappingID</td>
+<td><a href="../foreignKeys/Core_SceanrioMetadata_fk_SceanrioMetadata_MetadataMapping.html">fk_SceanrioMetadata_MetadataMapping</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td><a href="../tables/Core_SceanrioMetadata.html">Core.SceanrioMetadata</a></td><td>MetadataMappingID</td><td>MetadataMappingID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_SceanrioMetadata_fk_SceanriosMetadata_Scenarios.html">fk_SceanriosMetadata_Scenarios</a></td><td><a href="../tables/Core_Scenarios.html">Core.Scenarios</a></td><td><a href="../tables/Core_SceanrioMetadata.html">Core.SceanrioMetadata</a></td><td>ScenarioID</td><td>ScenarioID</td>
+<td><a href="../foreignKeys/Core_SceanrioMetadata_fk_SceanrioMetadata_Scenarios.html">fk_SceanrioMetadata_Scenarios</a></td><td><a href="../tables/Core_Scenarios.html">Core.Scenarios</a></td><td><a href="../tables/Core_SceanrioMetadata.html">Core.SceanrioMetadata</a></td><td>ScenarioID</td><td>ScenarioID</td>
 </tr>
 </table>
 <br>

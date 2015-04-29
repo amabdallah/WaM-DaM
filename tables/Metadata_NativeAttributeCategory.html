@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">NativeAttributeCategory</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">NativeAttributeCategory</td><td class="watermark_right">Orgnaizes native attributes into  hierarchal categories in their origi...</td>
 </tr>
 </table>
 <br>
@@ -36,16 +36,16 @@
 </td><td class="PkCol"><a href="../columns/Metadata_NativeAttributeCategory_NativeAttributeCategoryID.html">NativeAttributeCategoryID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."NativeAttributeCategory_NativeAttributeCategoryID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."NativeAttributeCategory_NativeAttributeCategoryID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Metadata_NativeAttributeCategory_NativeAttributeCategoryName.html">NativeAttributeCategoryName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Metadata_NativeAttributeCategory_NativeAttributeCategoryName.html">NativeAttributeCategoryName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a text of the Category name that the attribute falls under</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_NativeAttributeCategory_NativeAttributeCategoryDefinition.html">NativeAttributeCategoryDefinition</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Text definition of the category of the native attribute</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_NativeAttributeCategory_NativeAttributeCategoryGroup.html">NativeAttributeCategoryGroup</a></td><td>VarChar(255)</td><td>
@@ -57,7 +57,7 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_NativeAttributeCategory_ParentNativeAttributeCategoryID.html">ParentNativeAttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Native Attribute category</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>

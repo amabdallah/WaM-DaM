@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">People</td><td class="watermark_right">Describes people</td>
+<td class="title_nm">People</td><td class="watermark_right">A person record must be defined first to relate a source with an organ...</td>
 </tr>
 </table>
 <br>
@@ -36,46 +36,46 @@
 </td><td class="PkCol"><a href="../columns/Metadata_People_PersonID.html">PersonID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."People_PersonID_seq"'::regclass)</td><td class="PkCol">PrimaryKey</td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."People_PersonID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_People_ContactName.html">ContactName</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>Last name of the person</td><td> </td>
+</td><td> </td><td> </td><td>First and Last name of the person</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_People_Address.html">Address</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>The primary mailing address of the person, including street, city, state, zip, and country	</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_People_Email.html">Email</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>The primary email address of the person</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_People_Webpage.html">Webpage</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A URL for the website for a person</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_People_Phone.html">Phone</a></td><td>VarChar(50)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>The primary phone number of the person</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_People_Position.html">Position</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Position of the person</td><td> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_People_OrganizationID.html">OrganizationID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_People_OrganizationID.html">OrganizationID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreigh key identifier for an organization</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -96,7 +96,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_People_fk_People_Organization.html">fk_People_Organization</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td>OrganizationID</td><td>OrganizationID</td>
+<td><a href="../foreignKeys/Metadata_People_fk_People_Organizations.html">fk_People_Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td>OrganizationID</td><td>OrganizationID</td>
 </tr>
 </table>
 <br>

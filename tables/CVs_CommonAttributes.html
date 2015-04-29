@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">CommonAttributes</td><td class="watermark_right">Attributes are like variables in ODM but they are more general since t...</td>
+<td class="title_nm">CommonAttributes</td><td class="watermark_right">Controlled vocabulary for attributes like Volume which maps out to nat...</td>
 </tr>
 </table>
 <br>
@@ -36,7 +36,7 @@
 </td><td class="PkCol"><a href="../columns/CVs_CommonAttributes_CommonAttributeID.html">CommonAttributeID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"CVs"."CommonAttributes_CommonAttributeID_seq"'::regclass)</td><td class="PkCol">Primary key</td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"CVs"."CommonAttributes_CommonAttributeID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/CVs_CommonAttributes_CommonAttributeName.html">CommonAttributeName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Controlled vocabulary for the name of the attribute</td><td> </td>
@@ -45,13 +45,13 @@
 <td> </td><td><a href="../columns/CVs_CommonAttributes_CommonAttributeDefinition.html">CommonAttributeDefinition</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Definition of vocabulary term</td><td> </td>
 </tr>
 <tr>
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/CVs_CommonAttributes_CommonAttributeCategoryID.html">CommonAttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a CommonAttributeCategory</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -72,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CommonAttributes_fk_ControlledAttributes_ControlledAttributeCategory.html">fk_ControlledAttributes_ControlledAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td>CommonAttributeCategoryID</td><td>CommonAttributeCategoryID</td>
+<td><a href="../foreignKeys/CVs_CommonAttributes_fk_CommonAttributes_CommonAttributeCategory.html">fk_CommonAttributes_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td>CommonAttributeCategoryID</td><td>CommonAttributeCategoryID</td>
 </tr>
 </table>
 <br>
@@ -84,7 +84,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_Attributes_fk_NodeObjectAttributes_Attributes.html">fk_NodeObjectAttributes_Attributes</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td><a href="../tables/Core_Attributes.html">Core.Attributes</a></td><td>CommonAttributeID</td><td>CommonAttributeID</td>
+<td><a href="../foreignKeys/Core_Attributes_fk_Attributes_CommonAttributes.html">fk_Attributes_CommonAttributes</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td><a href="../tables/Core_Attributes.html">Core.Attributes</a></td><td>CommonAttributeID</td><td>CommonAttributeID</td>
 </tr>
 </table>
 <br>

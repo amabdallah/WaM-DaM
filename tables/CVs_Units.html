@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">Units</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Units</td><td class="watermark_right">A unit refers to the dimension of data values of a quantitative attrib...</td>
 </tr>
 </table>
 <br>
@@ -36,22 +36,22 @@
 </td><td class="PkCol"><a href="../columns/CVs_Units_UnitID.html">UnitID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."Units_UnitID_seq"'::regclass)</td><td class="PkCol">Primary key</td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."Units_UnitID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_Units_UnitType.html">UnitType</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_Units_UnitType.html">UnitType</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a text that defines the unit type e.g., length or volume/time</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_Units_UnitName.html">UnitName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_Units_UnitName.html">UnitName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Text name for the unit</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/CVs_Units_UnitSystem.html">UnitSystem</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> International System of Units (SI) or Imperial units (English) </td><td> </td>
+</td><td> </td><td> </td><td>International System of Units (SI) or Imperial units (English) </td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_Units_UnitAbbreviation.html">UnitAbbreviation</a></td><td>Char(50)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_Units_UnitAbbreviation.html">UnitAbbreviation</a></td><td>Char(50)</td><td> </td><td> </td><td> </td><td>Text abbreviation for the unit</td><td> </td>
 </tr>
 </table>
 <br>
@@ -75,7 +75,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_Attributes_fk_ObjectAttributes_Units.html">fk_ObjectAttributes_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Core_Attributes.html">Core.Attributes</a></td><td>UnitID</td><td>UnitID</td>
+<td><a href="../foreignKeys/Core_Attributes_fk_Attributes_Units.html">fk_Attributes_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Core_Attributes.html">Core.Attributes</a></td><td>UnitID</td><td>UnitID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Metadata_Models_fk_Models_Units.html">fk_Models_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Metadata_Models.html">Metadata.Models</a></td><td>UnitID</td><td>TimeStepUnit</td>

@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">SpatialReference</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">SpatialReference</td><td class="watermark_right">A spatial reference (e.g., NAD 1983) to referece all the instances tha...</td>
 </tr>
 </table>
 <br>
@@ -36,22 +36,22 @@
 </td><td class="PkCol"><a href="../columns/CVs_SpatialReference_SpatialReferenceID.html">SpatialReferenceID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."SpatialReference_SpatialReferenceID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."SpatialReference_SpatialReferenceID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_SpatialReference_SRSName.html">SRSName</a></td><td>VarChar(500)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_SpatialReference_SRSName.html">SRSName</a></td><td>VarChar(500)</td><td> </td><td> </td><td> </td><td>Text name of the spatial reference system</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_SpatialReference_SRSID.html">SRSID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_SpatialReference_SRSID.html">SRSID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td>SRS code for the spatial reference system</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/CVs_SpatialReference_IsGeographic.html">IsGeographic</a></td><td>Integer</td><td> </td><td> </td><td> </td><td> </td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_SpatialReference_Notes.html">Notes</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/CVs_SpatialReference_Notes.html">Notes</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Text notes describing the spatial reference system</td><td> </td>
 </tr>
 </table>
 <br>

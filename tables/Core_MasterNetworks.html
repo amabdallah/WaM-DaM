@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -17,8 +17,8 @@
 </table>
 <hr>
 <table class="pageTitle">
-<tr class="altRow">
-<td class="title_nm">MasterNetworks</td><td class="watermark_right">(Table)</td>
+<tr>
+<td class="title_nm">MasterNetworks</td><td class="watermark_right">A Master Network is a specific implementation of a Data Structure, its...</td>
 </tr>
 </table>
 <br>
@@ -36,16 +36,16 @@
 </td><td class="PkCol"><a href="../columns/Core_MasterNetworks_MasterNetworkID.html">MasterNetworkID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Core"."MasterNetworks_MasterNetworkID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Core"."MasterNetworks_MasterNetworkID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Core_MasterNetworks_MasterNetworkName.html">MasterNetworkName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Core_MasterNetworks_MasterNetworkName.html">MasterNetworkName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Text name for the Master Network</td><td> </td>
 </tr>
 <tr>
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_MasterNetworks_SpatialReferenceID.html">SpatialReferenceID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Spatial Reference system that describes the latitude and longitude coordinates</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -54,7 +54,7 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_MasterNetworks_VerticalDatumCV.html">VerticalDatumCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Vertical Datum</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -63,7 +63,7 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_MasterNetworks_RelatedMasterNetwork.html">RelatedMasterNetwork</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Master Network</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -72,7 +72,7 @@
 <td> </td><td><a href="../columns/Core_MasterNetworks_Description.html">Description</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Text description of the MasterNetwork</td><td> </td>
 </tr>
 </table>
 <br>
@@ -96,7 +96,7 @@
 <td><a href="../foreignKeys/Core_MasterNetworks_fk_MasterNetworks_SpatialReference.html">fk_MasterNetworks_SpatialReference</a></td><td><a href="../tables/CVs_SpatialReference.html">CVs.SpatialReference</a></td><td><a href="../tables/Core_MasterNetworks.html">Core.MasterNetworks</a></td><td>SpatialReferenceID</td><td>SpatialReferenceID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_MasterNetworks_fk_MasterNetworks_VerticalDatumCV.html">fk_MasterNetworks_VerticalDatumCV</a></td><td><a href="../tables/CVs_VerticalDatum.html">CVs.VerticalDatum</a></td><td><a href="../tables/Core_MasterNetworks.html">Core.MasterNetworks</a></td><td>Term</td><td>VerticalDatumCV</td>
+<td><a href="../foreignKeys/Core_MasterNetworks_fk_MasterNetworks_VerticalDatum.html">fk_MasterNetworks_VerticalDatum</a></td><td><a href="../tables/CVs_VerticalDatum.html">CVs.VerticalDatum</a></td><td><a href="../tables/Core_MasterNetworks.html">Core.MasterNetworks</a></td><td>Term</td><td>VerticalDatumCV</td>
 </tr>
 </table>
 <br>

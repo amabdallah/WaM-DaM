@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">TimeSeriesValues</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">TimeSeriesValues</td><td class="watermark_right">Thsi table stores the time series data values and their time stamp</td>
 </tr>
 </table>
 <br>
@@ -36,19 +36,19 @@
 </td><td class="PkCol"><a href="../columns/Storage_TimeSeriesValues_TimeSeriesDataID.html">TimeSeriesDataID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Storage"."TimeSeriesValues_TimeSeriesDataID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Storage"."TimeSeriesValues_TimeSeriesDataID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_TimeSeriesValues_TimeSeriesID.html">TimeSeriesID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_TimeSeriesValues_TimeSeriesID.html">TimeSeriesID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreigh key identifier for a Time Series</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_TimeSeriesValues_DateTimeStamp.html">DateTimeStamp</a></td><td>DateTime</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Storage_TimeSeriesValues_DateTimeStamp.html">DateTimeStamp</a></td><td>DateTime</td><td> </td><td> </td><td> </td><td>time stamp that corresponds to the data value</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_TimeSeriesValues_Value.html">Value</a></td><td>Float</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Storage_TimeSeriesValues_Value.html">Value</a></td><td>Float</td><td> </td><td> </td><td> </td><td>a real number data value that corresponds to the time stamp</td><td> </td>
 </tr>
 </table>
 <br>
@@ -66,7 +66,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_TimeSeriesValues_fk_TimeSeriesData_TimeSeries.html">fk_TimeSeriesData_TimeSeries</a></td><td><a href="../tables/Storage_TimeSeries.html">Storage.TimeSeries</a></td><td><a href="../tables/Storage_TimeSeriesValues.html">Storage.TimeSeriesValues</a></td><td>TimeSeriesID</td><td>TimeSeriesID</td>
+<td><a href="../foreignKeys/Storage_TimeSeriesValues_fk_TimeSeriesValues_TimeSeries.html">fk_TimeSeriesValues_TimeSeries</a></td><td><a href="../tables/Storage_TimeSeries.html">Storage.TimeSeries</a></td><td><a href="../tables/Storage_TimeSeriesValues.html">Storage.TimeSeriesValues</a></td><td>TimeSeriesID</td><td>TimeSeriesID</td>
 </tr>
 </table>
 <br>

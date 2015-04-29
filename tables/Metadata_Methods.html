@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">Methods</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Methods</td><td class="watermark_right">A Method refers to how a quantitative or qualitative data values of an...</td>
 </tr>
 </table>
 <br>
@@ -36,7 +36,7 @@
 </td><td class="PkCol"><a href="../columns/Metadata_Methods_MethodID.html">MethodID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."Methods_MethodID_seq"'::regclass)</td><td class="PkCol">Primary key</td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."Methods_MethodID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_Methods_MethodName.html">MethodName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Full text name of the method	</td><td> </td>
@@ -54,22 +54,22 @@
 </td><td> </td><td> </td><td>Full text description of the method	</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeCV.html">MethodTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeCV.html">MethodTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term that provides the method type  like sample, simulation, optimization, or field procedure. The method type corresponds to &ldquo;value type&rdquo; attribute in the Observations Data Model </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">PrimaryKey</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a person</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_ModeID.html">ModeID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_ModelID.html">ModelID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key</td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Model</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -78,7 +78,7 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_ParentMethodID.html">ParentMethodID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary key</td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a parent method</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -102,10 +102,10 @@
 <td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Methods.html">fk_Methods_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodID</td><td>ParentMethodID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodTypeCV.html">fk_Methods_MethodTypeCV</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Term</td><td>MethodTypeCV</td>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodType.html">fk_Methods_MethodType</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Term</td><td>MethodTypeCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Models.html">fk_Methods_Models</a></td><td><a href="../tables/Metadata_Models.html">Metadata.Models</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>ModesID</td><td>ModeID</td>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Models.html">fk_Methods_Models</a></td><td><a href="../tables/Metadata_Models.html">Metadata.Models</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>ModesID</td><td>ModelID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Metadata_Methods_fk_Methods_People.html">fk_Methods_People</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>PersonID</td><td>PersonID</td>
@@ -120,7 +120,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_MetadataMapping_fk_InstanceScenarioAttributes_Methods.html">fk_InstanceScenarioAttributes_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>MethodID</td><td>MethodID</td>
+<td><a href="../foreignKeys/Core_MetadataMapping_fk_MetadataMapping_Methods.html">fk_MetadataMapping_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td>MethodID</td><td>MethodID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Methods.html">fk_Methods_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodID</td><td>ParentMethodID</td>

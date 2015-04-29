@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">Organizations</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Organizations</td><td class="watermark_right">. An organization refers to the institution that affiliates a person w...</td>
 </tr>
 </table>
 <br>
@@ -36,19 +36,19 @@
 </td><td class="PkCol"><a href="../columns/Metadata_Organizations_OrganizationID.html">OrganizationID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Metadata"."Organizations_OrganizationID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Metadata"."Organizations_OrganizationID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_Organizations_OrganizationName.html">OrganizationName</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>The full text name of the organization</td><td> </td>
 </tr>
 <tr>
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Organizations_OrganizationTypeCV.html">OrganizationTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term defining the type of organization, e.g., academic</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -57,19 +57,19 @@
 <td> </td><td><a href="../columns/Metadata_Organizations_Webpage.html">Webpage</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A URL for the organization's website</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Metadata_Organizations_OrganizationDescription.html">OrganizationDescription</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>A text description of the organization</td><td> </td>
 </tr>
 <tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Organizations_ParentOrganizationID.html">ParentOrganizationID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a ParentOrganization</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -90,7 +90,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Organizations_fk_Organization_Organization.html">fk_Organization_Organization</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td>OrganizationID</td><td>ParentOrganizationID</td>
+<td><a href="../foreignKeys/Metadata_Organizations_fk_Organizations_Organizations.html">fk_Organizations_Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td>OrganizationID</td><td>ParentOrganizationID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Metadata_Organizations_fk_Organizations_OrganizationType.html">fk_Organizations_OrganizationType</a></td><td><a href="../tables/CVs_OrganizationType.html">CVs.OrganizationType</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td>Term</td><td>OrganizationTypeCV</td>
@@ -105,10 +105,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Organizations_fk_Organization_Organization.html">fk_Organization_Organization</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td>OrganizationID</td><td>ParentOrganizationID</td>
+<td><a href="../foreignKeys/Metadata_Organizations_fk_Organizations_Organizations.html">fk_Organizations_Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td>OrganizationID</td><td>ParentOrganizationID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_People_fk_People_Organization.html">fk_People_Organization</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td>OrganizationID</td><td>OrganizationID</td>
+<td><a href="../foreignKeys/Metadata_People_fk_People_Organizations.html">fk_People_Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td>OrganizationID</td><td>OrganizationID</td>
 </tr>
 </table>
 <br>

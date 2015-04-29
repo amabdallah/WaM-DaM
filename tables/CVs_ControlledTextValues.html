@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">ControlledTextValues</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">ControlledTextValues</td><td class="watermark_right">Controlled text values that can be shared across attributes of instanc...</td>
 </tr>
 </table>
 <br>
@@ -36,19 +36,19 @@
 </td><td class="PkCol"><a href="../columns/CVs_ControlledTextValues_ControlledTextValueID.html">ControlledTextValueID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"CVs"."ControlledText_TextValueControlledCVID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"CVs"."ControlledText_TextValueControlledCVID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_ControlledTextValues_ControlledTextValue.html">ControlledTextValue</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_ControlledTextValues_ControlledTextValue.html">ControlledTextValue</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Controlled vocabulary term</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_ControlledTextValues_ControlledTextAttribute.html">ControlledTextAttribute</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/CVs_ControlledTextValues_ControlledTextAttribute.html">ControlledTextAttribute</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a dublicate of the controlled attribute name that takes the value here. </td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_ControlledTextValues_ValueDefinition.html">ValueDefinition</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/CVs_ControlledTextValues_ValueDefinition.html">ValueDefinition</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td> </td><td> </td>
+</td><td> </td><td> </td><td>Definition of vocabulary term</td><td> </td>
 </tr>
 </table>
 <br>
@@ -72,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_ControlledText_fk_TextDescriptorControlledData_ControlledText2.html">fk_TextDescriptorControlledData_ControlledText2</a></td><td><a href="../tables/CVs_ControlledTextValues.html">CVs.ControlledTextValues</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>ControlledTextValueID</td><td>ControlledTextValueID</td>
+<td><a href="../foreignKeys/Storage_ControlledText_fk_ControlledText_ControlledTextValues.html">fk_ControlledText_ControlledTextValues</a></td><td><a href="../tables/CVs_ControlledTextValues.html">CVs.ControlledTextValues</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>ControlledTextValueID</td><td>ControlledTextValueID</td>
 </tr>
 </table>
 <br>

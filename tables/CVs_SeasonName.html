@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">SeasonName</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">SeasonName</td><td class="watermark_right">Controlled vocabulary for seasons (e.g., winter and day, night, holida...</td>
 </tr>
 </table>
 <br>
@@ -36,10 +36,10 @@
 </td><td class="PkCol"><a href="../columns/CVs_SeasonName_Term.html">Term</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/CVs_SeasonName_Definition.html">Definition</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/CVs_SeasonName_Definition.html">Definition</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>Definition of term</td><td> </td>
+</td><td> </td><td> </td><td>Definition of vocabulary term</td><td> </td>
 </tr>
 </table>
 <br>
@@ -63,7 +63,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_SeasonalParameters_fk_SeasonalParameterData_SeasonNameCV.html">fk_SeasonalParameterData_SeasonNameCV</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/Storage_SeasonalParameters.html">Storage.SeasonalParameters</a></td><td>Term</td><td>SeasonNameCV</td>
+<td><a href="../foreignKeys/Storage_SeasonalParameters_fk_SeasonalParameters_SeasonName.html">fk_SeasonalParameters_SeasonName</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/Storage_SeasonalParameters.html">Storage.SeasonalParameters</a></td><td>Term</td><td>SeasonNameCV</td>
 </tr>
 </table>
 <br>

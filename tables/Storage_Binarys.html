@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [Mar2015WaMDaM1.0.xml]</td>
+<td class="logo">WaM-DaM1.0</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr class="altRow">
-<td class="title_nm">Binarys</td><td class="watermark_right">(Table)</td>
+<td class="title_nm">Binarys</td><td class="watermark_right">This table stores binary data values of either zero or one to direct u...</td>
 </tr>
 </table>
 <br>
@@ -36,16 +36,19 @@
 </td><td class="PkCol"><a href="../columns/Storage_Binarys_BinaryID.html">BinaryID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol">nextval('"Storage"."BinaryData_BinaryID_seq"'::regclass)</td><td class="PkCol"> </td><td class="PkCol"> </td>
+</td><td class="PkCol">nextval('"Storage"."BinaryData_BinaryID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_Binarys_BinaryValue.html">BinaryValue</a></td><td>Binary(1)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td> </td><td><a href="../columns/Storage_Binarys_BinaryValue.html">BinaryValue</a></td><td>Binary(1)</td><td> </td><td> </td><td> </td><td>Binary value of the attribute, either 0 or 1</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_Binarys_BinaryValueMeaningCV.html">BinaryValueMeaningCV</a></td><td>Binary(1)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_BinaryValueMeaningCV.html">BinaryValueMeaningCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term provides the meaning of the binary value. e.g., 1 means "open" or 0 means "closed"</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -66,7 +69,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Binarys_fk_BinaryDataData_AttributeDataValues.html">fk_BinaryDataData_AttributeDataValues</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>Term</td><td>BinaryValueMeaningCV</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_DataStorage.html">fk_Binarys_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 </table>
 <br>
