@@ -7,7 +7,7 @@ WaM-DaMv1.0
 
 Water Management Data Model (WaM-DaM) is an information model that is proposed to synthesize and integrate Fragmented and inconsistent water resources management data. The information model aimes to help scientists and water managers organize, query, and interpret their disparate and diverse data to save time plus facilitate modeling.
 
-#### Getting Started witgh WaM-DaM
+#### Getting Started with WaM-DaM
 SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [Microsoft SQL Server] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MSSQL.sql)
 * [MySQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MySQL.sql)
