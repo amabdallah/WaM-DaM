@@ -10,9 +10,9 @@ Water Management Data Model (WaM-DaM) is an information model that is proposed t
 #### Getting Started witgh WaM-DaM
 SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [Microsoft SQL Server] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MSSQL.sql)
-* MySQL
-* PostgreSQL
-* SQLite
+* [MySQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MySQL.sql)
+* [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
+* [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
 
 
