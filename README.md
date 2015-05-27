@@ -14,6 +14,8 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
 * [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
+Credit: I used the this DDL Script in Python that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
+https://github.com/ODM2/ODM2/tree/master/src/build_schemas
 
 
 
