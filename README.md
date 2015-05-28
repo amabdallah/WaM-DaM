@@ -14,8 +14,7 @@ Water Management Data Model (WaM-DaM) is an information model that is proposed t
 
 
 #### Getting Started with WaM-DaM
-
-[WaM-DaM XML Schema] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WaM-DaM1.0.xml)
+Check out the [WaM-DaM XML Schema] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WaM-DaM1.0.xml)
 
 SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [Microsoft SQL Server] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MSSQL.sql)
@@ -25,9 +24,6 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 
 **Credit** I used the this DDL Script in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
 https://github.com/ODM2/ODM2/tree/master/src/build_schemas
-
-
-
 
 
 
