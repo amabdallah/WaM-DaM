@@ -1,4 +1,4 @@
-WaM-DaMv1.0
+WaM-DaM
 ===========
 
 #### The Water Management Data Model (WaM-DaM). 
