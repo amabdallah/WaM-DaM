@@ -1,7 +1,7 @@
 WaM-DaMv1.0
 ===========
 
-#### The Water Management Data Model 1.0 (WaM-DaM). 
+#### The Water Management Data Model (WaM-DaM). 
 
 #### Model Quicker, Publish Faster! 
 
