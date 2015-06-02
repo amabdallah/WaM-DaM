@@ -29,7 +29,9 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 **Credit** I used the this DDL Script in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
 https://github.com/ODM2/ODM2/tree/master/src/build_schemas
 
+Matlab Script to load data to WaM-DaM SQLite [here](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) 
 
+Populated SQLite WaM-DaM database [here]()
 
 This work is part of a large cyberinfrastructure project [(CI-WATER)](http://ci-water.org/) to advance water resources modeling that involves Utah State University, Brigham Young University, University of Utah and University of Wyoming. 
 
