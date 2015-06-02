@@ -1,4 +1,3 @@
--- Drop the database called 'ODM2' if it exists and then create a new database called 'ODM2'
 USE master;
 GO
 
