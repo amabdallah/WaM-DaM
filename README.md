@@ -87,7 +87,7 @@ Check out WaM-DaM documentation and development at the [GitHub Wiki](https://git
 
 
 
-[![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)
+[![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)  
 [![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
 
 
