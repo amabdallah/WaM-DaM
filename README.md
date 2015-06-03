@@ -33,10 +33,6 @@ Matlab Script to load data to WaM-DaM SQLite [here](https://github.com/amabdalla
 
 Populated SQLite WaM-DaM database [here]()
 
-This work is part of a large cyberinfrastructure project [(CI-WATER)](http://ci-water.org/) to advance water resources modeling that involves Utah State University, Brigham Young University, University of Utah and University of Wyoming. 
-
-Check out WaM-DaM documentation and development at the [GitHub Wiki](https://github.com/amabdallah/WaM-DaM1.0/wiki)
-
 Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM1.0/
 ). Last time updated: March 18, 2015 
 
@@ -73,4 +69,27 @@ Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthes
 
 For more info, please free to email Adel Abdallah at:
 amabdallah@aggiemail.usu.edu
+
+
+# Sponsors and Credit 
+
+This material is based upon work supported by the National Science Foundation Grant [NSF grant](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482) . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
+This WaM-DaM project is funded as part of the CI-Water Project. An interdisciplinary team of Utah and Wyoming researchers has received a $6 million, three-year award from the National Science Foundation (NSF) to develop a better understanding of the interconnectivity of natural and human water resources systems – a critical environmental sustainability problem facing both Western states.
+
+The award will allow the team of researchers to develop high-performance computer modeling and computational resources (known as cyberinfrastructure or CI for short) to simulate and study how factors such as population growth, shifting land uses and climate variability will impact water storage and availability in the Intermountain West. This award is made under the NSF Experimental Program to Stimulate Competitive Research (EPSCoR), which supports states' efforts to enhance research, science and mathematics education, and workforce development.
+
+The CI-WATER project includes researchers from Brigham Young University, the University of Utah, Utah State University, and the University of Wyoming. BYU and the University of Wyoming are the lead institutions for their respective states in the consortium.
+
+This work is part of a large cyberinfrastructure project [(CI-WATER)](http://ci-water.org/) to advance water resources modeling that involves Utah State University, Brigham Young University, University of Utah and University of Wyoming. 
+
+Check out WaM-DaM documentation and development at the [GitHub Wiki](https://github.com/amabdallah/WaM-DaM1.0/wiki)
+
+
+
+![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)
+[NSF](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135483)
+![CI-Water](http://ci-water.org/images/logo/ciwater.png)
+[CI-Water ](http://ci-water.org/)
+
 
