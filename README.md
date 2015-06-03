@@ -71,7 +71,7 @@ For more info, please free to email Adel Abdallah at:
 amabdallah@aggiemail.usu.edu
 
 
-# Sponsors and Credit 
+## Sponsors and Credit 
 
 This material is based upon work supported by the National Science Foundation Grant [NSF grant](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482) . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
 
