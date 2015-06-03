@@ -85,11 +85,10 @@ This work is part of a large cyberinfrastructure project [(CI-WATER)](http://ci-
 
 Check out WaM-DaM documentation and development at the [GitHub Wiki](https://github.com/amabdallah/WaM-DaM1.0/wiki)
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 
-![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)[NSF](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135483)
-![CI-Water](http://ci-water.org/images/logo/ciwater.png)[CI-Water ](http://ci-water.org/)
+[![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135483)
+[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
 
 
 
