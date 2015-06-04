@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0</td>
+<td class="logo">WaM-DaM1.0 [JuneWaM-DaM1.1.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -42,13 +42,13 @@
 <td> </td><td><a href="../columns/Storage_Binarys_BinaryValue.html">BinaryValue</a></td><td>Binary(1)</td><td> </td><td> </td><td> </td><td>Binary value of the attribute, either 0 or 1</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_BinaryValueMeaningCV.html">BinaryValueMeaningCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term provides the meaning of the binary value. e.g., 1 means "open" or 0 means "closed"</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_DataStorageID.html">DataStorageID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Binarys_BinaryValueMeaningID.html">BinaryValueMeaningID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Controlled vocabulary term</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -69,7 +69,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>Term</td><td>BinaryValueMeaningCV</td>
+<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>BinaryValueMeaningID</td><td>BinaryValueMeaningID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_DataStorage.html">fk_Binarys_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>DataStorageID</td><td>DataStorageID</td>
@@ -90,7 +90,7 @@
 <td class="Header">Diagram Name</td>
 </tr>
 <tr>
-<td><a href="../diagrams/DataStroage.html">DataStroage</a></td>
+<td><a href="../diagrams/DataStorage.html">DataStorage</a></td>
 </tr>
 <tr>
 <td><a href="../diagrams/Whole.html">Whole</a></td>

@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0</td>
+<td class="logo">WaM-DaM1.0 [JuneWaM-DaM1.1.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -45,13 +45,10 @@
 <td> </td><td><a href="../columns/CVs_CommonAttributeCategory_CommonCategoryDefinition.html">CommonCategoryDefinition</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td>
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td> </td><td>Definition of vocabulary term</td><td> </td>
+</td><td> </td><td> </td><td>Definition of vocabulary term</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/CVs_CommonAttributeCategory_ParentAttributeCategoryID.html">ParentAttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/CVs_CommonAttributeCategory_ParentCommonAttributeCategoryID.html">ParentCommonAttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a ParentAttributeCategoty</td><td class="FkCol">
@@ -75,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_NodeAttributeCategory_NodeAttributeCategory.html">fk_NodeAttributeCategory_NodeAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentAttributeCategoryID</td>
+<td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_CommonAttributeCategory_CommonAttributeCategory.html">fk_CommonAttributeCategory_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentCommonAttributeCategoryID</td>
 </tr>
 </table>
 <br>
@@ -87,7 +84,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_NodeAttributeCategory_NodeAttributeCategory.html">fk_NodeAttributeCategory_NodeAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentAttributeCategoryID</td>
+<td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_CommonAttributeCategory_CommonAttributeCategory.html">fk_CommonAttributeCategory_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentCommonAttributeCategoryID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/CVs_CommonAttributes_fk_CommonAttributes_CommonAttributeCategory.html">fk_CommonAttributes_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td>CommonAttributeCategoryID</td><td>CommonAttributeCategoryID</td>

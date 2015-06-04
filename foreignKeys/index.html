@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0</td>
+<td class="logo">WaM-DaM1.0 [JuneWaM-DaM1.1.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -87,16 +87,16 @@
 <td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_NativeObjectCategory.html">fk_ObjectTypes_NativeObjectCategory</a></td><td><a href="../tables/Metadata_NativeObjectCategory.html">Metadata.NativeObjectCategory</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>NativeObjectCategoryID</td><td>NativeObjectCategoryID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Core_SceanrioMetadata_fk_SceanrioMetadata_MetadataMapping.html">fk_SceanrioMetadata_MetadataMapping</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td><a href="../tables/Core_SceanrioMetadata.html">Core.SceanrioMetadata</a></td><td>MetadataMappingID</td><td>MetadataMappingID</td>
+<td><a href="../foreignKeys/Core_ScenarioMetadata_fk_SceanrioMetadata_MetadataMapping.html">fk_SceanrioMetadata_MetadataMapping</a></td><td><a href="../tables/Core_MetadataMapping.html">Core.MetadataMapping</a></td><td><a href="../tables/Core_ScenarioMetadata.html">Core.ScenarioMetadata</a></td><td>MetadataMappingID</td><td>MetadataMappingID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_SceanrioMetadata_fk_SceanrioMetadata_Scenarios.html">fk_SceanrioMetadata_Scenarios</a></td><td><a href="../tables/Core_Scenarios.html">Core.Scenarios</a></td><td><a href="../tables/Core_SceanrioMetadata.html">Core.SceanrioMetadata</a></td><td>ScenarioID</td><td>ScenarioID</td>
+<td><a href="../foreignKeys/Core_ScenarioMetadata_fk_SceanrioMetadata_Scenarios.html">fk_SceanrioMetadata_Scenarios</a></td><td><a href="../tables/Core_Scenarios.html">Core.Scenarios</a></td><td><a href="../tables/Core_ScenarioMetadata.html">Core.ScenarioMetadata</a></td><td>ScenarioID</td><td>ScenarioID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Core_Scenarios_fk_Scenarios_MasterNetworks.html">fk_Scenarios_MasterNetworks</a></td><td><a href="../tables/Core_MasterNetworks.html">Core.MasterNetworks</a></td><td><a href="../tables/Core_Scenarios.html">Core.Scenarios</a></td><td>MasterNetworkID</td><td>MasterNetworkID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_NodeAttributeCategory_NodeAttributeCategory.html">fk_NodeAttributeCategory_NodeAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentAttributeCategoryID</td>
+<td><a href="../foreignKeys/CVs_CommonAttributeCategory_fk_CommonAttributeCategory_CommonAttributeCategory.html">fk_CommonAttributeCategory_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td>CommonAttributeCategoryID</td><td>ParentCommonAttributeCategoryID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/CVs_CommonAttributes_fk_CommonAttributes_CommonAttributeCategory.html">fk_CommonAttributes_CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributeCategory.html">CVs.CommonAttributeCategory</a></td><td><a href="../tables/CVs_CommonAttributes.html">CVs.CommonAttributes</a></td><td>CommonAttributeCategoryID</td><td>CommonAttributeCategoryID</td>
@@ -150,16 +150,10 @@
 <td><a href="../foreignKeys/Metadata_Vertices_fk_Vertices_Connections.html">fk_Vertices_Connections</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td><a href="../tables/Metadata_Vertices.html">Metadata.Vertices</a></td><td>ConnectivityID</td><td>ConnectivityID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>Term</td><td>BinaryValueMeaningCV</td>
+<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>BinaryValueMeaningID</td><td>BinaryValueMeaningID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_DataStorage.html">fk_Binarys_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>DataStorageID</td><td>DataStorageID</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Storage_ControlledText_fk_ControlledText_ControlledTextValues.html">fk_ControlledText_ControlledTextValues</a></td><td><a href="../tables/CVs_ControlledTextValues.html">CVs.ControlledTextValues</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>ControlledTextValueID</td><td>ControlledTextValueID</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Storage_ControlledText_fk_ControlledText_DataStorage.html">fk_ControlledText_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_ControlledText.html">Storage.ControlledText</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Storage_FileBased_fk_FileBased_DataStorage.html">fk_FileBased_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_FileBased.html">Storage.FileBased</a></td><td>DataStorageID</td><td>DataStorageID</td>
@@ -168,28 +162,34 @@
 <td><a href="../foreignKeys/Storage_FileBased_fk_FileBased_FileFormate.html">fk_FileBased_FileFormate</a></td><td><a href="../tables/CVs_FileFormate.html">CVs.FileFormate</a></td><td><a href="../tables/Storage_FileBased.html">Storage.FileBased</a></td><td>Term</td><td>FileFormateCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_FreeText_fk_FreeText_DataStorage.html">fk_FreeText_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_FreeText.html">Storage.FreeText</a></td><td>DataStorageID</td><td>DataStorageID</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Storage_Functions_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Functions.html">Storage.Functions</a></td><td>DataStorageID</td><td>DataStorageID</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Storage_Functions_fk_Functions_Symbols.html">fk_Functions_Symbols</a></td><td><a href="../tables/CVs_Symbols.html">CVs.Symbols</a></td><td><a href="../tables/Storage_Functions.html">Storage.Functions</a></td><td>Term</td><td>SymbolCV</td>
-</tr>
-<tr class="altRow">
 <td><a href="../foreignKeys/Storage_MultiColumnArray_fk_MultiColumnArray_DataStorage.html">fk_MultiColumnArray_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
-<tr>
+<tr class="altRow">
 <td><a href="../foreignKeys/Storage_MultiColumnValues_fk_MultiColumnValues_MultiColumnArray.html">fk_MultiColumnValues_MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnValues.html">Storage.MultiColumnValues</a></td><td>MultiColumnID</td><td>MultiColumnID</td>
 </tr>
-<tr class="altRow">
+<tr>
 <td><a href="../foreignKeys/Storage_Parameters_fk_Parameters_DataStorage.html">fk_Parameters_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Parameters.html">Storage.Parameters</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
+<tr class="altRow">
+<td><a href="../foreignKeys/Storage_Rules_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>DataStorageID</td><td>DataStorageID</td>
+</tr>
 <tr>
-<td><a href="../foreignKeys/Storage_SeasonalParameters_fk_SeasonalParameters_DataStorage.html">fk_SeasonalParameters_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_SeasonalParameters.html">Storage.SeasonalParameters</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_Rules_fk_Functions_Symbols.html">fk_Functions_Symbols</a></td><td><a href="../tables/CVs_Symbols.html">CVs.Symbols</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>Term</td><td>SymbolCV</td>
 </tr>
 <tr class="altRow">
+<td><a href="../foreignKeys/Storage_SeasonalParameters_fk_SeasonalParameters_DataStorage.html">fk_SeasonalParameters_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_SeasonalParameters.html">Storage.SeasonalParameters</a></td><td>DataStorageID</td><td>DataStorageID</td>
+</tr>
+<tr>
 <td><a href="../foreignKeys/Storage_SeasonalParameters_fk_SeasonalParameters_SeasonName.html">fk_SeasonalParameters_SeasonName</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/Storage_SeasonalParameters.html">Storage.SeasonalParameters</a></td><td>Term</td><td>SeasonNameCV</td>
+</tr>
+<tr class="altRow">
+<td><a href="../foreignKeys/Storage_TextControlled_fk_ControlledText_ControlledTextValues.html">fk_ControlledText_ControlledTextValues</a></td><td><a href="../tables/CVs_TextControlledValues.html">CVs.TextControlledValues</a></td><td><a href="../tables/Storage_TextControlled.html">Storage.TextControlled</a></td><td>TextControlledValueID</td><td>TextControlledValueID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Storage_TextControlled_fk_ControlledText_DataStorage.html">fk_ControlledText_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_TextControlled.html">Storage.TextControlled</a></td><td>DataStorageID</td><td>DataStorageID</td>
+</tr>
+<tr class="altRow">
+<td><a href="../foreignKeys/Storage_TextFree_fk_FreeText_DataStorage.html">fk_FreeText_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_TextFree.html">Storage.TextFree</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Storage_TimeSeries_fk_TimeSeries_AggregationStatistic.html">fk_TimeSeries_AggregationStatistic</a></td><td><a href="../tables/CVs_AggregationStatistic.html">CVs.AggregationStatistic</a></td><td><a href="../tables/Storage_TimeSeries.html">Storage.TimeSeries</a></td><td>Term</td><td>AggregationStatisticCV</td>

@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0</td>
+<td class="logo">WaM-DaM1.0 [JuneWaM-DaM1.1.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -33,13 +33,22 @@
 <td class="PkCol">
 <p class="boolImg">
 <img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/CVs_BinaryValueMeaning_Term.html">Term</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
-</tr>
-<tr>
-<td> </td><td><a href="../columns/CVs_BinaryValueMeaning_Definition.html">Definition</a></td><td>Text</td><td>
+</td><td class="PkCol"><a href="../columns/CVs_BinaryValueMeaning_BinaryValueMeaningID.html">BinaryValueMeaningID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>Definition of vocabulary term</td><td> </td>
+</td><td class="PkCol">nextval('"CVs"."BinaryValueMeaning_BinaryValueMeaningID_seq"'::regclass)</td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/CVs_BinaryValueMeaning_BinaryValue.html">BinaryValue</a></td><td>Binary(1)</td><td> </td><td> </td><td> </td><td>Binary value 0 or 1</td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/CVs_BinaryValueMeaning_ValueDefinition.html">ValueDefinition</a></td><td>Text</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>Definition of vocabulary term CV term provides the meaning of the binary value. e.g., 1 means "open" or 0 means "closed"</td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/CVs_BinaryValueMeaning_BinaryAttribute.html">BinaryAttribute</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>The attribute that accompanies a data value 0 or 1</td><td> </td>
 </tr>
 </table>
 <br>
@@ -63,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>Term</td><td>BinaryValueMeaningCV</td>
+<td><a href="../foreignKeys/Storage_Binarys_fk_Binarys_BinaryValueMeaning.html">fk_Binarys_BinaryValueMeaning</a></td><td><a href="../tables/CVs_BinaryValueMeaning.html">CVs.BinaryValueMeaning</a></td><td><a href="../tables/Storage_Binarys.html">Storage.Binarys</a></td><td>BinaryValueMeaningID</td><td>BinaryValueMeaningID</td>
 </tr>
 </table>
 <br>
@@ -75,7 +84,7 @@
 <td class="Header">Diagram Name</td>
 </tr>
 <tr>
-<td><a href="../diagrams/DataStroage.html">DataStroage</a></td>
+<td><a href="../diagrams/DataStorage.html">DataStorage</a></td>
 </tr>
 <tr>
 <td><a href="../diagrams/Whole.html">Whole</a></td>
