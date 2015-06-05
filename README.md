@@ -34,7 +34,7 @@ Matlab Script to load data to WaM-DaM SQLite [here](https://github.com/amabdalla
 Populated SQLite WaM-DaM database [here]()
 
 Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/
-). Last time updated: March 18, 2015 
+). Last time updated: June 4, 2015 
 
 Check out the use cases and their results at the WIKI pages [here](https://github.com/amabdallah/WaM-DaM1.0/wiki/Use-Cases)
 
