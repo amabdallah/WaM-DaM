@@ -3,44 +3,42 @@ WaM-DaM
 
 #### The Water Management Data Model (WaM-DaM). 
 
-#### Model Quicker, Publish Faster! 
-
 Water Management Data Model (WaM-DaM) is an information model that is proposed to synthesize and integrate Fragmented and inconsistent water resources management data. The information model aimes to help scientists and water managers organize, query, and interpret their disparate and diverse data to save time plus facilitate modeling.
 
 
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaM-DaM.jpg)
 
 
-
-
-#### Software 
-I used [DbWrench 3.2.4](http://www.dbwrench.com) to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
-
 #### Getting Started with WaM-DaM
-Check out the [WaM-DaM XML Schema] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WaM-DaM1.0.xml)
  
-
 SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [Microsoft SQL Server] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MSSQL.sql)
 * [MySQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MySQL.sql)
 * [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
 * [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
+
+#### View Documentation of ODM2 Concepts
+Check out the [WaM-DaM XML Schema] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WaM-DaM1.0.xml)
+
+## Software 
+I used [DbWrench 3.2.4](http://www.dbwrench.com) to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
 **Credit** I used the this DDL Script in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
 https://github.com/ODM2/ODM2/tree/master/src/build_schemas
 
+
+#### View Diagrams and Documentation of the WaM-DaM Schema
+
+
+#### Data Use Cases
 Matlab Script to load data to WaM-DaM SQLite [here](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) 
 
 Populated SQLite WaM-DaM database [here]()
 
-Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/
-). Last time updated: June 4, 2015 
 
 Check out the use cases and their results at the WIKI pages [here](https://github.com/amabdallah/WaM-DaM1.0/wiki/Use-Cases)
 
 
-Please be aware that the earlier design concepts and documnetations have changed significantlry. However, the spirt of WaM-DaM and its priciples remain the same. You may check earlier documentations here at [WaM-DaM0.1](https://github.com/amabdallah/WaMDaM
-)
 
 #### Publications:
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewd conference paper:
