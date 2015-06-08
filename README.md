@@ -21,6 +21,9 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 #### View Documentation of ODM2 Concepts
 Check out the [WaM-DaM XML Schema] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WaM-DaM1.0.xml)
 
+
+ Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/
+
 ## Software 
 I used [DbWrench 3.2.4](http://www.dbwrench.com) to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
 **Credit** I used the this DDL Script in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
