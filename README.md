@@ -18,9 +18,8 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
 
-#### View Documentation of ODM2 Concepts
-Check out the [WaM-DaM XML Schema] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WaM-DaM1.0.xml)
-
+#### View Documentation of WaM-DaM Concepts
+[Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation)
 
  Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/
 
