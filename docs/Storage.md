@@ -1,7 +1,7 @@
 
 ##Data Storage in WaM-DaM
 
-WaM-DaM supports nine different data values formats that are frequently used water management models to represent among others physical and operational data. Separating data based on their format reinforces the integrity of the data model and guides users to only populate or query relevant data values. So WaM-DaM stores numeric data values separately from text data values. Each data values table is connected to the Data Storage Table in the WaM-DaM Core based on the attribute format that the user chooses (Figure 4). This section elaborates on each data format and why it is needed. The section starts with simple Binary data and ends at the complex Multi-Column Array format.
+WaM-DaM supports nine different data values formats that are frequently used water management models to represent among others physical and operational data. Separating data based on their format reinforces the integrity of the data model and guides users to only populate or query relevant data values. So WaM-DaM stores numeric data values separately from text data values. Each data values table is connected to the Data Storage Table in the WaM-DaM Core based on the attribute format that the user chooses. This section elaborates on each data format and why it is needed. The section starts with simple Binary data and ends at the complex Multi-Column Array format.
 
 The following are entities in the [WaM-DaM Storage schema](http://amabdallah.github.io/WaM-DaM/diagrams/DataStorage.html
 ):
@@ -9,7 +9,7 @@ The following are entities in the [WaM-DaM Storage schema](http://amabdallah.git
 ###Binary
 This table stores binary data values of either zero or one to direct users to only populate binary values to represent water management operations that has duel values. Water management models uses binary values in their algorithms to simulate operation actions. The table has a Binary Value and a “Binary Value Meaning” field that is a controlled vocabulary term registered by the user in WaM-DaM. For example, zero or one refers to a canal gate being “close” or “open”. 
 Parameters
-This table stores data values of single numeric parameters like an elevation of 45.5 that could have a unit of meter. The Parameters table helps users organize and separate their numeric data values for direct storage and access. Users can also specify additional metadata about the parameter through an attribute ParameterSubName like “lower bound” or “upper bound” (Figure 5).
+This table stores data values of single numeric parameters like an elevation of 45.5 that could have a unit of meter. The Parameters table helps users organize and separate their numeric data values for direct storage and access. Users can also specify additional metadata about the parameter through an attribute ParameterSubName like “lower bound” or “upper bound”.
 
 ###Seasonal Parameter
 This table stores multiple numeric data values of parameters that correspond to pattern changes in time but not necessarily the four seasons (e.g., winter, summer, day, and night). Seasonal patterns are used in water management models to represent data changes due to system operation. The table guide users to populate and query seasonal data values with their specific metadata like season name which is controlled from a predefined list and season start and end dates. For example a “water right” seasonal parameter can have 20 acre-feet in winter and 5 acre-feet in summer or a water demand parameter can take 10 cfs at day and 5 cfs at night.
