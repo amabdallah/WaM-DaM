@@ -39,7 +39,10 @@
 </td><td class="PkCol">nextval('"Storage"."FunctionData_FunctionID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Storage_Rules_RuleVariableID.html">RuleVariableID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td>Foreign key identifier that references the attributes that comprise the variables of the function</td><td> </td>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Storage_Rules_RuleVariableID.html">RuleVariableID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier that references the attributes that comprise the variables of the function</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/Storage_Rules_RuleVariableOrder.html">RuleVariableOrder</a></td><td>Integer</td><td>
@@ -75,7 +78,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_Rules_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_Rules_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>DataStorageID, DataStorageID</td><td>DataStorageID, RuleVariableID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Storage_Rules_fk_Functions_Symbols.html">fk_Functions_Symbols</a></td><td><a href="../tables/CVs_Symbols.html">CVs.Symbols</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>Term</td><td>SymbolCV</td>

@@ -108,7 +108,7 @@
 <td><a href="../foreignKeys/CVs_CommonObjectTypes_fk_CommonObjectTypes_CommonObjectCategory.html">fk_CommonObjectTypes_CommonObjectCategory</a></td><td><a href="../tables/CVs_CommonObjectCategory.html">CVs.CommonObjectCategory</a></td><td><a href="../tables/CVs_CommonObjectTypes.html">CVs.CommonObjectTypes</a></td><td>CommonObjectCategoryID</td><td>CommonObjectCategoryID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances.html">fk_Connections_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>LinkInstanceID</td>
+<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances.html">fk_Connections_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID, InstanceID, InstanceID</td><td>LinkInstanceID, StartNodeInstanceID, EndNodeInstanceID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Methods.html">fk_Methods_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodID</td><td>ParentMethodID</td>
@@ -162,7 +162,7 @@
 <td><a href="../foreignKeys/Storage_FileBased_fk_FileBased_FileFormate.html">fk_FileBased_FileFormate</a></td><td><a href="../tables/CVs_FileFormate.html">CVs.FileFormate</a></td><td><a href="../tables/Storage_FileBased.html">Storage.FileBased</a></td><td>Term</td><td>FileFormateCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Storage_MultiColumnArray_fk_MultiColumnArray_DataStorage.html">fk_MultiColumnArray_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_MultiColumnArray_fk_MultiColumnArray_DataStorage.html">fk_MultiColumnArray_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td>DataStorageID, DataStorageID</td><td>DataStorageID, ColumnNameID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Storage_MultiColumnValues_fk_MultiColumnValues_MultiColumnArray.html">fk_MultiColumnValues_MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnArray.html">Storage.MultiColumnArray</a></td><td><a href="../tables/Storage_MultiColumnValues.html">Storage.MultiColumnValues</a></td><td>MultiColumnID</td><td>MultiColumnID</td>
@@ -171,7 +171,7 @@
 <td><a href="../foreignKeys/Storage_Parameters_fk_Parameters_DataStorage.html">fk_Parameters_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Parameters.html">Storage.Parameters</a></td><td>DataStorageID</td><td>DataStorageID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Storage_Rules_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>DataStorageID</td><td>DataStorageID</td>
+<td><a href="../foreignKeys/Storage_Rules_fk_Functions_DataStorage.html">fk_Functions_DataStorage</a></td><td><a href="../tables/Core_DataStorage.html">Core.DataStorage</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>DataStorageID, DataStorageID</td><td>DataStorageID, RuleVariableID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Storage_Rules_fk_Functions_Symbols.html">fk_Functions_Symbols</a></td><td><a href="../tables/CVs_Symbols.html">CVs.Symbols</a></td><td><a href="../tables/Storage_Rules.html">Storage.Rules</a></td><td>Term</td><td>SymbolCV</td>

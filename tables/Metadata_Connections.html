@@ -45,10 +45,16 @@
 </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Metadata_Connections_StartNodeInstanceID.html">StartNodeInstanceID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td>Foreign key identifier for a StartNodeInstance</td><td> </td>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Connections_StartNodeInstanceID.html">StartNodeInstanceID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a StartNodeInstance</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Metadata_Connections_EndNodeInstanceID.html">EndNodeInstanceID</a></td><td>Integer</td><td> </td><td> </td><td> </td><td>Foreign key identifier for an EndtNodeInstance</td><td> </td>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Connections_EndNodeInstanceID.html">EndNodeInstanceID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for an EndtNodeInstance</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
 </tr>
 </table>
 <br>
@@ -66,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances.html">fk_Connections_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>LinkInstanceID</td>
+<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances.html">fk_Connections_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID, InstanceID, InstanceID</td><td>LinkInstanceID, StartNodeInstanceID, EndNodeInstanceID</td>
 </tr>
 </table>
 <br>
