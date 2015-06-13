@@ -3,8 +3,8 @@
 
 WaM-DaM supports nine different data values formats that are frequently used water management models to represent among others physical and operational data. Separating data based on their format reinforces the integrity of the data model and guides users to only populate or query relevant data values. So WaM-DaM stores numeric data values separately from text data values. Each data values table is connected to the Data Storage Table in the WaM-DaM Core based on the attribute format that the user chooses. This section elaborates on each data format and why it is needed. The section starts with simple Binary data and ends at the complex Multi-Column Array format.
 
-The following are entities in the (WaM-DaM Storage schema)[http://amabdallah.github.io/WaM-DaM/diagrams/DataStorage.html]:
-
+The following are entities in the (WaM-DaM Storage schema)[http://amabdallah.github.io/WaM-DaM/diagrams/DataStorage.html] :
+()[]
 ###Binary
 This table stores binary data values of either zero or one to direct users to only populate binary values to represent water management operations that has duel values. Water management models uses binary values in their algorithms to simulate operation actions. The table has a Binary Value and a “Binary Value Meaning” field that is a controlled vocabulary term registered by the user in WaM-DaM. For example, zero or one refers to a canal gate being “close” or “open”. 
 Parameters
