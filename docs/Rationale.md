@@ -14,13 +14,8 @@ The CI-WATER project includes researchers from Brigham Young University, the Uni
 
 
 ###Context
-WaM-DaM
+Here, talk about the context of WaM-DaM within the other projects 
 
-http://hobbes.ucdavis.edu/
-
-Hydra-Platform
-
-WEAP
 
 | #  | Project       | Affiliation|
 | --- | :-------------| :-----|
