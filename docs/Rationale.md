@@ -27,7 +27,9 @@ WEAP
 |  1 |Hydra Platform: web-services to linking water resource network models, share data in an open data management platform|University of Manchester, United Kingdom|
 |  2 |[HOBBES](http://hobbes.ucdavis.edu/):  a bottom up approach to improve and organize the data for water modeling efforts in California|University of California, Davis|
 |  3 |ADHydro: A Large-scale High-resolution Multi-physics Distributed Water Resources Model for Water Resources Simulations      |University of Wyoming|
-
+|  4 |[WEAP](http://www.weap21.org/index.asp): Water Evaluation And Planning System|Stockholm Environment Institute|
+|  5 |[RiverWare](http://www.riverware.org/index.html): a river system modeling tool| Center for Advanced Decision Support for Water and Environmental Systems (CADSWES). University of Colorado at Boulder|
+|  6 |[HEC-ResSim](http://www.hec.usace.army.mil/software/hec-ressim/): The Reservoir System Simulation software|U.S. Army Corps of Engineers, Institute for Water Resources, Hydrologic Engineering Center|
 
 
 
