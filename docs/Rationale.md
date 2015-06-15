@@ -25,7 +25,7 @@ WEAP
 | #  | Project       | Affiliation|
 | --- | :-------------| :-----|
 |  1 |Hydra Platform: web-services to linking water resource network models, share data in an open data management platform|University of Manchester, United Kingdom|
-|  2 |HOBBES:  a bottom up approach to improve and organize the data for water modeling efforts in California|University of California, Davis|
+|  2 |[HOBBES](http://hobbes.ucdavis.edu/):  a bottom up approach to improve and organize the data for water modeling efforts in California|University of California, Davis|
 |  3 |ADHydro: A Large-scale High-resolution Multi-physics Distributed Water Resources Model for Water Resources Simulations      |University of Wyoming|
 
 
