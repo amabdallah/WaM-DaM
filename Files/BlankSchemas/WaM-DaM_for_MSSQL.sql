@@ -1,6 +1,16 @@
+-- Drop the database called 'WaM-DaM' if it exists and then create a new database called 'WaM-DaM'
 USE master;
 GO
 
+IF DB_ID(N'WaMDaM') IS NOT NULL
+DROP DATABASE WaMDaM;
+GO
+
+CREATE DATABASE WaMDaM;
+GO
+
+USE WaMDaM;
+GO
 
 CREATE SCHEMA WaMDaM;
 GO
@@ -82,11 +92,11 @@ CREATE TABLE WaMDaM.ObjectTypes (
 	CommonObjectTypeID int   NULL,
 	PRIMARY KEY (ObjectTypeID)
 )
-CREATE TABLE WaMDaM.SceanrioMetadata (
-	SceanrioMetadataID int  IDENTITY (1,1) NOT NULL,
+CREATE TABLE WaMDaM.ScenarioMetadata (
+	ScenarioMetadataID int  IDENTITY (1,1) NOT NULL,
 	ScenarioID int   NOT NULL,
 	MetadataMappingID int   NOT NULL,
-	PRIMARY KEY (SceanrioMetadataID)
+	PRIMARY KEY (ScenarioMetadataID)
 )
 CREATE TABLE WaMDaM.Scenarios (
 	ScenarioID int  IDENTITY (1,1) NOT NULL,
@@ -110,9 +120,11 @@ CREATE TABLE WaMDaM.AttributeTypeCode (
 	PRIMARY KEY (Term)
 )
 CREATE TABLE WaMDaM.BinaryValueMeaning (
-	Term varchar (255)  NOT NULL,
-	Definition text   NULL,
-	PRIMARY KEY (Term)
+	BinaryValueMeaningID int  IDENTITY (1,1) NOT NULL,
+	BinaryValue binary (1)  NOT NULL,
+	ValueDefinition text   NULL,
+	BinaryAttribute varchar (255)  NOT NULL,
+	PRIMARY KEY (BinaryValueMeaningID)
 )
 CREATE TABLE WaMDaM.CommonAttributeCategory (
 	CommonAttributeCategoryID int  IDENTITY (1,1) NOT NULL,
@@ -142,13 +154,6 @@ CREATE TABLE WaMDaM.CommonObjectTypes (
 	CommonObjectDefinition text   NULL,
 	CommonObjectCategoryID int   NULL,
 	PRIMARY KEY (CommonObjectTypeID)
-)
-CREATE TABLE WaMDaM.ControlledTextValues (
-	ControlledTextValueID int  IDENTITY (1,1) NOT NULL,
-	ControlledTextValue varchar (255)  NOT NULL,
-	ControlledTextAttribute varchar (255)  NOT NULL,
-	ValueDefinition text   NULL,
-	PRIMARY KEY (ControlledTextValueID)
 )
 CREATE TABLE WaMDaM.DataStructureDomain (
 	Term varchar (255)  NOT NULL,
@@ -192,6 +197,13 @@ CREATE TABLE WaMDaM.Symbols (
 	Term varchar (255)  NOT NULL,
 	Definition text   NULL,
 	PRIMARY KEY (Term)
+)
+CREATE TABLE WaMDaM.TextControlledValues (
+	TextControlledValueID int  IDENTITY (1,1) NOT NULL,
+	TextControlledValue varchar (255)  NOT NULL,
+	TextControlledAttribute varchar (255)  NOT NULL,
+	ValueDefinition text   NULL,
+	PRIMARY KEY (TextControlledValueID)
 )
 CREATE TABLE WaMDaM.Units (
 	UnitID int  IDENTITY (1,1) NOT NULL,
@@ -301,15 +313,9 @@ CREATE TABLE WaMDaM.Vertices (
 CREATE TABLE WaMDaM.Binarys (
 	BinaryID int  IDENTITY (1,1) NOT NULL,
 	BinaryValue binary (1)  NOT NULL,
-	BinaryValueMeaningCV varchar (255)  NOT NULL,
 	DataStorageID int   NOT NULL,
+	BinaryValueMeaningID int   NOT NULL,
 	PRIMARY KEY (BinaryID)
-)
-CREATE TABLE WaMDaM.ControlledText (
-	ControlledTextID int  IDENTITY (1,1) NOT NULL,
-	DataStorageID int   NOT NULL,
-	ControlledTextValueID int   NOT NULL,
-	PRIMARY KEY (ControlledTextID)
 )
 CREATE TABLE WaMDaM.FileBased (
 	FileBasedID int  IDENTITY (1,1) NOT NULL,
@@ -318,14 +324,6 @@ CREATE TABLE WaMDaM.FileBased (
 	FileLocationOnDesk varchar (255)  NOT NULL,
 	DataStorageID int   NOT NULL,
 	PRIMARY KEY (FileBasedID)
-)
-CREATE TABLE WaMDaM.Functions (
-	FunctionID int  IDENTITY (1,1) NOT NULL,
-	FunctionVariableID int   NOT NULL,
-	FunctionVariableOrder int   NULL,
-	SymbolCV varchar (255)  NOT NULL,
-	DataStorageID int   NOT NULL,
-	PRIMARY KEY (FunctionID)
 )
 CREATE TABLE WaMDaM.MultiColumnArray (
 	MultiColumnID int  IDENTITY (1,1) NOT NULL,
@@ -347,6 +345,14 @@ CREATE TABLE WaMDaM.Parameters (
 	DataStorageID int   NULL,
 	PRIMARY KEY (ParameterID)
 )
+CREATE TABLE WaMDaM.Rules (
+	RuleID int  IDENTITY (1,1) NOT NULL,
+	RuleVariableID int   NOT NULL,
+	RuleVariableOrder int   NULL,
+	SymbolCV varchar (255)  NOT NULL,
+	DataStorageID int   NOT NULL,
+	PRIMARY KEY (RuleID)
+)
 CREATE TABLE WaMDaM.SeasonalParameters (
 	SeasonalParameterID int  IDENTITY (1,1) NOT NULL,
 	SeasonStartDateTime datetime   NOT NULL,
@@ -355,6 +361,12 @@ CREATE TABLE WaMDaM.SeasonalParameters (
 	SeasonValue varchar (500)  NOT NULL,
 	DataStorageID int   NOT NULL,
 	PRIMARY KEY (SeasonalParameterID)
+)
+CREATE TABLE WaMDaM.TextControlled (
+	TextControlledID int  IDENTITY (1,1) NOT NULL,
+	DataStorageID int   NOT NULL,
+	TextControlledValueID int   NOT NULL,
+	PRIMARY KEY (TextControlledID)
 )
 CREATE TABLE WaMDaM.TextFree (
 	TextFreeID int  IDENTITY (1,1) NOT NULL,
@@ -376,11 +388,11 @@ CREATE TABLE WaMDaM.TimeSeries (
 	PRIMARY KEY (TimeSeriesID)
 )
 CREATE TABLE WaMDaM.TimeSeriesValues (
-	TimeSeriesDataID int  IDENTITY (1,1) NOT NULL,
+	TimeSeriesValueID int  IDENTITY (1,1) NOT NULL,
 	TimeSeriesID int   NOT NULL,
 	DateTimeStamp datetime   NOT NULL,
 	Value float   NOT NULL,
-	PRIMARY KEY (TimeSeriesDataID)
+	PRIMARY KEY (TimeSeriesValueID)
 )
 
 ALTER TABLE WaMDaM.Attributes ADD CONSTRAINT fk_Attributes_CommonAttributes
@@ -467,11 +479,11 @@ ALTER TABLE WaMDaM.ObjectTypes ADD CONSTRAINT fk_ObjectTypes_NativeObjectCategor
 FOREIGN KEY (NativeObjectCategoryID) REFERENCES WaMDaM.NativeObjectCategory (NativeObjectCategoryID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
-ALTER TABLE WaMDaM.SceanrioMetadata ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
+ALTER TABLE WaMDaM.ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
 FOREIGN KEY (MetadataMappingID) REFERENCES WaMDaM.MetadataMapping (MetadataMappingID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
-ALTER TABLE WaMDaM.SceanrioMetadata ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
+ALTER TABLE WaMDaM.ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
 FOREIGN KEY (ScenarioID) REFERENCES WaMDaM.Scenarios (ScenarioID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
@@ -552,18 +564,10 @@ FOREIGN KEY (ConnectivityID) REFERENCES WaMDaM.Connections (ConnectivityID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.Binarys ADD CONSTRAINT fk_Binarys_BinaryValueMeaning
-FOREIGN KEY (BinaryValueMeaningCV) REFERENCES WaMDaM.BinaryValueMeaning (Term)
+FOREIGN KEY (BinaryValueMeaningID) REFERENCES WaMDaM.BinaryValueMeaning (BinaryValueMeaningID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.Binarys ADD CONSTRAINT fk_Binarys_DataStorage
-FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.ControlledText ADD CONSTRAINT fk_ControlledText_ControlledTextValues
-FOREIGN KEY (ControlledTextValueID) REFERENCES WaMDaM.ControlledTextValues (ControlledTextValueID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.ControlledText ADD CONSTRAINT fk_ControlledText_DataStorage
 FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
@@ -573,14 +577,6 @@ ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.FileBased ADD CONSTRAINT fk_FileBased_FileFormate
 FOREIGN KEY (FileFormateCV) REFERENCES WaMDaM.FileFormate (Term)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.Functions ADD CONSTRAINT fk_Functions_DataStorage
-FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.Functions ADD CONSTRAINT fk_Functions_Symbols
-FOREIGN KEY (SymbolCV) REFERENCES WaMDaM.Symbols (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.MultiColumnArray ADD CONSTRAINT fk_MultiColumnArray_DataStorage
@@ -595,12 +591,28 @@ ALTER TABLE WaMDaM.Parameters ADD CONSTRAINT fk_Parameters_DataStorage
 FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
+ALTER TABLE WaMDaM.Rules ADD CONSTRAINT fk_Functions_DataStorage
+FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Rules ADD CONSTRAINT fk_Functions_Symbols
+FOREIGN KEY (SymbolCV) REFERENCES WaMDaM.Symbols (Term)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
 ALTER TABLE WaMDaM.SeasonalParameters ADD CONSTRAINT fk_SeasonalParameters_DataStorage
 FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.SeasonalParameters ADD CONSTRAINT fk_SeasonalParameters_SeasonName
 FOREIGN KEY (SeasonNameCV) REFERENCES WaMDaM.SeasonName (Term)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.TextControlled ADD CONSTRAINT fk_ControlledText_ControlledTextValues
+FOREIGN KEY (TextControlledValueID) REFERENCES WaMDaM.TextControlledValues (TextControlledValueID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.TextControlled ADD CONSTRAINT fk_ControlledText_DataStorage
+FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.TextFree ADD CONSTRAINT fk_FreeText_DataStorage

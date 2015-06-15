@@ -118,8 +118,8 @@ CREATE TABLE ObjectTypes (
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-CREATE TABLE SceanrioMetadata (
-	SceanrioMetadataID INTEGER   NOT NULL PRIMARY KEY,
+CREATE TABLE ScenarioMetadata (
+	ScenarioMetadataID INTEGER   NOT NULL PRIMARY KEY,
 	ScenarioID INTEGER   NOT NULL,
 	MetadataMappingID INTEGER   NOT NULL,
 	FOREIGN KEY (MetadataMappingID) REFERENCES MetadataMapping (MetadataMappingID)
@@ -152,8 +152,10 @@ CREATE TABLE AttributeTypeCode (
 );
 
 CREATE TABLE BinaryValueMeaning (
-	Term VARCHAR (255)  NOT NULL PRIMARY KEY,
-	Definition TEXT   NULL
+	BinaryValueMeaningID INTEGER   NOT NULL PRIMARY KEY,
+	BinaryValue BINARY (1)  NOT NULL,
+	ValueDefinition TEXT   NULL,
+	BinaryAttribute VARCHAR (255)  NOT NULL
 );
 
 CREATE TABLE CommonAttributeCategory (
@@ -191,13 +193,6 @@ CREATE TABLE CommonObjectTypes (
 	CommonObjectCategoryID INTEGER   NULL,
 	FOREIGN KEY (CommonObjectCategoryID) REFERENCES CommonObjectCategory (CommonObjectCategoryID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
-);
-
-CREATE TABLE ControlledTextValues (
-	ControlledTextValueID INTEGER   NOT NULL PRIMARY KEY,
-	ControlledTextValue VARCHAR (255)  NOT NULL,
-	ControlledTextAttribute VARCHAR (255)  NOT NULL,
-	ValueDefinition TEXT   NULL
 );
 
 CREATE TABLE DataStructureDomain (
@@ -241,6 +236,13 @@ CREATE TABLE SpatialReference (
 CREATE TABLE Symbols (
 	Term VARCHAR (255)  NOT NULL PRIMARY KEY,
 	Definition TEXT   NULL
+);
+
+CREATE TABLE TextControlledValues (
+	TextControlledValueID INTEGER   NOT NULL PRIMARY KEY,
+	TextControlledValue VARCHAR (255)  NOT NULL,
+	TextControlledAttribute VARCHAR (255)  NOT NULL,
+	ValueDefinition TEXT   NULL
 );
 
 CREATE TABLE Units (
@@ -379,19 +381,9 @@ CREATE TABLE Vertices (
 CREATE TABLE Binarys (
 	BinaryID INTEGER   NOT NULL PRIMARY KEY,
 	BinaryValue BINARY (1)  NOT NULL,
-	BinaryValueMeaningCV VARCHAR (255)  NOT NULL,
 	DataStorageID INTEGER   NOT NULL,
-	FOREIGN KEY (BinaryValueMeaningCV) REFERENCES BinaryValueMeaning (Term)
-	ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
-	ON UPDATE NO ACTION ON DELETE NO ACTION
-);
-
-CREATE TABLE ControlledText (
-	ControlledTextID INTEGER   NOT NULL PRIMARY KEY,
-	DataStorageID INTEGER   NOT NULL,
-	ControlledTextValueID INTEGER   NOT NULL,
-	FOREIGN KEY (ControlledTextValueID) REFERENCES ControlledTextValues (ControlledTextValueID)
+	BinaryValueMeaningID INTEGER   NOT NULL,
+	FOREIGN KEY (BinaryValueMeaningID) REFERENCES BinaryValueMeaning (BinaryValueMeaningID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
@@ -406,18 +398,6 @@ CREATE TABLE FileBased (
 	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (FileFormateCV) REFERENCES FileFormate (Term)
-	ON UPDATE NO ACTION ON DELETE NO ACTION
-);
-
-CREATE TABLE Functions (
-	FunctionID INTEGER   NOT NULL PRIMARY KEY,
-	FunctionVariableID INTEGER   NOT NULL,
-	FunctionVariableOrder INTEGER   NULL,
-	SymbolCV VARCHAR (255)  NOT NULL,
-	DataStorageID INTEGER   NOT NULL,
-	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
-	ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY (SymbolCV) REFERENCES Symbols (Term)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
@@ -447,6 +427,18 @@ CREATE TABLE Parameters (
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
+CREATE TABLE Rules (
+	RuleID INTEGER   NOT NULL PRIMARY KEY,
+	RuleVariableID INTEGER   NOT NULL,
+	RuleVariableOrder INTEGER   NULL,
+	SymbolCV VARCHAR (255)  NOT NULL,
+	DataStorageID INTEGER   NOT NULL,
+	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION,
+	FOREIGN KEY (SymbolCV) REFERENCES Symbols (Term)
+	ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
 CREATE TABLE SeasonalParameters (
 	SeasonalParameterID INTEGER   NOT NULL PRIMARY KEY,
 	SeasonStartDateTime DATETIME   NOT NULL,
@@ -457,6 +449,16 @@ CREATE TABLE SeasonalParameters (
 	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (SeasonNameCV) REFERENCES SeasonName (Term)
+	ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE TextControlled (
+	TextControlledID INTEGER   NOT NULL PRIMARY KEY,
+	DataStorageID INTEGER   NOT NULL,
+	TextControlledValueID INTEGER   NOT NULL,
+	FOREIGN KEY (TextControlledValueID) REFERENCES TextControlledValues (TextControlledValueID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION,
+	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
@@ -488,7 +490,7 @@ CREATE TABLE TimeSeries (
 );
 
 CREATE TABLE TimeSeriesValues (
-	TimeSeriesDataID INTEGER   NOT NULL PRIMARY KEY,
+	TimeSeriesValueID INTEGER   NOT NULL PRIMARY KEY,
 	TimeSeriesID INTEGER   NOT NULL,
 	DateTimeStamp DATETIME   NOT NULL,
 	Value FLOAT   NOT NULL,

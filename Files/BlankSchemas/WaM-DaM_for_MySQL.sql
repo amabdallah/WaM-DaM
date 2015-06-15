@@ -81,8 +81,8 @@ CREATE TABLE ObjectTypes (
 	CommonObjectTypeID INT   NULL
 );
 
-CREATE TABLE SceanrioMetadata (
-	SceanrioMetadataID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+CREATE TABLE ScenarioMetadata (
+	ScenarioMetadataID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ScenarioID INT   NOT NULL,
 	MetadataMappingID INT   NOT NULL
 );
@@ -110,8 +110,10 @@ CREATE TABLE AttributeTypeCode (
 );
 
 CREATE TABLE BinaryValueMeaning (
-	Term VARCHAR (255)  NOT NULL PRIMARY KEY,
-	Definition TEXT   NULL
+	BinaryValueMeaningID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	BinaryValue BINARY (1)  NOT NULL,
+	ValueDefinition TEXT   NULL,
+	BinaryAttribute VARCHAR (255)  NOT NULL
 );
 
 CREATE TABLE CommonAttributeCategory (
@@ -141,13 +143,6 @@ CREATE TABLE CommonObjectTypes (
 	CommonObjectTopology VARCHAR (50)  NULL,
 	CommonObjectDefinition TEXT   NULL,
 	CommonObjectCategoryID INT   NULL
-);
-
-CREATE TABLE ControlledTextValues (
-	ControlledTextValueID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	ControlledTextValue VARCHAR (255)  NOT NULL,
-	ControlledTextAttribute VARCHAR (255)  NOT NULL,
-	ValueDefinition TEXT   NULL
 );
 
 CREATE TABLE DataStructureDomain (
@@ -191,6 +186,13 @@ CREATE TABLE SpatialReference (
 CREATE TABLE Symbols (
 	Term VARCHAR (255)  NOT NULL PRIMARY KEY,
 	Definition TEXT   NULL
+);
+
+CREATE TABLE TextControlledValues (
+	TextControlledValueID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	TextControlledValue VARCHAR (255)  NOT NULL,
+	TextControlledAttribute VARCHAR (255)  NOT NULL,
+	ValueDefinition TEXT   NULL
 );
 
 CREATE TABLE Units (
@@ -303,14 +305,8 @@ USE WaMDaM;
 CREATE TABLE Binarys (
 	BinaryID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	BinaryValue BINARY (1)  NOT NULL,
-	BinaryValueMeaningCV VARCHAR (255)  NOT NULL,
-	DataStorageID INT   NOT NULL
-);
-
-CREATE TABLE ControlledText (
-	ControlledTextID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	DataStorageID INT   NOT NULL,
-	ControlledTextValueID INT   NOT NULL
+	BinaryValueMeaningID INT   NOT NULL
 );
 
 CREATE TABLE FileBased (
@@ -318,14 +314,6 @@ CREATE TABLE FileBased (
 	FileName VARCHAR (255)  NOT NULL,
 	FileFormateCV VARCHAR (255)  NOT NULL,
 	FileLocationOnDesk VARCHAR (255)  NOT NULL,
-	DataStorageID INT   NOT NULL
-);
-
-CREATE TABLE Functions (
-	FunctionID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	FunctionVariableID INT   NOT NULL,
-	FunctionVariableOrder INT   NULL,
-	SymbolCV VARCHAR (255)  NOT NULL,
 	DataStorageID INT   NOT NULL
 );
 
@@ -349,6 +337,14 @@ CREATE TABLE Parameters (
 	DataStorageID INT   NULL
 );
 
+CREATE TABLE Rules (
+	RuleID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	RuleVariableID INT   NOT NULL,
+	RuleVariableOrder INT   NULL,
+	SymbolCV VARCHAR (255)  NOT NULL,
+	DataStorageID INT   NOT NULL
+);
+
 CREATE TABLE SeasonalParameters (
 	SeasonalParameterID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	SeasonStartDateTime DATETIME   NOT NULL,
@@ -356,6 +352,12 @@ CREATE TABLE SeasonalParameters (
 	SeasonNameCV VARCHAR (255)  NOT NULL,
 	SeasonValue VARCHAR (500)  NOT NULL,
 	DataStorageID INT   NOT NULL
+);
+
+CREATE TABLE TextControlled (
+	TextControlledID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	DataStorageID INT   NOT NULL,
+	TextControlledValueID INT   NOT NULL
 );
 
 CREATE TABLE TextFree (
@@ -378,7 +380,7 @@ CREATE TABLE TimeSeries (
 );
 
 CREATE TABLE TimeSeriesValues (
-	TimeSeriesDataID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	TimeSeriesValueID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TimeSeriesID INT   NOT NULL,
 	DateTimeStamp DATETIME   NOT NULL,
 	Value FLOAT   NOT NULL
@@ -469,11 +471,11 @@ ALTER TABLE ObjectTypes ADD CONSTRAINT fk_ObjectTypes_NativeObjectCategory
 FOREIGN KEY (NativeObjectCategoryID) REFERENCES NativeObjectCategory (NativeObjectCategoryID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
-ALTER TABLE SceanrioMetadata ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
+ALTER TABLE ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
 FOREIGN KEY (MetadataMappingID) REFERENCES MetadataMapping (MetadataMappingID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
-ALTER TABLE SceanrioMetadata ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
+ALTER TABLE ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
 FOREIGN KEY (ScenarioID) REFERENCES Scenarios (ScenarioID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
@@ -554,18 +556,10 @@ FOREIGN KEY (ConnectivityID) REFERENCES Connections (ConnectivityID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE Binarys ADD CONSTRAINT fk_Binarys_BinaryValueMeaning
-FOREIGN KEY (BinaryValueMeaningCV) REFERENCES BinaryValueMeaning (Term)
+FOREIGN KEY (BinaryValueMeaningID) REFERENCES BinaryValueMeaning (BinaryValueMeaningID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE Binarys ADD CONSTRAINT fk_Binarys_DataStorage
-FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE ControlledText ADD CONSTRAINT fk_ControlledText_ControlledTextValues
-FOREIGN KEY (ControlledTextValueID) REFERENCES ControlledTextValues (ControlledTextValueID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE ControlledText ADD CONSTRAINT fk_ControlledText_DataStorage
 FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
@@ -575,14 +569,6 @@ ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE FileBased ADD CONSTRAINT fk_FileBased_FileFormate
 FOREIGN KEY (FileFormateCV) REFERENCES FileFormate (Term)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE Functions ADD CONSTRAINT fk_Functions_DataStorage
-FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE Functions ADD CONSTRAINT fk_Functions_Symbols
-FOREIGN KEY (SymbolCV) REFERENCES Symbols (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE MultiColumnArray ADD CONSTRAINT fk_MultiColumnArray_DataStorage
@@ -597,12 +583,28 @@ ALTER TABLE Parameters ADD CONSTRAINT fk_Parameters_DataStorage
 FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
+ALTER TABLE Rules ADD CONSTRAINT fk_Functions_DataStorage
+FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Rules ADD CONSTRAINT fk_Functions_Symbols
+FOREIGN KEY (SymbolCV) REFERENCES Symbols (Term)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
 ALTER TABLE SeasonalParameters ADD CONSTRAINT fk_SeasonalParameters_DataStorage
 FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE SeasonalParameters ADD CONSTRAINT fk_SeasonalParameters_SeasonName
 FOREIGN KEY (SeasonNameCV) REFERENCES SeasonName (Term)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE TextControlled ADD CONSTRAINT fk_ControlledText_ControlledTextValues
+FOREIGN KEY (TextControlledValueID) REFERENCES TextControlledValues (TextControlledValueID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE TextControlled ADD CONSTRAINT fk_ControlledText_DataStorage
+FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE TextFree ADD CONSTRAINT fk_FreeText_DataStorage
