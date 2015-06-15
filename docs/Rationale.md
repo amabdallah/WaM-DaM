@@ -25,7 +25,10 @@ Here, talk about the context of WaM-DaM within the other projects
 |  4 |[WEAP](http://www.weap21.org/index.asp): Water Evaluation And Planning System|Stockholm Environment Institute|
 |  5 |[RiverWare](http://www.riverware.org/index.html): a river system modeling tool| Center for Advanced Decision Support for Water and Environmental Systems (CADSWES). University of Colorado at Boulder|
 |  6 |[HEC-ResSim](http://www.hec.usace.army.mil/software/hec-ressim/): The Reservoir System Simulation software|U.S. Army Corps of Engineers, Institute for Water Resources, Hydrologic Engineering Center|
-
+|  7|[IWRM](http://www.hec.usace.army.mil/software/hec-ressim/): Integrated Water Resources Management|[The Urban Water Group ](http://urbanwater.utah.edu/home)University of Utah|
+|  8|[IWRM](http://demo.tethys.ci-water.org/apps/parleys-creek-management/): Integrated Water Resources Management|[The Urban Water Group ](http://urbanwater.utah.edu/home)University of Utah|
+|  9|[WaDE](http://www.westernstateswater.org/wade/): The Water Data Exchange Program|Western States Water Council|
+| 10|Managing water resources data |Utah Division of Water Resources|
 
 
 
