@@ -54,7 +54,8 @@ There are four cases in referencing data values many times in WaM-DaM, i) the sa
 
 
 ####Scenarios
-[ScenarioMetadata](http://amabdallah.github.io/WaM-DaM/tables/Core_ScenarioMetadata.html)
+The [ScenarioMetadata](http://amabdallah.github.io/WaM-DaM/tables/Core_ScenarioMetadata.html)entity in the core logical data model allows associating many MetadataMapping records with many scenarios. 
+
 
 
 
