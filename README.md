@@ -17,7 +17,7 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
 * [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
-Check out the [Instructions] on how set up a WaM-DaM database in SQLite
+Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLiteInstructions%20.md) on how set up a WaM-DaM database in SQLite.
 
 #### View Documentation of WaM-DaM Concepts
 [Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation)
