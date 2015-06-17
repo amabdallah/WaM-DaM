@@ -1,10 +1,11 @@
 #### The Water Management Data Model (WaM-DaM)
 
-Water Management Data Model (WaM-DaM) is a persistent information model to organize and synthesize disparate systems Water management data. The information model aimes to help scientists and practitioners organize, search, discover, and interpret their disparate and diverse data to save time plus facilitate modeling.
+Water Management Data Model (WaM-DaM) is a persistent information model to organize and synthesize disparate systems Water management data. The information model aimes to help scientists and practitioners organize, search, discover, and interpret their disparate and diverse data to save time plus facilitate modeling. Check out the [Context and Rationale]( https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale%20and%20Context.md
+) of WaM-DaM's work.
 
 WaM-DaM supports this collection of nine data types that are used in systems analysis: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. WaM-DaM uses modulur objects of data with their attributes. Objects can be replicated as instances with specific data for resources and infrasturcutre componanants.The componnanats can be connected through a network of nodes and links. WaM-DaM supports scenarios that track changes in networks and allows users to compare them and identify differences among scenarios. Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.   
 
-You can think of WaM-DaM as a repository of systems data (purple cylinder) plus a middle-person translator between the vast data sources at the left and your different models at the right as shown in this flowchart. WaM-DaM traslates two componants: the syntax and semantics. So WaM-DaM conforms al the disperate data sources to a persistant strucutre and consistant vocabulary. 
+You can think of WaM-DaM as a repository of systems data (purple cylinder) plus a middle-person translator between the vast data sources at the left and your different models at the right as shown in this flowchart. WaM-DaM traslates two componants: the syntax and semantics. So WaM-DaM conforms al the disperate data sources to a persistant strucutre and consistant vocabulary. Check out why WaM-DaM is needed and what's new it has to offer? 
 
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaM-DaM.jpg)
 
@@ -21,18 +22,13 @@ Here are the SQL scripts that you can use to create a blank WaM-DaM database. Th
 Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLiteInstructions%20.md) on how you can set up a WaM-DaM database in SQLite. The instructions are demostrated live in a video screenshot :)
 
 #### Documentation of WaM-DaM
-Here we document the archtercher of WaM-DaM design to help you make sense of its tables and how they're connected. WaM-DaM has 48 interrelated tables that are organized into four groups: i) Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, ii) Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and iv) Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
-[Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation)
+Here we document the architecture of WaM-DaM design to help you make sense of its tables and how they're connected. WaM-DaM has 48 interrelated tables that are organized into four groups: i) Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, ii) Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and iv) Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
 
- Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/
-
+Check out this interactive WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/) and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation) abou WaM-DaM architecture
 
 
-
-#### View Diagrams and Documentation of the WaM-DaM Schema
-
-
-#### Data Use Cases
+#### Use Cases
+So far you have an empty copy of WaM-DaM database set up in SQLite. You also have an idea about WaM-DaM tables, what they mean, and how they are connected with each other. Now, here we offer a simple use case as an example that you can follow to use WaM-DaM as a repository for data. We hope that you can follow the logic of the use case to build a WaM-DaM database for your own data. This Use Cases page provide instrucutions that you can follow.  
 Matlab Script to load data to WaM-DaM SQLite [here](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) 
 
 Populated SQLite WaM-DaM database [here]()
