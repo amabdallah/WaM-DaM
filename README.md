@@ -1,6 +1,6 @@
 #### The Water Management Data Model (WaM-DaM)
 
-Water Management Data Model (WaM-DaM) is a persistent information model to organize and synthesize disparate systems water management data. The information model aimes to help scientists and practitioners like you to organize, search, discover, and interpret their disparate and diverse data to save time plus facilitate modeling. Check out the [Context and Rationale]( https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale%20and%20Context.md
+Water Management Data Model (WaM-DaM) is a persistent information model to organize and synthesize disparate systems water management data. The information model aimes to help scientists and practitioners like you to organize, search, discover, and interpret their disparate and diverse data to save time plus facilitate modeling. Check out the [Context and Rationale](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_and_Context.md.md
 ) of WaM-DaM's work.
 
 WaM-DaM supports this collection of nine data types that are used in systems analysis: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. WaM-DaM uses modulur objects of data with their attributes. Objects can be replicated as instances with specific data for resources and infrasturcutre componanants.The componnanats can be connected through a network of nodes and links. WaM-DaM supports scenarios that track changes in networks and allows users to compare them and identify differences among scenarios. Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.   
@@ -19,7 +19,7 @@ Here are the SQL scripts that you can use to create a blank WaM-DaM database. Th
 * [MySQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MySQL.sql)
 * [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
 
-Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLiteInstructions%20.md) on how you can set up a WaM-DaM database in SQLite. The instructions are demostrated live in a video screenshot :)
+Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md) on how you can set up a WaM-DaM database in SQLite. The instructions are demostrated live in a video screenshot :)
 
 #### Documentation of WaM-DaM
 Here we document the architecture of WaM-DaM design to help you make sense of its tables and how they're connected. WaM-DaM has 48 interrelated tables that are organized into four groups: i) Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, ii) Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and iv) Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
