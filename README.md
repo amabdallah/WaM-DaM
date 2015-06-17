@@ -29,9 +29,7 @@ Check out this interactive WaM-DaM logical data model [schema](http://amabdallah
 
 #### Use Cases
 So far you have an empty copy of WaM-DaM database set up in SQLite. You also have an idea about WaM-DaM tables, what they mean, and how they are connected with each other. Now, here we offer a simple use case as an example that you can follow to use WaM-DaM as a repository for data. We hope that you can follow the logic of the use case to build a WaM-DaM database for your own data. This Use Cases page provide instrucutions that you can follow.  
-Matlab Script to load data to WaM-DaM SQLite [here](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) 
-
-Populated SQLite WaM-DaM database [here]()
+Matlab Script to load data to WaM-DaM SQLite 
 
 
 Check out the use cases and their results at the WIKI pages [here](https://github.com/amabdallah/WaM-DaM1.0/wiki/Use-Cases)
