@@ -22,7 +22,7 @@ The CI-WATER project includes researchers from Brigham Young University, the Uni
 
 
 ###Context
-Here, talk about the context of WaM-DaM within the other projects 
+The timming, funds, expertise and passion of WaM-DaM development was incredible (cannot get better). There is an incredable interest from National and International scientis and prationers in standarizing the way we we communicate systems water management data. We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies. WaM-DaM and these products complement each other and there is a big room for reall collaboration. We hope that our discussions continue so we can achive our common goal of having a standard to communciate systems water management data. There are numerous opportunities for [future work]() with many of these groups.
 
 
 | #  | Project       | Affiliation|
@@ -39,6 +39,11 @@ Here, talk about the context of WaM-DaM within the other projects
 | 10|Managing data for the state river basins water budgets models|Utah Division of Water Resources|
 
 
-Discliamer:
-Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) do not necessarily reflect the views of the National Science Foundation. Utah Water Research Laboratory and the Water Users Association provided financial support. 
 
+### Acknowledgement 
+The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) do not necessarily reflect the views of the National Science Foundation. Utah Water Research Laboratory and the Water Users Association provided financial support. 
+
+These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh,  Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis.
+
+Discliamer:
+Any opinions, findings, and conclusions or recommendations expressed in this entire GitHub repository are those of the author(s) do not necessarily reflect the views of the National Science Foundation.
