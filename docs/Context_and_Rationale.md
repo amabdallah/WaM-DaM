@@ -1,4 +1,12 @@
-##Rationale and Context 
+## Context and Rationale
+
+The developemnt of WaM-DaM is part of an ambitious research project to develop cyberinfrastructure to advance the science of hydrology and water managemet. The project “Cyber-Infrastructure to Advance High Performance Water Resource Modelling” (CI-WATER) http://ci-water.org. The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. 
+
+
+
+These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh,  Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis.
+
+
 
 
 [CI-WATER](http://ci-water.org)
@@ -28,7 +36,9 @@ Here, talk about the context of WaM-DaM within the other projects
 |  7|[IWRM](http://www.hec.usace.army.mil/software/hec-ressim/): Integrated Water Resources Management|[The Urban Water Group ](http://urbanwater.utah.edu/home)University of Utah|
 |  8|[IWRM](http://demo.tethys.ci-water.org/apps/parleys-creek-management/): Integrated Water Resources Management|[The Urban Water Group ](http://urbanwater.utah.edu/home)University of Utah|
 |  9|[WaDE](http://www.westernstateswater.org/wade/): The Water Data Exchange Program|Western States Water Council|
-| 10|Managing water resources data |Utah Division of Water Resources|
+| 10|Managing data for the state river basins water budgets models|Utah Division of Water Resources|
 
 
+Discliamer:
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) do not necessarily reflect the views of the National Science Foundation. Utah Water Research Laboratory and the Water Users Association provided financial support. 
 
