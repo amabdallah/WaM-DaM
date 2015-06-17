@@ -22,7 +22,7 @@ The CI-WATER project includes researchers from Brigham Young University, the Uni
 
 
 ###Context
-The timming, funds, expertise and passion of WaM-DaM development was incredible (cannot get better). There is an incredable interest from National and International scientis and prationers in standarizing the way we we communicate systems water management data. We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies. WaM-DaM and these products complement each other and there is a big room for reall collaboration. We hope that our discussions continue so we can achive our common goal of having a standard to communciate systems water management data. There are numerous opportunities for [future work]() with many of these groups.
+The timming, funds, expertise and passion of WaM-DaM development was incredible (cannot get better). There is an incredable interest from National and International scientis and prationers in standarizing the way we we communicate systems water management data. We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies. WaM-DaM and these products complement each other and there is a big room for reall collaboration. We hope that our discussions continue so we can achive our common goal of having a standard to communciate systems water management data. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work) with many of these groups.
 
 
 | #  | Project       | Affiliation|
