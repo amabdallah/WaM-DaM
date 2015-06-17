@@ -4,7 +4,7 @@ Water Management Data Model (WaM-DaM) is a persistent information model to organ
 
 WaM-DaM supports this collection of nine data types that are used in systems analysis: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. WaM-DaM uses modulur objects of data with their attributes. Objects can be replicated as instances with specific data for resources and infrasturcutre componanants.The componnanats can be connected through a network of nodes and links. WaM-DaM supports scenarios that track changes in networks and allows users to compare them and identify differences among scenarios.   
 
-You can think of WaM-DaM as a repository of systems data (purple cylinder) plus a middle-person translator between the vast data sources at the left and your different models at the right as shown in this flowchart
+You can think of WaM-DaM as a repository of systems data (purple cylinder) plus a middle-person translator between the vast data sources at the left and your different models at the right as shown in this flowchart. WaM-DaM traslates two componants: the syntax and semantics. So WaM-DaM conforms al the disperate data sources to a persistant strucutre and consistant vocabulary. 
 
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaM-DaM.jpg)
 
