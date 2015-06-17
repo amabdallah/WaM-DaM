@@ -1,6 +1,6 @@
 ### Reviewed Systems
 
-Download spreadsheet of the [ReviewedSystems](https://github.com/amabdallah/WaM-DaM/blob/master/docs/ReviewedDataManagement%20Systems.xlsx)
+Download spreadsheet of the [ReviewedSystems](https://github.com/amabdallah/WaM-DaM/blob/master/docs/ReviewedDataManagement%20Systems.xlsx) DRAFT, Not completely finished yet
 
 For each data management system, we identified its common use and application, data formats, data types, technology of the data management system (e.g., text files, database), and whether the data schema is available or published. If the schema is not available, we reverse engineered the conceptual data schema for many models by using third party software or through the model user interface and its published User Manual or journal articles. For example, we used SQLite Manager Add-on extension in Firefox-Mozilla [https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager] to reverse engineer the schema of HydroPlatform (Harou et al., 2010) and we used “Paradox dBase Reader” [http://download.cnet.com/Paradox-dbase-Reader/3000-2065_4-10860264.html] to reverse engineer the schema of the WEAP model (Yates et al., 2005).
 
