@@ -17,16 +17,14 @@ SQL scripts for generating blank WaM-DaM databases can be downloaded here:
 * [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
 * [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
+Check out the [Instructions] on how set up a WaM-DaM database in SQLite
 
 #### View Documentation of WaM-DaM Concepts
 [Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation)
 
  Check out the current WaM-DaM logical data model [schema](http://amabdallah.github.io/WaM-DaM/
 
-## Software 
-I used [DbWrench 3.2.4](http://www.dbwrench.com) to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
-**Credit** I used the this DDL Script in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
-https://github.com/ODM2/ODM2/tree/master/src/build_schemas
+
 
 
 #### View Diagrams and Documentation of the WaM-DaM Schema
