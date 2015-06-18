@@ -10,9 +10,11 @@
 
 4. Adel M. Abdallah and David E. Rosenberg (2013). [A Relational Data Model for Water Management Data](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/CUAHSI2013_WaM-DaM.pptx?raw=true) CUASHI Conference on Hydroinformatics and Modeling, Logan, UT: July 17-19, 2013.
 
-3. Adel M. Abdallah and David E. Rosenberg (2013). [a Summary of the Proposed WaM-DaM](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/WaM-DaM_Summary_Dec_2013.pdf) Term Project Final Report,GIS in Water Resources Class, USU: Dec 6, 2013.
+4. Adel M. Abdallah and David E. Rosenberg (2013). [a Summary of the Proposed WaM-DaM](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/WaM-DaM_Summary_Dec_2013.pdf) Term Project Final Report,GIS in Water Resources Class, USU: Dec 6, 2013.
 
-2. Adel M. Abdallah. [Investigate the Capability of Arc Hydro Framework to Represent Water Management Data](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/ArcHydro_Project.pdf) Term Project Final Report,GIS in Water Resources Class, USU: Nov 6, 2013.
+3. Adel M. Abdallah. [Investigate the Capability of Arc Hydro Framework to Represent Water Management Data](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/ArcHydro_Project.pdf) Term Project Final Report,GIS in Water Resources Class, USU: Nov 6, 2013.
 
-1. Adel M. Abdallah and David E. Rosenberg (2013). [Design Reservoir Conceptual Data Model](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/Abdallah_CIWATER_Symposium_Poster.pptx) Final Term Project Paper, GHydroinformatics Class, USU: Dec 13, 2012.
+2. Adel M. Abdallah, Jason Randall, Jason Smith, and Maxwell Barrus (2013). [Water Management Data Model](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/Water_Management_Data_Model.pdf) Final Class Project Report, Management Information Systems Class, USU: April 25, 2013.
+
+1. Adel M. Abdallah and David E. Rosenberg (2013). [Design Reservoir Conceptual Data Model](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/Abdallah_CIWATER_Symposium_Poster.pptx) Final Term Project Paper, Hydroinformatics Class, USU: Dec 13, 2012.
 
