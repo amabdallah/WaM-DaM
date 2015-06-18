@@ -1,5 +1,5 @@
 #### Upcoming:
-10. Adel Abdallah, David E. Rosenberg (2015)A Relational Model to Organize and Synthesize Disparate Systems Water Management Data. 3rd CUAHSI Conference on HydroInformatics. Model and Data Interoperability: From Theory to Practice July 15-17, 2015, University of Alabama and the National Water Center, Tuscaloosa, AL
+10. Adel Abdallah, David E. Rosenberg (2015) A Relational Model to Organize and Synthesize Disparate Systems Water Management Data. 3rd CUAHSI Conference on HydroInformatics. Model and Data Interoperability: From Theory to Practice July 15-17, 2015, University of Alabama and the National Water Center, Tuscaloosa, AL
 
 #### Presentatons:
 9. Adel Abdallah, David E. Rosenberg (2014).[WaM-DaM: A Data Model to Organize and Synthesize Water Management Data](http://www.engr.usu.edu/cee/faculty/derosenberg/documents/WaM-DaM_UWUG.pptx)  Utah Water Data Users Group 2nd Meeting, Salt Lake City, Utah: Jan. 27, 2015.
