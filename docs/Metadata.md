@@ -1,1 +1,3 @@
-## Metadata
+## Metadata Structure in WaM-DaM
+
+
