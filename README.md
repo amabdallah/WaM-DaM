@@ -31,10 +31,6 @@ So far you have an empty copy of WaM-DaM database set up in SQLite. You also hav
 Matlab Script to load data to WaM-DaM SQLite 
 
 
-Check out the use cases and their results at the WIKI pages [here](https://github.com/amabdallah/WaM-DaM1.0/wiki/Use-Cases)
-
-
-
 #### Publications:
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewd conference paper:
 [WaM-DaM:A Data Model to Organize and Synthesize Water Management Data](http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf)
@@ -43,7 +39,7 @@ Please cite WaM-DaM as:
 Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthesize Water Management Data. In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2
 
 #### Presentatons:
-Check out the profiesnioan and conference [presentations] (https://github.com/amabdallah/WaM-DaM/blob/master/docs/Presentations.md)
+Check out the profesional and conference [presentations] (https://github.com/amabdallah/WaM-DaM/blob/master/docs/Presentations.md)
 
 
 For more info, please free to email Adel Abdallah at:
