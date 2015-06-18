@@ -28,6 +28,7 @@ We were fortunate to discuss and the development of WaM-DaM with these research 
 |  7|<a href="http://demo.tethys.ci-water.org/apps/parleys-creek-management/" target="_blank">IWRM</a>: Integrated Water Resources Management|<a href="http://urbanwater.utah.edu/home" target="_blank">The Urban Water Group</a> University of Utah|
 | 8|<a href="http://www.westernstateswater.org/wade/" target="_blank">WaDE</a>:The Water Data Exchange Program|Western States Water Council|
 | 9|Managing data for the state river basins water budgets models|Utah Division of Water Resources|
+| 10|<a href="http://hydroshare.cuahsi.org/" target="_blank">HydroShare</a>:collaborative environment for sharing hydrologic data and models aimed at giving hydrologists the technology infrastructure they need to address critical issues related to water quantity, quality, accessibility, and management. |Utah State University|
 
 
 ### Acknowledgement 
