@@ -17,6 +17,7 @@ The timming, avaialability of funds, expertise, and passion for WaM-DaM developm
 We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies listed below. WaM-DaM and these projects complement each other and there is a big room for reall future collaboration. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/edit/master/docs/Future_Work.md) with many of these groups.We hope that our discussions with these groups continue so we can achieve our common goal of having a standard to communciate systems water management data. 
 
 
+
 | #  | Project       | Affiliation|
 | --- | :-------------| :-----|
 |  1 |Hydra Platform: web-services to linking water resource network models, share data in an open data management platform|University of Manchester, United Kingdom|
