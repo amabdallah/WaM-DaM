@@ -37,5 +37,5 @@ The CI-WATER Project is funded by the National Science Foundation through grants
 
 These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh,  Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis.
 
-Discliamer:
+### Discliamer:
 Any opinions, findings, and conclusions or recommendations expressed in this entire GitHub repository are those of the author(s) do not necessarily reflect the views of the National Science Foundation.
