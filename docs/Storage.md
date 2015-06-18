@@ -3,6 +3,8 @@
 
 WaM-DaM supports nine different data values formats that are frequently used water management models to represent among others physical and operational data. Separating data based on their format reinforces the integrity of the data model and guides users to only populate or query relevant data values. So WaM-DaM stores numeric data values separately from text data values. Each data values table is connected to the Data Storage Table in the WaM-DaM Core based on the attribute format that the user chooses. This section elaborates on each data format and why it is needed. The section starts with simple Binary data and ends at the complex Multi-Column Array format. Below are the entities in the [WaM-DaM Storage schema](http://amabdallah.github.io/WaM-DaM/diagrams/DataStorage.html). Here is the WaM-DaM conceptual design diagram shows how the Storage Schema fitst in WaM-DaM desing
 
+Separating data values based on their format reinforces the integrity of the data model and guides users to only populate or query relevant data values. Integrity here means that data values are stored in and then accessed only from one place based on their attribute data type. For example, WaM-DaM stores numeric data values (e.g., parameter) separately from text data values (e.g., text controlled of free). Each data value’s table is connected to the Data Storage Table in the WaM-DaM based on the attribute format that the user chooses. 
+
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaMDaM%20core%20flowchart.jpg)
 
 
