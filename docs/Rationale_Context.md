@@ -1,28 +1,20 @@
-## Context and Rationale
+## Rationale and Context
 
-The developemnt of WaM-DaM is part of an ambitious research project to develop cyberinfrastructure to advance the science of hydrology and water managemet. The project “Cyber-Infrastructure to Advance High Performance Water Resource Modelling” (CI-WATER) http://ci-water.org. The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. 
-
-
-
-These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh,  Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis.
-
-
-
-
-[CI-WATER](http://ci-water.org)
+### Rationale
+The developemnt of WaM-DaM is part of an ambitious research project to develop cyberinfrastructure to advance the science of hydrology and water managemet. The project is called “Cyber-Infrastructure to Advance High Performance Water Resource Modelling” (CI-WATER) http://ci-water.org. The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. 
 NSF Award Number: [1135482](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482)
-
 [CI-WATER Proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/CI-WATER_Proposal.pdf)
+
+The CI-WATER project includes researchers from Brigham Young University, the University of Utah, Utah State University, and the University of Wyoming. BYU and the University of Wyoming are the lead institutions for their respective states in the consortium.
 
 An interdisciplinary team of Utah and Wyoming researchers has received a $6 million, three-year award from the National Science Foundation (NSF) to develop a better understanding of the interconnectivity of natural and human water resources systems – a critical environmental sustainability problem facing both Western states.
 
 The award will allow the team of researchers to develop high-performance computer modeling and computational resources (known as cyberinfrastructure or CI for short) to simulate and study how factors such as population growth, shifting land uses and climate variability will impact water storage and availability in the Intermountain West. This award is made under the NSF Experimental Program to Stimulate Competitive Research (EPSCoR), which supports states' efforts to enhance research, science and mathematics education, and workforce development.
  
-The CI-WATER project includes researchers from Brigham Young University, the University of Utah, Utah State University, and the University of Wyoming. BYU and the University of Wyoming are the lead institutions for their respective states in the consortium.
-
-
 ###Context
-The timming, funds, expertise and passion of WaM-DaM development was incredible (cannot get better). There is an incredable interest from National and International scientis and prationers in standarizing the way we we communicate systems water management data. We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies. WaM-DaM and these products complement each other and there is a big room for reall collaboration. We hope that our discussions continue so we can achive our common goal of having a standard to communciate systems water management data. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work) with many of these groups.
+The timming, funds, expertise, and passion that are avaialabe for WaM-DaM development were incredible (it cannot get better :)). Along the way of WaM-DaM development, there has been  an incredable interest from National and International scientists and practioners in standarizing the way we communicate systems water management data. 
+
+We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies listed below. WaM-DaM and these projects complement each other and there is a big room for reall future collaboration. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work) with many of these groups.We hope that our discussions with these groups continue so we can achieve our common goal of having a standard to communciate systems water management data. 
 
 
 | #  | Project       | Affiliation|
