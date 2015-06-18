@@ -13,4 +13,7 @@ https://www.mozilla.org/en-US/firefox/new/
 3.	SQLite Manager Add-on to Mozilla FireFox
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
+4. DDL script to creat blank WaM-DaM database for [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
+
+
 4. Matlab. You also can use Python, R, or any scripting language to load data to your database 
