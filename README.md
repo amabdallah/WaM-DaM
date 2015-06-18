@@ -42,14 +42,7 @@ Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthes
 Check out the profesional and conference [presentations] (https://github.com/amabdallah/WaM-DaM/blob/master/docs/Presentations.md)
 
 ## Sponsors and Credit 
-This material is based upon work supported by the National Science Foundation Grant [NSF grant](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482) . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-
-
-
-This work is part of a large cyberinfrastructure project [(CI-WATER)](http://ci-water.org/) to advance water resources modeling that involves Utah State University, Brigham Young University, University of Utah and University of Wyoming. 
-
-Check out WaM-DaM documentation and development at the [GitHub Wiki](https://github.com/amabdallah/WaM-DaM1.0/wiki)
-
+This material is based upon work supported by the National Science Foundation Grant [NSF grant](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482) . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Check out more info about the project and [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development
 
 
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
