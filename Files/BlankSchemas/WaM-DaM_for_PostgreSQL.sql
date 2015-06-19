@@ -286,9 +286,9 @@ create table WaMDaM.MultiColumnArray (
 );
 create table WaMDaM.MultiColumnValues (
 	multicolumnvalueid serial  NOT NULL primary key,
-	multicolumnid integer  NOT NULL,
 	value varchar (255) NOT NULL,
-	valueorder integer  NOT NULL
+	valueorder integer  NOT NULL,
+	multicolumnid integer  NOT NULL
 );
 create table WaMDaM.Parameters (
 	parameterid serial  NOT NULL primary key,
@@ -313,8 +313,8 @@ create table WaMDaM.SeasonalParameters (
 );
 create table WaMDaM.TextControlled (
 	textcontrolledid serial  NOT NULL primary key,
-	datastorageid integer  NOT NULL,
-	textcontrolledvalueid integer  NOT NULL
+	textcontrolledvalueid integer  NOT NULL,
+	datastorageid integer  NOT NULL
 );
 create table WaMDaM.TextFree (
 	textfreeid serial  NOT NULL primary key,

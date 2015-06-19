@@ -325,9 +325,9 @@ CREATE TABLE MultiColumnArray (
 
 CREATE TABLE MultiColumnValues (
 	MultiColumnValueID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	MultiColumnID INT   NOT NULL,
 	Value VARCHAR (255)  NOT NULL,
-	ValueOrder INT   NOT NULL
+	ValueOrder INT   NOT NULL,
+	MultiColumnID INT   NOT NULL
 );
 
 CREATE TABLE Parameters (
@@ -356,8 +356,8 @@ CREATE TABLE SeasonalParameters (
 
 CREATE TABLE TextControlled (
 	TextControlledID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	DataStorageID INT   NOT NULL,
-	TextControlledValueID INT   NOT NULL
+	TextControlledValueID INT   NOT NULL,
+	DataStorageID INT   NOT NULL
 );
 
 CREATE TABLE TextFree (

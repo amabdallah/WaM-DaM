@@ -333,9 +333,9 @@ CREATE TABLE WaMDaM.MultiColumnArray (
 )
 CREATE TABLE WaMDaM.MultiColumnValues (
 	MultiColumnValueID int  IDENTITY (1,1) NOT NULL,
-	MultiColumnID int   NOT NULL,
 	Value varchar (255)  NOT NULL,
 	ValueOrder int   NOT NULL,
+	MultiColumnID int   NOT NULL,
 	PRIMARY KEY (MultiColumnValueID)
 )
 CREATE TABLE WaMDaM.Parameters (
@@ -364,8 +364,8 @@ CREATE TABLE WaMDaM.SeasonalParameters (
 )
 CREATE TABLE WaMDaM.TextControlled (
 	TextControlledID int  IDENTITY (1,1) NOT NULL,
-	DataStorageID int   NOT NULL,
 	TextControlledValueID int   NOT NULL,
+	DataStorageID int   NOT NULL,
 	PRIMARY KEY (TextControlledID)
 )
 CREATE TABLE WaMDaM.TextFree (

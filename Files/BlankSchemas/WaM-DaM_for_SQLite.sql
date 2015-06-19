@@ -411,9 +411,9 @@ CREATE TABLE MultiColumnArray (
 
 CREATE TABLE MultiColumnValues (
 	MultiColumnValueID INTEGER   NOT NULL PRIMARY KEY,
-	MultiColumnID INTEGER   NOT NULL,
 	Value VARCHAR (255)  NOT NULL,
 	ValueOrder INTEGER   NOT NULL,
+	MultiColumnID INTEGER   NOT NULL,
 	FOREIGN KEY (MultiColumnID) REFERENCES MultiColumnArray (MultiColumnID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
@@ -454,8 +454,8 @@ CREATE TABLE SeasonalParameters (
 
 CREATE TABLE TextControlled (
 	TextControlledID INTEGER   NOT NULL PRIMARY KEY,
-	DataStorageID INTEGER   NOT NULL,
 	TextControlledValueID INTEGER   NOT NULL,
+	DataStorageID INTEGER   NOT NULL,
 	FOREIGN KEY (TextControlledValueID) REFERENCES TextControlledValues (TextControlledValueID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
