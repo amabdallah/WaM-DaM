@@ -200,7 +200,7 @@ CREATE TABLE DataStructureDomain (
 	Definition TEXT   NULL
 );
 
-CREATE TABLE FileFormate (
+CREATE TABLE FileFormat (
 	Term VARCHAR (255)  NOT NULL PRIMARY KEY,
 	Definition TEXT   NULL
 );
@@ -397,7 +397,7 @@ CREATE TABLE FileBased (
 	DataStorageID INTEGER   NOT NULL,
 	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY (FileFormateCV) REFERENCES FileFormate (Term)
+	FOREIGN KEY (FileFormateCV) REFERENCES FileFormat (Term)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 

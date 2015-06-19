@@ -135,7 +135,7 @@ create table WaMDaM.DataStructureDomain (
 	term varchar (255) NOT NULL primary key,
 	definition text  NULL
 );
-create table WaMDaM.FileFormate (
+create table WaMDaM.FileFormat (
 	term varchar (255) NOT NULL primary key,
 	definition text  NULL
 );
@@ -521,7 +521,7 @@ foreign key (DataStorageID) References WaMDaM.DataStorage (DataStorageID)
 on update no Action on delete cascade;
 
 alter table WaMDaM.FileBased add constraint fk_FileBased_FileFormate
-foreign key (FileFormateCV) References WaMDaM.FileFormate (Term)
+foreign key (FileFormateCV) References WaMDaM.FileFormat (Term)
 on update no Action on delete cascade;
 
 alter table WaMDaM.MultiColumnArray add constraint fk_MultiColumnArray_DataStorage

@@ -150,7 +150,7 @@ CREATE TABLE DataStructureDomain (
 	Definition TEXT   NULL
 );
 
-CREATE TABLE FileFormate (
+CREATE TABLE FileFormat (
 	Term VARCHAR (255)  NOT NULL PRIMARY KEY,
 	Definition TEXT   NULL
 );
@@ -568,7 +568,7 @@ FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE FileBased ADD CONSTRAINT fk_FileBased_FileFormate
-FOREIGN KEY (FileFormateCV) REFERENCES FileFormate (Term)
+FOREIGN KEY (FileFormateCV) REFERENCES FileFormat (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE MultiColumnArray ADD CONSTRAINT fk_MultiColumnArray_DataStorage

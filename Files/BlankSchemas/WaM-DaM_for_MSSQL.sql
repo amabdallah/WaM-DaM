@@ -160,7 +160,7 @@ CREATE TABLE WaMDaM.DataStructureDomain (
 	Definition text   NULL,
 	PRIMARY KEY (Term)
 )
-CREATE TABLE WaMDaM.FileFormate (
+CREATE TABLE WaMDaM.FileFormat (
 	Term varchar (255)  NOT NULL,
 	Definition text   NULL,
 	PRIMARY KEY (Term)
@@ -576,7 +576,7 @@ FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.FileBased ADD CONSTRAINT fk_FileBased_FileFormate
-FOREIGN KEY (FileFormateCV) REFERENCES WaMDaM.FileFormate (Term)
+FOREIGN KEY (FileFormateCV) REFERENCES WaMDaM.FileFormat (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.MultiColumnArray ADD CONSTRAINT fk_MultiColumnArray_DataStorage
