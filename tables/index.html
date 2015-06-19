@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [JuneWaM-DaM1.1.xml]</td>
+<td class="logo">WaM-DaM1.0 [June2015WaMDaM1.0.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -66,7 +66,7 @@
 <td><a href="Storage_FileBased.html">FileBased</a></td><td>This table stores references for data files which cannot be supported directly in WaM-DaM like maps, images, and documents</td><td>Storage</td>
 </tr>
 <tr>
-<td><a href="CVs_FileFormate.html">FileFormate</a></td><td>Controlled text for file formats like csv, shp, dss, ndf, NetCDF, ini, gsm, db, .xy, .mdb, XML, PDF, .rdf, HDB</td><td>CVs</td>
+<td><a href="CVs_FileFormat.html">FileFormat</a></td><td>Controlled text for file formats like csv, shp, dss, ndf, NetCDF, ini, gsm, db, .xy, .mdb, XML, PDF, .rdf, HDB</td><td>CVs</td>
 </tr>
 <tr class="altRow">
 <td><a href="CVs_InstanceStatus.html">InstanceStatus</a></td><td>Instance Status is a controlled vocabulary (e.g., existing, proposed, past existed, and planned). </td><td>CVs</td>
@@ -99,7 +99,7 @@
 <td><a href="Metadata_NativeAttributeCategory.html">NativeAttributeCategory</a></td><td>Orgnaizes native attributes into  hierarchal categories in their original data source  like hydropower category which groups all attributes that belong to hydropower </td><td>Metadata</td>
 </tr>
 <tr class="altRow">
-<td><a href="Metadata_NativeObjectCategory.html">NativeObjectCategory</a></td><td>Orgnaizes objects into hierarchal categories in their original data source  like supply and deamnd categories that group objects </td><td>Metadata</td>
+<td><a href="Metadata_NativeObjectCategory.html">NativeObjectCategory</a></td><td>Organizes objects into hierarchal categories in their original data source  like supply and demand categories that group objects </td><td>Metadata</td>
 </tr>
 <tr>
 <td><a href="Core_ObjectAttributes.html">ObjectAttributes</a></td><td>It is a bridge tables that allow associating many Object Types with many attributes. Users also can share the same native attribute across different object types like Capital Cost attribute that is shared for all the WEAP Objects</td><td>Core</td>
@@ -123,7 +123,7 @@
 <td><a href="Storage_Rules.html">Rules</a></td><td>The Rule table stores relationships between attributes of instances in the form of mathematical equations to help users represent water management actions as conditional rules and use them in their models. </td><td>Storage</td>
 </tr>
 <tr class="altRow">
-<td><a href="Core_ScenarioMetadata.html">ScenarioMetadata</a></td><td>The ScenarioMetadata is a bridge table that allows associating many MetadataMapping records with many scenarios. This table allows to map out the dublicate topology, metadata, and data between scenarios </td><td>Core</td>
+<td><a href="Core_ScenarioMetadata.html">ScenarioMetadata</a></td><td>The ScenarioMetadata is a bridge table that allows associating many MetadataMapping records with many scenarios. This table allows to map out the duplicate topology, metadata, and data between scenarios </td><td>Core</td>
 </tr>
 <tr>
 <td><a href="Core_Scenarios.html">Scenarios</a></td><td>A scenario organizes different topologies or connections of Instances in a Master Network and different metadata or data values for the attributes that describe those Instances. A Scenario concept helps users represent different modeling alternatives that simulate socio-economic changes in water resources networks and their data</td><td>Core</td>
@@ -138,10 +138,10 @@
 <td><a href="Metadata_Sources.html">Sources</a></td><td>A data Source refers to the data provider and where quantitative or qualitative data values of an attribute came from and who provided them. </td><td>Metadata</td>
 </tr>
 <tr>
-<td><a href="CVs_SpatialReference.html">SpatialReference</a></td><td>A spatial reference (e.g., NAD 1983) to referece all the instances that belong to the same Master Network</td><td>CVs</td>
+<td><a href="CVs_SpatialReference.html">SpatialReference</a></td><td>A spatial reference (e.g., NAD 1983) to reference all the instances that belong to the same Master Network</td><td>CVs</td>
 </tr>
 <tr class="altRow">
-<td><a href="CVs_Symbols.html">Symbols</a></td><td>Controlled vocabulary for arithmatic and equations symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </td><td>CVs</td>
+<td><a href="CVs_Symbols.html">Symbols</a></td><td>Controlled vocabulary for arithmetic  and equations symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </td><td>CVs</td>
 </tr>
 <tr>
 <td><a href="Storage_TextControlled.html">TextControlled</a></td><td>This table is similar to Text Free table but this one enforces controlled vocabulary on text data values to help users consistently define static descriptive text data values across instances. For example, a user can choose the owner type of a reservoir from a user predefined list like Federal, State, Local, and Private.</td><td>Storage</td>
@@ -156,13 +156,13 @@
 <td><a href="Storage_TimeSeries.html">TimeSeries</a></td><td>This table stores metadata that are fixed for all the data values of a time series. </td><td>Storage</td>
 </tr>
 <tr>
-<td><a href="Storage_TimeSeriesValues.html">TimeSeriesValues</a></td><td>Thsi table stores the time series data values and their time stamp</td><td>Storage</td>
+<td><a href="Storage_TimeSeriesValues.html">TimeSeriesValues</a></td><td>This table stores the time series data values and their time stamp</td><td>Storage</td>
 </tr>
 <tr class="altRow">
 <td><a href="CVs_Units.html">Units</a></td><td>A unit refers to the dimension of data values of a quantitative attribute, help users unambiguously interpret the meaning of data values. Qualitative attributes like a &ldquo;dam owner name&rdquo; have no unit. The Units table applies to the Attributes table in WaM-DaM Core and enforces the same unit for all attributes across the instances of an Object to meet the consistency of units in particular Data Structure as used in modeling. </td><td>CVs</td>
 </tr>
 <tr>
-<td><a href="CVs_VerticalDatum.html">VerticalDatum</a></td><td>A vertical datum (e.g., above sea mean level) to referece all the instances that belong to the same Master Network</td><td>CVs</td>
+<td><a href="CVs_VerticalDatum.html">VerticalDatum</a></td><td>A vertical datum (e.g., above sea mean level) to reference all the instances that belong to the same Master Network</td><td>CVs</td>
 </tr>
 <tr class="altRow">
 <td><a href="Metadata_Vertices.html">Vertices</a></td><td>The Vertices Table is optional and allows users to represent geographical orientation of a link by storing many points or vertices with their longitude and latitudes along the link. The Vertices table helps users draw links and their natural topographic changes to scale. </td><td>Metadata</td>
