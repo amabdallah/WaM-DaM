@@ -33,7 +33,8 @@ Matlab Script to load data to WaM-DaM SQLite
 
 #### Publications:
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewed conference paper:
-[WaM-DaM:A Data Model to Organize and Synthesize Water Management Data](http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf)
+<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">(WaM-DaM:A Data Model to Organize and Synthesize Water Management Data)</a> 
+
 
 Please cite WaM-DaM as:
 Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthesize Water Management Data. In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2
