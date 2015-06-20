@@ -1,7 +1,7 @@
 ## Rationale and Context
 
 ### Rationale
-The developemnt of WaM-DaM is part of an ambitious research project to develop cyberinfrastructure to advance the science of hydrology and water managemet. The project is called “Cyber-Infrastructure to Advance High Performance Water Resource Modelling” (CI-WATER) http://ci-water.org. The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. The project comprisesa large interdisciplinary team of Utah and Wyoming researchers.
+The developemnt of WaM-DaM is part of an ambitious research project to develop cyberinfrastructure to advance the science of hydrology and water managemet. The project is called “Cyber-Infrastructure to Advance High Performance Water Resource Modelling” <a href="http://ci-water.org" target="_blank">CI-WATER</a>. The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. The project comprisesa large interdisciplinary team of Utah and Wyoming researchers.
 
 The CI-WATER project includes researchers from Brigham Young University, the University of Utah, Utah State University, and the University of Wyoming. The project has received a $6 million, three-year award from the National Science Foundation (NSF) to develop a better understanding of the interconnectivity of natural and human water resources systems – a critical environmental sustainability problem facing both Western states.
 
