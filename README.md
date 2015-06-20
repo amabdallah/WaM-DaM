@@ -23,7 +23,7 @@ Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/d
 #### Documentation of WaM-DaM
 Here we document the architecture of WaM-DaM design to help you make sense of its tables and how they're connected. WaM-DaM has 48 interrelated tables that are organized into four groups: i) Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, ii) Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and iv) Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
 
-Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">([schema])</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation) abou WaM-DaM architecture
+Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/wiki/Documentation) abou WaM-DaM architecture
 
 
 #### Use Cases (Draft)
@@ -33,7 +33,7 @@ Matlab Script to load data to WaM-DaM SQLite
 
 #### Publications:
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewed conference paper:
-<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">(WaM-DaM:A Data Model to Organize and Synthesize Water Management Data)</a> 
+<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> 
 
 
 Please cite WaM-DaM as:
