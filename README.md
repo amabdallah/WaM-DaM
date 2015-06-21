@@ -51,3 +51,5 @@ This material is based upon work supported by the National Science Foundation Gr
 
 For more info, please free to email Adel Abdallah at:
 amabdallah@aggiemail.usu.edu
+David Rosenberg
+http://www.engr.usu.edu/cee/faculty/derosenberg/
