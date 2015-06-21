@@ -49,7 +49,8 @@ This material is based upon work supported by the National Science Foundation Gr
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
 
 
-For more info, please free to email Adel Abdallah at:
+For more info, please free to email <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"Adel Abdallah</a> at:
 amabdallah@aggiemail.usu.edu
-David Rosenberg
-http://www.engr.usu.edu/cee/faculty/derosenberg/
+<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"David Rosenberg</a> 
+david.rosenberg@usu.edu
+
