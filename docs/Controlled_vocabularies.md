@@ -30,11 +30,57 @@ refers to the dimension of data values of a quantitative attribute, help users u
 A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_InstanceStatus.html" target="_blank">Instance Status </a> is a controlled vocabulary (e.g., existing, proposed, past existed, and planned).	
 
 
-VerticalDatum	
+##### VerticalDatum	
+A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_VerticalDatum.html" target="_blank">Vertical Datum </a>
+(e.g., above sea mean level) to reference all the instances that belong to the same Master Network	
+
+##### SpatialReference
+A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_SpatialReference.html" target="_blank">SpatialReference </a>
+A spatial reference (e.g., NAD 1983) to reference all the instances that belong to the same Master Network	
+
+##### AttributeTypeCode
+ <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_AttributeTypeCode.html" target="_blank">An Attribute Type Code </a> is like binary (B), parameters (P), seasonal parameter (SP), free text (TF), controlled text (CT), file based (FB), Rule (R), time series (TS), and multi-column array (MC)	
+
+#### CV on WaM-DaM's Metadata
+
+#### OrganizationType
+<a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_OrganizationType.html" target="_blank">Organization Type</a> is like academic and government agency	
+
+#### MethodType
+<a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_MethodType.html" target="_blank">Method Type</a> 
+is a controlled vocabulary term that can be like sample, simulation, optimization, or field procedure. The method type corresponds to “value type” attribute in the Observations Data Model	
+
+### CV on WaM-DaM's Data Storage
+
+#### BinaryValueMeaning
+This table stores binary data values of either zero or one to direct users to only populate binary values to represent water management operations that has duel values.	
 
 
-SpatialReference
+#### SeasonName
+Controlled vocabulary for seasons (e.g., winter and day, night, holiday, weekend, week days)	
 
 
+#### TextControlledValues
+Controlled text values that can be shared across attributes of instances like Land use “Grass_Pasture” or irrigation type "Flood”, states "Utah"	
 
-AggregationStatistic
+
+#### FileFormat
+Controlled text for file formats like csv, shp, dss, ndf, NetCDF, ini, gsm, db, .xy, .mdb, XML, PDF, .rdf, HDB	
+
+
+#### Symbols
+Controlled vocabulary for arithmetic and equations symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function	
+
+
+#### AggregationStatistic
+CV term for the statistic that is performed over a time Support interval for time series values (e.g., cumulative, average, maximum)	
+
+
+% move this to the Metadata section
+
+##### NativeObjectCategory
+ <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeObjectCategory.html" target="_blank">Native Object Category </a> organizes objects into hierarchal categories in their original data source like supply and demand categories that group objects	
+
+
+##### NativeAttributeCategory
+ <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeAttributeCategory.html" target="_blank">Native Attribute Category</a> orgnaizes native attributes into hierarchal categories in their original data source like hydropower category which groups all attributes that belong to hydropower	
