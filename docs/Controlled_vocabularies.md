@@ -19,11 +19,21 @@ A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_CommonObjectTypes.html
 ##### CommonAttributes
 A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_CommonObjectTypes.html" target="_blank">CommonAttributes</a> Controlled vocabulary for attributes like Volume which maps out to native attributes like capacity, vol, and storage		
 
-
 ##### CommonAttributeCategory
 A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_CommonObjectTypes.html" target="_blank">CommonAttributeCategory	</a> Controlled vocabulary for common attributes to organize them into hierarchal categories like Hydropower categories
 
+##### Units
+A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_Units.html" target="_blank">unit </a>
+refers to the dimension of data values of a quantitative attribute, help users unambiguously interpret the meaning of data values. Qualitative attributes like a “dam owner name” have no unit. The Units table applies to the Attributes table in WaM-DaM Core and enforces the same unit for all attributes across the instances of an Object to meet the consistency of units in particular Data Structure as used in modeling.	
 
+##### InstanceStatus
+A <a href="http://amabdallah.github.io/WaM-DaM/tables/CVs_InstanceStatus.html" target="_blank">Instance Status </a> is a controlled vocabulary (e.g., existing, proposed, past existed, and planned).	
+
+
+VerticalDatum	
+
+
+SpatialReference
 
 
 
