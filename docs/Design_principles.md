@@ -42,7 +42,7 @@ WaM-DaM uses the time scale triplet in time series data which represents i) exte
 Additional or more complex data types can be incorporated in future improvements to WaM-DaM. Details on each data type are posted at the GitHub repository.
 
 | Data type         | Definition   | 
-| ------------- |-------------:|
+| ------------- |:-------------|
 | Binary      | 0 or 1 numerical values that refer to a canal gate being “close” or “open” | 
 | Parameters      | Discrete numerical variables. For example, a dam elevation is 45.5 feet | 
 | Seasonal parameter      | Parameter that changes with categorical time. For example,  water right variable can have 20 acre-feet in winter and 5 acre-feet in summer or a water demand parameter can take 10 cfs at day and 5 cfs at night | 
