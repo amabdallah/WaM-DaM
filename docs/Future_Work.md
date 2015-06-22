@@ -32,14 +32,9 @@ Energy generation, distribution, and use systems are analogous to water resource
 The NSF is calling for Innovations at the Nexus of Food, Energy and Water Systems (INFEWS). WaM-DaM can serve as a basis to integrated and relate data across the three resources.     
 
 
-#### 5. Great Salt Lake Information System: A Repository for the Great Salt Lake River Basins Models  
-
-<a href="http://greatsaltlakeinfo.org/" target="_blank">Great Salt Lake Information System</a>
-
-<a href="http://ffsl.utah.gov/index.php/grant-programs/state-lands-research-grants" target="_blank">Great Salt Lake Research Grants</a> by the 
-*"The Utah Department of Natural Resources, Division of Forestry, Fire & State Lands requests proposals for research projects that will assist the Division in becoming better informed stewards of Great Salt Lake. It is the intent of the Division to gain a better understanding of the lake system which leads to informed decision making regarding long-term management of this important ecosystem."*
-
-
+#### 5. A Repository for the Great Salt Lake River Basins Models  
+There is an opportunity to use WaM-DaM as a repository of the three major rivers that end at the Great Salt Lake: Bear, Weber, and Jordan River. Each of these river basins already has a systems model to simulate its water allocation. WaM-DaM could be used as a repository of data for the three models. Users of researchers and water managers can use the repository to access data for the three basins. The repository could be used to build a united systems models for the three basins as well. The <a href="http://greatsaltlakeinfo.org/" target="_blank">Great Salt Lake Information System</a> provides time series data for the Great Salt Lake and the WaM-DaM repository could be added to this information system. There is an opportunity to seek funds from the <a href="http://ffsl.utah.gov/index.php/grant-programs/state-lands-research-grants" target="_blank">Great Salt Lake Research Grants</a>. Although data management is not among the hot topics sought for these grants. A repository idea seems to fit very well with the ultimate goal of these grants as cited here:    
+*The Utah Department of Natural Resources, Division of Forestry, Fire & State Lands requests proposals for research projects that will assist the Division in becoming better informed stewards of Great Salt Lake. It is the intent of the Division to gain a better understanding of the lake system which leads to informed decision making regarding long-term management of this important ecosystem.*
 
 #### 6. WaM-DaM 2.0: Improved Design for Complex Water Management Models 
 To solicit WaM-DaM as a community standard, WaM-DaM should be further tested with very complex and large water management models like the Colorado Water Management and Allocation Model (RiverWare) (Zagona et al., 2001), the California Hydro-Economic Model (HOBBES) (Jenkins et al., 2004) and the HydroBase for the State of Colorado water management data which contains several gigabytes of surface, groundwater, water infrastructure, and water rights among others. HydroBase contains over two hundred tables and can serve as a comprehensive testing example for WaM-DaM 2.0 (Malers et al.)
