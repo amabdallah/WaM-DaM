@@ -43,15 +43,23 @@ Additional or more complex data types can be incorporated in future improvements
 
 | Data type         | Definition   | 
 | ------------- |:-------------:|
-| Binary      | right-aligned | 
-| Binary      | right-aligned | 
-| Binary      | right-aligned | 
-| Binary      | right-aligned | 
-| Binary      | right-aligned | 
-| Binary      | right-aligned | 
+| Binary      | 0 or 1 numerical values that refer to a canal gate being “close” or “open” | 
+| Parameters      | Discrete numerical variables. For example, a dam elevation is 45.5 feet | 
+| Seasonal parameter      | Parameter that changes with categorical time. For example,  water right variable can have 20 acre-feet in winter and 5 acre-feet in summer or a water demand parameter can take 10 cfs at day and 5 cfs at night | 
+| Text Controlled      | Categorical variables that are re-used across instances. For example, land use attribute has a value of “Grass_Pasture” or irrigation type attribute has a value of “Flood” | 
+| Text Free      | Descriptive variables that can have any text data value. For example, a dam release rule could be stored as block of text  | 
+| File based      | Files with several formats. For example, images, PDF documents, NetCDF and shape-files stored with a link to their location on disk | 
+| Rule       |Relates attributes in an algebraic form. System dynamic models like GoldSim (GoldSim, 2014) represent mass balance equations that aggregate other attributes for water system objects. For example, these aggregate attributes contribute to “addition rate” or withdrawal rate” from a reservoir, e.g., addition=Inflow + precipitation| 
+| Time series       | Numerical variables with a time stamp. Time series can be regular or irregular  stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  | 
+| Multi Column Array      | Pared numeric values.  
+water cost that changes with demand and time (e.g., month of the year), and reservoir volume and corresponding surface area that change with pool elevation 
+| 
 
 
 #### 8.	Open-source and free software environment
+Public open-source software environment and code, promotes reproducibility and helps others to adopt and advance the development of models (Easterbrook, 2014; Goodman et al., 2014). Most of the reviewed data systems were either proprietary or they privately kept their source-code and data schema. WaM-DaM, its source-code, and documentation are available to the public at the GitHub collaboration repository github.com/amabdallah/WaM-DaM in an open-source environment under the New Berkeley Software Distribution (BSD) License, which allows for liberal reuse of the software and code. 
+
+WaM-DaM as a generic data model will holistically support all these eight principles to meet the diverse needs of water management systems. The next section employs these eight principles and important design questions in conceptual, logical, and physical methodological design steps of WaM-DaM.
 
 
 
