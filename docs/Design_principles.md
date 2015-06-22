@@ -51,9 +51,7 @@ Additional or more complex data types can be incorporated in future improvements
 | File based      | Files with several formats. For example, images, PDF documents, NetCDF and shape-files stored with a link to their location on disk | 
 | Rule       |Relates attributes in an algebraic form. System dynamic models like GoldSim (GoldSim, 2014) represent mass balance equations that aggregate other attributes for water system objects. For example, these aggregate attributes contribute to “addition rate” or withdrawal rate” from a reservoir, e.g., addition=Inflow + precipitation| 
 | Time series       | Numerical variables with a time stamp. Time series can be regular or irregular  stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  | 
-| Multi Column Array      | Pared numeric values.  
-water cost that changes with demand and time (e.g., month of the year), and reservoir volume and corresponding surface area that change with pool elevation 
-| 
+| Multi Column Array      | Pared numeric values. water cost that changes with demand and time (e.g., month of the year), and reservoir volume and corresponding surface area that change with pool elevation | 
 
 
 #### 8.	Open-source and free software environment
