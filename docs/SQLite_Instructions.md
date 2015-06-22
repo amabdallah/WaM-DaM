@@ -16,4 +16,4 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 4. DDL script to creat blank WaM-DaM database for [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
 
 
-4. Matlab. You also can use Python, R, or any scripting language to load data to your database 
+4. Matlab. You need to install the Database Toolbox which doesnt come with the standartd Matlab software. You also can use Python, R, or any scripting language to load data to your database. 
