@@ -9,6 +9,9 @@ You can think of WaM-DaM as a repository of systems data (purple cylinder) plus 
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaM-DaM.jpg)
 
 
+#### Is WaM-DaM good for me?
+WaM-DaM would be great for you if you are using systems data (nodes and links). WaM-DaM can help you build your networks, scenarios. If your data comes in different types like these: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. WaM-DaM would be good for you if you want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.
+
 #### Getting Started with WaM-DaM
  
 WaM-DaM information model is implemented in a relational database which is ready for use to load your data into it. You can choose one of these relational database systems. If you are a beginner, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data.  
