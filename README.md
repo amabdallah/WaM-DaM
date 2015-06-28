@@ -9,8 +9,14 @@ You can think of WaM-DaM as a repository of systems data (purple cylinder) plus 
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaM-DaM.jpg)
 
 
-#### Is WaM-DaM good for me?
-WaM-DaM would be great for you if you are using systems data (nodes and links). WaM-DaM supports networks, scenarios. It's helpful to you if your data comes in different types like these: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. WaM-DaM would be good for you too if you want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.  
+#### Who can use WaM-DaM?
+You can use WaM-DaM if:
+1. You are using systems data (nodes and links). WaM-DaM supports networks, scenarios. 
+2. You have different data types like these: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. 
+3. You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the
+
+
+[scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.  
 
 #### Getting Started with WaM-DaM
  
