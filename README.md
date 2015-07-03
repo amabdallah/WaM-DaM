@@ -10,10 +10,10 @@ You can think of WaM-DaM as a repository of systems data (purple cylinder) plus 
 
 
 #### Who can use WaM-DaM?
-You can use WaM-DaM if:
-1. You are using systems data (nodes and links). WaM-DaM supports networks, scenarios. 
-2. You have different data types like these: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays. 
-3. You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the
+You can use WaM-DaM if: 
+1. You are using systems data (nodes and links). WaM-DaM supports networks, scenarios.  
+2. You have different data types like these: binary, numeric parameters, seasonal, parameters, file based, rules, time series, and multi-column arrays.  
+3. You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the 
 
 
 [scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.  
