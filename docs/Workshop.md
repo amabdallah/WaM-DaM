@@ -13,14 +13,14 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM.sqlite
 
 4. Queries     
-i.  Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
+#####i.  Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
 This query shows the data structure of Object Types and their Attributes 
 for Water Evaluation and Assessment (WEAP) model.    
 Users can see the Objects, their topology, and their Attributes that WEAP uses 
 to model water systems. These Object and Attributes are used as input to queries 
 to search and discover water management data in other data structures   
 
-ii. Available data to expand the Lower Bear River Model using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/02DiscoverAvailableDataToExpandBear.sql)     
+#####ii. Available data to expand the Lower Bear River Model using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/02DiscoverAvailableDataToExpandBear.sql)     
 This query discovers the available data to expand the existing Lower Bear River Model in the Water and Evaluation 
 and Assessment (WEAP) model to the entire Bear Watershed    
 The search is based on a boundary of coordinates for instances in the upper Bear River Watershed. 
