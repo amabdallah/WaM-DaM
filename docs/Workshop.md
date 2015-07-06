@@ -13,14 +13,14 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM.sqlite
 
 4. Queries     
-#####i.  Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
+i.  Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
 This query shows the data structure of Object Types and their Attributes 
 for Water Evaluation and Assessment (WEAP) model.    
 Users can see the Objects, their topology, and their Attributes that WEAP uses 
 to model water systems. These Object and Attributes are used as input to queries 
 to search and discover water management data in other data structures   
 
-#####ii. Available data to expand the Lower Bear River Model using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/02DiscoverAvailableDataToExpandBear.sql)     
+ii. Available data to expand the Lower Bear River Model using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/02DiscoverAvailableDataToExpandBear.sql)     
 This query discovers the available data to expand the existing Lower Bear River Model in the Water and Evaluation 
 and Assessment (WEAP) model to the entire Bear Watershed    
 The search is based on a boundary of coordinates for instances in the upper Bear River Watershed. 
@@ -31,10 +31,23 @@ controlled or common name.
 Users can further search for more metadata and data about these instances. 
 Then they can choose which ones to import to their model 
 
+#####iii.Identify missing data to expand  the WEAP model using this query [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/03DiscoverMissingDataToExpandBear.sql)       
+This query shows the data structure of Object Types and their Attributes 
+for Water Evaluation and Assessment (WEAP) model. 
+The search is based on a boundary of coordinates for instances in the upper Bear River Watershed. 
+Users need to only change these coordinates to discover data in other regions.    
+Users can see the Objects, their topology, and their Attributes that WEAP uses 
+to model water systems. These Object and Attributes are used as input to queries 
+to search and discover water management data in other data structures    
 
-
-#####iii.Identify missing data to expand  the WEAP model    
-
-
-#####iv. Discover available data for a WEAP model in the Tuscaloosa Region    
+#####iv. Discover available data for a WEAP model in the Tuscaloosa Region using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/04DiscoverSearchAlabama.sql)    
+This query discovers the available data to to build a model in the Water and Evaluation 
+and Assessment (WEAP) system for the Tuscaloosa region, Alabama     
+The search is based on a boundary of coordinates for instances in the Tuscaloosa region, Alabama
+Users need to only change these coordinates to discover data in other regions    
+Users can see the Objects, their topology, and their Attributes that WEAP uses     
+to model water systems. These Object and Attributes are used as input to queries 
+to search and discover water management data in other data structures
+Users can further search for more metadata and data about these instances. 
+Then they can choose which ones to import to their model
 
