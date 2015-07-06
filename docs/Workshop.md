@@ -17,3 +17,5 @@ i.  Check out the WEAP data structure
 ii. Available data to expand the Lower Bear River Model     
 iii.Identify missing data to expand  the WEAP model     
 iv. Discover available data for a WEAP model in the Tuscaloosa Region    
+
+https://github.com/amabdallah/WaM-DaM/tree/master/Files/WorkshopQuries
