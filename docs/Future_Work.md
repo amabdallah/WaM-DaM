@@ -1,19 +1,11 @@
-### Future Work
+## Future Work
 
-The design of WaM-DaM is limited to experience drawn from the reviewed water data systems, used data sources, and demonstrated use cases. 
-
-1. Future work can incorporate complex and unanticipated aspects of water management data as an improvement to the current design. There are several opportunities for future work that can build on WaM-DaM specifications. 
-
-2. We will utilize WaM-DaM to develop scientific workflows to automate the process to identify available and relevant data for models, extract it, transform and reformat it, and serve it to models. 
-
-3. Other opportunities for future work can develop comprehensive lists of controlled vocabularies and ontology for water resources management data like in Piasecki and Beran (2009) for point observations time series data. 
-
-Future work also can use the WaM-DaM and controlled vocabularies in web-services to publish and share water management data. Future work can develop a plugin to HydroDesktop (Ames et al., 2012) to discover, download, and visualize water management data. There is also an opportunity to build software tools to interact with WaM-DaM database like the ODM data loading tools (Horsburgh et al., 2011). Future work could test and adapt WaM-DaM to organize interlinked systems data of water, energy, and food resources. These future work opportunities can improve WaM-DaM and make it useful to the broader community, water managers, consulting industry, and scientists.
+The design of WaM-DaM is limited to experience drawn from the reviewed water data systems, used data sources, and demonstrated use cases. Future work can incorporate complex and unanticipated aspects of water management data as an improvement to the current design. There are several opportunities for future work that can build on WaM-DaM specifications. We are already undertaking many of the opportunities and there are several promossing ideas.
 
 ### A. Currently undertaken 
 
 #### 1. An Integrated Method to Couple Water Management Data and Serve to Models
-Coming soon :)
+details are coming soon :)
 
 #### 2. Publish and Share Water Management Data through web services 
 Use WaM-DaM to publish water management data for models for the State of Utah using a standardized XML or Json web languages. Host integrated data using data in [7.2] in public servers. Benefit from  previous work that has been done to publish time series data (Goodall et al., 2008)
@@ -21,7 +13,6 @@ Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Fil
 
 #### 3. Add a new Resoure Type to HydroShare 
 Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaM_DaM_HydroShare_Linkage.docx) of the idea 
-
 
 ### B. Future Promosing opportunitues to build on WaM-DaM
 
@@ -40,9 +31,14 @@ The National Science Foundation (NSF) is calling for Critical Techniques and Tec
 Energy generation, distribution, and use systems are analogous to water resources. Water and energy resources are inextricably linked from their generation to their consumption. Most energy sources need water for cooling and water resources need energy pump, supply, and treat water and wastewater. Water end-uses need energy to heat water for sanitation (Abdallah and Rosenberg, 2014). In addition, food production requires water and energy. Thus, WaM-DaM could be adapted and tested to organize energy and food resources data to help relate these three important resources together.
 The NSF is calling for Innovations at the Nexus of Food, Energy and Water Systems (INFEWS). WaM-DaM can serve as a basis to integrated and relate data across the three resources.     
 
-#### 5. WaM-DaM 2.0: Improved Design for Complex Water Management Models 
+
+#### 5. A Repository for the Great Salt Lake River Basins Models  
+There is an opportunity to use WaM-DaM as a repository of the three major rivers that end at the Great Salt Lake: Bear, Weber, and Jordan River. Each of these river basins already has a systems model to simulate its water allocation. WaM-DaM could be used as a repository of data for the three models. Users of researchers and water managers can use the repository to access data for the three basins. The repository could be used to build a united systems models for the three basins as well. The <a href="http://greatsaltlakeinfo.org/" target="_blank">Great Salt Lake Information System</a> provides time series data for the Great Salt Lake and the WaM-DaM repository could be added to this information system. There is an opportunity to seek funds from the <a href="http://ffsl.utah.gov/index.php/grant-programs/state-lands-research-grants" target="_blank">Great Salt Lake Research Grants</a>. Although data management is not among the hot topics sought for these grants. A repository idea seems to fit very well with the ultimate goal of these grants as cited here:    
+*The Utah Department of Natural Resources, Division of Forestry, Fire & State Lands requests proposals for research projects that will assist the Division in becoming better informed stewards of Great Salt Lake. It is the intent of the Division to gain a better understanding of the lake system which leads to informed decision making regarding long-term management of this important ecosystem.*
+
+#### 6. WaM-DaM 2.0: Improved Design for Complex Water Management Models 
 To solicit WaM-DaM as a community standard, WaM-DaM should be further tested with very complex and large water management models like the Colorado Water Management and Allocation Model (RiverWare) (Zagona et al., 2001), the California Hydro-Economic Model (HOBBES) (Jenkins et al., 2004) and the HydroBase for the State of Colorado water management data which contains several gigabytes of surface, groundwater, water infrastructure, and water rights among others. HydroBase contains over two hundred tables and can serve as a comprehensive testing example for WaM-DaM 2.0 (Malers et al.)
 
-Further developments and refinement to WaM-DaM needs engagement from the larger water resources community that is involved in the fields of systems analysis and hydroinformatics. This community is mostly represented at the Environmental & Water Resources Institute <a href="http://www.asce.org/environmental-and-water-resources-engineering/environmental-and-water-resources-institute/" target="_blank">(EWRI)</a> of the American Society of Civil Engineers, the Consortium of Universities for the Advancement of the Hydrologic Science Inc., <a href="https://www.cuahsi.org/" target="_blank">(CUAHSI)</a>, and the International Environmental Modelling & Software Society <a href="http://www.iemss.org/society/" target="_blank">(iEMSs)</a>
+Further developments and refinement to WaM-DaM needs the engagement from the larger water resources community that is involved in the fields of systems analysis and hydroinformatics. This community is mostly represented at the Environmental & Water Resources Institute <a href="http://www.asce.org/environmental-and-water-resources-engineering/environmental-and-water-resources-institute/" target="_blank">(EWRI)</a> of the American Society of Civil Engineers, the Consortium of Universities for the Advancement of the Hydrologic Science Inc., <a href="https://www.cuahsi.org/" target="_blank">(CUAHSI)</a>, and the International Environmental Modelling & Software Society <a href="http://www.iemss.org/society/" target="_blank">(iEMSs)</a>
 
 We invite these communities of scientists and users to engage in further testing to WaM-DaM and provide feedback to improve it. WaM-DaM can serve as a first step towards a standard to organize and communicate systems analysis water management data.

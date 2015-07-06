@@ -39,3 +39,10 @@ to allow virtual discretizing of the same link to follow geo-referenced represen
 WaM-DaM preserves the native vocabularies and their categories for Object Types and Attributes. The <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeObjectCategory.html" target="_blank"> Native Objetc Type Categories</a> track in .....
 The <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeAttributeCategory.html" target="_blank">Native Attributes Category</a> table tracks ......
 
+
+##### NativeObjectCategory
+ <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeObjectCategory.html" target="_blank">Native Object Category </a> organizes objects into hierarchal categories in their original data source like supply and demand categories that group objects	
+
+
+##### NativeAttributeCategory
+ <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeAttributeCategory.html" target="_blank">Native Attribute Category</a> orgnaizes native attributes into hierarchal categories in their original data source like hydropower category which groups all attributes that belong to hydropower	
