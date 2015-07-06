@@ -13,7 +13,7 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM.sqlite
 
 4. Queries 
-i.  Check out the WEAP data structure 
-ii. Available data to expand the Lower Bear River Model 
-iii.Identify missing data to expand  the WEAP model 
-iv. Discover available data for a WEAP model in the Tuscaloosa Region
+i.  Check out the WEAP data structure    
+ii. Available data to expand the Lower Bear River Model     
+iii.Identify missing data to expand  the WEAP model     
+iv. Discover available data for a WEAP model in the Tuscaloosa Region    
