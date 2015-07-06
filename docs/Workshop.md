@@ -10,6 +10,12 @@ https://www.mozilla.org/en-US/firefox/new/
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 3. Download the Pre-populated WaMDaM instance here 
+https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM.sqlite
 
+4. Queries     
+i.  Check out the WEAP data structure    
+ii. Available data to expand the Lower Bear River Model     
+iii.Identify missing data to expand  the WEAP model     
+iv. Discover available data for a WEAP model in the Tuscaloosa Region    
 
-
+https://github.com/amabdallah/WaM-DaM/tree/master/Files/WorkshopQuries
