@@ -13,7 +13,7 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM.sqlite
 
 4. Queries     
-i.  Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql) 
+i.  Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
 This query shows the data structure of Object Types and their Attributes 
 for Water Evaluation and Assessment (WEAP) model.    
 Users can see the Objects, their topology, and their Attributes that WEAP uses 
