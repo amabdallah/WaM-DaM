@@ -19,7 +19,7 @@ Then they can choose which ones to import to their model
 -- Select the available Object Types that match with what WEAP is looking for.
 -- Controlled vocabularies of Object Types is the mediator between WEAP and the other sources semantics 
 
-SELECT  DISTINCT "ObjectTypes"."NativeObjectName","CommonObjectType",
+SELECT  DISTINCT "CommonObjectType",
 -- Count the number of instances that are available for each Object Type
 COUNT(DISTINCT "Instances"."InstanceName") AS "#Of Instances",
 -- Count the number of attributes that are available for each Object type 
@@ -88,7 +88,7 @@ ON "CommonObjectTypes"."CommonObjectTypeID"="ObjectTypes"."CommonObjectTypeID"
 WHERE "DataStructureName"='WEAP') OR 
 
 -- Include the WaterBody and Streams Object Types 
-"CommonObjectType"='Water Body' OR "CommonObjectType"='Stream')
+ "CommonObjectType"='Stream')
 
 
 GROUP BY
