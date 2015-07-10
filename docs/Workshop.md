@@ -1,4 +1,9 @@
-# WaM-DaM Workshop 
+# WaM-DaM Workshop: Discover what water management data is available to run a WEAP model
+
+This 20-minute workshop will introduce the Water Management Data Model (WaM-DaM) and demonstrate some WaM-DaM capabilities to search and discover water management data for use in water resources modeling. 
+
+You may access the [workshop handout]() [7 pages] for the detailed instrucutions  
+
 
 We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Mozzile FireFox Manager to visualize and interact with the WaM-DaM database. I explain the how to set up a SQLite database in this Youtube demonstration video. if you follow the instructions, the estimated time to setup a SQLite instance and create WaM-DaM blank instance is less than 15 miutes.
 
