@@ -68,8 +68,8 @@ WHERE
 -- this Boundary is for the parts of the upper Bear River Watershed 
 ("Instances"."Longitude">='-112.4424' 
 AND "Instances"."Longitude"<='-110.65833'
-AND "Instances"."Latitude">='40.83833'
-AND "Instances"."Latitude"<='42.84333') AND 
+AND "Instances"."Latitude">='42.00'
+AND "Instances"."Latitude"<='42.700') AND
 
 
 -- Select the list of Object Types that only WEAP requires 
@@ -87,7 +87,7 @@ ON "CommonObjectTypes"."CommonObjectTypeID"="ObjectTypes"."CommonObjectTypeID"
 
 WHERE "DataStructureName"='WEAP') OR 
 
--- Include the WaterBody and Streams Object Types 
+-- Include the  Streams Object Types 
  "CommonObjectType"='Stream')
 
 
