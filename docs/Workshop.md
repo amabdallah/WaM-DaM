@@ -1,4 +1,5 @@
-# WaM-DaM Workshop: Discover what water management data is available to run a WEAP model
+# WaM-DaM Workshop    
+## Discover what water management data is available to run a WEAP model
 
 This 20-minute workshop will introduce the Water Management Data Model (WaM-DaM) and demonstrate some WaM-DaM capabilities to search and discover water management data for use in water resources modeling. 
 
