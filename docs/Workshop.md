@@ -8,15 +8,17 @@ You may access the [workshop handout](https://github.com/amabdallah/WaM-DaM/raw/
 
 We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Mozzile FireFox Manager to visualize and interact with the WaM-DaM database. I explain the how to set up a SQLite database in this Youtube demonstration video. if you follow the instructions, the estimated time to setup a SQLite instance and create WaM-DaM blank instance is less than 15 miutes.
 
-## Software needed:
+## Software and files needed:
 1. Download Mozilla FireFox web browser
 https://www.mozilla.org/en-US/firefox/new/
 
 2.	SQLite Manager Add-on to Mozilla FireFox
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
-3. Download the Pre-populated WaMDaM instance here and unzipp the folder.
-https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM.rar
+3. Download one of these Pre-populated WaM-DaM SQLite database instances at your convenience and save it to a place that you can later navigate to like the Desktop
+•	WaMDaM.sqlite [67 MB] – best if you have a fast internet connection https://goo.gl/KPEO2Z
+•	WaMDaMzip.zip [30 MB] –requires WINZIP to unzip it https://goo.gl/ZRBTSC
+•	WaMDaM.rar [8 MB] – requires WINRAR to unzip it https://goo.gl/KMVhXs
 
 ###4. Queries     
 #####i. Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
