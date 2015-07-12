@@ -15,10 +15,10 @@ https://www.mozilla.org/en-US/firefox/new/
 2.	SQLite Manager Add-on to Mozilla FireFox
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
-3. Download one of these Pre-populated WaM-DaM SQLite database instances at your convenience and save it to a place that you can later navigate to like the Desktop
-•	WaMDaM.sqlite [67 MB] – best if you have a fast internet connection https://goo.gl/KPEO2Z
-•	WaMDaMzip.zip [30 MB] –requires WINZIP to unzip it https://goo.gl/ZRBTSC
-•	WaMDaM.rar [8 MB] – requires WINRAR to unzip it https://goo.gl/KMVhXs
+3. Download one of these Pre-populated WaM-DaM SQLite database instances at your convenience and save it to a place that you can later navigate to like the Desktop    
+•	WaMDaM.sqlite [67 MB] – best if you have a fast internet connection https://goo.gl/KPEO2Z   
+•	WaMDaMzip.zip [30 MB] –requires WINZIP to unzip it https://goo.gl/ZRBTSC   
+•	WaMDaM.rar [8 MB] – requires WINRAR to unzip it https://goo.gl/KMVhXs   
 
 ###4. Queries     
 #####i. Check out the WEAP data structure using this [query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WorkshopQuries2/01CheckWEAPdataStructure.sql)      
