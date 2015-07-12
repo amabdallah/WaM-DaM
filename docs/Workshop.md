@@ -18,7 +18,8 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 ###4. Queries     
 #####A.	What are the required attributes for the WEAP model? [query](https://goo.gl/4L57yI )      
-This query shows the data structure of Object Types and their Attributes for Water Evaluation and Assessment (WEAP) model.  
+This query shows the data structure of Object Types and their Attributes for Water Evaluation and Assessment 
+<a href="http://www.weap21.org/index.asp" target="_blank">(WEAP)</a>.  
 Users can see the Objects, their topology, and their Attributes that WEAP uses to model water systems. These Object and Attributes are used as input to queries to search and discover water management data in other data structures.      
 
 This query summarizes the required data that users need to find to populate a specific instance of a WEAP model. For example, users need to look for data values of attributes like buffer coefficient that describe reservoirs and cost values for return flows in their model. WaM-DaM stores these objects and their attributes and associates them with the WEAP model.   
