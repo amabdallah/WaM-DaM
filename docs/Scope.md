@@ -14,3 +14,18 @@ So distributed water management data are out of the scope of WaM-DaM because WaM
                         ![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/ExampleNetworksFinal.jpg)
  
 Figure 1: Systems analysis schematic for a water supply network. Shapes and colors are used to distinguish different types of nodes. Links’ types are not shown here for simplicity.
+
+
+##### Referneces:
+Jackson, S.R., 2014. RiverML: A Harmonized Transfer Language for River Hydraulic Models, Civil, Architectural, and Environmental Engineering. University of Texas at Austin.  
+
+Kim, D., Muste, M., Merwade, V., 2015. A GIS-based relational data model for multi-dimensional representation of river hydrodynamics and morphodynamics. Environmental Modelling & Software 65(0) 79-93.  
+
+Lai, W., Steinke, R.C., Ogden, F.L., Douglas, C., Miller, S.N., Zhang, Y., 2013. ADHydro: A Large-scale High-resolution Multi-physics Distributed Water Resources Model for Water Resources Simulations in a Parallel Computing Environment, AGU Fall Meetings: San Francisco, USA.  
+
+Loucks, D.P., Van Beek, E., Stedinger, J.R., Dijkman, J.P., Villars, M.T., 2005. Water resources systems planning and management: an introduction to methods, models and applications. Paris: UNESCO.   
+
+Maidment, D.R., 2002. Arc hydro : GIS for water resources. ESRI Press, Redlands, Calif.  
+Loucks, D.P., Van Beek, E., Stedinger, J.R., Dijkman, J.P., Villars, M.T., 2005. Water resources systems planning and management: an introduction to methods, models and applications. Paris: UNESCO.
+
+Olivera, F., Valenzuela, M., Srinivasan, R., Choi, J., Cho, H., Koka, S., Agrawal, A., 2006. ARCGIS-SWAT: A Geodata Model And GIS Interface For SWAT. JAWRA Journal of the American Water Resources Association 42(2) 295-309.   
