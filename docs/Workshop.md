@@ -11,10 +11,13 @@ https://www.mozilla.org/en-US/firefox/new/
 2.	SQLite Manager Add-on to Mozilla Firefox [Caution: It does not work to install the Add-On from Google Chrome] 	
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
-3. Download one of these pre-populated WaM-DaM SQLite database instances at your convenience and save it to a place that you can later navigate to, like the Desktop    
+3. Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
 •	[WaMDaM.sqlite](https://goo.gl/KPEO2Z  ) [67 MB] – best if you have a fast internet connection  
 •	[WaMDaMzip.zip](https://goo.gl/ZRBTSC) [30 MB] –requires WINZIP to unzip it   
 •	[WaMDaM.rar](https://goo.gl/KMVhXs ) [8 MB] – requires WINRAR to unzip it   
+
+![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaM-DaM_workflowExample.JPG)
+
 
 ###4. Queries     
 #####A.	What are the required attributes for the WEAP model? [query](https://goo.gl/4L57yI )      
