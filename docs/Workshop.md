@@ -1,14 +1,14 @@
 # WaM-DaM Workshop    
 ## Discover what water management data is available to run a WEAP model
 
-This 20-minute workshop will introduce the Water Management Data Model (WaM-DaM) and demonstrate some WaM-DaM capabilities to search and discover water management data for use in water resources modeling. You may access the [workshop handout](https://github.com/amabdallah/WaM-DaM/raw/master/Files/WaM-DaM_workshop.pdf) [7 pages] for the detailed instrucutions  
-We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Mozzile FireFox Manager to interact with the WaM-DaM database. I explain the how to set up a SQLite database in this Youtube demonstration video. 
+This 20-minute workshop will introduce the Water Management Data Model (WaM-DaM) and demonstrate some WaM-DaM capabilities to search and discover water management data for use in water resources modeling. You may access the [workshop handout](https://github.com/amabdallah/WaM-DaM/raw/master/Files/WaM-DaM_workshop.pdf) [7 pages] for the detailed instructions  
+We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Mozilla Firefox Manager to interact with the WaM-DaM database. I explain the how to set up a SQLite database in this YouTube demonstration video. 
 
 ## Software and files needed to complete the activity
-1. Download Mozilla FireFox web browser
+1. Download Mozilla Firefox web browser
 https://www.mozilla.org/en-US/firefox/new/
 
-2.	SQLite Manager Add-on to Mozilla FireFox [Caution: It does not work to install the Add-On from Google Chrome] 	
+2.	SQLite Manager Add-on to Mozilla Firefox [Caution: It does not work to install the Add-On from Google Chrome] 	
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 3. Download one of these pre-populated WaM-DaM SQLite database instances at your convenience and save it to a place that you can later navigate to, like the Desktop    
@@ -24,12 +24,11 @@ Users can see the Objects, their topology, and their Attributes that WEAP uses t
 
 This query summarizes the required data that users need to find to populate a specific instance of a WEAP model. For example, users need to look for data values of attributes like buffer coefficient that describe reservoirs and cost values for return flows in their model. WaM-DaM stores these objects and their attributes and associates them with the WEAP model.   
  
-#####B. Discover available data to expand the Lower Bear River Model to the entire Basin  [query](https://goo.gl/c0hkp7)      
-The search is based on a boundary of coordinates provided in the SQL script for instances in the upper Bear River Watershed . Users need to only change these coordinates in the provided SQL script to discover data in other regions. 
+#####B. Discover available data to expand the Lower Bear River Model to the entire Basin [query](https://goo.gl/c0hkp7)      
+The search is based on a boundary of coordinates provided in the SQL script for instances in the upper Bear River Basin . Users need to only change these coordinates in the provided SQL script to discover data in other regions. 
 
  ![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/ExpandBear.JPG)
 
 #####C. Discover available data for a WEAP model in the Tuscaloosa Region, AL [query](https://goo.gl/BCPZoq)           
-This query discovers the available data to to build a model in the Water and Evaluation 
-and Assessment (WEAP) system for the Tuscaloosa region, Alabama. The search is based on a boundary of coordinates for instances in the Tuscaloosa region, Alabama     
+This query discovers the available data to build a model in the Water and Evaluation and Assessment (WEAP) system for the Tuscaloosa region, Alabama. The search is based on a boundary of coordinates for instances in the Tuscaloosa region, Alabama     
 
