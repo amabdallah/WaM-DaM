@@ -30,8 +30,14 @@ Here are the SQL scripts that you can use to create a blank WaM-DaM database. Th
 * [MySQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MySQL.sql)
 * [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
 
-#### Documentation of WaM-DaM
-Here we document the architecture of WaM-DaM design to help you make sense of its tables and how they're connected. WaM-DaM has 48 interrelated tables that are organized into four groups: i) Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, ii) Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and iv) Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
+#### Documentation  
+WaM-DaM is a set of related database tables that are organized into four groups handling different aspects of water management data:  
+* Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, 
+* Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, 
+* Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and 
+* Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
+
+![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaM-DaM_Conceptual.jpg)
 
 Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Documentation.md) abou WaM-DaM architecture
 
