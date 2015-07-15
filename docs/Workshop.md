@@ -2,7 +2,7 @@
 ## Discover what water management data is available to run a WEAP model
 
 This 20-minute workshop will introduce the Water Management Data Model (WaM-DaM) and demonstrate some WaM-DaM capabilities to search and discover water management data for use in water resources modeling. You may access the [workshop handout](https://github.com/amabdallah/WaM-DaM/raw/master/Files/WaM-DaM_workshop.pdf) [PDF: 7 pages] for the detailed instructions  
-We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Mozilla Firefox Manager to interact with the WaM-DaM database. I explain the how to set up a SQLite database in this YouTube demonstration video. 
+We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Mozilla Firefox Manager to interact with the WaM-DaM database.
 
 ## Software and files needed to complete the activity
 1. Download Mozilla Firefox web browser
