@@ -63,7 +63,7 @@ This material is based upon work supported by the National Science Foundation Gr
 Check out more info about the project and [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development
 
 
-LICENSING
+## LICENSING
 
 Materials in this GitHub repository are disturbed under a BSD 3-Clause license (see [LICENSE](https://github.com/amabdallah/WaM-DaM/blob/master/LICENSE)). For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.
 
