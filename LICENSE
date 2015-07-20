@@ -1,8 +1,7 @@
-Copyright (c) {2015}, {Utah State University and WaMDaM development team}
-All rights reserved.
+LICENSING
 
-Please cite this WaM-DaM work as:
-Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthesize Water Management Data. In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2
+Copyright (c) 2015, Utah State University and WaMDaM development team: Adel M. Abdallah and David E. Rosenberg
+All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -14,7 +13,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of the WaM-DaM nor its contributors may be used to endorse or promote products derived from
+* Neither the name of the Utah State University, WaM-DaM, nor its contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
