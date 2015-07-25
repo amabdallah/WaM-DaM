@@ -72,6 +72,6 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 
 
 ## AUTHOR and CONTACT
-
-    For more info, please free to email <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> david.rosenberg@usu.edu
+For more info, please free to email <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu 
+<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> david.rosenberg@usu.edu
 
