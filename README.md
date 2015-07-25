@@ -64,18 +64,14 @@ Check out more info about the project and [Rationale and Context](https://github
 
 
 ## LICENSING
-    Materials in this GitHub repository are disturbed under a BSD 3-Clause license (see           [LICENSE](https://github.com/amabdallah/WaM-DaM/blob/master/LICENSE.md)). 
-    For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
+Materials in this GitHub repository are disturbed under a BSD 3-Clause license (see           [LICENSE](https://github.com/amabdallah/WaM-DaM/blob/master/LICENSE.md)). 
+For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
 
 
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
 
 
-For more info, please free to email <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at:
+## AUTHOR and CONTACT
 
-amabdallah@aggiemail.usu.edu
-
-<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a>
-
-david.rosenberg@usu.edu
+    For more info, please free to email <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> david.rosenberg@usu.edu
 
