@@ -64,10 +64,7 @@ Check out more info about the project and [Rationale and Context](https://github
 
 
 ## LICENSING
-    e. See additional directions in the file GenerateAlternatives-readme.txt for use of the stratgibbs function.
-
-Materials in this GitHub repository are disturbed under a BSD 3-Clause license (see [LICENSE](https://github.com/amabdallah/WaM-DaM/blob/master/LICENSE.md)). For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
-
+   Materials in this GitHub repository are disturbed under a BSD 3-Clause license (see             [LICENSE](https://github.com/amabdallah/WaM-DaM/blob/master/LICENSE.md)). For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
 
 
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
