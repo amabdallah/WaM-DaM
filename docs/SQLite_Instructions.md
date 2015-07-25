@@ -17,3 +17,9 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 
 4. Matlab. You need to install the Database Toolbox which doesnt come with the standartd Matlab software. You also can use Python, R, or any scripting language to load data to your database. 
+
+
+Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
+•	[WaMDaM.sqlite](https://goo.gl/KPEO2Z  ) [67 MB] – best if you have a fast internet connection  
+•	[WaMDaMzip.zip](https://goo.gl/ZRBTSC) [30 MB] –requires WINZIP to unzip it   
+•	[WaMDaM.rar](https://goo.gl/KMVhXs ) [8 MB] – requires WINRAR to unzip it   
