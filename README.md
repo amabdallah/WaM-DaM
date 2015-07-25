@@ -43,7 +43,7 @@ Check out this interactive WaM-DaM logical data model <a href="http://amabdallah
 
 #### Use Cases (Draft)
 In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. In this section we offer a simple use case as an example that you can follow to use WaM-DaM as a repository for data. We hope that you can follow the logic of the use case to build a WaM-DaM database for your own data. This Use Cases page provide instrucutions that you can follow.  
-Matlab Script to load data to WaM-DaM SQLite 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Use_Cases.md" target="_blank">Use cases</a>     
 
 
 #### Publications:
