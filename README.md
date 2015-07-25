@@ -10,7 +10,6 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 
 The repository is organized to direct you to i) understand WaM-DaM design, demonstrate how WaM-DaM works, and provide you with instructions on how to use WaM-DaM 
 
-
 #### Who can use WaM-DaM?
 You can use WaM-DaM if:   
 1.	Your data are for nodes (points) and/or links (connections between nodes).    
@@ -45,8 +44,7 @@ Check out this interactive WaM-DaM logical data model <a href="http://amabdallah
 In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. In this section we offer a simple use case as an example that you can follow to use WaM-DaM as a repository for data. We hope that you can follow the logic of the use case to build a WaM-DaM database for your own data. This Use Cases page provide instrucutions that you can follow.  
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Use_Cases.md" target="_blank">Use cases</a>     
 
-
-#### Publications:
+#### Publications
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewed conference paper:
 <a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> 
 
@@ -54,7 +52,7 @@ A preliminary WaM-DaM design was published in 2014 as a peer-reviewed conference
 Please cite WaM-DaM as:
 Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthesize Water Management Data. In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2
 
-#### Presentations:
+#### Presentations
 Check out the professional and conference [presentations](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Presentations.md) along the way of WaM-DaM development 
 
 
