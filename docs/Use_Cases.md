@@ -1,16 +1,14 @@
 #### Use Cases to Demonstrate the Capabilities and Benefits of WaM-DaM
 
+We load disperate water manageemnt data to a WaM-DaM SQLite empty database. Then we present six uses cases that demonstrate how WaM-DaM can help users of scentistis and practioners to search for data for their models, keep track of important metadata, and compare similarites and differences across their data.
 
+![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaM-DaM_workflowExample.JPG)
 
-[here](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) 
+First, we compiled all the data into CSV files under four Excel workbooks where each workbook has spreadsheets that replicate WaM-DaM tables. Then, I wrote a Matlab script to parse and then load data to the WaM-DaM SQLite database. You can use this generic [Matlab script](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) to load your data to an empty SQLite WaM-DaM database. You can use the populated SQLite database along with the  <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> instrcutions </a> on how to set it up to test the use cases below. 
 
-Populated SQLite WaM-DaM database [here]()
+  
 
-
-
-
-
-1.	What are the water system infrastructure components?  
+1. What are the available data structures, networks and scenarios, and what are their spatial reference?    
 [Query]()[Result]()  
 2.	What is the data value(s) of an attribute of a system component?    
 2.1 Binary  
