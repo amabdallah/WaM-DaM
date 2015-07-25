@@ -7,46 +7,69 @@ We load disperate water manageemnt data to a WaM-DaM SQLite empty database. Then
 First, we compiled all the data into CSV files under four Excel workbooks where each workbook has spreadsheets that replicate WaM-DaM tables. Then, I wrote a Matlab script to parse and then load data to the WaM-DaM SQLite database. You can use this generic [Matlab script](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) to load your data to an empty SQLite WaM-DaM database. You can use the populated SQLite database along with the  <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> instrcutions </a> on how to set it up to test the use cases below. 
 
   
-
 1. What are the available data structures, networks and scenarios, and what are their spatial reference?    
 [Query]()[Result]()  
-2.	What is the data value(s) of an attribute of a system component?    
-2.1 Binary  
-[Query]()[Result]()   
-2.2 Parameter  
+
+2.	What are the available water system infrastructure components to run a model? 
 [Query]()[Result]()  
-2.3 Seasonal Parameter 
+
+3.	What is the data value(s) of an attribute of a system component?
+[Query]()[Result]()  
+
+3.1 Binarys
+[Query]()[Result]()  
+
+3.2 Parameters  
+[Query]()[Result]() 
+
+3.3 Seasonal Parameters 
+[Query]()[Result]()  
+
+3.4 Text Free  
+[Query]()[Result]()  
+
+3.5 Text Controlled    
 [Query]()[Result]()    
-2.4 Text Free  
+
+3.6 File Based  
 [Query]()[Result]()  
-2.5 Text Controlled    
+
+3.7 Rules  
 [Query]()[Result]()    
-2.6 File Based  
+
+3.8 time Series    
 [Query]()[Result]()  
-2.7 Rules  
-[Query]()[Result]()    
-2.8 time Series    
-[Query]()[Result]()   
-2.9 Multi-Column Array    
+
+3.81 TimeSeriesValues
 [Query]()[Result]()  
-3.	Where the data came from for an attribute, who reported them, and using what method?  
+
+3.9 Multi-Column Array    
 [Query]()[Result]()  
-4.	What are the available networks and scenarios, and what are their domain, spatial reference, and vertical datum?  
+  
+4.	Where the data came from for an attribute, who reported them, and to what organization the person belongs to, and using what method?  
 [Query]()[Result]()  
-5.	How these infrastructure components are physically connected to each other in a scenario? list the start and end nodes and directions of flow 
+
+5.	How a node component is physically connected to others in a scenario? What are the directions of flow? 
 [Query]()[Result]()  
+
 5.1 Start and End nodes of Link Instances 
 [Query]()[Result]()  
+
 5.2 Link Instances that start at a node instance  
 [Query]()[Result]()  
+
 5.3 Link Instances that end at a node instances 
 [Query]()[Result]()  
-6.	What are the data and metadata similarities and differences between two scenarios of a network for a model (e.g., WEAP)?
+
+6. What are the differences between two scenarios of a network in a model? 
 [Query]()[Result]()  
-5.1 Differences in Topology 
+
+6.1 Differences in Topology 
 [Query]()[Result]()  
-5.2 Differences in Metadata
+
+6.2 Differences in Metadata
 [Query]()[Result]()  
-5.3 Differences in Data Values 
+
+6.3 Differences in Data Values 
 [Query]()[Result]()  
 
