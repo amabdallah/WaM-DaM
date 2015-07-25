@@ -46,7 +46,7 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 3.9 Multi-Column Array    
 [Query]()[Result]()    
   
-4. Where the data came from for an attribute, who reported them, and to what organization the person belongs to, and using what method?      
+4.0 Where the data came from for an attribute, who reported them, and to what organization the person belongs to, and using what method?      
 [Query]()[Result]()     
 
 5.0 How a node component is physically connected to others in a scenario? What are the directions of flow? 
