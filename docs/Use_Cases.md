@@ -49,17 +49,8 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 4.0 Where the data came from for an attribute, who reported them, and to what organization the person belongs to, and using what method?      
 [Query]()[Result]()     
 
-5.0 How a node component is physically connected to others in a scenario? What are the directions of flow? 
+5.0 What is the connectivity matrix (start and end nodes of links) of a scenario for a network?   
 [Query]()[Result]()     
-
-5.1 Start and End nodes of Link Instances 
-[Query]()[Result]()  
-
-5.2 Link Instances that start at a node instance  
-[Query]()[Result]()  
-
-5.3 Link Instances that end at a node instances 
-[Query]()[Result]()  
 
 6. What are the differences between two scenarios of a network in a model? 
 [Query]()[Result]()  
