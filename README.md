@@ -72,7 +72,7 @@ For more info, please free to email
 <a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Adel M. Abdallah" /></a> <a title="Adel M. Abdallah" href="http://www.mendeley.com/profiles/adel-abdallah2/"><img 
 src="http://www.veryicon.com/icon/72/System/Flatwoken/Apps%20mendeley.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en"><img 
 src="http://libraryds.grenoble-em.com/fr/PublishingImages/Logos/Logo_GoogleScholar.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://www.linkedin.com/in/adelmabdallah"><img 
-src="http://png-1.findicons.com/files/icons/1979/social/50/linkedin.pngg" alt="Adel M. Abdallah" /></a>
+src="https://png-1.findicons.com/files/icons/1979/social/50/linkedin.pngg" alt="Adel M. Abdallah" /></a>
 
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> at: david.rosenberg@usu.edu
 
