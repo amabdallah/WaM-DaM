@@ -50,8 +50,7 @@ Check out more info about the project and [Rationale and Context](https://github
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewed conference paper:
 <a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> 
 
-Please cite WaM-DaM as:
-Abdallah, A., Rosenberg, D., 2014. WaM-DaM: A Data Model to Organize and Synthesize Water Management Data. In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), Proceedings of the 7th International Congress on Environmental Modelling and Software, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2
+You can download the EndNote citation [file](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM_AbdallahRosenberg.enw)
 
 #### Presentations
 Check out the professional and conference [presentations](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Presentations.md) along the way of WaM-DaM development 
@@ -66,7 +65,17 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 
 ## AUTHOR and CONTACT
 For more info, please free to email    
-<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu       
+<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu 
+
+http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en
+http://www.mendeley.com/profiles/adel-abdallah2/
+
+<a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Adel M. Abdallah" /></a>
+
+<span id='badgeCont119693' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont119693&mashlet=badge&showTitle=false&className=a&rid=C-8020-2013'></script></span>
+
+http://www.linkedin.com/in/adelmabdallah/
+
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> at: david.rosenberg@usu.edu
 
 ## Sponsors and Credit 
