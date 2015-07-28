@@ -72,11 +72,10 @@ http://www.mendeley.com/profiles/adel-abdallah2/
 
 <a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Adel M. Abdallah" /></a>
 
-<span id='badgeCont119693' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont119693&mashlet=badge&showTitle=false&className=a&rid=C-8020-2013'></script></span>
+<span id='badgeCont119693' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont119693&mashlet=badge&showTitle=false&className=a&rid=C-8020-2013'></script></span>    
 
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>    
-
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/adelmabdallah" data-format="click"></script> 
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/adelmabdallah/" data-format="hover"></script>   
 
 <span id='badgeCont119693' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont119693&mashlet=badge&showTitle=false&className=a&rid=C-8020-2013'></script></span>
 
