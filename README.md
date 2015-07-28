@@ -67,20 +67,12 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 For more info, please free to email    
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu 
 
-http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en
+http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en   
 http://www.mendeley.com/profiles/adel-abdallah2/
 
 <a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Adel M. Abdallah" /></a>
 
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/adelmabdallah" data-format="click" data-related="false"></script>
 
-<span id='badgeCont11969322' style='width:126px'><script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/adelmabdallah/" data-format="hover"></script></span>   
-
-<span id='badgeCont119693' style='width:126px'><script src='http://labs.researcherid.com/mashlets?el=badgeCont119693&mashlet=badge&showTitle=false&className=a&rid=C-8020-2013'></script></span>   
-
-<iframe src="http://www.w3schools.com"></iframe>   
  
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> at: david.rosenberg@usu.edu
 
