@@ -72,7 +72,7 @@ http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en
 <a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Adel M. Abdallah" /></a>
 
 <a title="Adel M. Abdallah" href="http://www.mendeley.com/profiles/adel-abdallah2/"><img 
-src=" http://prod-stack-20150109-s3bucketdrupal-1q2lugja61lfq.s3.amazonaws.com/thumbnails/video/youtube-Gv6_HuCYExM_0.jpg" alt="Adel M. Abdallah" /></a>
+src="https://upload.wikimedia.org/wikipedia/commons/8/81/Mendeley_Logo_Vertical.png" alt="Adel M. Abdallah" /></a>
 
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> at: david.rosenberg@usu.edu
 
