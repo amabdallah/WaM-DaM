@@ -14,7 +14,8 @@ The repository is organized to direct you to i) understand WaM-DaM design, demon
 You can use WaM-DaM if:   
 1.	Your data are for nodes (points) and/or links (connections between nodes).    
 2.	You have one or more data types such as binary, numeric parameters, seasonal, parameters, file-based, rules, time series, or multi-column arrays.   
-3.	You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.  
+3.	You want to manage and organize all of your data for different models in a central database 
+4.	You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md) of WaM-DaM data.  
 
 #### Getting Started with WaM-DaM
  
