@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><Db flnm="WaM-DaM1.0" nm="WaM-DaM1.0" ver="1.3.4">
+<?xml version="1.0" encoding="UTF-8"?><Db flnm="WaMDaMAugust2015" nm="WaM-DaM1.0" ver="1.3.4">
   <VerLbl/>
   <VerNotes/>
   <DefTblOpts/>
-  <DocFolder>C:\Users\Adel\Desktop\dbwrench</DocFolder>
+  <DocFolder>C:\Users\AdelMabdallah\Desktop</DocFolder>
   <Sch Cm="" nm="Core">
     <Tbl UsSo="1" nm="Attributes">
       <Cm>An attribute is a specific quantitative or qualitative characteristic of an object type and allows users to describe the object properties that are needed to model water system components in user models. </Cm>
@@ -139,6 +139,75 @@
       <UniqueConstraints/>
       <SchTrHis/>
     </Tbl>
+    <Tbl UsSo="1" nm="Mapping">
+      <Cm>It is the central table in WaM-DaM which maps out data values to their attributes, metadata, and organizing structure (i.e., MasterNetworks, Scenarios, ObjectTypes, Instances, and DataStructure). Therefore the MetadataMapping table is often used to query data from WaM-DaM database. </Cm>
+      <TblOpts>WITHOUT OIDS</TblOpts>
+      <Pk ClNs="MappingID" nm="pkMapping"/>
+      <Cl au="1" df="nextval('&quot;Core&quot;.&quot;Metadata_MetadataID_seq&quot;'::regclass)" nm="MappingID" nu="0">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Primary key identifier</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="ObjectAttributeID" nu="0">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreign key identifier for an ObjectAttribute</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="InstanceID" nu="0">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreign key identifier for an Instance</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="InputOrOutput" nu="1">
+        <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
+        <Cm>input or output text that indicates whether the attribute values are used as input to a model or they are output of a model. Leave it blank if the data values are not relevant to modeling</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="SourceID" nu="1">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreign key identifier for a Source</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="MethodID" nu="1">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreign key identifier for a Method</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="AttributeTypeCodeCV" nu="1">
+        <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
+        <Cm>CV term for an Attribute Type Code like T (time series), P (parameter), MC (MultiColumn Array) </Cm>
+      </Cl>
+      <Cl au="0" df="" nm="DataStorageID" nu="1">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreign key identifier for a Data Storage record</Cm>
+      </Cl>
+      <Fk deAc="3" nm="fk_MetadataMapping_AttributeTypeCode" prLkCl="Term" upAc="3">
+        <PrTb mn="0" nm="AttributeTypeCode" oe="1" sch="CVs" zr="1"/>
+        <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="AttributeTypeCodeCV" prCl="Term"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_MetadataMapping_DataStorage" prLkCl="DataStorageID" upAc="3">
+        <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="1"/>
+        <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_MetadataMapping_Instances" prLkCl="InstanceID" upAc="3">
+        <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
+        <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="InstanceID" prCl="InstanceID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_MetadataMapping_Methods" prLkCl="MethodID" upAc="3">
+        <PrTb mn="0" nm="Methods" oe="1" sch="Metadata" zr="1"/>
+        <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="MethodID" prCl="MethodID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_MetadataMapping_ObjectAttributes" prLkCl="ObjectAttributeID" upAc="3">
+        <PrTb mn="0" nm="ObjectAttributes" oe="1" sch="Core" zr="0"/>
+        <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="ObjectAttributeID" prCl="ObjectAttributeID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_MetadataMapping_Sources" prLkCl="SourceID" upAc="3">
+        <PrTb mn="0" nm="Sources" oe="1" sch="Metadata" zr="1"/>
+        <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="SourceID" prCl="SourceID"/>
+      </Fk>
+      <UniqueConstraints/>
+      <SchTrHis/>
+    </Tbl>
     <Tbl UsSo="1" nm="MasterNetworks">
       <Cm>A Master Network is a specific implementation of a Data Structure, its Instances, and data values within a spatial location (e.g., Bear River Watershed, Utah). Master Networks help researchers to organize and then search groups of Instances that belong to a Data Structure in space. For example, a Data Structure for a WEAP model can be used to create separate WEAP model for the Bear River and the Weber River watersheds in Utah.</Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
@@ -181,75 +250,6 @@
         <PrTb mn="0" nm="VerticalDatum" oe="1" sch="CVs" zr="1"/>
         <CdTb mn="1" nm="MasterNetworks" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="VerticalDatumCV" prCl="Term"/>
-      </Fk>
-      <UniqueConstraints/>
-      <SchTrHis/>
-    </Tbl>
-    <Tbl UsSo="1" nm="MetadataMapping">
-      <Cm>It is the central table in WaM-DaM which maps out data values to their attributes, metadata, and organizing structure (i.e., MasterNetworks, Scenarios, ObjectTypes, Instances, and DataStructure). Therefore the MetadataMapping table is often used to query data from WaM-DaM database. </Cm>
-      <TblOpts>WITHOUT OIDS</TblOpts>
-      <Pk ClNs="MetadataMappingID" nm="pkMetadataMapping"/>
-      <Cl au="1" df="nextval('&quot;Core&quot;.&quot;Metadata_MetadataID_seq&quot;'::regclass)" nm="MetadataMappingID" nu="0">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Primary key identifier</Cm>
-      </Cl>
-      <Cl au="0" df="" nm="ObjectAttributeID" nu="0">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreign key identifier for an ObjectAttribute</Cm>
-      </Cl>
-      <Cl au="0" df="" nm="InstanceID" nu="0">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreign key identifier for an Instance</Cm>
-      </Cl>
-      <Cl au="0" df="" nm="InputOrOutput" nu="1">
-        <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
-        <Cm>input or output text that indicates whether the attribute values are used as input to a model or they are output of a model. Leave it blank if the data values are not relevant to modeling</Cm>
-      </Cl>
-      <Cl au="0" df="" nm="SourceID" nu="1">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreign key identifier for a Source</Cm>
-      </Cl>
-      <Cl au="0" df="" nm="MethodID" nu="1">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreign key identifier for a Method</Cm>
-      </Cl>
-      <Cl au="0" df="" nm="AttributeTypeCodeCV" nu="1">
-        <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
-        <Cm>CV term for an Attribute Type Code like T (time series), P (parameter), MC (MultiColumn Array) </Cm>
-      </Cl>
-      <Cl au="0" df="" nm="DataStorageID" nu="1">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreign key identifier for a Data Storage record</Cm>
-      </Cl>
-      <Fk deAc="3" nm="fk_MetadataMapping_AttributeTypeCode" prLkCl="Term" upAc="3">
-        <PrTb mn="0" nm="AttributeTypeCode" oe="1" sch="CVs" zr="1"/>
-        <CdTb mn="1" nm="MetadataMapping" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="AttributeTypeCodeCV" prCl="Term"/>
-      </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_DataStorage" prLkCl="DataStorageID" upAc="3">
-        <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="1"/>
-        <CdTb mn="1" nm="MetadataMapping" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
-      </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_Instances" prLkCl="InstanceID" upAc="3">
-        <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
-        <CdTb mn="1" nm="MetadataMapping" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="InstanceID" prCl="InstanceID"/>
-      </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_Methods" prLkCl="MethodID" upAc="3">
-        <PrTb mn="0" nm="Methods" oe="1" sch="Metadata" zr="1"/>
-        <CdTb mn="1" nm="MetadataMapping" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="MethodID" prCl="MethodID"/>
-      </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_ObjectAttributes" prLkCl="ObjectAttributeID" upAc="3">
-        <PrTb mn="0" nm="ObjectAttributes" oe="1" sch="Core" zr="0"/>
-        <CdTb mn="1" nm="MetadataMapping" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="ObjectAttributeID" prCl="ObjectAttributeID"/>
-      </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_Sources" prLkCl="SourceID" upAc="3">
-        <PrTb mn="0" nm="Sources" oe="1" sch="Metadata" zr="1"/>
-        <CdTb mn="1" nm="MetadataMapping" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="SourceID" prCl="SourceID"/>
       </Fk>
       <UniqueConstraints/>
       <SchTrHis/>
@@ -367,11 +367,11 @@
       <UniqueConstraints/>
       <SchTrHis/>
     </Tbl>
-    <Tbl UsSo="1" nm="SceanrioMetadata">
-      <Cm>The ScenarioMetadata is a bridge table that allows associating many MetadataMapping records with many scenarios. This table allows to map out the dublicate topology, metadata, and data between scenarios </Cm>
+    <Tbl UsSo="1" nm="ScenarioMapping">
+      <Cm>The ScenarioMapping is a bridge table that allows associating many MetadataMapping records with many scenarios. This table allows to map out the duplicate topology, metadata, and data between scenarios </Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
-      <Pk ClNs="SceanrioMetadataID" nm="pkSceanrioMetadata"/>
-      <Cl au="1" df="nextval('&quot;Core&quot;.&quot;SceanrioMetadata_SceanrioMetadataID_seq&quot;'::regclass)" nm="SceanrioMetadataID" nu="0">
+      <Pk ClNs="ScenarioMappingID" nm="pkScenarioMapping"/>
+      <Cl au="1" df="nextval('&quot;Core&quot;.&quot;SceanrioMetadata_SceanrioMetadataID_seq&quot;'::regclass)" nm="ScenarioMappingID" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
       </Cl>
@@ -379,18 +379,18 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a Scenario</Cm>
       </Cl>
-      <Cl au="0" df="" nm="MetadataMappingID" nu="0">
+      <Cl au="0" df="" nm="MappingID" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a MetadataMapping record</Cm>
       </Cl>
-      <Fk deAc="3" nm="fk_SceanrioMetadata_MetadataMapping" prLkCl="MetadataMappingID" upAc="3">
-        <PrTb mn="0" nm="MetadataMapping" oe="1" sch="Core" zr="0"/>
-        <CdTb mn="1" nm="SceanrioMetadata" oe="0" sch="Core" zr="1"/>
-        <ClPr cdCl="MetadataMappingID" prCl="MetadataMappingID"/>
+      <Fk deAc="3" nm="fk_SceanrioMetadata_MetadataMapping" prLkCl="MappingID" upAc="3">
+        <PrTb mn="0" nm="Mapping" oe="1" sch="Core" zr="0"/>
+        <CdTb mn="1" nm="ScenarioMapping" oe="0" sch="Core" zr="1"/>
+        <ClPr cdCl="MappingID" prCl="MappingID"/>
       </Fk>
       <Fk deAc="3" nm="fk_SceanrioMetadata_Scenarios" prLkCl="ScenarioID" upAc="3">
         <PrTb mn="0" nm="Scenarios" oe="1" sch="Core" zr="0"/>
-        <CdTb mn="1" nm="SceanrioMetadata" oe="0" sch="Core" zr="1"/>
+        <CdTb mn="1" nm="ScenarioMapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="ScenarioID" prCl="ScenarioID"/>
       </Fk>
       <UniqueConstraints/>
@@ -652,10 +652,10 @@
       <UniqueConstraints/>
       <SchTrHis/>
     </Tbl>
-    <Tbl UsSo="1" nm="FileFormate">
+    <Tbl UsSo="1" nm="FileFormat">
       <Cm>Controlled text for file formats like csv, shp, dss, ndf, NetCDF, ini, gsm, db, .xy, .mdb, XML, PDF, .rdf, HDB</Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
-      <Pk ClNs="Term" nm="pkFileFormate"/>
+      <Pk ClNs="Term" nm="pkFileFormat"/>
       <Cl au="0" df="" nm="Term" nu="0">
         <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
         <Cm>Controlled vocabulary term</Cm>
@@ -728,7 +728,7 @@
       <SchTrHis/>
     </Tbl>
     <Tbl UsSo="1" nm="SpatialReference">
-      <Cm>A spatial reference (e.g., NAD 1983) to referece all the instances that belong to the same Master Network</Cm>
+      <Cm>A spatial reference (e.g., NAD 1983) to reference all the instances that belong to the same Master Network</Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
       <Pk ClNs="SpatialReferenceID" nm="pkSpatialReference"/>
       <Cl au="1" df="nextval('&quot;Metadata&quot;.&quot;SpatialReference_SpatialReferenceID_seq&quot;'::regclass)" nm="SpatialReferenceID" nu="0">
@@ -757,7 +757,7 @@
       </SchTrHis>
     </Tbl>
     <Tbl UsSo="1" nm="Symbols">
-      <Cm>Controlled vocabulary for arithmatic and equations symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </Cm>
+      <Cm>Controlled vocabulary for arithmetic  and equations symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
       <Pk ClNs="Term" nm="pkSymbols"/>
       <Cl au="0" df="" nm="Term" nu="0">
@@ -825,7 +825,7 @@
       </SchTrHis>
     </Tbl>
     <Tbl UsSo="1" nm="VerticalDatum">
-      <Cm>A vertical datum (e.g., above sea mean level) to referece all the instances that belong to the same Master Network</Cm>
+      <Cm>A vertical datum (e.g., above sea mean level) to reference all the instances that belong to the same Master Network</Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
       <Pk ClNs="Term" nm="pkVerticalDatum"/>
       <Cl au="0" df="" nm="Term" nu="0">
@@ -905,6 +905,8 @@
         <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="Connections" oe="0" sch="Metadata" zr="1"/>
         <ClPr cdCl="LinkInstanceID" prCl="InstanceID"/>
+        <ClPr cdCl="StartNodeInstanceID" prCl="InstanceID"/>
+        <ClPr cdCl="EndNodeInstanceID" prCl="InstanceID"/>
       </Fk>
       <UniqueConstraints/>
       <SchTrHis>
@@ -1044,6 +1046,7 @@
       </Cl>
       <Cl au="0" df="" nm="NativeAttributeCategoryGroup" nu="1">
         <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
+        <Cm>Groups the native categories of attributes for a specific data strcuture (e.g., WEAP, ODM)</Cm>
       </Cl>
       <Cl au="0" df="" nm="ParentNativeAttributeCategoryID" nu="1">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
@@ -1060,7 +1063,7 @@
       </SchTrHis>
     </Tbl>
     <Tbl UsSo="1" nm="NativeObjectCategory">
-      <Cm>Orgnaizes objects into hierarchal categories in their original data source  like supply and deamnd categories that group objects </Cm>
+      <Cm>Organizes objects into hierarchal categories in their original data source  like supply and demand categories that group objects </Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
       <Pk ClNs="NativeObjectCategoryID" nm="pkNativeObjectCategory"/>
       <Cl au="1" df="nextval('&quot;Metadata&quot;.&quot;NativeObjectCategory_NativeObjectCategoryID_seq&quot;'::regclass)" nm="NativeObjectCategoryID" nu="0">
@@ -1077,6 +1080,7 @@
       </Cl>
       <Cl au="0" df="" nm="NativeObjectCategoryGroup" nu="1">
         <DT arr="0" ds="VarChar" en="" id="12" ln="500" sc="null" sg="1" un="0"/>
+        <Cm>Groups the native categories of Object Types for a specific data strcuture (e.g., WEAP, ODM)</Cm>
       </Cl>
       <Cl au="0" df="" nm="ParentNativeObjectCategoryID" nu="1">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
@@ -1357,7 +1361,7 @@
         <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
       </Fk>
       <Fk deAc="3" nm="fk_FileBased_FileFormate" prLkCl="Term" upAc="3">
-        <PrTb mn="0" nm="FileFormate" oe="1" sch="CVs" zr="0"/>
+        <PrTb mn="0" nm="FileFormat" oe="1" sch="CVs" zr="0"/>
         <CdTb mn="1" nm="FileBased" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="FileFormateCV" prCl="Term"/>
       </Fk>
@@ -1386,6 +1390,7 @@
         <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="MultiColumnArray" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
+        <ClPr cdCl="ColumnNameID" prCl="DataStorageID"/>
       </Fk>
       <UniqueConstraints/>
       <SchTrHis>
@@ -1400,10 +1405,6 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
       </Cl>
-      <Cl au="0" df="" nm="MultiColumnID" nu="0">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreigh key identifier for a Multi-Column array</Cm>
-      </Cl>
       <Cl au="0" df="" nm="Value" nu="0">
         <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
         <Cm>a text of the value of the column. e.g., 100 or January</Cm>
@@ -1411,6 +1412,10 @@
       <Cl au="0" df="" nm="ValueOrder" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>An integer as an ascending order that coresponds to the Values of the column. The order of the value preserves the pairing of data values across columns of the same MultiColumn array</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="MultiColumnID" nu="0">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreigh key identifier for a Multi-Column array</Cm>
       </Cl>
       <Fk deAc="3" nm="fk_MultiColumnValues_MultiColumnArray" prLkCl="MultiColumnID" upAc="3">
         <PrTb mn="0" nm="MultiColumnArray" oe="1" sch="Storage" zr="0"/>
@@ -1472,6 +1477,9 @@
         <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
         <Cm>CV term for function symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </Cm>
       </Cl>
+      <Cl au="0" df="" nm="NumConstant" nu="1">
+        <DT arr="0" ds="Float" en="" id="6" ln="null" sc="null" sg="1" un="0"/>
+      </Cl>
       <Cl au="0" df="" nm="DataStorageID" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a Data Storage record</Cm>
@@ -1480,6 +1488,7 @@
         <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="Rules" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
+        <ClPr cdCl="RuleVariableID" prCl="DataStorageID"/>
       </Fk>
       <Fk deAc="3" nm="fk_Functions_Symbols" prLkCl="Term" upAc="3">
         <PrTb mn="0" nm="Symbols" oe="1" sch="CVs" zr="0"/>
@@ -1498,11 +1507,11 @@
         <Cm>Primary key identifier</Cm>
       </Cl>
       <Cl au="0" df="" nm="SeasonStartDateTime" nu="0">
-        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+        <DT arr="0" ds="VarChar" en="" id="12" ln="50" sc="null" sg="1" un="0"/>
         <Cm>it documents the start date or time that corresponds with the season (e.g., holiday)</Cm>
       </Cl>
       <Cl au="0" df="" nm="SeasonEndDateTime" nu="0">
-        <DT arr="0" ds="DateTime" en="" id="700" ln="null" sc="null" sg="1" un="0"/>
+        <DT arr="0" ds="VarChar" en="" id="12" ln="50" sc="null" sg="1" un="0"/>
         <Cm>it documents the start date or time that corresponds with the season (e.g., holiday)</Cm>
       </Cl>
       <Cl au="0" df="" nm="SeasonNameCV" nu="0">
@@ -1540,13 +1549,13 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
       </Cl>
-      <Cl au="0" df="" nm="DataStorageID" nu="0">
-        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
-        <Cm>Foreign key identifier for a Data Storage record</Cm>
-      </Cl>
       <Cl au="0" df="" nm="TextControlledValueID" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier a controlled text value</Cm>
+      </Cl>
+      <Cl au="0" df="" nm="DataStorageID" nu="0">
+        <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
+        <Cm>Foreign key identifier for a Data Storage record</Cm>
       </Cl>
       <Fk deAc="3" nm="fk_ControlledText_ControlledTextValues" prLkCl="TextControlledValueID" upAc="3">
         <PrTb mn="0" nm="TextControlledValues" oe="1" sch="CVs" zr="0"/>
@@ -1654,10 +1663,10 @@
       </SchTrHis>
     </Tbl>
     <Tbl UsSo="1" nm="TimeSeriesValues">
-      <Cm>Thsi table stores the time series data values and their time stamp</Cm>
+      <Cm>This table stores the time series data values and their time stamp</Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
-      <Pk ClNs="TimeSeriesDataID" nm="pkTimeSeriesValues"/>
-      <Cl au="1" df="nextval('&quot;Storage&quot;.&quot;TimeSeriesValues_TimeSeriesDataID_seq&quot;'::regclass)" nm="TimeSeriesDataID" nu="0">
+      <Pk ClNs="TimeSeriesValueID" nm="pkTimeSeriesValues"/>
+      <Cl au="1" df="nextval('&quot;Storage&quot;.&quot;TimeSeriesValues_TimeSeriesDataID_seq&quot;'::regclass)" nm="TimeSeriesValueID" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
       </Cl>
@@ -1745,22 +1754,22 @@
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="136" y="665"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectTypes" x="102" y="2176"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4075" y="132"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MetadataMapping" x="2914" y="2479"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Mapping" x="2914" y="2479"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectAttributes" x="1527" y="2256"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="SceanrioMetadata" x="4063" y="1883"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ScenarioMapping" x="4063" y="1883"/>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_Instances" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_Attributes" parentEdge="" positioner="">
@@ -1775,10 +1784,10 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_DataStructures" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.SceanrioMetadata.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.SceanrioMetadata.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="" positioner="">
@@ -1787,7 +1796,62 @@
     <Notes/>
     <Zones/>
   </Dgm>
-  <Dgm nm="DataStroage">
+  <Dgm nm="CVs">
+    <RnCf ClkAct="true" FtSz="68" lkStgy="OffsetDirect" zm="0.25">
+      <VbCfg>
+        <Fg ky="Auto Number" vl="0"/>
+        <Fg ky="Check" vl="0"/>
+        <Fg ky="Comment" vl="0"/>
+        <Fg ky="Data Type" vl="0"/>
+        <Fg ky="Default" vl="0"/>
+        <Fg ky="ENUM Values" vl="0"/>
+        <Fg ky="Length" vl="0"/>
+        <Fg ky="Name" vl="1"/>
+        <Fg ky="Nullable" vl="0"/>
+        <Fg ky="Schema Name" vl="1"/>
+        <Fg ky="Signed" vl="0"/>
+      </VbCfg>
+    </RnCf>
+    <DiaProps>
+      <Show AllCols="1" FkCols="1" FkNms="0" PkCols="0"/>
+      <ErNotation>InfoEngErNotation</ErNotation>
+      <DbTableRectangleFill>BasicRectangleFill</DbTableRectangleFill>
+      <svg path=""/>
+    </DiaProps>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="AggregationStatistic" x="2453" y="1548"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="AttributeTypeCode" x="582" y="354"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="BinaryValueMeaning" x="548" y="1024"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributeCategory" x="552" y="1932"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributes" x="600" y="2764"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonObjectCategory" x="2344" y="2220"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonObjectTypes" x="2448" y="3008"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="DataStructureDomain" x="3652" y="464"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="FileFormat" x="4000" y="1340"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="InstanceStatus" x="4004" y="1964"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="MethodType" x="4044" y="2704"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="OrganizationType" x="3972" y="3244"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="SeasonName" x="2332" y="824"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="SpatialReference" x="5440" y="744"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="Symbols" x="5456" y="1640"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="TextControlledValues" x="5316" y="2148"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="Units" x="5408" y="2928"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="VerticalDatum" x="2284" y="264"/>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributeCategory.fk_CommonAttributeCategory_CommonAttributeCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributes.fk_CommonAttributes_CommonAttributeCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectCategory.fk_CommonObjectCategory_CommonObjectCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectTypes.fk_CommonObjectTypes_CommonObjectCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <Notes/>
+    <Zones/>
+  </Dgm>
+  <Dgm nm="DataStorage">
     <RnCf ClkAct="false" FtSz="68" lkStgy="RightAngleStrategy" zm="0.25">
       <VbCfg>
         <Fg ky="Auto Number" vl="0"/>
@@ -1825,7 +1889,7 @@
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="Symbols" x="2950" y="3391"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="SeasonName" x="2984" y="1259"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="TextControlledValues" x="2637" y="2167"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="FileFormate" x="2975" y="2767"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="FileFormat" x="2975" y="2767"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="BinaryValueMeaning" x="2624" y="256"/>
     <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.Binarys.fk_Binarys_BinaryValueMeaning" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
@@ -1838,9 +1902,10 @@
         <positionableLine lineRole="CHILD_LINE" x1="1520" x2="160" y1="296" y2="296"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.FileBased.fk_FileBased_DataStorage" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.FileBased.fk_FileBased_DataStorage" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="748" x2="1472" y1="3121" y2="3121"/>
+        <positionableLine lineRole="PARENT_LINE" x1="743" x2="743" y1="3020" y2="3021"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1472" x2="747" y1="3025" y2="3025"/>
       </positionableLines>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.FileBased.fk_FileBased_FileFormate" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
@@ -1923,190 +1988,8 @@
     <Notes/>
     <Zones/>
   </Dgm>
-  <Dgm nm="Metadata">
-    <RnCf ClkAct="true" FtSz="60" lkStgy="OffsetDirect" zm="0.25">
-      <VbCfg>
-        <Fg ky="Auto Number" vl="0"/>
-        <Fg ky="Check" vl="0"/>
-        <Fg ky="Comment" vl="0"/>
-        <Fg ky="Data Type" vl="0"/>
-        <Fg ky="Default" vl="0"/>
-        <Fg ky="ENUM Values" vl="0"/>
-        <Fg ky="Length" vl="0"/>
-        <Fg ky="Name" vl="1"/>
-        <Fg ky="Nullable" vl="1"/>
-        <Fg ky="Schema Name" vl="1"/>
-        <Fg ky="Signed" vl="0"/>
-      </VbCfg>
-    </RnCf>
-    <DiaProps>
-      <Show AllCols="1" FkCols="1" FkNms="0" PkCols="0"/>
-      <ErNotation>InfoEngErNotation</ErNotation>
-      <DbTableRectangleFill>BasicRectangleFill</DbTableRectangleFill>
-      <svg path=""/>
-    </DiaProps>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="Units" x="2308" y="2789"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Methods" x="3296" y="3469"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Organizations" x="2397" y="4560"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="People" x="4271" y="4393"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Models" x="2344" y="3532"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Sources" x="4258" y="3499"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="SpatialReference" x="4026" y="19"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Instances" x="3137" y="1517"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributeCategory" x="1260" y="4727"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributes" x="1189" y="3846"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Attributes" x="1270" y="3151"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonObjectCategory" x="117" y="4798"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonObjectTypes" x="120" y="3804"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectTypes" x="58" y="2568"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStorage" x="4221" y="2967"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4054" y="692"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Scenarios" x="4200" y="1460"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Connections" x="1948" y="964"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="159" y="1027"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MetadataMapping" x="2957" y="2460"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="SceanrioMetadata" x="4023" y="2059"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectAttributes" x="1227" y="2368"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="DataStructureDomain" x="136" y="64"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="InstanceStatus" x="2991" y="904"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="MethodType" x="3400" y="4404"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="OrganizationType" x="3446" y="4862"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="VerticalDatum" x="2983" y="56"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="AttributeTypeCode" x="4050" y="2559"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="NativeAttributeCategory" x="1823" y="1681"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="NativeObjectCategory" x="639" y="1726"/>
-    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Vertices" x="1753" y="59"/>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_CommonAttributes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_Units" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.DataStructures.fk_DataStructures_DataStructureDomain" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_Instances" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_InstanceStatus" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_SpatialReference" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_VerticalDatum" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_AttributeTypeCode" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Methods" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Sources" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_Attributes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_NativeAttributeCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_ObjectAttributes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_ObjectTypes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_CommonObjectTypes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_DataStructures" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_NativeObjectCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.SceanrioMetadata.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.SceanrioMetadata.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributeCategory.fk_CommonAttributeCategory_CommonAttributeCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributes.fk_CommonAttributes_CommonAttributeCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectCategory.fk_CommonObjectCategory_CommonObjectCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectTypes.fk_CommonObjectTypes_CommonObjectCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Methods" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_MethodType" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Models" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_People" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Models.fk_Models_Units" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.NativeAttributeCategory.fk_NativeAttributeCategory_NativeAttributeCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.NativeObjectCategory.fk_NativeObjectCategory_NativeObjectCategory" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Organizations.fk_Organizations_Organizations" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Organizations.fk_Organizations_OrganizationType" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.People.fk_People_Organizations" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Sources.fk_Sources_People" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Sources.fk_Sources_Sources" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Vertices.fk_Vertices_Connections" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <Notes/>
-    <Zones/>
-  </Dgm>
-  <Dgm nm="Whole">
-    <RnCf ClkAct="true" FtSz="68" lkStgy="OffsetDirect" zm="0.25">
+  <Dgm nm="Full">
+    <RnCf ClkAct="true" FtSz="68" lkStgy="OffsetDirect" zm="0.15">
       <VbCfg>
         <Fg ky="Auto Number" vl="0"/>
         <Fg ky="Check" vl="0"/>
@@ -2125,13 +2008,13 @@
       <Show AllCols="1" FkCols="1" FkNms="0" PkCols="0"/>
       <ErNotation>InfoEngErNotation</ErNotation>
       <DbTableRectangleFill>BasicRectangleFill</DbTableRectangleFill>
-      <svg path="C:\Users\AdelMAbdallah\Desktop\Wssssssshole.svg"/>
+      <svg path=""/>
     </DiaProps>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectTypes" x="119" y="3316"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Attributes" x="1567" y="3918"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="80" y="1371"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Instances" x="3579" y="2058"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MetadataMapping" x="3607" y="3102"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Mapping" x="3607" y="3102"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4557" y="899"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Scenarios" x="4607" y="1759"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStorage" x="5216" y="3496"/>
@@ -2170,9 +2053,9 @@
     <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Vertices" x="2471" y="453"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="VerticalDatum" x="3580" y="370"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="AttributeTypeCode" x="4721" y="2970"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="InstanceStatus" x="3627" y="1430"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="SceanrioMetadata" x="4415" y="2450"/>
-    <TbGl bkCl="ff6666ff" sch="CVs" tbl="FileFormate" x="7884" y="3240"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="InstanceStatus" x="3627" y="1425"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ScenarioMapping" x="4415" y="2450"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="FileFormat" x="7884" y="3240"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="BinaryValueMeaning" x="7868" y="172"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributeCategory" x="1364" y="5474"/>
     <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Core.Attributes.fk_Attributes_CommonAttributes" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
@@ -2190,6 +2073,24 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_InstanceStatus" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_AttributeTypeCode" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Methods" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Sources" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
     <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
       <positionableLines/>
     </FkGl>
@@ -2197,24 +2098,6 @@
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_VerticalDatum" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_AttributeTypeCode" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Methods" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
-      <positionableLines/>
-    </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.MetadataMapping.fk_MetadataMapping_Sources" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_Attributes" parentEdge="" positioner="">
@@ -2238,10 +2121,10 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_NativeObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.SceanrioMetadata.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.SceanrioMetadata.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="NORTH" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
@@ -2358,7 +2241,189 @@
     <Notes/>
     <Zones/>
   </Dgm>
-  <RnmMgr NxRnmId="869">
+  <Dgm nm="Metadata">
+    <RnCf ClkAct="true" FtSz="60" lkStgy="OffsetDirect" zm="0.25">
+      <VbCfg>
+        <Fg ky="Auto Number" vl="0"/>
+        <Fg ky="Check" vl="0"/>
+        <Fg ky="Comment" vl="0"/>
+        <Fg ky="Data Type" vl="0"/>
+        <Fg ky="Default" vl="0"/>
+        <Fg ky="ENUM Values" vl="0"/>
+        <Fg ky="Length" vl="0"/>
+        <Fg ky="Name" vl="1"/>
+        <Fg ky="Nullable" vl="1"/>
+        <Fg ky="Schema Name" vl="1"/>
+        <Fg ky="Signed" vl="0"/>
+      </VbCfg>
+    </RnCf>
+    <DiaProps>
+      <Show AllCols="1" FkCols="1" FkNms="0" PkCols="0"/>
+      <ErNotation>InfoEngErNotation</ErNotation>
+      <DbTableRectangleFill>BasicRectangleFill</DbTableRectangleFill>
+      <svg path=""/>
+    </DiaProps>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="Units" x="2308" y="2789"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Methods" x="3296" y="3469"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Organizations" x="2397" y="4560"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="People" x="4271" y="4393"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Models" x="2344" y="3532"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Sources" x="4258" y="3499"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="SpatialReference" x="4026" y="19"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Instances" x="3137" y="1517"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributeCategory" x="1260" y="4727"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributes" x="1189" y="3846"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Attributes" x="1270" y="3151"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonObjectCategory" x="117" y="4798"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonObjectTypes" x="120" y="3804"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectTypes" x="58" y="2568"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStorage" x="4221" y="2967"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4054" y="692"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Scenarios" x="4200" y="1460"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Connections" x="1948" y="964"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="159" y="1027"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Mapping" x="2957" y="2460"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ScenarioMapping" x="4023" y="2059"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectAttributes" x="1227" y="2368"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="DataStructureDomain" x="136" y="64"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="InstanceStatus" x="2991" y="904"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="MethodType" x="3400" y="4404"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="OrganizationType" x="3446" y="4862"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="VerticalDatum" x="2983" y="56"/>
+    <TbGl bkCl="ff6666ff" sch="CVs" tbl="AttributeTypeCode" x="4050" y="2559"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="NativeAttributeCategory" x="1823" y="1681"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="NativeObjectCategory" x="639" y="1726"/>
+    <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Vertices" x="1753" y="59"/>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_CommonAttributes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_Units" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.DataStructures.fk_DataStructures_DataStructureDomain" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_Instances" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_InstanceStatus" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_AttributeTypeCode" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Methods" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Sources" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_SpatialReference" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_VerticalDatum" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_Attributes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_NativeAttributeCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_ObjectAttributes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_ObjectTypes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_CommonObjectTypes" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_DataStructures" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_NativeObjectCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributeCategory.fk_CommonAttributeCategory_CommonAttributeCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributes.fk_CommonAttributes_CommonAttributeCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectCategory.fk_CommonObjectCategory_CommonObjectCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectTypes.fk_CommonObjectTypes_CommonObjectCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Methods" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_MethodType" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Models" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_People" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Models.fk_Models_Units" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.NativeAttributeCategory.fk_NativeAttributeCategory_NativeAttributeCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.NativeObjectCategory.fk_NativeObjectCategory_NativeObjectCategory" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Organizations.fk_Organizations_Organizations" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Organizations.fk_Organizations_OrganizationType" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.People.fk_People_Organizations" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Sources.fk_Sources_People" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Sources.fk_Sources_Sources" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Vertices.fk_Vertices_Connections" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <Notes/>
+    <Zones/>
+  </Dgm>
+  <RnmMgr NxRnmId="878">
     <RnmCh ObjCls="Schema" ParCls="Database" ParNme="newDb" SupCls="" SupNme="">
       <Rnm id="656" nNm="Core" oNm="WaMDaMCore"/>
       <Rnm id="307" nNm="WaMDaMCore" oNm="TestApril"/>
@@ -3718,6 +3783,7 @@
       <Rnm id="584" nNm="ColumnNameID" oNm="ColumnHeadlineID"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="TimeSeriesValues" SupCls="Schema" SupNme="Storage">
+      <Rnm id="871" nNm="TimeSeriesValueID" oNm="TimeSeriesDataID"/>
       <Rnm id="585" nNm="TimeSeriesDataID" oNm="Id"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Attributes" SupCls="Schema" SupNme="WaMDaMCore">
@@ -3761,7 +3827,7 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="MultiColumnArray" SupCls="Schema" SupNme="Storage">
       <Rnm id="612" nNm="ColumnName" oNm="adds more specifity to the attribute name (e.g., flood pool)"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="615" nNm="BridgeID" oNm="Id"/>
     </RnmCh>
     <RnmCh ObjCls="Table" ParCls="Schema" ParNme="Metadata" SupCls="" SupNme="">
@@ -3818,7 +3884,7 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="ObjectTypes" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="639" nNm="ObjectName" oNm="StrcutureObjectName"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="642" nNm="AttributeID" oNm="StructureObjectAttributeID"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Attributes" SupCls="Schema" SupNme="WaMDaMCore">
@@ -3907,6 +3973,7 @@
       <Rnm id="686" nNm="RelatedMasterNetwork" oNm="ParentMasterNetwork"/>
     </RnmCh>
     <RnmCh ObjCls="Table" ParCls="Schema" ParNme="Core" SupCls="" SupNme="">
+      <Rnm id="874" nNm="Mapping" oNm="MetadataMapping"/>
       <Rnm id="822" nNm="MetadataMapping" oNm="Metadata"/>
       <Rnm id="741" nNm="Metadata" oNm="DataStorageMetadata"/>
       <Rnm id="738" nNm="DataStorageMetadata" oNm="InstanceScenarioAttributes"/>
@@ -3914,7 +3981,8 @@
       <Rnm id="717" nNm="InstanceObjecAttributes" oNm="AttributeStorage"/>
       <Rnm id="687" nNm="AttributeStorage" oNm="AttributeStorageBridge"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="Core">
+      <Rnm id="873" nNm="MappingID" oNm="MetadataMappingID"/>
       <Rnm id="821" nNm="MetadataMappingID" oNm="MetadataID"/>
       <Rnm id="739" nNm="MetadataID" oNm="InstanceScenarioAttributeID"/>
       <Rnm id="721" nNm="InstanceScenarioAttributeID" oNm="BridgeID"/>
@@ -3998,7 +4066,7 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Attributes" SupCls="Schema" SupNme="Core">
       <Rnm id="716" nNm="UnitID" oNm="AttributeUnitID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="Core">
       <Rnm id="719" nNm="InstanceID" oNm="DataStorageID"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStorage" SupCls="Schema" SupNme="Core">
@@ -4022,7 +4090,7 @@
       <Rnm id="734" nNm="AttributeDataID" oNm="BridgeID"/>
       <Rnm id="727" nNm="BridgeID" oNm="Id"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="Core">
       <Rnm id="728" nNm="StorageInstanceID" oNm="StorageInstance"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStorage" SupCls="Schema" SupNme="Core">
@@ -4037,10 +4105,10 @@
       <Rnm id="732" nNm="" oNm="AttributeData"/>
       <Rnm id="731" nNm="AttributeData" oNm="Bridge"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="Core">
       <Rnm id="737" nNm="InputOrOutput" oNm="InoutOrOutput"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="MetadataMapping" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="Mapping" SupCls="Schema" SupNme="Core">
       <Rnm id="740" nNm="AttributeTypeCodeCV" oNm="AttributeTypeCV"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="ObjectAttributes" SupCls="Schema" SupNme="Core">
@@ -4183,9 +4251,13 @@
       <Rnm id="801" nNm="FreeTextValue" oNm="TextValue"/>
     </RnmCh>
     <RnmCh ObjCls="Table" ParCls="Schema" ParNme="Core" SupCls="" SupNme="">
+      <Rnm id="877" nNm="ScenarioMapping" oNm="ScenarioMetadata"/>
+      <Rnm id="869" nNm="ScenarioMetadata" oNm="SceanrioMetadata"/>
       <Rnm id="803" nNm="SceanrioMetadata" oNm="SceanriosMetadata"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="SceanrioMetadata" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="ScenarioMapping" SupCls="Schema" SupNme="Core">
+      <Rnm id="876" nNm="ScenarioMappingID" oNm="ScenarioMetadataID"/>
+      <Rnm id="870" nNm="ScenarioMetadataID" oNm="SceanrioMetadataID"/>
       <Rnm id="804" nNm="SceanrioMetadataID" oNm="Id"/>
     </RnmCh>
     <RnmCh ObjCls="Table" ParCls="Schema" ParNme="Storage" SupCls="" SupNme="">
@@ -4230,7 +4302,8 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="ObjectAttributes" SupCls="Schema" SupNme="Core">
       <Rnm id="820" nNm="ObjectTypeID" oNm="ObjectID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="SceanrioMetadata" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="ScenarioMapping" SupCls="Schema" SupNme="Core">
+      <Rnm id="875" nNm="MappingID" oNm="MetadataMappingID"/>
       <Rnm id="823" nNm="MetadataMappingID" oNm="MetadataID"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="TextControlledValues" SupCls="Schema" SupNme="CVs">
@@ -4268,7 +4341,7 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Scenarios" SupCls="Schema" SupNme="Core">
       <Rnm id="839" nNm="MasterNetworkID" oNm="MasterNetwrokID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="FileFormate" SupCls="Schema" SupNme="CVs">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="FileFormat" SupCls="Schema" SupNme="CVs">
       <Rnm id="844" nNm="Term" oNm="Id"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Models" SupCls="Schema" SupNme="Metadata">
@@ -4292,6 +4365,9 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="BinaryValueMeaning" SupCls="Schema" SupNme="CVs">
       <Rnm id="868" nNm="ValueDefinition" oNm="Definition"/>
     </RnmCh>
+    <RnmCh ObjCls="Table" ParCls="Schema" ParNme="CVs" SupCls="" SupNme="">
+      <Rnm id="872" nNm="FileFormat" oNm="FileFormate"/>
+    </RnmCh>
   </RnmMgr>
   <DbDocOptionMgr>
     <BasicOptionMgr>
@@ -4309,18 +4385,11 @@
     </BasicOptionMgr>
   </DbDocOptionMgr>
   <OpenEditors>
-    <OpenEditor ClsNm="Diagram" fqn="null.Metadata" selected="0"/>
-    <OpenEditor ClsNm="Diagram" fqn="null.DataStroage" selected="0"/>
-    <OpenEditor ClsNm="Diagram" fqn="null.Whole" selected="1"/>
+    <OpenEditor ClsNm="Diagram" fqn="null.Full" selected="1"/>
   </OpenEditors>
   <TreePaths>
     <TreePath/>
     <TreePath>/Schemas (4)</TreePath>
-    <TreePath>/Schemas (4)/Core</TreePath>
-    <TreePath>/Schemas (4)/CVs</TreePath>
-    <TreePath>/Schemas (4)/CVs/Tables (18)</TreePath>
-    <TreePath>/Schemas (4)/Metadata</TreePath>
-    <TreePath>/Schemas (4)/Storage</TreePath>
-    <TreePath>/Diagrams (4)</TreePath>
+    <TreePath>/Diagrams (5)</TreePath>
   </TreePaths>
 </Db>
