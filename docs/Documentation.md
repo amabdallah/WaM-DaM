@@ -1,4 +1,4 @@
-## WaM-DaM Documentation Index
+## WaM-DaM Documentation
 
 ### Scope
 WaM-DaM is specifically designed to support Systems water management data. We draw the [scope] (https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md)
