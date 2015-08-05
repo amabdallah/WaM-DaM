@@ -21,6 +21,8 @@ We complied eight <a href="https://github.com/amabdallah/WaM-DaM/blob/master/doc
 ### WaM-DaM Architecture
 WaM-DaM is organized into four schemas: i) core concepts (blue) which represent the key configuring concepts of WaM-DaM modular design, ii) metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) controlled vocabulary (purple) which enforces the consistent use of terms across disparate data sources, and iv) data storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
 
+![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaMDaM_Logical.jpg)
+
 Check out the current WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">schema</a>
 
 ### WaM-DaM Core Entities
