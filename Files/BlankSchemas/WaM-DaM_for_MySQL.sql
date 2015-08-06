@@ -39,17 +39,8 @@ CREATE TABLE Instances (
 	RelatedInstanceID INT   NULL
 );
 
-CREATE TABLE MasterNetworks (
-	MasterNetworkID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	MasterNetworkName VARCHAR (255)  NOT NULL,
-	SpatialReferenceID INT   NULL,
-	VerticalDatumCV VARCHAR (255)  NULL,
-	RelatedMasterNetwork INT   NULL,
-	Description TEXT   NULL
-);
-
-CREATE TABLE MetadataMapping (
-	MetadataMappingID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+CREATE TABLE Mapping (
+	MappingID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ObjectAttributeID INT   NOT NULL,
 	InstanceID INT   NOT NULL,
 	InputOrOutput VARCHAR (255)  NULL,
@@ -57,6 +48,15 @@ CREATE TABLE MetadataMapping (
 	MethodID INT   NULL,
 	AttributeTypeCodeCV VARCHAR (255)  NULL,
 	DataStorageID INT   NULL
+);
+
+CREATE TABLE MasterNetworks (
+	MasterNetworkID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	MasterNetworkName VARCHAR (255)  NOT NULL,
+	SpatialReferenceID INT   NULL,
+	VerticalDatumCV VARCHAR (255)  NULL,
+	RelatedMasterNetwork INT   NULL,
+	Description TEXT   NULL
 );
 
 CREATE TABLE ObjectAttributes (
@@ -81,10 +81,10 @@ CREATE TABLE ObjectTypes (
 	CommonObjectTypeID INT   NULL
 );
 
-CREATE TABLE ScenarioMetadata (
-	ScenarioMetadataID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
+CREATE TABLE ScenarioMapping (
+	ScenarioMappingID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ScenarioID INT   NOT NULL,
-	MetadataMappingID INT   NOT NULL
+	MappingID INT   NOT NULL
 );
 
 CREATE TABLE Scenarios (
@@ -342,13 +342,14 @@ CREATE TABLE Rules (
 	RuleVariableID INT   NOT NULL,
 	RuleVariableOrder INT   NULL,
 	SymbolCV VARCHAR (255)  NOT NULL,
+	NumConstant FLOAT   NULL,
 	DataStorageID INT   NOT NULL
 );
 
 CREATE TABLE SeasonalParameters (
 	SeasonalParameterID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	SeasonStartDateTime DATETIME   NOT NULL,
-	SeasonEndDateTime DATETIME   NOT NULL,
+	SeasonStartDateTime VARCHAR (50)  NOT NULL,
+	SeasonEndDateTime VARCHAR (50)  NOT NULL,
 	SeasonNameCV VARCHAR (255)  NOT NULL,
 	SeasonValue VARCHAR (500)  NOT NULL,
 	DataStorageID INT   NOT NULL
@@ -407,6 +408,30 @@ ALTER TABLE Instances ADD CONSTRAINT fk_Instances_InstanceStatus
 FOREIGN KEY (StatusCV) REFERENCES InstanceStatus (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
+ALTER TABLE Mapping ADD CONSTRAINT fk_MetadataMapping_AttributeTypeCode
+FOREIGN KEY (AttributeTypeCodeCV) REFERENCES AttributeTypeCode (Term)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Mapping ADD CONSTRAINT fk_MetadataMapping_DataStorage
+FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Mapping ADD CONSTRAINT fk_MetadataMapping_Instances
+FOREIGN KEY (InstanceID) REFERENCES Instances (InstanceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Mapping ADD CONSTRAINT fk_MetadataMapping_Methods
+FOREIGN KEY (MethodID) REFERENCES Methods (MethodID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Mapping ADD CONSTRAINT fk_MetadataMapping_ObjectAttributes
+FOREIGN KEY (ObjectAttributeID) REFERENCES ObjectAttributes (ObjectAttributeID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Mapping ADD CONSTRAINT fk_MetadataMapping_Sources
+FOREIGN KEY (SourceID) REFERENCES Sources (SourceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
 ALTER TABLE MasterNetworks ADD CONSTRAINT fk_MasterNetworks_MasterNetworks
 FOREIGN KEY (RelatedMasterNetwork) REFERENCES MasterNetworks (MasterNetworkID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
@@ -417,30 +442,6 @@ ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE MasterNetworks ADD CONSTRAINT fk_MasterNetworks_VerticalDatum
 FOREIGN KEY (VerticalDatumCV) REFERENCES VerticalDatum (Term)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE MetadataMapping ADD CONSTRAINT fk_MetadataMapping_AttributeTypeCode
-FOREIGN KEY (AttributeTypeCodeCV) REFERENCES AttributeTypeCode (Term)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE MetadataMapping ADD CONSTRAINT fk_MetadataMapping_DataStorage
-FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE MetadataMapping ADD CONSTRAINT fk_MetadataMapping_Instances
-FOREIGN KEY (InstanceID) REFERENCES Instances (InstanceID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE MetadataMapping ADD CONSTRAINT fk_MetadataMapping_Methods
-FOREIGN KEY (MethodID) REFERENCES Methods (MethodID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE MetadataMapping ADD CONSTRAINT fk_MetadataMapping_ObjectAttributes
-FOREIGN KEY (ObjectAttributeID) REFERENCES ObjectAttributes (ObjectAttributeID)
-ON UPDATE NO ACTION ON DELETE NO ACTION;
-
-ALTER TABLE MetadataMapping ADD CONSTRAINT fk_MetadataMapping_Sources
-FOREIGN KEY (SourceID) REFERENCES Sources (SourceID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE ObjectAttributes ADD CONSTRAINT fk_ObjectAttributes_Attributes
@@ -471,11 +472,11 @@ ALTER TABLE ObjectTypes ADD CONSTRAINT fk_ObjectTypes_NativeObjectCategory
 FOREIGN KEY (NativeObjectCategoryID) REFERENCES NativeObjectCategory (NativeObjectCategoryID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
-ALTER TABLE ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
-FOREIGN KEY (MetadataMappingID) REFERENCES MetadataMapping (MetadataMappingID)
+ALTER TABLE ScenarioMapping ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
+FOREIGN KEY (MappingID) REFERENCES Mapping (MappingID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
-ALTER TABLE ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
+ALTER TABLE ScenarioMapping ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
 FOREIGN KEY (ScenarioID) REFERENCES Scenarios (ScenarioID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
@@ -499,8 +500,16 @@ ALTER TABLE CommonObjectTypes ADD CONSTRAINT fk_CommonObjectTypes_CommonObjectCa
 FOREIGN KEY (CommonObjectCategoryID) REFERENCES CommonObjectCategory (CommonObjectCategoryID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
-ALTER TABLE Connections ADD CONSTRAINT fk_Connections_Instances
+ALTER TABLE Connections ADD CONSTRAINT fk_Connections_Instances1
 FOREIGN KEY (LinkInstanceID) REFERENCES Instances (InstanceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Connections ADD CONSTRAINT fk_Connections_Instances2
+FOREIGN KEY (StartNodeInstanceID) REFERENCES Instances (InstanceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE Connections ADD CONSTRAINT fk_Connections_Instances3
+FOREIGN KEY (EndNodeInstanceID) REFERENCES Instances (InstanceID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE Methods ADD CONSTRAINT fk_Methods_Methods

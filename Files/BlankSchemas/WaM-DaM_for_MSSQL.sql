@@ -50,6 +50,17 @@ CREATE TABLE WaMDaM.Instances (
 	RelatedInstanceID int   NULL,
 	PRIMARY KEY (InstanceID)
 )
+CREATE TABLE WaMDaM.Mapping (
+	MappingID int  IDENTITY (1,1) NOT NULL,
+	ObjectAttributeID int   NOT NULL,
+	InstanceID int   NOT NULL,
+	InputOrOutput varchar (255)  NULL,
+	SourceID int   NULL,
+	MethodID int   NULL,
+	AttributeTypeCodeCV varchar (255)  NULL,
+	DataStorageID int   NULL,
+	PRIMARY KEY (MappingID)
+)
 CREATE TABLE WaMDaM.MasterNetworks (
 	MasterNetworkID int  IDENTITY (1,1) NOT NULL,
 	MasterNetworkName varchar (255)  NOT NULL,
@@ -58,17 +69,6 @@ CREATE TABLE WaMDaM.MasterNetworks (
 	RelatedMasterNetwork int   NULL,
 	Description text   NULL,
 	PRIMARY KEY (MasterNetworkID)
-)
-CREATE TABLE WaMDaM.MetadataMapping (
-	MetadataMappingID int  IDENTITY (1,1) NOT NULL,
-	ObjectAttributeID int   NOT NULL,
-	InstanceID int   NOT NULL,
-	InputOrOutput varchar (255)  NULL,
-	SourceID int   NULL,
-	MethodID int   NULL,
-	AttributeTypeCodeCV varchar (255)  NULL,
-	DataStorageID int   NULL,
-	PRIMARY KEY (MetadataMappingID)
 )
 CREATE TABLE WaMDaM.ObjectAttributes (
 	ObjectAttributeID int  IDENTITY (1,1) NOT NULL,
@@ -92,11 +92,11 @@ CREATE TABLE WaMDaM.ObjectTypes (
 	CommonObjectTypeID int   NULL,
 	PRIMARY KEY (ObjectTypeID)
 )
-CREATE TABLE WaMDaM.ScenarioMetadata (
-	ScenarioMetadataID int  IDENTITY (1,1) NOT NULL,
+CREATE TABLE WaMDaM.ScenarioMapping (
+	ScenarioMappingID int  IDENTITY (1,1) NOT NULL,
 	ScenarioID int   NOT NULL,
-	MetadataMappingID int   NOT NULL,
-	PRIMARY KEY (ScenarioMetadataID)
+	MappingID int   NOT NULL,
+	PRIMARY KEY (ScenarioMappingID)
 )
 CREATE TABLE WaMDaM.Scenarios (
 	ScenarioID int  IDENTITY (1,1) NOT NULL,
@@ -350,13 +350,14 @@ CREATE TABLE WaMDaM.Rules (
 	RuleVariableID int   NOT NULL,
 	RuleVariableOrder int   NULL,
 	SymbolCV varchar (255)  NOT NULL,
+	NumConstant float   NULL,
 	DataStorageID int   NOT NULL,
 	PRIMARY KEY (RuleID)
 )
 CREATE TABLE WaMDaM.SeasonalParameters (
 	SeasonalParameterID int  IDENTITY (1,1) NOT NULL,
-	SeasonStartDateTime datetime   NOT NULL,
-	SeasonEndDateTime datetime   NOT NULL,
+	SeasonStartDateTime varchar (50)  NOT NULL,
+	SeasonEndDateTime varchar (50)  NOT NULL,
 	SeasonNameCV varchar (255)  NOT NULL,
 	SeasonValue varchar (500)  NOT NULL,
 	DataStorageID int   NOT NULL,
@@ -415,6 +416,30 @@ ALTER TABLE WaMDaM.Instances ADD CONSTRAINT fk_Instances_InstanceStatus
 FOREIGN KEY (StatusCV) REFERENCES WaMDaM.InstanceStatus (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
+ALTER TABLE WaMDaM.Mapping ADD CONSTRAINT fk_MetadataMapping_AttributeTypeCode
+FOREIGN KEY (AttributeTypeCodeCV) REFERENCES WaMDaM.AttributeTypeCode (Term)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Mapping ADD CONSTRAINT fk_MetadataMapping_DataStorage
+FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Mapping ADD CONSTRAINT fk_MetadataMapping_Instances
+FOREIGN KEY (InstanceID) REFERENCES WaMDaM.Instances (InstanceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Mapping ADD CONSTRAINT fk_MetadataMapping_Methods
+FOREIGN KEY (MethodID) REFERENCES WaMDaM.Methods (MethodID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Mapping ADD CONSTRAINT fk_MetadataMapping_ObjectAttributes
+FOREIGN KEY (ObjectAttributeID) REFERENCES WaMDaM.ObjectAttributes (ObjectAttributeID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Mapping ADD CONSTRAINT fk_MetadataMapping_Sources
+FOREIGN KEY (SourceID) REFERENCES WaMDaM.Sources (SourceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
 ALTER TABLE WaMDaM.MasterNetworks ADD CONSTRAINT fk_MasterNetworks_MasterNetworks
 FOREIGN KEY (RelatedMasterNetwork) REFERENCES WaMDaM.MasterNetworks (MasterNetworkID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
@@ -425,30 +450,6 @@ ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.MasterNetworks ADD CONSTRAINT fk_MasterNetworks_VerticalDatum
 FOREIGN KEY (VerticalDatumCV) REFERENCES WaMDaM.VerticalDatum (Term)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.MetadataMapping ADD CONSTRAINT fk_MetadataMapping_AttributeTypeCode
-FOREIGN KEY (AttributeTypeCodeCV) REFERENCES WaMDaM.AttributeTypeCode (Term)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.MetadataMapping ADD CONSTRAINT fk_MetadataMapping_DataStorage
-FOREIGN KEY (DataStorageID) REFERENCES WaMDaM.DataStorage (DataStorageID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.MetadataMapping ADD CONSTRAINT fk_MetadataMapping_Instances
-FOREIGN KEY (InstanceID) REFERENCES WaMDaM.Instances (InstanceID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.MetadataMapping ADD CONSTRAINT fk_MetadataMapping_Methods
-FOREIGN KEY (MethodID) REFERENCES WaMDaM.Methods (MethodID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.MetadataMapping ADD CONSTRAINT fk_MetadataMapping_ObjectAttributes
-FOREIGN KEY (ObjectAttributeID) REFERENCES WaMDaM.ObjectAttributes (ObjectAttributeID)
-ON UPDATE NO ACTION ON DELETE NO ACTION
-
-ALTER TABLE WaMDaM.MetadataMapping ADD CONSTRAINT fk_MetadataMapping_Sources
-FOREIGN KEY (SourceID) REFERENCES WaMDaM.Sources (SourceID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.ObjectAttributes ADD CONSTRAINT fk_ObjectAttributes_Attributes
@@ -479,11 +480,11 @@ ALTER TABLE WaMDaM.ObjectTypes ADD CONSTRAINT fk_ObjectTypes_NativeObjectCategor
 FOREIGN KEY (NativeObjectCategoryID) REFERENCES WaMDaM.NativeObjectCategory (NativeObjectCategoryID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
-ALTER TABLE WaMDaM.ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
-FOREIGN KEY (MetadataMappingID) REFERENCES WaMDaM.MetadataMapping (MetadataMappingID)
+ALTER TABLE WaMDaM.ScenarioMapping ADD CONSTRAINT fk_SceanrioMetadata_MetadataMapping
+FOREIGN KEY (MappingID) REFERENCES WaMDaM.Mapping (MappingID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
-ALTER TABLE WaMDaM.ScenarioMetadata ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
+ALTER TABLE WaMDaM.ScenarioMapping ADD CONSTRAINT fk_SceanrioMetadata_Scenarios
 FOREIGN KEY (ScenarioID) REFERENCES WaMDaM.Scenarios (ScenarioID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
@@ -507,8 +508,16 @@ ALTER TABLE WaMDaM.CommonObjectTypes ADD CONSTRAINT fk_CommonObjectTypes_CommonO
 FOREIGN KEY (CommonObjectCategoryID) REFERENCES WaMDaM.CommonObjectCategory (CommonObjectCategoryID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
-ALTER TABLE WaMDaM.Connections ADD CONSTRAINT fk_Connections_Instances
+ALTER TABLE WaMDaM.Connections ADD CONSTRAINT fk_Connections_Instances1
 FOREIGN KEY (LinkInstanceID) REFERENCES WaMDaM.Instances (InstanceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Connections ADD CONSTRAINT fk_Connections_Instances2
+FOREIGN KEY (StartNodeInstanceID) REFERENCES WaMDaM.Instances (InstanceID)
+ON UPDATE NO ACTION ON DELETE NO ACTION
+
+ALTER TABLE WaMDaM.Connections ADD CONSTRAINT fk_Connections_Instances3
+FOREIGN KEY (EndNodeInstanceID) REFERENCES WaMDaM.Instances (InstanceID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.Methods ADD CONSTRAINT fk_Methods_Methods

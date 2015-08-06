@@ -44,23 +44,8 @@ CREATE TABLE Instances (
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-CREATE TABLE MasterNetworks (
-	MasterNetworkID INTEGER   NOT NULL PRIMARY KEY,
-	MasterNetworkName VARCHAR (255)  NOT NULL,
-	SpatialReferenceID INTEGER   NULL,
-	VerticalDatumCV VARCHAR (255)  NULL,
-	RelatedMasterNetwork INTEGER   NULL,
-	Description TEXT   NULL,
-	FOREIGN KEY (RelatedMasterNetwork) REFERENCES MasterNetworks (MasterNetworkID)
-	ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY (SpatialReferenceID) REFERENCES SpatialReference (SpatialReferenceID)
-	ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY (VerticalDatumCV) REFERENCES VerticalDatum (Term)
-	ON UPDATE NO ACTION ON DELETE NO ACTION
-);
-
-CREATE TABLE MetadataMapping (
-	MetadataMappingID INTEGER   NOT NULL PRIMARY KEY,
+CREATE TABLE Mapping (
+	MappingID INTEGER   NOT NULL PRIMARY KEY,
 	ObjectAttributeID INTEGER   NOT NULL,
 	InstanceID INTEGER   NOT NULL,
 	InputOrOutput VARCHAR (255)  NULL,
@@ -79,6 +64,21 @@ CREATE TABLE MetadataMapping (
 	FOREIGN KEY (ObjectAttributeID) REFERENCES ObjectAttributes (ObjectAttributeID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (SourceID) REFERENCES Sources (SourceID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE MasterNetworks (
+	MasterNetworkID INTEGER   NOT NULL PRIMARY KEY,
+	MasterNetworkName VARCHAR (255)  NOT NULL,
+	SpatialReferenceID INTEGER   NULL,
+	VerticalDatumCV VARCHAR (255)  NULL,
+	RelatedMasterNetwork INTEGER   NULL,
+	Description TEXT   NULL,
+	FOREIGN KEY (RelatedMasterNetwork) REFERENCES MasterNetworks (MasterNetworkID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION,
+	FOREIGN KEY (SpatialReferenceID) REFERENCES SpatialReference (SpatialReferenceID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION,
+	FOREIGN KEY (VerticalDatumCV) REFERENCES VerticalDatum (Term)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
@@ -118,11 +118,11 @@ CREATE TABLE ObjectTypes (
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-CREATE TABLE ScenarioMetadata (
-	ScenarioMetadataID INTEGER   NOT NULL PRIMARY KEY,
+CREATE TABLE ScenarioMapping (
+	ScenarioMappingID INTEGER   NOT NULL PRIMARY KEY,
 	ScenarioID INTEGER   NOT NULL,
-	MetadataMappingID INTEGER   NOT NULL,
-	FOREIGN KEY (MetadataMappingID) REFERENCES MetadataMapping (MetadataMappingID)
+	MappingID INTEGER   NOT NULL,
+	FOREIGN KEY (MappingID) REFERENCES Mapping (MappingID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (ScenarioID) REFERENCES Scenarios (ScenarioID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
@@ -268,6 +268,10 @@ CREATE TABLE Connections (
 	StartNodeInstanceID INTEGER   NOT NULL,
 	EndNodeInstanceID INTEGER   NOT NULL,
 	FOREIGN KEY (LinkInstanceID) REFERENCES Instances (InstanceID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION,
+	FOREIGN KEY (StartNodeInstanceID) REFERENCES Instances (InstanceID)
+	ON UPDATE NO ACTION ON DELETE NO ACTION,
+	FOREIGN KEY (EndNodeInstanceID) REFERENCES Instances (InstanceID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
@@ -432,6 +436,7 @@ CREATE TABLE Rules (
 	RuleVariableID INTEGER   NOT NULL,
 	RuleVariableOrder INTEGER   NULL,
 	SymbolCV VARCHAR (255)  NOT NULL,
+	NumConstant FLOAT   NULL,
 	DataStorageID INTEGER   NOT NULL,
 	FOREIGN KEY (DataStorageID) REFERENCES DataStorage (DataStorageID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
@@ -441,8 +446,8 @@ CREATE TABLE Rules (
 
 CREATE TABLE SeasonalParameters (
 	SeasonalParameterID INTEGER   NOT NULL PRIMARY KEY,
-	SeasonStartDateTime DATETIME   NOT NULL,
-	SeasonEndDateTime DATETIME   NOT NULL,
+	SeasonStartDateTime VARCHAR (50)  NOT NULL,
+	SeasonEndDateTime VARCHAR (50)  NOT NULL,
 	SeasonNameCV VARCHAR (255)  NOT NULL,
 	SeasonValue VARCHAR (500)  NOT NULL,
 	DataStorageID INTEGER   NOT NULL,
