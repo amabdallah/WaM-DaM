@@ -19,7 +19,13 @@ default_schema = 'WaMDaMAugust2015'
 
 build_ddl.py -d all -x WaMDaMAugust2015.xml -o wamdam_ddl
 
-the Pythos script should build four DDL schemas.......done 
+the Pythos script should build four DDL schemas.......done as shown at this snapshot 
+
+![]https://github.com/amabdallah/WaM-DaM/blob/master/Files/DDL/SnapshotOfResult_DDL_cmd.JPG
+
+
+
+
 
 Credit: This is an adapted script that is originally writen by Tony Castronova at Utah State University 
 https://github.com/ODM2/ODM2/tree/master/src/build_schemas
