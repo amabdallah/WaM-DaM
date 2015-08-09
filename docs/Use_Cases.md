@@ -6,53 +6,52 @@ We load disperate water manageemnt data to a WaM-DaM SQLite empty database. Then
 
 First, we compiled all the data into CSV files under four Excel workbooks where each workbook has spreadsheets that replicate WaM-DaM tables. Then, I wrote a Matlab script to parse and then load data to the WaM-DaM SQLite database. You can use this generic [Matlab script](https://github.com/amabdallah/WaM-DaM/blob/master/Files/MatlabScript/AutomateLoadingDataToWaMDaM.m) to load your data to an empty SQLite WaM-DaM database. You can use the populated SQLite database along with the  <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> instrcutions </a> on how to set it up to test the use cases below. 
 
-***Use case # 1:*** What are the required types of water system components and their attributes for a WEAP model?
-
+**Use case # 1:** What are the required types of water system components and their attributes for a WEAP model?
 [Query]()[Result]()  
 
-2.	What are the available water system infrastructure components to run a model? 
+**Use case #2:** What are the available water system infrastructure components to expand the Lower Bear River Model to the entire Bear River Watershed? 
 [Query]()[Result]()  
 
-3.	What is the data value(s) of an attribute of a system component?
+**Use case #3:** How are the water system components physically connected? Show directions of flow 
 [Query]()[Result]()  
 
-3.1 Binarys
+
+**Use case #4:** What are the data value(s) of an attribute of a system component?
 [Query]()[Result]()  
 
-3.2 Parameters  
+4.1 Binarys
+[Query]()[Result]()  
+
+4.2 Parameters  
 [Query]()[Result]() 
 
-3.3 Seasonal Parameters 
+4.3 Seasonal Parameters 
 [Query]()[Result]()  
 
-3.4 Text Free  
+4.4 Text Free  
 [Query]()[Result]()  
 
-3.5 Text Controlled    
+4.5 Text Controlled    
 [Query]()[Result]()    
 
-3.6 File Based  
+4.6 File Based  
 [Query]()[Result]()  
 
-3.7 Rules  
+4.7 Rules  
 [Query]()[Result]()    
 
-3.8 time Series    
+4.8 Time Series    
 [Query]()[Result]()  
 
-3.81 TimeSeriesValues
+4.81 TimeSeriesValues
 [Query]()[Result]()  
 
-3.9 Multi-Column Array    
+4.9 Multi-Column Array    
 [Query]()[Result]()    
-  
-4.0 Where the data came from for an attribute, who reported them, and to what organization the person belongs to, and using what method?      
-[Query]()[Result]()     
 
-5.0 What is the connectivity matrix (start and end nodes of links) of a scenario for a network?   
-[Query]()[Result]()     
+**Use case #5:** Where the data came from for an attribute, who reported them, and to what organization the person belongs to, and using what method?
 
-6. What are the differences between two scenarios of a network in a model? 
+**Use case #6:** What are the data and metadata differences between two scenarios?
 [Query]()[Result]()  
 
 6.1 Differences in Topology 
@@ -63,4 +62,5 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 
 6.3 Differences in Data Values 
 [Query]()[Result]()  
+
 
