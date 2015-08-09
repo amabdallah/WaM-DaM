@@ -1,4 +1,4 @@
-This ReadMe text helps you create blank database scheams for MySQL, MS SQL Server, SQLite, and PostgreSQL, at once. You only provde the XML Schema from DBWrench to the script.
+These Python scripts help you create blank database scheams for MySQL, MS SQL Server, SQLite, and PostgreSQL, at once. You only provde the XML Schema from DBWrench to the script.
 
 Open the CMD Terminal 
 Windows>Start>Accessories>CMD
