@@ -1,3 +1,11 @@
+-- This is a Data Definition Language (DDL) script that 
+-- generates a blank schema of the Water Management Data Model (WaM-DaM)
+-- for SQLite database
+-- Use the SQLite Manager Add-on to Mozilla Firefox
+-- Create a new empty database. Click on the Execute SQL button and delete the text "SELECT * FROM tablename"
+-- Simply copy all this script and paste into this Execute SQL window 
+-- Then click Run SQL. The script should run successfully and create the 48 empty tables of WaM-DaM
+
 
 /***************************************************************************/
 /******************************* CREATE CORE *******************************/

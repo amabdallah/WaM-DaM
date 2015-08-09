@@ -1,8 +1,10 @@
+-- This is a Data Definition Language (DDL) script that 
+-- generates a blank schema of the Water Management Data Model (WaM-DaM)
+-- for PostgreSQL database
+-- in PostgreSQL, click on Databases>> Postgers>>   at the left Object Browser pannel
+-- Simply copy all this script and paste into the new window of "SQL query"
+-- Then click execute. The script should run successfully and create the 48 empty tables of WaM-DaM
 
-CREATE EXTENSION if not exists postgis;
-CREATE EXTENSION if not exists postgis_topology;
-CREATE EXTENSION if not exists fuzzystrmatch;
-CREATE EXTENSION if not exists postgis_tiger_geoCoder;
 
 drop schema if exists WaMDaM cascade;
 

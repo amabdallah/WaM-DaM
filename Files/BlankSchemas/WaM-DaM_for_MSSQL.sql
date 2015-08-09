@@ -1,4 +1,13 @@
--- Drop the database called 'WaM-DaM' if it exists and then create a new database called 'WaM-DaM'
+-- This is a Data Definition Language (DDL) script that 
+-- generates a blank schema of the Water Management Data Model (WaM-DaM)
+-- for Microsoft SQL Server database
+-- in SQL Server, Click File >> New >> Query with Current Condition  
+-- Simply copy all this script and paste into the new window of "create query"
+-- Then click execute. The script should run successfully and create the 48 empty tables of WaM-DaM
+
+-- Drop the database called 'WaM-DaM' if it exists and then 
+-- create a new database called 'WaM-DaM'
+
 USE master;
 GO
 
@@ -643,3 +652,4 @@ ON UPDATE NO ACTION ON DELETE NO ACTION
 ALTER TABLE WaMDaM.TimeSeriesValues ADD CONSTRAINT fk_TimeSeriesValues_TimeSeries
 FOREIGN KEY (TimeSeriesID) REFERENCES WaMDaM.TimeSeries (TimeSeriesID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
+

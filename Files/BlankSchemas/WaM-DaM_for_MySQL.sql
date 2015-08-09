@@ -1,3 +1,9 @@
+-- This is a Data Definition Language (DDL) script that 
+-- generates a blank schema of the Water Management Data Model (WaM-DaM)
+-- for MySQL database
+-- in MySQL Workbench, Create a New SQL Tab for Executing queries
+-- Simply copy all this script and paste into the new window of "create query"
+-- Then click execute. The script should run successfully and create the 48 empty tables of WaM-DaM
 
 DROP SCHEMA IF EXISTS WaMDaM;
 
