@@ -9,7 +9,7 @@ To draw the common and needed data features for a generic design, we reviewed th
 Check out further details about the [Reviewed Systems](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Reviewed_Systems.md)
 
 ## Software 
-I used <a href="http://www.dbwrench.com" target="_blank">DbWrench 3.2.4</a> to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
+I used <a href="http://www.dbwrench.com" target="_blank">DbWrench 3.3.1</a> to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
 
 **Credit** 
 I adapted and used this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/Files/DDL" target="_blank">DDL generator</a> script written in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
