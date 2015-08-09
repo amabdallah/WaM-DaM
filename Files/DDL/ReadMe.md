@@ -21,7 +21,7 @@ build_ddl.py -d all -x WaMDaMAugust2015.xml -o wamdam_ddl
 
 the Pythos script should build four DDL schemas.......done as shown at this snapshot 
 
-![]https://github.com/amabdallah/WaM-DaM/blob/master/Files/DDL/SnapshotOfResult_DDL_cmd.JPG
+![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/DDL/SnapshotOfResult_DDL_cmd.JPG)
 
 
 
