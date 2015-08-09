@@ -1,4 +1,4 @@
-﻿-- 3.3 SeasonalParameter
+﻿-- 4.3 SeasonalParameter
 
 /*
 This query shows an example of data values for a seasonal parameter called......... 

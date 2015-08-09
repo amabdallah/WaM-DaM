@@ -1,4 +1,4 @@
-﻿-- 3.5 TextControlled
+﻿-- 4.5 TextControlled
 
 /*
 This query shows text controlled data values, their attributes, units, object names, and instances, and data source 

@@ -1,4 +1,4 @@
-﻿-- 3.6 FileBased
+﻿-- 4.6 FileBased
 
 /*
 This query shows file-based references, their attributes, units, object names, and instances, and data source 

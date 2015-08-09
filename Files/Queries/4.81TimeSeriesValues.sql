@@ -1,4 +1,4 @@
-﻿-- 3.8 TimeSeriesValues
+﻿-- 4.81 TimeSeriesValues
 
 /*
 This query shows data values for a particular time series their attributes, units, object names, and instances, and data source 

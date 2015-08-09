@@ -1,4 +1,4 @@
-﻿--3.7 Rules
+﻿--4.7 Rules
 
 /*
 This query shows an example Rule for an attribute called........., their attributes, units, object names, and instances, and data source 

@@ -1,4 +1,4 @@
-﻿-- 3.2 Parameters
+﻿-- 4.2 Parameters
 
 /*
 This query shows parameters data values, their attributes, units, object names, and instances, and data source 

@@ -1,4 +1,4 @@
-﻿--3.4 TextFree
+﻿--4.4 TextFree
 
 /*
 This query shows text free data values, their attributes, units, object names, and instances, and data source 

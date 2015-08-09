@@ -1,4 +1,4 @@
-﻿-- 3.8 TimeSeries
+﻿-- 4.8 TimeSeries
 
 /*
 This query shows time series general metadata, their attributes, units, object names, and instances, and data source 
