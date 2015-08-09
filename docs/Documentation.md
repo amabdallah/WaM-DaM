@@ -12,7 +12,7 @@ Check out further details about the [Reviewed Systems](https://github.com/amabda
 I used <a href="http://www.dbwrench.com" target="_blank">DbWrench 3.2.4</a> to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
 
 **Credit** 
-I adapted this <a href="https://github.com/ODM2/ODM2/tree/master/src/build_schemas" target="_blank">DDL generator</a> script written in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
+I adapted and used this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/Files/DDL" target="_blank">DDL generator</a> script written in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
 
 ### WaM-DaM Design principles 
 We complied eight <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Design_principles.md" target="_blank">design principles</a> for WaM-DaM based on the reviewed systems, important questions, and uses cases. It is the key contribution of WaM-DaM to support all these principles together: flexible and extensible modular design, networks, scenarios, conditional query for subsets of data, dynamic controlled vocabulary, reusable descriptive and explicit metadata, multiple data formats for systems models, and open-source environment.
