@@ -11,8 +11,8 @@ cd DDL
 
 Edit the name of XML Schema in the build_ddl.py python file and the default schema name 
 For example:
-input_file = 'June15WaM-DaM1.0.xml'
-default_schema = 'June15WaM-DaM1.0'
+input_file = 'WaMDaMAugust2015.xml'
+default_schema = 'WaMDaMAugust2015'
 
 % Execute this command line at the CMD terminal while still at the directory above
 % copy and past this line after you change thee WaM-DAM.xml name below 
