@@ -1,3 +1,4 @@
+DataStructureName,NativeObjectName,ObjectTopology,NativeAttributeName
 "WEAP","Catchment","Node","ObjectInstances"
 "WEAP","Catchment","Node","Area"
 "WEAP","Catchment","Node","Kc"
