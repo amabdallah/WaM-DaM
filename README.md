@@ -41,9 +41,8 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 
 Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Documentation.md) abou WaM-DaM architecture
 
-#### Use Cases (Draft)
-In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. In this section we offer a simple use case as an example that you can follow to use WaM-DaM as a repository for data. We hope that you can follow the logic of the use case to build a WaM-DaM database for your own data. This Use Cases page provide instrucutions that you can follow.  
-<a href="https://github.com/amabdallah/WaM-DaM/tree/master/Files/Use_Cases" target="_blank">Use cases</a>     
+#### Use Cases
+In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. This section provids sizx used cases that demonestrate the capabilities of WaM-DaM and how users can benifeit from it. These uses cases need the prepopulated WaM-DaM SQLite database. Check out the SQL scripts that guide you for the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/Files/Use_Cases" target="_blank">use cases</a>     
 
 Check out more info about the project and [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development
 
