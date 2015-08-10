@@ -1,7 +1,7 @@
-﻿-- 03 Find Connectivity Matrix of a scenario of a network
+﻿-- 03.1 Find Connectivity Matrix of a scenario of a network
 
 /*
-Use case #3: How are the water system components physically connected? Show directions of flow 
+Use case #3.1: How are the water system components physically connected? Show directions of flow 
 
 
 Users can use such query to understand how the water infrastructure is connected 
@@ -12,9 +12,14 @@ and start and end nodes for each link to indicate the direction of flow to their
  
 */
 
-SELECT  "Instances"."InstanceName" As "LinkInstanceName","ObjectTypes"."NativeObjectName",
-"StartNodeInstance"."InstanceName" AS "StartInstanceName","ObjectTypeStartNodeInstance"."NativeObjectName",
+SELECT  "Instances"."InstanceName" As "LinkInstanceName",
+ "Instances".InstanceID AS "LinkInstaceID",
+"ObjectTypes"."NativeObjectName",
+"StartNodeInstance"."InstanceName" AS "StartInstanceName",
+"StartNodeInstance"."InstanceID" AS "StartNodeInstanceID",
+"ObjectTypeStartNodeInstance"."NativeObjectName",
 "EndNodeInstance"."InstanceName" AS "EndInstanceName",
+"EndNodeInstance"."InstanceID" AS "EndNodeInstanceID",
 "ObjectTypeEndNodeInstance"."NativeObjectName" As "ObjectEndInstance"
 --,"DataStructures"."DataStructureName"
 
@@ -90,10 +95,12 @@ ON "ObjectTypeEndNodeInstance"."ObjectTypeID"="ObjectAttEndNodeInstance"."Object
 
 Left JOIN  "Attributes" As "AttLinkEndInstance"
 ON "AttLinkEndInstance"."AttributeID"="ObjectAttEndNodeInstance"."AttributeID"
+
 -- Over 
 
 WHERE  "AttLinkInstance"."NativeAttributeName"='ObjectInstances'
 AND "Attributes"."NativeAttributeName"='ObjectInstances'
+AND "AttLinkEndInstance"."NativeAttributeName"='ObjectInstances'
 AND DataStructureName='WEAP'
 AND ScenarioName ='BaseCaseLower'
 
