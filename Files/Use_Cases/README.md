@@ -24,7 +24,6 @@ This use case shows the data values of all the types of data that WaM-DaM suppor
  
 
 **Use case #6:** [What are the data and metadata differences between two scenarios?](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Use_Cases/Use_Case6.md)   
-
 This use cases show how WaM-DaM compares the differences in Topology, Metadata, and Data Values between two scenarios of the Lower Bear River model in WEAP.     
 
 
