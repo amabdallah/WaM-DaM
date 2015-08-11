@@ -35,8 +35,7 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 * Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, 
 * Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, 
 * Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and 
-* Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
-
+* Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)   
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
 Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Documentation.md) abou WaM-DaM architecture
