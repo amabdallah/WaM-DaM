@@ -6,7 +6,7 @@ WaM-DaM supports this collection of nine data types that are used in systems ana
 
 Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax and semantics. WaM-DaM will speed the time to find, organize, and synthesize data from different sources and prepare data for modeling. Along the way, you'll learn more about your data and the water system the data describes. 
 
-<img src="https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>
+<img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>
 
 The repository is organized to direct you to i) understand WaM-DaM design, demonstrate how WaM-DaM works, and provide you with instructions on how to use WaM-DaM 
 
@@ -37,7 +37,7 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 * Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and 
 * Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
 
-![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaM-DaM_Conceptual.jpg)
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
 Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Documentation.md) abou WaM-DaM architecture
 
