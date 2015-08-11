@@ -4,7 +4,7 @@
 This query summarizes the difference of data values between two scenarios of the Lower Bear River 
 Master Network. 
 
-The query should indentify which instances has changes in data values. 
+The query should identify which instances has changes in data values. 
 
 Result:
 

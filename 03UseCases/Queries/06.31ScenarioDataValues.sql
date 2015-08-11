@@ -15,7 +15,7 @@ Units.UnitName AS IntervalTimeUnitName,
 AggregationInterval,
 UnitInterval.UnitName,
 DateTimeStamp,
-ScenarioName
+ScenarioName,
 Value
 
 FROM "DataStructures"
