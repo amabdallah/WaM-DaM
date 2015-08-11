@@ -5,7 +5,7 @@
 
 4.1 Binarys  
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCases/Queries/4.1Binarys.sql)   
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCases/Results/UseCase4.1.csv)  
 
 4.2 Parameters   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCases/Queries/4.2Parameters.sql)    
