@@ -7,3 +7,4 @@ Here are the [results](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCa
 
 
 
+![](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCases/Results/ExpandBear.JPG)
