@@ -1,5 +1,0 @@
-NativeObjectName,#Of Instances,CommonObjectType,ObjectTopology ,MasterNetworkName
-"NWISCUAHSIStream","44","Stream Gage","Node","Bear River Watershed Utah gages"
-"Dam","11","Reservoir","Node","National Dams"
-"Stream","20","Stream","Link","National Streams Network"
-"WaterBody","7","Water Body","Node","National Water Bodies and Wetlands"
