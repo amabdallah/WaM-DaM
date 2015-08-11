@@ -20,7 +20,7 @@ You can use WaM-DaM if:
 #### Getting Started with WaM-DaM
  
 WaM-DaM information model is implemented in a relational database which is ready for use to load your data into it. You can choose one of these relational database systems. If you are a beginner, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data.  
-Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md) on how you can set up a WaM-DaM database in SQLite. The instructions are demonstrated live in a video screenshot :)
+Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop) on how you can set up a WaM-DaM database in SQLite. The instructions are demonstrated live in a video screenshot :)
 
 Check out this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> WaM-DaM Workshop </a>  activity to discover water management data for a WEAP model 
 
