@@ -34,7 +34,7 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 * Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)   
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
-Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Documentation.md) abou WaM-DaM architecture
+Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation) abou WaM-DaM architecture
 
 #### Use Cases
 In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. This section provids sizx used cases that demonestrate the capabilities of WaM-DaM and how users can benifeit from it. These uses cases need the prepopulated WaM-DaM SQLite database. Check out the SQL scripts that guide you for the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a>     
