@@ -25,10 +25,8 @@ Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/d
 Check out this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Workshop.md" target="_blank"> WaM-DaM Workshop </a>  activity to discover water management data for a WEAP model 
 
 Here are the SQL scripts that you can use to create a blank WaM-DaM database. The differences among them are minor and technical due to differences in physical data types used by each system.
-* [SQLite](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_SQLite.sql)
-* [Microsoft SQL Server] (https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MSSQL.sql)
-* [MySQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_MySQL.sql)
-* [PostgreSQL](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/BlankSchemas/WaM-DaM_for_PostgreSQL.sql)
+
+Check out the WaM-DaM <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02WaM-DaM_Schema" target="_blank"> WaM-DaM XML and blank schemas </a> for SQLite, MySQL, PostgreSQL, and Microsoft SQL Server  
 
 #### Documentation  
 WaM-DaM is a set of related database tables that are organized into four groups handling different aspects of water management data:  
