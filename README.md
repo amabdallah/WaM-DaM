@@ -24,8 +24,7 @@ Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/blob/master/d
 
 Check out this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> WaM-DaM Workshop </a>  activity to discover water management data for a WEAP model 
 
-
-
+Check out the WaM-DaM <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">XML and blank database schemas</a> for SQLite, Microsoft SQL Server, PostgreSQL, and MySQL.
 
 #### Documentation  
 WaM-DaM is a set of related database tables that are organized into four groups handling different aspects of water management data:  
