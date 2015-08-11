@@ -1,6 +1,6 @@
 **Use case #4:** What are the data value(s) of an attribute of a system component?   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCases/Queries/04ComparSurfaceArea_Parameter.sql)     
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/03UseCases/Results/UseCase4.csv)  
 
 
 4.1 Binarys  
