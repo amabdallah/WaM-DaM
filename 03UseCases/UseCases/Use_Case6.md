@@ -2,11 +2,19 @@
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.0ScenarioComparision.sql)[Result]()  
 
 6.1 Differences in Topology   
-[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.1TopologicalDifference.sql)[Result]()  
+Addition 
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.1TopologicalDifference.sql)   
+[Result]()  
+
+Removals
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.1TopologicalDifference.sql)   
+[Result]()
 
 6.2 Differences in Metadata   
-[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.2ScenarioMetadata.sql)[Result]()  
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.2ScenarioMetadata.sql)   
+[Result]()  
 
 6.3 Differences in Data Values    
-[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.30ScenarioDataValues.sql)[Result]()  
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Queries/06.30ScenarioDataValues.sql)    
+[Result]()  
 
