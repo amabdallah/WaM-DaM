@@ -73,7 +73,7 @@ WaM-DaM development is supported by the National Science Foundation Grant <a hre
 
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
 
-<a href="http://www.w3c.org/" target="_blank">W3C Home Page</a>
+<a href="http://www.w3c.org/" target="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Twitter.png">W3C Home Page</a>
 
 
 
