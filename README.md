@@ -8,7 +8,7 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>
 
-#### Who can use WaM-DaM? You can use WaM-DaM if:   
+#### Who can use WaM-DaM? You can use it, if:   
 1.	Your data is represented in space through nodes (points) and/or links (connections between nodes).    
 2.	You have one or more data types such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays.   
 3.	You want to manage and organize all of your data for different models in a central standarized database
