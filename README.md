@@ -1,23 +1,23 @@
 #### The Water Management Data Model (WaM-DaM)
 
-Water Management Data Model (WaM-DaM) is a persistent information model (like a standard) to help scientists and practitioners like you to organize all of your water management data (input and output of models) consistently in a single database repository. WaM-DaM then can help you search and discover data to build models and interpret it their data correctly
+Water Management Data Model (WaM-DaM) is a persistent information model (like a standard) to help scientists and practitioners like you to organize all of your water management data (input and output of models) consistently in a single database repository. WaM-DaM then can help you search and discover data to build models and interpret their data correctly. 
 
-Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax and semantics. WaM-DaM will speed the time to find, organize, and synthesize data from different sources and prepare data for modeling. Along the way, you'll learn more about your data and the water system the data describes. 
+Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax and semantics. WaM-DaM will speed the time to find, organize, and synthesize data from different sources and prepare data for modeling.
+
+This GitHub repository is organized to direct you to i) understand WaM-DaM design, ii) demonstrate uses cases of how WaM-DaM works, and iii) set up your own WaM-DaM instances. 
 
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>
 
-The repository is organized to direct you to i) understand WaM-DaM design, demonstrate how WaM-DaM works, and provide you with instructions on how to use WaM-DaM 
-
-#### Who can use WaM-DaM?
-You can use WaM-DaM if:   
-1.	Your data are for nodes (points) and/or links (connections between nodes).    
-2.	You have one or more data types such as binary, numeric parameters, seasonal, parameters, file-based, rules, time series, or multi-column arrays.   
-3.	You want to manage and organize all of your data for different models in a central database 
+#### Who can use WaM-DaM? You can use WaM-DaM if:   
+1.	Your data is represented in space through nodes (points) and/or links (connections between nodes).    
+2.	You have one or more data types such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays.   
+3.	You want to manage and organize all of your data for different models in a central standarized database
+4.	You want to automate the process to discover and prepare your input data to models in a generic way. 
 4.	You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md) of WaM-DaM data.  
 
 #### Getting Started with WaM-DaM
- 
-WaM-DaM information model is implemented in a relational database which is ready for use to load your data into it. You can choose one of these relational database systems. If you are a beginner, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data.  
+WaM-DaM is implemented in a relational database and ready for use to load your data into it it. You can choose one of these relational database systems to set up your own WaM-DaM instances: SQLite, PostGreSQL, MySQL, and Microsfot SQL Server. If you are a beginner, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. 
+
 Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop) on how you can set up a WaM-DaM database in SQLite. The instructions are demonstrated live in a video screenshot :)
 
 Check out this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> WaM-DaM Workshop </a>  activity to discover water management data for a WEAP model 
