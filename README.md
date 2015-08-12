@@ -73,8 +73,8 @@ WaM-DaM development is supported by the National Science Foundation Grant <a hre
 
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
 
-<a href="http://www.google.com" target="_blank">
-  <img width="220" height="250" border="0" align="center"  src="http://www.nsf.gov/images/logos/nsf1v.jpg"/>
+<a href="https://twitter.com/AdelMAbdallah" target="_blank">
+  <img width="220" height="250" border="0" align="center"  src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Twitter.png"/>
 </a>
 
 
