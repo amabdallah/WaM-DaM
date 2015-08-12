@@ -67,7 +67,9 @@ For more info, please free to email
 <a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/ResearchGate.png" alt="Adel M. Abdallah" /></a> <a title="Adel M. Abdallah" href="http://www.mendeley.com/profiles/adel-abdallah2/"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/mendeley.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/GoogleScholar.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://www.linkedin.com/in/adelmabdallah"><img 
-src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Linkedin.png" alt="Adel M. Abdallah" /></a>
+src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Linkedin.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://usu.academia.edu/AdelMAbdallah"><img 
+src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Academia.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://twitter.com/AdelMAbdallah"><img 
+src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Twitter.png" alt="Adel M. Abdallah" /></a>
 
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> at: david.rosenberg@usu.edu
 
