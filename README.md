@@ -57,7 +57,7 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 ## AUTHOR and CONTACT
 For more info, contact Adel Abdallah @       
 amabdallah@aggiemail.usu.edu    
-<a  href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm"><img 
+<a  href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Home.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/ResearchGate.png" alt="Adel M. Abdallah" /></a> <a title="Adel M. Abdallah" href="http://www.mendeley.com/profiles/adel-abdallah2/"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/mendeley.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/GoogleScholar.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://www.linkedin.com/in/adelmabdallah"><img 
@@ -72,10 +72,5 @@ david.rosenberg@usu.edu
 WaM-DaM development is supported by the National Science Foundation Grant <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">NSF grant</a> . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.   
 
 [![NSF](http://www.nsf.gov/images/logos/nsf1v.jpg)](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false)[![CI-Water](http://ci-water.org/images/logo/ciwater.png)](http://ci-water.org/)
-
-<a href="https://twitter.com/AdelMAbdallah" target="_blank">
-  <img width="220" height="250" border="0" align="center"  src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Twitter.png"/>
-</a>
-
 
 
