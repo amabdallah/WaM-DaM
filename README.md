@@ -55,19 +55,18 @@ Materials in this GitHub repository are disturbed under a BSD 3-Clause license (
 For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
 
 ## AUTHOR and CONTACT
-For more info, please free to email    
-<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"> Adel Abdallah </a> at: amabdallah@aggiemail.usu.edu 
-
-   
-
+For more info, contact Adel Abdallah @       
+amabdallah@aggiemail.usu.edu 
 <a title="Adel M. Abdallah" href="https://www.researchgate.net/profile/Adel_Abdallah4/"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/ResearchGate.png" alt="Adel M. Abdallah" /></a> <a title="Adel M. Abdallah" href="http://www.mendeley.com/profiles/adel-abdallah2/"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/mendeley.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="http://scholar.google.com/citations?user=l5SLhK8AAAAJ&hl=en"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/GoogleScholar.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://www.linkedin.com/in/adelmabdallah"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Linkedin.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://usu.academia.edu/AdelMAbdallah"><img 
 src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Academia.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="https://twitter.com/AdelMAbdallah"><img 
-src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Twitter.png" alt="Adel M. Abdallah" /></a>
-
-<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> at: david.rosenberg@usu.edu
+src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Twitter.png" alt="Adel M. Abdallah" /></a><a title="Adel M. Abdallah" href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm"><img 
+src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Home.png" alt="Adel M. Abdallah" /></a>
+Or 
+<a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> @
+david.rosenberg@usu.edu
 
 ## Sponsors and Credit 
 WaM-DaM development is supported by the National Science Foundation Grant <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">NSF grant</a> . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.   
