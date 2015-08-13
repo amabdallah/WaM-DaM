@@ -2,7 +2,7 @@
 
 Water Management Data Model (WaM-DaM) is a persistent information model (like a standard for a database) to help scientists and practitioners like you to consistently organize all of your water management data (input and output of models) in a single database. WaM-DaM also can help you search and discover data from sources to build models and interpret their data correctly.   
 
-Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax (i.e., strucutre) and semantics (terminology). WaM-DaM will speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.   
+Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaM-DaM will speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.   
 
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>     
 
@@ -16,7 +16,7 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 *	Your data is represented in space through nodes (points) and/or links (connections between nodes).    
 *	You have one or more data types for your attributes such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays **and you want to**   
 
-1.	Manage and organize all of your data for different models in a central standarized database
+1.	Manage and organize all of your data for different models in a central standardized database
 2.	Automate the process to discover and prepare your input data to models, and  
 3.	Share and publish your data. WaM-DaM supports important contextual metadata like sources, methods, and units to help others correctly interpret the meanings of your data. 
 
@@ -28,24 +28,24 @@ This interactive WaM-DaM logical data model is at the <a href="http://amabdallah
 
 ==============================
 ### Getting Started with WaM-DaM: Get a Copy of WaM-DaM!    
-WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostGreSQL, MySQL, and Microsfot SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
+WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
 
 
 ==============================
 ### Use Cases: What Can WaM-DaM Do?      
-WaM-DaM capabilites are demonestrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with a the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
+WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
 
 
 ==============================
 ### Publications and Presentations 
-A preliminary WaM-DaM design was published at <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">iEMSs 2014</a> as a peer-reviewed conference paper at the :
+A preliminary WaM-DaM design was published at <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">iEMSs 2014</a> as a peer-reviewed conference paper at the:
 <a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> You can download the EndNote citation [file](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaMDaM_AbdallahRosenberg.enw)
 You also can check out the professional and conference [presentations](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Presentations.md) along the way of WaM-DaM development 
 
 
 ==============================
 ### Future Work and Limitations 
-There are numerous opportunities for <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">futute work </a> to build on on WaM-DaM and benefit from its design in applications. Several of these opportunities may overcome the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Limitations.md" target="_blank">limitations</a> of the current design and improve it to be a standard for communicating systems analysis data.
+There are numerous opportunities for <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">future work </a> to build on WaM-DaM and benefit from its design in applications. Several of these opportunities may overcome the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Limitations.md" target="_blank">limitations</a> of the current design and improve it to be a standard for communicating systems analysis data.
 
 ==============================
 ### Licensing
