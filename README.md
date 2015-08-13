@@ -7,7 +7,7 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>     
 
 **This GitHub repository is organized to direct you to**   
-**i)** Understand WaM-DaM design,    
+**i)** Understand WaM-DaM design and its schema,    
 **ii)** Follow use cases that demonstrate WaM-DaM capabilities and how it works, and    
 **iii)** Set up your own WaM-DaM instance and populate it with your data.    
 
