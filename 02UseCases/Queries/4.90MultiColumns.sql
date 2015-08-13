@@ -10,7 +10,7 @@ WaM-DaM keeps track of the meanings of data values, their units, to what instanc
 */
 
 SELECT "ObjectTypes"."NativeObjectName",
-"Instances"."InstanceName","Attributes"."NativeAttributeName","MetadataMapping"."AttributeTypeCodeCV",
+"Instances"."InstanceName","Attributes"."NativeAttributeName","Mapping"."AttributeTypeCodeCV",
 "AttributesColumns"."NativeAttributeName" AS "ColumName",
 "MetadataColumns"."AttributeTypeCodeCV",
 "ColumnsUnits"."UnitName" AS "ColUnitName",
@@ -46,27 +46,27 @@ ON "CommonAttributeCategory"."CommonAttributeCategoryID"="CommonAttributes"."Com
 Left JOIN "Units" 
 ON "Units"."UnitID"="Attributes"."UnitID"
 
-Left JOIN "MetadataMapping"
-ON "MetadataMapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
+Left JOIN "Mapping"
+ON "Mapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
 
 Left JOIN "DataStorage" 
-ON "DataStorage"."DataStorageID"="MetadataMapping"."DataStorageID"
+ON "DataStorage"."DataStorageID"="Mapping"."DataStorageID"
 
-Left JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="MetadataMapping"."MetadataMappingID"
+Left JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="Mapping"."MetadataMappingID"
 
 JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 AND "Scenarios"."ScenarioName"='BaseCaseLower'
 
 Left JOIN "MasterNetworks" 
 ON "MasterNetworks"."MasterNetworkID"="Scenarios"."ScenarioID"
 
 Left JOIN "Methods" 
-ON "Methods"."MethodID"="MetadataMapping"."MethodID"
+ON "Methods"."MethodID"="Mapping"."MethodID"
 
 Left JOIN "Sources" 
-ON "Sources"."SourceID"="MetadataMapping"."SourceID"
+ON "Sources"."SourceID"="Mapping"."SourceID"
 
 Left JOIN "MultiColumnArray"  
 ON "MultiColumnArray" ."DataStorageID"="DataStorage"."DataStorageID"
@@ -78,7 +78,7 @@ ON "MultiColumnArray" ."DataStorageID"="DataStorage"."DataStorageID"
 Left JOIN "DataStorage" As "StorageColumns"
 ON "StorageColumns"."DataStorageID"="MultiColumnArray"."ColumnNameID"
 
-Left JOIN "MetadataMapping" As "MetadataColumns"
+Left JOIN "Mapping" As "MetadataColumns"
 ON "MetadataColumns"."DataStorageID"="StorageColumns"."DataStorageID"
 
 Left JOIN  "ObjectAttributes" As "ObjAttColumns"
@@ -97,7 +97,7 @@ Left JOIN "MultiColumnValues"
 ON "MultiColumnValues"."MultiColumnID"="MultiColumnArray"."MultiColumnID"
 
 Left JOIN "Instances" 
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 WHERE "Instances"."InstanceName"='Hyrum (10)' 
 

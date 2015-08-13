@@ -48,26 +48,26 @@ ON "CommonAttributeCategory"."CommonAttributeCategoryID"="CommonAttributes"."Com
 Left JOIN "Units" 
 ON "Units"."UnitID"="Attributes"."UnitID"
 
-Left JOIN "MetadataMapping"
-ON "MetadataMapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
+Left JOIN "Mapping"
+ON "Mapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
 
 Left JOIN "DataStorage" 
-ON "DataStorage"."DataStorageID"="MetadataMapping"."DataStorageID"
+ON "DataStorage"."DataStorageID"="Mapping"."DataStorageID"
 
-Left JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="MetadataMapping"."MetadataMappingID"
+Left JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="Mapping"."MetadataMappingID"
 
 Left JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "MasterNetworks" 
 ON "MasterNetworks"."MasterNetworkID"="Scenarios"."ScenarioID"
 
 Left JOIN "Methods" 
-ON "Methods"."MethodID"="MetadataMapping"."MethodID"
+ON "Methods"."MethodID"="Mapping"."MethodID"
 
 Left JOIN "Sources" 
-ON "Sources"."SourceID"="MetadataMapping"."SourceID"
+ON "Sources"."SourceID"="Mapping"."SourceID"
 
 Left JOIN "Sources" As "ParentSources"
 ON "ParentSources"."SourceID"="Sources"."ParentSourceID"
@@ -88,6 +88,6 @@ Left JOIN "Organizations" As "OrganizationsSources"
 ON "OrganizationsSources" ."OrganizationID"="PeopleSources"."OrganizationID"
 
 Left JOIN "Instances" 
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 WHERE  "ScenarioName"!='AbandonedPlans' AND("Instances"."InstanceName"='Hyrum (10)' OR "Instances"."InstanceName"='Hyrum Reservoir' OR "Instances"."InstanceName"='HYRUM')
 

@@ -4,36 +4,36 @@
 This query summarizes the difference of metadata between two scenarios of the Lower Bear River 
 Master Network. 
 
-First, the query should indentify which instances has changes in metadata. 
-Then, using the spcific instances, we should look for changes in what kind of metadata 
+First, the query should identify which instances has changes in metadata. 
+Then, using the specific instances, we should look for changes in what kind of metadata 
 
 Result:
 
 */
 -- find the metadata differences in the base case scenario
 SELECT  DISTINCT "Instances"."InstanceName","NativeObjectName","ObjectTopology","NativeAttributeName",
-"SourceName","MethodName","MetadataMapping"."DataStorageID" ,
+"SourceName","MethodName","Mapping"."DataStorageID" ,
 "AttributeTypeCodeCV" ,"ScenarioName" 
 
 FROM "ScenarioComparision"
 
-JOIN "MetadataMapping"
-ON "MetadataMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
+JOIN "Mapping"
+ON "Mapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
 
 Left JOIN "Methods" 
-ON "Methods"."MethodID"="MetadataMapping"."MethodID"
+ON "Methods"."MethodID"="Mapping"."MethodID"
 
 Left JOIN "Sources" 
-ON "Sources"."SourceID"="MetadataMapping"."SourceID"
+ON "Sources"."SourceID"="Mapping"."SourceID"
 
-JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
+JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
 
 JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "ObjectAttributes"
-ON "ObjectAttributes"."ObjectAttributeID"="MetadataMapping"."ObjectAttributeID"
+ON "ObjectAttributes"."ObjectAttributeID"="Mapping"."ObjectAttributeID"
 
 Left JOIN  "Attributes"
 ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
@@ -45,7 +45,7 @@ Left JOIN "DataStructures"
 ON "DataStructures"."DataStructureID"="ObjectTypes"."DataStructureID"
 
 JOIN "Instances"
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 WHERE InstanceName  NOT IN  (SELECT InstanceName
 FROM Topologies )
@@ -56,28 +56,28 @@ UNION ALL
 -- Find the metadata changes in the Proposed scenario
 
 SELECT  DISTINCT "Instances"."InstanceName","NativeObjectName","ObjectTopology","NativeAttributeName",
-"SourceName","MethodName","MetadataMapping"."DataStorageID" ,
+"SourceName","MethodName","Mapping"."DataStorageID" ,
 "AttributeTypeCodeCV" ,"ScenarioName" 
 
 FROM "ScenarioComparision"
 
-JOIN "MetadataMapping"
-ON "MetadataMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
+JOIN "Mapping"
+ON "Mapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
 
 Left JOIN "Methods" 
-ON "Methods"."MethodID"="MetadataMapping"."MethodID"
+ON "Methods"."MethodID"="Mapping"."MethodID"
 
 Left JOIN "Sources" 
-ON "Sources"."SourceID"="MetadataMapping"."SourceID"
+ON "Sources"."SourceID"="Mapping"."SourceID"
 
-JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
+JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
 
 JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "ObjectAttributes"
-ON "ObjectAttributes"."ObjectAttributeID"="MetadataMapping"."ObjectAttributeID"
+ON "ObjectAttributes"."ObjectAttributeID"="Mapping"."ObjectAttributeID"
 
 Left JOIN  "Attributes"
 ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
@@ -89,7 +89,7 @@ Left JOIN "DataStructures"
 ON "DataStructures"."DataStructureID"="ObjectTypes"."DataStructureID"
 
 JOIN "Instances"
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 WHERE "InstanceName" NOT IN  (SELECT InstanceName
 FROM Topologies );
 

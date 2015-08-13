@@ -26,23 +26,23 @@ ON CommonAttributes.CommonAttributeID= Attributes .CommonAttributeID
 LEFT JOIN Units
 ON Units.UnitID= Attributes.UnitID
 
-LEFT JOIN MetadataMapping
-ON MetadataMapping.ObjectAttributeID= ObjectAttributes.ObjectAttributeID
+LEFT JOIN Mapping
+ON Mapping.ObjectAttributeID= ObjectAttributes.ObjectAttributeID
 
 LEFT JOIN Instances
-ON Instances.InstanceID= MetadataMapping.InstanceID
+ON Instances.InstanceID= Mapping.InstanceID
 
-LEFT JOIN ScenarioMetadata
-ON ScenarioMetadata.MetadataMappingID= MetadataMapping.MetadataMappingID
+LEFT JOIN ScenarioMapping
+ON ScenarioMapping.MetadataMappingID= Mapping.MetadataMappingID
 
 LEFT JOIN Scenarios
-ON Scenarios.ScenarioID= ScenarioMetadata.ScenarioID
+ON Scenarios.ScenarioID= ScenarioMapping.ScenarioID
 
 LEFT JOIN MasterNetworks
 ON MasterNetworks.MasterNetworkID= Scenarios.MasterNetworkID
 
 LEFT JOIN DataStorage
-ON DataStorage .DataStorageID = MetadataMapping.DataStorageID 
+ON DataStorage .DataStorageID = Mapping.DataStorageID 
 
 LEFT JOIN Binarys
 ON Binarys.DataStorageID = DataStorage.DataStorageID 

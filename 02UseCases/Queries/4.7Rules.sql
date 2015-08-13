@@ -15,7 +15,7 @@ InstanceName,
 Attributes.NativeAttributeName,
 "Units"."UnitName",
 "DataStructureName",
-MetadataMapping.AttributeTypeCodeCV,
+Mapping.AttributeTypeCodeCV,
 --NumConstant,
 RuleVariableOrder,
 SymbolCV,
@@ -38,20 +38,20 @@ ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
 Left JOIN "Units" 
 ON "Units"."UnitID"="Attributes"."UnitID"
 
-Left JOIN "MetadataMapping"
-ON "MetadataMapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
+Left JOIN "Mapping"
+ON "Mapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
 
 Left JOIN "Instances" 
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 Left JOIN "DataStorage" 
-ON "DataStorage"."DataStorageID"="MetadataMapping"."DataStorageID"
+ON "DataStorage"."DataStorageID"="Mapping"."DataStorageID"
 
-LEFT JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="MetadataMapping"."MetadataMappingID"
+LEFT JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="Mapping"."MetadataMappingID"
 
 Left JOIN "Scenarios" 
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "MasterNetworks" 
 ON "MasterNetworks"."MasterNetworkID"="Scenarios"."ScenarioID"
@@ -64,7 +64,7 @@ ON "Rules"."DataStorageID"="DataStorage"."DataStorageID"
 Left JOIN "DataStorage" As "RuleVariables"
 ON "RuleVariables"."DataStorageID"="Rules"."RuleVariableID"
 
-Left JOIN "MetadataMapping" As "MetadataRuleVariables"
+Left JOIN "Mapping" As "MetadataRuleVariables"
 ON "MetadataRuleVariables"."DataStorageID"="RuleVariables"."DataStorageID"
 
 Left JOIN  "ObjectAttributes" As "ObjAttRuleVariables"

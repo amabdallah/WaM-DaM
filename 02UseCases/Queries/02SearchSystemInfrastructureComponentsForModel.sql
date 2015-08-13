@@ -46,20 +46,20 @@ ON "ObjectAttributes"."ObjectTypeID"="ObjectTypes"."ObjectTypeID"
 Left JOIN  "Attributes"
 ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
 
-Left JOIN "MetadataMapping"
-ON "MetadataMapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
+Left JOIN "Mapping"
+ON "Mapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
 
-Left JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="MetadataMapping"."MetadataMappingID"
+Left JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MappingID"="Mapping"."MappingID"
 
 Left JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "MasterNetworks" 
 ON "MasterNetworks"."MasterNetworkID"="Scenarios"."MasterNetworkID"
 
 LEFT JOIN "Instances"
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 Left JOIN "Connections" 
 ON "Connections"."LinkInstanceID"="Instances"."InstanceID"

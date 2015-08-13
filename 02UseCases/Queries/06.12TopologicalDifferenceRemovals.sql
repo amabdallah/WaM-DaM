@@ -24,17 +24,17 @@ SELECT  DISTINCT  "Instances"."InstanceName","NativeObjectName","ObjectTopology"
 
 FROM "ScenarioComparision"
 
-JOIN "MetadataMapping"
-ON "MetadataMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
+JOIN "Mapping"
+ON "Mapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
 
-JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
+JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID4"
 
 JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "ObjectAttributes"
-ON "ObjectAttributes"."ObjectAttributeID"="MetadataMapping"."ObjectAttributeID"
+ON "ObjectAttributes"."ObjectAttributeID"="Mapping"."ObjectAttributeID"
 
 Left JOIN  "Attributes"
 ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
@@ -49,7 +49,7 @@ Left JOIN "DataStructures"
 ON "DataStructures"."DataStructureID"="ObjectTypes"."DataStructureID"
 
 JOIN "Instances"
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 WHERE "Attributes"."NativeAttributeName"='ObjectInstances'
 

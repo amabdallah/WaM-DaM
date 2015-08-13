@@ -13,13 +13,13 @@ The divide between the two queries is the UNION command
 
 Result:
 
-The first part of the query finds the instances that are added to the orignal scenario 
-the second part of the query finds the instances that are removed from the orignal scenario 
+The first part of the query finds the instances that are added to the original scenario 
+the second part of the query finds the instances that are removed from the original scenario 
 
 */
 
 -- First Part 
--- Find the instances that are added to the orginal scenario
+-- Find the instances that are added to the original scenario
 
 
 SELECT  DISTINCT  "Instances"."InstanceName","NativeObjectName","ObjectTopology","ScenarioName",
@@ -27,20 +27,20 @@ SELECT  DISTINCT  "Instances"."InstanceName","NativeObjectName","ObjectTopology"
 
 FROM "ScenarioComparision"
 
-JOIN "MetadataMapping"
-ON "MetadataMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
+JOIN "Mapping"
+ON "Mapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
 
-JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
+JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="ScenarioComparision"."MetadataMappingID5"
 
 JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 Left JOIN "MasterNetworks" 
 ON "MasterNetworks"."MasterNetworkID"="Scenarios"."MasterNetworkID"
 
 Left JOIN "ObjectAttributes"
-ON "ObjectAttributes"."ObjectAttributeID"="MetadataMapping"."ObjectAttributeID"
+ON "ObjectAttributes"."ObjectAttributeID"="Mapping"."ObjectAttributeID"
 
 Left JOIN  "Attributes"
 ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
@@ -52,6 +52,6 @@ Left JOIN "DataStructures"
 ON "DataStructures"."DataStructureID"="ObjectTypes"."DataStructureID"
 
 JOIN "Instances"
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 WHERE "Attributes"."NativeAttributeName"='ObjectInstances'

@@ -35,20 +35,20 @@ Left JOIN  "ObjectAttributes"
 ON "ObjectAttributes"."ObjectTypeID"="ObjectTypes"."ObjectTypeID"
 
 -- Join the Objects Attributes to Mapping Table  
-Left JOIN "MetadataMapping"
-ON "MetadataMapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
+Left JOIN "Mapping"
+ON "Mapping"."ObjectAttributeID"="ObjectAttributes"."ObjectAttributeID"
 
 -- Join the Attributes table to the ObjectAttributes table   
 Left JOIN  "Attributes"
 ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID" 
 
 -- Join the Mapping table to the ScenarioMapping table   
-Left JOIN "ScenarioMetadata"
-ON "ScenarioMetadata"."MetadataMappingID"="MetadataMapping"."MetadataMappingID"
+Left JOIN "ScenarioMapping"
+ON "ScenarioMapping"."MetadataMappingID"="Mapping"."MetadataMappingID"
 
 -- Join the Scenarios table to the ScenarioMapping table   
 Left JOIN "Scenarios"
-ON "Scenarios"."ScenarioID"="ScenarioMetadata"."ScenarioID"
+ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
 
 -- Join the MasterNetworks table to the Scenarios table   
 Left JOIN "MasterNetworks"
@@ -56,7 +56,7 @@ ON "MasterNetworks"."MasterNetworkID"="Scenarios"."MasterNetworkID"
 
 -- Join the Instances table to the Mapping table   
 Left JOIN "Instances" 
-ON "Instances"."InstanceID"="MetadataMapping"."InstanceID"
+ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 -- Join the Connections table to the Instances table   
 Left JOIN "Connections" 
@@ -71,7 +71,7 @@ Left JOIN "Instances"  AS "EndNodeInstance"
 ON "EndNodeInstance"."InstanceID"="Connections"."EndNodeInstanceID"
 
 --- Get the Object Type Name for the start node instance 
-Left JOIN "MetadataMapping" As "MetadataStartNodeInstace"
+Left JOIN "Mapping" As "MetadataStartNodeInstace"
 ON "MetadataStartNodeInstace"."InstanceID"="StartNodeInstance"."InstanceID"
 
 Left JOIN  "ObjectAttributes" As "ObjectAttStartNodeInstance"
@@ -84,7 +84,7 @@ Left JOIN  "Attributes" As "AttLinkInstance"
 ON "AttLinkInstance"."AttributeID"="ObjectAttStartNodeInstance"."AttributeID"
 
 --- Get the Object Type Name for the end node instance 
-Left JOIN "MetadataMapping" As "MetadataEndNodeInstace"
+Left JOIN "Mapping" As "MetadataEndNodeInstace"
 ON "MetadataEndNodeInstace"."InstanceID"="EndNodeInstance"."InstanceID"
 
 Left JOIN  "ObjectAttributes" As "ObjectAttEndNodeInstance"

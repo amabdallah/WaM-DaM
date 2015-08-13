@@ -5,25 +5,25 @@
 -- Topology, metadata, and data values 
 
 
--- First,  query and combine the MetadataMapping tables for both scenarios (Left Outer Join)
--- Second, subtract the common MetadataMapping between the two scenarios 
+-- First,  query and combine the Mapping tables for both scenarios (Left Outer Join)
+-- Second, subtract the common Mapping between the two scenarios 
 
 -- Create a new table that has the Scenario and Mapping unique identifiers to Scenario #4 
--- which coresponds to the Base Case 
+-- which corresponds to the Base Case 
 CREATE Table t4 AS
 SELECT ScenarioID,MetadataMappingID
- FROM "ScenarioMetadata"
+ FROM "ScenarioMapping"
 WHERE ScenarioID=4
 
 -- Create a new table that has the Scenario and Mapping unique identifiers to Scenario #5 
--- which coresponds to the Proposed scenario
+-- which corresponds to the Proposed scenario
 CREATE Table t5 AS
 SELECT ScenarioID,MetadataMappingID
- FROM "ScenarioMetadata" 
+ FROM "ScenarioMapping" 
 WHERE ScenarioID=5
 
 -- create a new table that joins both tables above but shows only the differences between them 
--- i.e., the additions or removals of uniqe identifiers that are no similar between the two scenarios
+-- i.e., the additions or removals of unique identifiers that are no similar between the two scenarios
 CREATE Table ScenarioComparision AS 
 
 SELECT "t4"."MetadataMappingID" As MetadataMappingID4,"t4"."ScenarioID" As ScenarioID4,
