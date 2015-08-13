@@ -47,7 +47,7 @@ You also can check out the professional and conference [presentations](https://g
 
 ==============================
 ### Future Work and Limitations 
-There are numerous opportunities for <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">future work </a> to build on WaM-DaM and benefit from its design in applications. Several of these opportunities may overcome the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Limitations.md" target="_blank">limitations</a> of the current design and improve it to be a standard for communicating systems analysis data.
+There are numerous opportunities for <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Future_Work.md" target="_blank">future work </a> to build on WaM-DaM and benefit from its design in applications. Several of these opportunities may overcome the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Limitations.md" target="_blank">limitations</a> of the current design and improve it to be a standard for communicating systems analysis data.
 
 
 ==============================
