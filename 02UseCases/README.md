@@ -1,4 +1,4 @@
-#### Use Cases to Demonstrate the Capabilities and Benefits of WaM-DaM
+### Use Cases to Demonstrate the Capabilities and Benefits of WaM-DaM
 
 We load disperate water manageemnt data to a WaM-DaM SQLite empty database. Then we present six uses cases that demonstrate how WaM-DaM can help users of scentistis and practioners to search for data for their models, keep track of important metadata, and compare similarites and differences across their data.
 
@@ -24,7 +24,8 @@ This use case shows the data values of all the types of data that WaM-DaM suppor
 This use cases show how WaM-DaM compares the differences in Topology, Metadata, and Data Values between two scenarios of the Lower Bear River model in WEAP.
 
 
-#### Workshop
+========================================================================
+### Workshop
 
 We demonstrated the first two uses cases in a workshop at the 2014 CUAHSI conference at Tuscaloosa, AL. Here is the detailed instructions of the 20 minutes <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> workshop </a>  activity to discover water management data for a WEAP model. 
 
