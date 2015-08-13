@@ -41,7 +41,7 @@ WaM-DaM is implemented in a relational database and ready to load your data into
 ==============================
 ### Publications and Presentations 
 A preliminary WaM-DaM design was published at <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">iEMSs 2014</a> as a peer-reviewed conference paper at the:
-<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> You can download the EndNote citation [file](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/WaMDaM_AbdallahRosenberg.enw)
+<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a>.<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/WaMDaM_AbdallahRosenberg.enw" target="_blank">EndNote citation</a>        
 You also can check out the professional and conference <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/ReadMe.md" target="_blank">presentations</a>along the way of WaM-DaM development 
 
 
