@@ -3,10 +3,11 @@
 Water Management Data Model (WaM-DaM) is a persistent information model (like a standard) to help scientists and practitioners like you to organize all of your water management data (input and output of models) consistently in a single database. WaM-DaM then can help you search and discover data from sources to build models and interpret their data correctly.   
 
 Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax and semantics. WaM-DaM will speed the time to find, organize, and synthesize data from different sources and prepare data for modeling.   
-   
-**This GitHub repository is organized to direct you to** **i)** understand WaM-DaM design, **ii)** follow uses cases that demonstrate WaM-DaM capabilites and how it works, and **iii)** set up your own WaM-DaM instance and populate it with your data. 
-
-<img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>
+<img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>     
+**This GitHub repository is organized to direct you to** 
+**i)** understand WaM-DaM design,    
+**ii)** follow uses cases that demonstrate WaM-DaM capabilities and how it works, and    
+**iii)** set up your own WaM-DaM instance and populate it with your data.    
 
 #### Who can use WaM-DaM? You can use it, if:   
 1.	Your data is represented in space through nodes (points) and/or links (connections between nodes).    
@@ -15,8 +16,19 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 4.	You want to automate the process to discover and prepare your input data to models in a generic way. 
 4.	You want to share and publish your data. WaM-DaM supports important metadata like sources, methods, and units to help others correctly interpret the meanings of your data.Check out the [scope](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md) of WaM-DaM data.  
 
+
+#### WaM-DaM Schema
+Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation) abou WaM-DaM architecture
+
+
 #### Getting Started with WaM-DaM
-WaM-DaM is implemented in a relational database and ready for use to load your data into it it. You can choose one of these relational database systems to set up your own WaM-DaM instances: SQLite, PostGreSQL, MySQL, and Microsfot SQL Server. If you are a beginner, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. 
+WaM-DaM is implemented in a relational database and ready for use to load your data into it  in SQLite, PostGreSQL, MySQL, and Microsfot SQL Server. If you are a beginner, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. 
+
+#### Use Cases
+In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. This section provids sizx used cases that demonestrate the capabilities of WaM-DaM and how users can benifeit from it. These uses cases need the prepopulated WaM-DaM SQLite database. Check out the SQL scripts that guide you for the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a>     
+
+Check out more info about the project and [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development
+
 
 Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop) on how you can set up a WaM-DaM database in SQLite. The instructions are demonstrated live in a video screenshot :)
 
@@ -32,12 +44,8 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 * Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)   
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
-Check out this interactive WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">(WaM-DaM schema)</a> and see the full [Documentation](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation) abou WaM-DaM architecture
 
-#### Use Cases
-In the Getting Started with WaM-DaM section above, you can get an empty database of WaM-DaM. Then the Documentation section gives you an idea about WaM-DaM tables, what they mean, and how they are connected with each other. This section provids sizx used cases that demonestrate the capabilities of WaM-DaM and how users can benifeit from it. These uses cases need the prepopulated WaM-DaM SQLite database. Check out the SQL scripts that guide you for the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a>     
 
-Check out more info about the project and [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development
 
 #### Publications
 A preliminary WaM-DaM design was published in 2014 as a peer-reviewed conference paper:
