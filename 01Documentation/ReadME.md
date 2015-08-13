@@ -23,6 +23,20 @@ WaM-DaM is organized into four schemas: i) core concepts (blue) which represent 
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaMDaM_Logical.jpg)
 
+
+#### Documentation  
+WaM-DaM is a set of related database tables that are organized into four groups handling different aspects of water management data:  
+* Core constructs (blue) which represent the key configuring constructs of WaM-DaM modular design, 
+* Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, 
+* Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and 
+* Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)   
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
+
+
+
+
+
+
 Check out the current WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">schema</a>
 
 ### WaM-DaM Core Entities
