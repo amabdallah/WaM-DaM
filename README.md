@@ -11,10 +11,11 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 **ii)** Follow use cases that demonstrate WaM-DaM capabilities and how it works, and    
 **iii)** Set up your own WaM-DaM instance and populate it with your data.    
 
+
 ==============================
 ### Who Can Use WaM-DaM? You Can Use it, if:   
 *	Your data is represented in space through nodes (points) and/or links (connections between nodes).    
-*	You have one or more data types for your attributes such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays **and you want to**   
+*	You have one or more data types for your attributes such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays, **and you want to**   
 
 1.	Manage and organize all of your data for different models in a central standardized database
 2.	Automate the process to discover and prepare your input data to models, and  
@@ -27,13 +28,13 @@ This interactive WaM-DaM logical data model is at the <a href="http://amabdallah
 
 
 ==============================
-### Getting Started with WaM-DaM: Get a Copy of WaM-DaM!    
-WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
+### Use Cases: What Can WaM-DaM Do?      
+WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
 
 
 ==============================
-### Use Cases: What Can WaM-DaM Do?      
-WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
+### Getting Started with WaM-DaM: Get a Copy of WaM-DaM!    
+WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
 
 
 ==============================
@@ -47,10 +48,12 @@ You also can check out the professional and conference [presentations](https://g
 ### Future Work and Limitations 
 There are numerous opportunities for <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">future work </a> to build on WaM-DaM and benefit from its design in applications. Several of these opportunities may overcome the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Limitations.md" target="_blank">limitations</a> of the current design and improve it to be a standard for communicating systems analysis data.
 
+
 ==============================
 ### Licensing
 WaM-DaM and materials in this GitHub repository are disturbed under a BSD 3-Clause license (see           [LICENSE](https://github.com/amabdallah/WaM-DaM/blob/master/LICENSE.md)). 
 For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
+
 
 ==============================
 ### Authors and Contact
@@ -65,6 +68,7 @@ src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/
 Or    
 <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/" target="_blank"> David Rosenberg </a> @    
 david.rosenberg@usu.edu
+
 
 ==============================
 ### Sponsors and Credit 
