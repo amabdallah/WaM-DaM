@@ -66,8 +66,6 @@ david.rosenberg@usu.edu
 
 ## Sponsors and Credit 
 WaM-DaM development is supported by the National Science Foundation Grant <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">NSF grant</a> . Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.   
-
-For more info about the 
-Check out more info about the project and [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development
+Check out the [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development and how it fits with other efforts in this area.
 
 <a  href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false" target="_blank"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/nsf1v.jpg"/></a> <a  href="http://ci-water.org/" target="_blank"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/ciwater.png"/></a> 
