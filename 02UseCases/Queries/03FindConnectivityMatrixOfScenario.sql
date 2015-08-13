@@ -44,7 +44,7 @@ ON "Attributes"."AttributeID"="ObjectAttributes"."AttributeID"
 
 -- Join the Mapping table to the ScenarioMapping table   
 Left JOIN "ScenarioMapping"
-ON "ScenarioMapping"."MetadataMappingID"="Mapping"."MetadataMappingID"
+ON "ScenarioMapping"."MappingID"="Mapping"."MappingID"
 
 -- Join the Scenarios table to the ScenarioMapping table   
 Left JOIN "Scenarios"

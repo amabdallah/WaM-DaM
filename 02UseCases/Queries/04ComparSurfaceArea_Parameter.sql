@@ -66,7 +66,7 @@ Left JOIN "DataStorage"
 ON "DataStorage"."DataStorageID"="Mapping"."DataStorageID"
 
 JOIN "ScenarioMapping"
-ON "ScenarioMapping"."MetadataMappingID"="Mapping"."MetadataMappingID"
+ON "ScenarioMapping"."MappingID"="Mapping"."MappingID"
 
 Left JOIN "Scenarios" 
 ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
