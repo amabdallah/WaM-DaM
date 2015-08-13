@@ -23,3 +23,14 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 | **Data types**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 |**Scenarios**    | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | **Connections (links)** | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+
+
+
+
+These data sources have different native syntax and use different semantics to describe their data. Differences in semantics are prevalent through attribute names like SURF_AREA, Area_mi, and surface area. Terms like dam, waterbody, reservoir, and lake in some cases, all refer to the same man-made open structure that stores surface water. For syntax differences in network connectivity, WEAP uses start and end nodes for its links to indicate the directing of flow the connectivity of links. We accessed the schematic of the model’s network through the Node and Arc shapefiles that stored in the WEAP database. The Stream’s Dataset however, stores the connectivity matrix implicitly in ArcGIS. So we extracted the geospatial coordinates of start and end nodes for each stream segment using ArcGIS. 
+
+
+There are also significant differences in data format and syntax as well. The WEAP model uses a mix of proprietary database and CSV files to manage and store its data. The Streams, Waterbodies, and Dams datasets are shapefiles. Each of them has its own native data structure (e.g., a objects and their attributes). They use coded data values for attributes and they store the meaning of each code separately in a text file. For example, the attribute “purpose” in the Dams Dataset can have a value of “CI” which represents dam designated purposes of “Flood Control” in the letter “C” and “Irrigation” in the letter “I”. This is the case in these datasets for most of the attributes that have a categorical data value. Key metadata for these datasets like methods, sources and units are stored separately at the data supplier webpage. Thus users have to go back and forth between the data and its metadata to look for units and the meanings of coded values of each attribute. 
+
+
+WaM-DaM therefore overcomes these semantic and syntax differences by imposing a persistent set of specifications on data semantics and syntax across all these data sources as discussed in Sections 3 and 4. Data users in the Bear River Watershed or others can utilize WaM-DaM as a central repository to organize disparate water management data and then use it to discover subsets of data across these sources and populate such data to their models.
