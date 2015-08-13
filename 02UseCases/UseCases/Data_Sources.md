@@ -13,13 +13,13 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 
 | Source name  | Dams | Waterbodies  | Streams  | HydroDesktop Time series  | WEAP Model |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Data provider and citation  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Spatial coverage  | Content Cell  || Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Time span  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| #Objects   | Content Cell  || Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Object topology   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| # Instances   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| #Attributes   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Data types   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-|Scenarios    | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Connections (links) | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|**Data provider and citation**  | USGS (U.S. Geological Survey, 2013) |USGS (National Atlas of the United States, 2013)  | USGS (U.S. Geological Survey, 2005)  | HydroDesktop (Ames et al., 2012) | David Rosenberg, unpublished  |
+| **Spatial coverage**  | Content Cell  || Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **Time span**  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|** #Objects**   | Content Cell  || Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **Object topology**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **# Instances**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **#Attributes**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **Data types**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|**Scenarios**    | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **Connections (links)** | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
