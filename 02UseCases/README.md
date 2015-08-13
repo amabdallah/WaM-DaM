@@ -2,8 +2,9 @@
 
 We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilites. Here we present the six uses cases that demonstrate how WaM-DaM can help users of scentistis and practioners to search for data for their models, keep track of important metadata, and compare similarites and differences across their data.
 
-For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> populated SQLite WaM-DaM database </a>
+For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> populated SQLite WaM-DaM database </a>   
 
+===========================================================
 
 **Use case # 1:** [What are the required types of water system components and their attributes for a WEAP model?](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/Use_Case1.md)   
  
@@ -21,8 +22,8 @@ This use case shows the data values of all the types of data that WaM-DaM suppor
  
 
 **Use case #6:** [What are the data and metadata differences between two scenarios?](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/Use_Case6.md)   
-This use cases show how WaM-DaM compares the differences in Topology, Metadata, and Data Values between two scenarios of the Lower Bear River model in WEAP.
-
+This use cases show how WaM-DaM compares the differences in Topology, Metadata, and Data Values between two scenarios of the Lower Bear River model in WEAP.   
+ 
 
 ========================================================================
 ### Workshop
