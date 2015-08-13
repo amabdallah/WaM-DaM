@@ -15,7 +15,8 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 ==============================
 ### Who Can Use WaM-DaM? You Can Use it, if:   
 *	Your data is represented in space through nodes (points) and/or links (connections between nodes).    
-*	You have one or more data types for your attributes such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays, **and you want to**   
+*	You have one or more data types for your attributes such as binary, numeric parameters, seasonal, parameters, text parameters, file-based, rules, time series,  multi-column arrays,    
+**and you want to**   
 
 1.	Manage and organize all of your data for different models in a central standardized database
 2.	Automate the process to discover and prepare your input data to models, and  
@@ -29,12 +30,12 @@ This interactive WaM-DaM logical data model is at the <a href="http://amabdallah
 
 ==============================
 ### Use Cases: What Can WaM-DaM Do?      
-WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
+WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02UseCases" target="_blank">use cases</a> page.     
 
 
 ==============================
 ### Getting Started with WaM-DaM: Get a Copy of WaM-DaM!    
-WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
+WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
 
 
 ==============================
