@@ -37,7 +37,7 @@ LEFT JOIN Instances
 ON Instances.InstanceID=Mapping .InstanceID
 
 LEFT JOIN ScenarioMapping 
-ON ScenarioMapping.MetadataMappingID=Mapping.MetadataMappingID
+ON ScenarioMapping.MappingID=Mapping.MappingID
 
 LEFT JOIN DataStorage 
 ON DataStorage.DataStorageID=Mapping .DataStorageID

@@ -11,14 +11,14 @@
 -- Create a new table that has the Scenario and Mapping unique identifiers to Scenario #4 
 -- which corresponds to the Base Case 
 CREATE Table t4 AS
-SELECT ScenarioID,MetadataMappingID
+SELECT ScenarioID,MappingID
  FROM "ScenarioMapping"
 WHERE ScenarioID=4
 
 -- Create a new table that has the Scenario and Mapping unique identifiers to Scenario #5 
 -- which corresponds to the Proposed scenario
 CREATE Table t5 AS
-SELECT ScenarioID,MetadataMappingID
+SELECT ScenarioID,MappingID
  FROM "ScenarioMapping" 
 WHERE ScenarioID=5
 
@@ -26,24 +26,24 @@ WHERE ScenarioID=5
 -- i.e., the additions or removals of unique identifiers that are no similar between the two scenarios
 CREATE Table ScenarioComparision AS 
 
-SELECT "t4"."MetadataMappingID" As MetadataMappingID4,"t4"."ScenarioID" As ScenarioID4,
+SELECT "t4"."MappingID" As MetadataMappingID4,"t4"."ScenarioID" As ScenarioID4,
        CAST(NULL AS INTEGER) As MetadataMappingID5, CAST(NULL AS INTEGER) As ScenarioID5
 
 FROM "t4"
 WHERE NOT EXISTS (
     SELECT *
 FROM "t5"
-WHERE "t4"."MetadataMappingID"="t5"."MetadataMappingID" )
+WHERE "t4"."MappingID"="t5"."MappingID" )
 
 
 UNION ALL
 
 SELECT        CAST(NULL AS INTEGER) As MetadataMappingID5, CAST(NULL AS INTEGER) As ScenarioID5,
-	"t5"."MetadataMappingID","t5"."ScenarioID"
+	"t5"."MappingID","t5"."ScenarioID"
        
 FROM "t5"
 WHERE NOT EXISTS (
     SELECT *
 FROM "t4"
-WHERE "t4"."MetadataMappingID"="t5"."MetadataMappingID" )
+WHERE "t4"."MappingID"="t5"."MappingID" )
 
