@@ -69,3 +69,7 @@ WaM-DaM development is supported by the National Science Foundation Grant <a hre
 Check out the [Rationale and Context](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Rationale_Context.md) of WaM-DaM development and how it fits with other efforts in this area.
 
 <a  href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482&HistoricalAwards=false" target="_blank"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/nsf1v.jpg"/></a> <a  href="http://ci-water.org/" target="_blank"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/ciwater.png"/></a> 
+
+ <a  href="http://uwrl.usu.edu/" target="_blank"><img  src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/uwrl.png"/></a> 
+ <a  href="http://www.usu.edu/" target="_blank"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/usu.jpg"/></a> 
+
