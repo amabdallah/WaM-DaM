@@ -23,6 +23,9 @@ This use case shows the data values of all the types of data that WaM-DaM suppor
 **Use case #6:** [What are the data and metadata differences between two scenarios?](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/Use_Case6.md)   
 This use cases show how WaM-DaM compares the differences in Topology, Metadata, and Data Values between two scenarios of the Lower Bear River model in WEAP.
 
+
+#### Workshop
+
 We demonstrated the first two uses cases in a workshop at the 2014 CUAHSI conference at Tuscaloosa, AL. Here is the detailed instructions of the 20 minutes <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> workshop </a>  activity to discover water management data for a WEAP model. 
 
 
