@@ -29,7 +29,7 @@ WaM-DaM is implemented in a relational database and ready to load your data into
 
 
 #### Use Cases: what can WaM-DaM do?   
-WaM-DaM is capabilites are demonestrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with a the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
+WaM-DaM capabilites are demonestrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with a the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">use cases</a> page.     
 
 
 #### Publications and Presentations 
