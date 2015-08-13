@@ -2,7 +2,7 @@
 
 Water Management Data Model (WaM-DaM) is a persistent information model (like a standard) to help scientists and practitioners like you to organize all of your water management data (input and output of models) consistently in a single database. WaM-DaM then can help you search and discover data from sources to build models and interpret their data correctly.   
 
-Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax and semantics. WaM-DaM will speed the time to find, organize, and synthesize data from different sources and prepare data for modeling.   
+Think of WaM-DaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax and semantics. WaM-DaM will speed the time to find, organize, and synthesize data from different data sources and prepare data for modeling.   
 
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>     
 
