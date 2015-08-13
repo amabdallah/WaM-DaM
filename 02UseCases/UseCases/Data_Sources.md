@@ -9,3 +9,17 @@ We leverage current knowledge with these models and data sources and demonstrate
 
 
 First, we compiled all the data into CSV files under four Excel workbooks where each workbook has spreadsheets that replicate WaM-DaM tables. Then, I wrote a Matlab script to parse and then load data to the WaM-DaM SQLite database. You can use this generic [Matlab script](https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases/MatlabScript) to load your data to an empty SQLite WaM-DaM database. You can use the populated SQLite database along with the  <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> instrcutions </a> on how to set it up to test the use cases below. 
+
+
+| Source name  | Dams | Waterbodies  | Streams  | HydroDesktop Time series  | WEAP Model |
+| ------------- | ------------- || ------------- | ------------- || ------------- | ------------- |
+| Data provider and citation  | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| Spatial coverage  | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| Time span  | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| #Objects   | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| Object topology   | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| # Instances   | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| #Attributes   | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| Data types   | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+|Scenarios    | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
+| Connections (links) | Content Cell  || Content Cell  | Content Cell  || Content Cell  | Content Cell  |
