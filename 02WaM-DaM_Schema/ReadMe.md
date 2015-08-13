@@ -6,3 +6,10 @@ If you are a beginner, we recommend you to use SQLite because it is very simple 
 [Microsoft SQL Server](https://github.com/amabdallah/WaM-DaM/blob/master/02WaM-DaM_Schema/WaM-DaM_for_MSSQL.sql)  
 [MySQL](https://github.com/amabdallah/WaM-DaM/blob/master/02WaM-DaM_Schema/WaM-DaM_for_MySQL.sql)  
 [PostgreSQL](https://github.com/amabdallah/WaM-DaM/blob/master/02WaM-DaM_Schema/WaM-DaM_for_PostgreSQL.sql)  
+
+
+Check out the [Instructions](https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop) on how you can set up a WaM-DaM database in SQLite. 
+
+Check out this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> WaM-DaM Workshop </a>  activity to discover water management data for a WEAP model 
+
+Check out the WaM-DaM <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03UseCases" target="_blank">XML and blank database schemas</a> for SQLite, Microsoft SQL Server, PostgreSQL, and MySQL.
