@@ -6,6 +6,12 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_workflow.jpg" alt="Drawing" style="width: 100px;"/>     
 
+
+==============================
+### Use Cases: What Can WaM-DaM Do?      
+WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02UseCases" target="_blank">use cases</a> page.     
+
+
 **This GitHub repository is organized to direct you to**   
 **i)** Understand WaM-DaM design and its schema,    
 **ii)** Follow use cases that demonstrate WaM-DaM capabilities and how it works, and    
@@ -27,11 +33,6 @@ Think of WaM-DaM as a repository of water management data (purple cylinder) and 
 ==============================
 ### WaM-DaM Schema: See the Beautiful WaM-DaM!    
 This interactive WaM-DaM logical data model is at the <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">Logical Model</a> page. The schema shows WaM-DaM tables and their attributes, what they mean, and how they are connected with each other. You can see a simpler abstract design schematics and the full documentation of WaM-DaM design at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation" target="_blank">Documentation</a> page.   
-
-
-==============================
-### Use Cases: What Can WaM-DaM Do?      
-WaM-DaM capabilities are demonstrated through six generic use cases that follow the user needs to discover data for their models. You can see and examine these use cases using a prepopulated WaM-DaM SQLite database with the provided SQL commands at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02UseCases" target="_blank">use cases</a> page.     
 
 
 ==============================
