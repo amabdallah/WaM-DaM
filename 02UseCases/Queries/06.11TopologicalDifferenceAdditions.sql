@@ -28,10 +28,10 @@ SELECT  DISTINCT  "Instances"."InstanceName","NativeObjectName","ObjectTopology"
 FROM "ScenarioComparision"
 
 JOIN "Mapping"
-ON "Mapping"."MappingID"="ScenarioComparision"."MetadataMappingID5"
+ON "Mapping"."MappingID"="ScenarioComparision"."MappingID5"
 
 JOIN "ScenarioMapping"
-ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MetadataMappingID5"
+ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MappingID5"
 
 JOIN "Scenarios"
 ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"

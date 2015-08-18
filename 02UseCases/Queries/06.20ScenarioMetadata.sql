@@ -18,7 +18,7 @@ SELECT  DISTINCT "Instances"."InstanceName","NativeObjectName","ObjectTopology",
 FROM "ScenarioComparision"
 
 JOIN "Mapping"
-ON "Mapping"."MappingID"="ScenarioComparision"."MetadataMappingID5"
+ON "Mapping"."MappingID"="ScenarioComparision"."MappingID5"
 
 Left JOIN "Methods" 
 ON "Methods"."MethodID"="Mapping"."MethodID"
@@ -27,7 +27,7 @@ Left JOIN "Sources"
 ON "Sources"."SourceID"="Mapping"."SourceID"
 
 JOIN "ScenarioMapping"
-ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MetadataMappingID5"
+ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MappingID5"
 
 JOIN "Scenarios"
 ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
@@ -62,7 +62,7 @@ SELECT  DISTINCT "Instances"."InstanceName","NativeObjectName","ObjectTopology",
 FROM "ScenarioComparision"
 
 JOIN "Mapping"
-ON "Mapping"."MappingID"="ScenarioComparision"."MetadataMappingID4"
+ON "Mapping"."MappingID"="ScenarioComparision"."MappingID4"
 
 Left JOIN "Methods" 
 ON "Methods"."MethodID"="Mapping"."MethodID"
@@ -71,7 +71,7 @@ Left JOIN "Sources"
 ON "Sources"."SourceID"="Mapping"."SourceID"
 
 JOIN "ScenarioMapping"
-ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MetadataMappingID4"
+ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MappingID4"
 
 JOIN "Scenarios"
 ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"

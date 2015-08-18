@@ -13,11 +13,11 @@ The divide between the two queries is the UNION command
 
 Result:
 
-The first part of the query finds the instances that are added to the orignal scenario 
-the second part of the query finds the instances that are removed from the orignal scenario 
+The first part of the query finds the instances that are added to the original scenario 
+the second part of the query finds the instances that are removed from the original scenario 
 
 */
--- Find the instances that are deleted (removals) from the orginal scenario
+-- Find the instances that are deleted (removals) from the original scenario
 
 SELECT  DISTINCT  "Instances"."InstanceName","NativeObjectName","ObjectTopology","ScenarioName",
 "MasterNetworkName"
@@ -25,10 +25,10 @@ SELECT  DISTINCT  "Instances"."InstanceName","NativeObjectName","ObjectTopology"
 FROM "ScenarioComparision"
 
 JOIN "Mapping"
-ON "Mapping"."MappingID"="ScenarioComparision"."MetadataMappingID4"
+ON "Mapping"."MappingID"="ScenarioComparision"."MappingID4"
 
 JOIN "ScenarioMapping"
-ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MetadataMappingID4"
+ON "ScenarioMapping"."MappingID"="ScenarioComparision"."MappingID4"
 
 JOIN "Scenarios"
 ON "Scenarios"."ScenarioID"="ScenarioMapping"."ScenarioID"
