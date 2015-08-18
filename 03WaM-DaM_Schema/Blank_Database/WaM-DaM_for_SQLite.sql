@@ -1,15 +1,9 @@
 -- This is a Data Definition Language (DDL) script that 
 -- generates a blank schema of the Water Management Data Model (WaM-DaM)
--- for SQLite database
--- Use the SQLite Manager Add-on to Mozilla Firefox
--- Create a new empty database. Click on the Execute SQL button and delete the text "SELECT * FROM tablename"
--- Simply copy all this script and paste into this Execute SQL window 
--- Then click Run SQL. The script should run successfully and create the 48 empty tables of WaM-DaM
-
-
-/***************************************************************************/
-/******************************* CREATE CORE *******************************/
-/***************************************************************************/
+-- for MySQL database
+-- in MySQL Workbench, Create a New SQL Tab for Executing queries
+-- Simply copy all this script and paste into the new window of "create query"
+-- Then click execute. The script should run successfully and create the 48 empty tables of WaM-DaM
 
 CREATE TABLE Attributes (
 	AttributeID INTEGER   NOT NULL PRIMARY KEY,
@@ -27,12 +21,12 @@ CREATE TABLE DataStorage (
 	DataStorageID INTEGER   NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE DataStructures (
+CREATE TABLE DataStructure (
 	DataStructureID INTEGER   NOT NULL PRIMARY KEY,
 	DataStructureName VARCHAR (255)  NOT NULL,
 	DataStructureDomainCV VARCHAR (255)  NOT NULL,
 	DataStructureWebpage VARCHAR (255)  NULL,
-	DataStrcutureDescription TEXT   NULL,
+	DataStructureDescription TEXT   NULL,
 	FOREIGN KEY (DataStructureDomainCV) REFERENCES DataStructureDomain (Term)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 );
@@ -120,7 +114,7 @@ CREATE TABLE ObjectTypes (
 	CommonObjectTypeID INTEGER   NULL,
 	FOREIGN KEY (CommonObjectTypeID) REFERENCES CommonObjectTypes (CommonObjectTypeID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY (DataStructureID) REFERENCES DataStructures (DataStructureID)
+	FOREIGN KEY (DataStructureID) REFERENCES DataStructure (DataStructureID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (NativeObjectCategoryID) REFERENCES NativeObjectCategory (NativeObjectCategoryID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION
@@ -454,8 +448,8 @@ CREATE TABLE Rules (
 
 CREATE TABLE SeasonalParameters (
 	SeasonalParameterID INTEGER   NOT NULL PRIMARY KEY,
-	SeasonStartDateTime VARCHAR (50)  NOT NULL,
-	SeasonEndDateTime VARCHAR (50)  NOT NULL,
+	SeasonStartDateTime VARCHAR (50)  NULL,
+	SeasonEndDateTime VARCHAR (50)  NULL,
 	SeasonNameCV VARCHAR (255)  NOT NULL,
 	SeasonValue VARCHAR (500)  NOT NULL,
 	DataStorageID INTEGER   NOT NULL,

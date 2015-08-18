@@ -5,6 +5,7 @@
 -- Simply copy all this script and paste into the new window of "create query"
 -- Then click execute. The script should run successfully and create the 48 empty tables of WaM-DaM
 
+
 DROP SCHEMA IF EXISTS WaMDaM;
 
 CREATE SCHEMA IF NOT EXISTS WaMDaM;
@@ -26,12 +27,12 @@ CREATE TABLE DataStorage (
 	DataStorageID INT   NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE DataStructures (
+CREATE TABLE DataStructure (
 	DataStructureID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	DataStructureName VARCHAR (255)  NOT NULL,
 	DataStructureDomainCV VARCHAR (255)  NOT NULL,
 	DataStructureWebpage VARCHAR (255)  NULL,
-	DataStrcutureDescription TEXT   NULL
+	DataStructureDescription TEXT   NULL
 );
 
 CREATE TABLE Instances (
@@ -354,8 +355,8 @@ CREATE TABLE Rules (
 
 CREATE TABLE SeasonalParameters (
 	SeasonalParameterID INT  AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	SeasonStartDateTime VARCHAR (50)  NOT NULL,
-	SeasonEndDateTime VARCHAR (50)  NOT NULL,
+	SeasonStartDateTime VARCHAR (50)  NULL,
+	SeasonEndDateTime VARCHAR (50)  NULL,
 	SeasonNameCV VARCHAR (255)  NOT NULL,
 	SeasonValue VARCHAR (500)  NOT NULL,
 	DataStorageID INT   NOT NULL
@@ -402,7 +403,7 @@ ALTER TABLE Attributes ADD CONSTRAINT fk_Attributes_Units
 FOREIGN KEY (UnitID) REFERENCES Units (UnitID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
-ALTER TABLE DataStructures ADD CONSTRAINT fk_DataStructures_DataStructureDomain
+ALTER TABLE DataStructure ADD CONSTRAINT fk_DataStructures_DataStructureDomain
 FOREIGN KEY (DataStructureDomainCV) REFERENCES DataStructureDomain (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
@@ -471,7 +472,7 @@ FOREIGN KEY (CommonObjectTypeID) REFERENCES CommonObjectTypes (CommonObjectTypeI
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE ObjectTypes ADD CONSTRAINT fk_ObjectTypes_DataStructures
-FOREIGN KEY (DataStructureID) REFERENCES DataStructures (DataStructureID)
+FOREIGN KEY (DataStructureID) REFERENCES DataStructure (DataStructureID)
 ON UPDATE NO ACTION ON DELETE NO ACTION;
 
 ALTER TABLE ObjectTypes ADD CONSTRAINT fk_ObjectTypes_NativeObjectCategory

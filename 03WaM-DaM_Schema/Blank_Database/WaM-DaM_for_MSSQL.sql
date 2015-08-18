@@ -40,12 +40,12 @@ CREATE TABLE WaMDaM.DataStorage (
 	DataStorageID int   NOT NULL,
 	PRIMARY KEY (DataStorageID)
 )
-CREATE TABLE WaMDaM.DataStructures (
+CREATE TABLE WaMDaM.DataStructure (
 	DataStructureID int  IDENTITY (1,1) NOT NULL,
 	DataStructureName varchar (255)  NOT NULL,
 	DataStructureDomainCV varchar (255)  NOT NULL,
 	DataStructureWebpage varchar (255)  NULL,
-	DataStrcutureDescription text   NULL,
+	DataStructureDescription text   NULL,
 	PRIMARY KEY (DataStructureID)
 )
 CREATE TABLE WaMDaM.Instances (
@@ -365,8 +365,8 @@ CREATE TABLE WaMDaM.Rules (
 )
 CREATE TABLE WaMDaM.SeasonalParameters (
 	SeasonalParameterID int  IDENTITY (1,1) NOT NULL,
-	SeasonStartDateTime varchar (50)  NOT NULL,
-	SeasonEndDateTime varchar (50)  NOT NULL,
+	SeasonStartDateTime varchar (50)  NULL,
+	SeasonEndDateTime varchar (50)  NULL,
 	SeasonNameCV varchar (255)  NOT NULL,
 	SeasonValue varchar (500)  NOT NULL,
 	DataStorageID int   NOT NULL,
@@ -413,7 +413,7 @@ ALTER TABLE WaMDaM.Attributes ADD CONSTRAINT fk_Attributes_Units
 FOREIGN KEY (UnitID) REFERENCES WaMDaM.Units (UnitID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
-ALTER TABLE WaMDaM.DataStructures ADD CONSTRAINT fk_DataStructures_DataStructureDomain
+ALTER TABLE WaMDaM.DataStructure ADD CONSTRAINT fk_DataStructures_DataStructureDomain
 FOREIGN KEY (DataStructureDomainCV) REFERENCES WaMDaM.DataStructureDomain (Term)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
@@ -482,7 +482,7 @@ FOREIGN KEY (CommonObjectTypeID) REFERENCES WaMDaM.CommonObjectTypes (CommonObje
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.ObjectTypes ADD CONSTRAINT fk_ObjectTypes_DataStructures
-FOREIGN KEY (DataStructureID) REFERENCES WaMDaM.DataStructures (DataStructureID)
+FOREIGN KEY (DataStructureID) REFERENCES WaMDaM.DataStructure (DataStructureID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
 
 ALTER TABLE WaMDaM.ObjectTypes ADD CONSTRAINT fk_ObjectTypes_NativeObjectCategory
@@ -652,4 +652,3 @@ ON UPDATE NO ACTION ON DELETE NO ACTION
 ALTER TABLE WaMDaM.TimeSeriesValues ADD CONSTRAINT fk_TimeSeriesValues_TimeSeries
 FOREIGN KEY (TimeSeriesID) REFERENCES WaMDaM.TimeSeries (TimeSeriesID)
 ON UPDATE NO ACTION ON DELETE NO ACTION
-

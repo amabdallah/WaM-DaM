@@ -1,9 +1,10 @@
 -- This is a Data Definition Language (DDL) script that 
 -- generates a blank schema of the Water Management Data Model (WaM-DaM)
 -- for PostgreSQL database
--- in PostgreSQL, click on Databases>> Postgers>>   at the left Object Browser pannel
+-- in PostgreSQL, click on Databases>> Postgers>>   at the left Object Browser panel
 -- Simply copy all this script and paste into the new window of "SQL query"
 -- Then click execute. The script should run successfully and create the 48 empty tables of WaM-DaM
+
 
 
 drop schema if exists WaMDaM cascade;
@@ -24,12 +25,12 @@ create table WaMDaM.Attributes (
 create table WaMDaM.DataStorage (
 	datastorageid integer  NOT NULL primary key
 );
-create table WaMDaM.DataStructures (
+create table WaMDaM.DataStructure (
 	datastructureid serial  NOT NULL primary key,
 	datastructurename varchar (255) NOT NULL,
 	datastructuredomaincv varchar (255) NOT NULL,
 	datastructurewebpage varchar (255) NULL,
-	datastrcuturedescription text  NULL
+	datastructuredescription text  NULL
 );
 create table WaMDaM.Instances (
 	instanceid serial  NOT NULL primary key,
@@ -308,8 +309,8 @@ create table WaMDaM.Rules (
 );
 create table WaMDaM.SeasonalParameters (
 	seasonalparameterid serial  NOT NULL primary key,
-	seasonstartdatetime varchar (50) NOT NULL,
-	seasonenddatetime varchar (50) NOT NULL,
+	seasonstartdatetime varchar (50) NULL,
+	seasonenddatetime varchar (50) NULL,
 	seasonnamecv varchar (255) NOT NULL,
 	seasonvalue varchar (500) NOT NULL,
 	datastorageid integer  NOT NULL
@@ -351,7 +352,7 @@ alter table WaMDaM.Attributes add constraint fk_Attributes_Units
 foreign key (UnitID) References WaMDaM.Units (UnitID)
 on update no Action on delete cascade;
 
-alter table WaMDaM.DataStructures add constraint fk_DataStructures_DataStructureDomain
+alter table WaMDaM.DataStructure add constraint fk_DataStructures_DataStructureDomain
 foreign key (DataStructureDomainCV) References WaMDaM.DataStructureDomain (Term)
 on update no Action on delete cascade;
 
@@ -420,7 +421,7 @@ foreign key (CommonObjectTypeID) References WaMDaM.CommonObjectTypes (CommonObje
 on update no Action on delete cascade;
 
 alter table WaMDaM.ObjectTypes add constraint fk_ObjectTypes_DataStructures
-foreign key (DataStructureID) References WaMDaM.DataStructures (DataStructureID)
+foreign key (DataStructureID) References WaMDaM.DataStructure (DataStructureID)
 on update no Action on delete cascade;
 
 alter table WaMDaM.ObjectTypes add constraint fk_ObjectTypes_NativeObjectCategory
