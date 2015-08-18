@@ -8,10 +8,15 @@ The CI-WATER project includes researchers from Brigham Young University, the Uni
 
 Systems water management data lacks a standardized method to organize and communicate its diverse and disparate data. Developing a persistent data model for water management data is an important step to advance how we communicate such vital data across disciplines. So the C-WATER team at Utah State University took the task to develop WaM-DaM.
 
-###Context
-The timing, availability of funds, expertise, and passion for WaM-DaM development were incredible by all means. Along the way of WaM-DaM development, there has been an incredible interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.
+Most of existing models use the traditional architecture which incorporate there integrated and tight coupled components i) user interface, data management system, and the model engine of algorithms (Harou et al., 2010). There is an increasing interest to decouple the three components to allow the reuses of data and user interface across different models. WaM-DaM aims to provide a standard for the database component so other models can re-use the same data.
+
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/PradigmShift.jpg)
+
+
+
+###Context
+The timing, availability of funds, expertise, and passion for WaM-DaM development were incredible by all means. Along the way of WaM-DaM development, there has been an incredible interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.
 
 We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies listed below. WaM-DaM and these projects complement each other and there is a big room for real future collaboration. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/edit/master/docs/Future_Work.md) with many of these groups. We hope that our discussions with them continue so we can achieve our common goal of having a standard to communicate systems water management data. 
 
