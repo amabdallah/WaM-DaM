@@ -10,11 +10,8 @@ to what instance they apply too....
 
 */
 
-
-
-SELECT DataStructureName,ObjectTypes.NativeObjectName,MasterNetworkName,ScenarioName, 
-Instances.InstanceName,NativeAttributeName,UnitAbbreviation,AttributeTypeCodeCV,TextControlledValue,ValueDefinition	
---,MethodName,SourceName,
+SELECT NativeObjectName,MasterNetworkName,ScenarioName, 
+InstanceName,NativeAttributeName,UnitAbbreviation,AttributeTypeCodeCV,TextControlledValue,ValueDefinition	
 FROM DataStructures
 
 
@@ -34,7 +31,7 @@ LEFT JOIN Mapping
 ON Mapping .ObjectAttributeID=ObjectAttributes.ObjectAttributeID
 
 LEFT JOIN Instances 
-ON Instances.InstanceID=Mapping .InstanceID
+ON Instances.InstanceID=Mapping.InstanceID
 
 LEFT JOIN ScenarioMapping 
 ON ScenarioMapping.MappingID=Mapping.MappingID
@@ -46,13 +43,7 @@ LEFT JOIN Scenarios
 ON Scenarios.ScenarioID=ScenarioMapping.ScenarioID
 
 LEFT JOIN MasterNetworks 
-ON MasterNetworks.MasterNetworkID=Scenarios.ScenarioID
-
---LEFT JOIN Methods 
---ON Methods.MethodID=Metadata.MethodID
-
---LEFT JOIN Sources 
---ON Sources.SourceID=Metadata.SourceID
+ON MasterNetworks.MasterNetworkID=Scenarios.MasterNetworkID
 
 LEFT JOIN TextControlled
 ON TextControlled.DataStorageID=DataStorage.DataStorageID
@@ -60,4 +51,7 @@ ON TextControlled.DataStorageID=DataStorage.DataStorageID
 LEFT JOIN TextControlledValues
 ON TextControlledValues.TextControlledValueID=TextControlled.TextControlledValueID
 
-WHERE AttributeTypeCodeCV='TC'
+WHERE AttributeTypeCodeCV='TC' AND 
+NativeAttributeName='PURPOSES'
+
+
