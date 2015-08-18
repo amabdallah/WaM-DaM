@@ -1,6 +1,6 @@
 <HTML>
 <Header>
-<Title>DataStructures - Table</Title>
+<Title>DataStructure - Table</Title>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 <Link href="../css/doc.css" rel="stylesheet" type="text/css">
 </Header>
@@ -18,7 +18,7 @@
 <hr>
 <table class="pageTitle">
 <tr>
-<td class="title_nm">DataStructures</td><td class="watermark_right">A Data Structure is a particular configuration and arrangement of Obje...</td>
+<td class="title_nm">DataStructure</td><td class="watermark_right">A Data Structure is a particular configuration and arrangement of Obje...</td>
 </tr>
 </table>
 <br>
@@ -33,28 +33,28 @@
 <td class="PkCol">
 <p class="boolImg">
 <img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/Core_DataStructures_DataStructureID.html">DataStructureID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
+</td><td class="PkCol"><a href="../columns/Core_DataStructure_DataStructureID.html">DataStructureID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td class="PkCol">nextval('"Core"."DataStructures_StructureID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Core_DataStructures_DataStructureName.html">DataStructureName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Full text name of the Data Structure (e.g., Water Evaluation and Planning system (WEAP))</td><td> </td>
+<td> </td><td><a href="../columns/Core_DataStructure_DataStructureName.html">DataStructureName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Full text name of the Data Structure (e.g., Water Evaluation and Planning system (WEAP))</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_DataStructures_DataStructureDomainCV.html">DataStructureDomainCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for Data Structure domains like Water distribution, wastewater collection, and hydropower generation</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Core_DataStructure_DataStructureDomainCV.html">DataStructureDomainCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for Data Structure domains like Water distribution, wastewater collection, and hydropower generation</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Core_DataStructures_DataStructureWebpage.html">DataStructureWebpage</a></td><td>VarChar(255)</td><td>
+<td> </td><td><a href="../columns/Core_DataStructure_DataStructureWebpage.html">DataStructureWebpage</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>A URL to a full description of the Data Structure origin like http://weap21.org/</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Core_DataStructures_DataStrcutureDescription.html">DataStrcutureDescription</a></td><td>Text</td><td>
+<td> </td><td><a href="../columns/Core_DataStructure_DataStructureDescription.html">DataStructureDescription</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>Full text description of the Data Structure </td><td> </td>
@@ -75,7 +75,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_DataStructures_fk_DataStructures_DataStructureDomain.html">fk_DataStructures_DataStructureDomain</a></td><td><a href="../tables/CVs_DataStructureDomain.html">CVs.DataStructureDomain</a></td><td><a href="../tables/Core_DataStructures.html">Core.DataStructures</a></td><td>Term</td><td>DataStructureDomainCV</td>
+<td><a href="../foreignKeys/Core_DataStructure_fk_DataStructures_DataStructureDomain.html">fk_DataStructures_DataStructureDomain</a></td><td><a href="../tables/CVs_DataStructureDomain.html">CVs.DataStructureDomain</a></td><td><a href="../tables/Core_DataStructure.html">Core.DataStructure</a></td><td>Term</td><td>DataStructureDomainCV</td>
 </tr>
 </table>
 <br>
@@ -87,7 +87,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_DataStructures.html">fk_ObjectTypes_DataStructures</a></td><td><a href="../tables/Core_DataStructures.html">Core.DataStructures</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>DataStructureID</td><td>DataStructureID</td>
+<td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_DataStructures.html">fk_ObjectTypes_DataStructures</a></td><td><a href="../tables/Core_DataStructure.html">Core.DataStructure</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>DataStructureID</td><td>DataStructureID</td>
 </tr>
 </table>
 <br>

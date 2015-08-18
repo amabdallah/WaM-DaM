@@ -30,7 +30,7 @@
 <td><a href="../foreignKeys/Core_Attributes_fk_Attributes_Units.html">fk_Attributes_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Core_Attributes.html">Core.Attributes</a></td><td>UnitID</td><td>UnitID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_DataStructures_fk_DataStructures_DataStructureDomain.html">fk_DataStructures_DataStructureDomain</a></td><td><a href="../tables/CVs_DataStructureDomain.html">CVs.DataStructureDomain</a></td><td><a href="../tables/Core_DataStructures.html">Core.DataStructures</a></td><td>Term</td><td>DataStructureDomainCV</td>
+<td><a href="../foreignKeys/Core_DataStructure_fk_DataStructures_DataStructureDomain.html">fk_DataStructures_DataStructureDomain</a></td><td><a href="../tables/CVs_DataStructureDomain.html">CVs.DataStructureDomain</a></td><td><a href="../tables/Core_DataStructure.html">Core.DataStructure</a></td><td>Term</td><td>DataStructureDomainCV</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Core_Instances_fk_Instances_Instances.html">fk_Instances_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td>InstanceID</td><td>RelatedInstanceID</td>
@@ -81,7 +81,7 @@
 <td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_CommonObjectTypes.html">fk_ObjectTypes_CommonObjectTypes</a></td><td><a href="../tables/CVs_CommonObjectTypes.html">CVs.CommonObjectTypes</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>CommonObjectTypeID</td><td>CommonObjectTypeID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_DataStructures.html">fk_ObjectTypes_DataStructures</a></td><td><a href="../tables/Core_DataStructures.html">Core.DataStructures</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>DataStructureID</td><td>DataStructureID</td>
+<td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_DataStructures.html">fk_ObjectTypes_DataStructures</a></td><td><a href="../tables/Core_DataStructure.html">Core.DataStructure</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>DataStructureID</td><td>DataStructureID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Core_ObjectTypes_fk_ObjectTypes_NativeObjectCategory.html">fk_ObjectTypes_NativeObjectCategory</a></td><td><a href="../tables/Metadata_NativeObjectCategory.html">Metadata.NativeObjectCategory</a></td><td><a href="../tables/Core_ObjectTypes.html">Core.ObjectTypes</a></td><td>NativeObjectCategoryID</td><td>NativeObjectCategoryID</td>
@@ -108,7 +108,13 @@
 <td><a href="../foreignKeys/CVs_CommonObjectTypes_fk_CommonObjectTypes_CommonObjectCategory.html">fk_CommonObjectTypes_CommonObjectCategory</a></td><td><a href="../tables/CVs_CommonObjectCategory.html">CVs.CommonObjectCategory</a></td><td><a href="../tables/CVs_CommonObjectTypes.html">CVs.CommonObjectTypes</a></td><td>CommonObjectCategoryID</td><td>CommonObjectCategoryID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances.html">fk_Connections_Instances</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID, InstanceID, InstanceID</td><td>LinkInstanceID, StartNodeInstanceID, EndNodeInstanceID</td>
+<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances1.html">fk_Connections_Instances1</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>LinkInstanceID</td>
+</tr>
+<tr class="altRow">
+<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances2.html">fk_Connections_Instances2</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>StartNodeInstanceID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Metadata_Connections_fk_Connections_Instances3.html">fk_Connections_Instances3</a></td><td><a href="../tables/Core_Instances.html">Core.Instances</a></td><td><a href="../tables/Metadata_Connections.html">Metadata.Connections</a></td><td>InstanceID</td><td>EndNodeInstanceID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Metadata_Methods_fk_Methods_Methods.html">fk_Methods_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodID</td><td>ParentMethodID</td>
