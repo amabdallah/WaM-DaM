@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><Db flnm="WaMDaMAugust2015" nm="WaM-DaM1.0" ver="1.3.4">
+<?xml version="1.0" encoding="UTF-8"?><Db flnm="WaMDaMAugust19_2015" nm="WaM-DaM1.0" ver="1.3.4">
   <VerLbl/>
   <VerNotes/>
   <DefTblOpts/>
-  <DocFolder>C:\Users\AdelMabdallah\Desktop</DocFolder>
+  <DocFolder>C:\Users\AdelMabdallah\Desktop\doc</DocFolder>
   <Sch Cm="" nm="Core">
     <Tbl UsSo="1" nm="Attributes">
       <Cm>An attribute is a specific quantitative or qualitative characteristic of an object type and allows users to describe the object properties that are needed to model water system components in user models. </Cm>
@@ -58,10 +58,10 @@
         <StPr stA="DataStorage" stB="AttributeDataStorage"/>
       </SchTrHis>
     </Tbl>
-    <Tbl UsSo="1" nm="DataStructures">
+    <Tbl UsSo="1" nm="DataStructure">
       <Cm>A Data Structure is a particular configuration and arrangement of Object Types and their Attributes in a dataset (e.g., model) for a specific domain (e.g., water supply, wastewater collection, storm water).</Cm>
       <TblOpts>WITHOUT OIDS</TblOpts>
-      <Pk ClNs="DataStructureID" nm="pkDataStructures"/>
+      <Pk ClNs="DataStructureID" nm="pkDataStructure"/>
       <Cl au="1" df="nextval('&quot;Core&quot;.&quot;DataStructures_StructureID_seq&quot;'::regclass)" nm="DataStructureID" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
@@ -78,13 +78,13 @@
         <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
         <Cm>A URL to a full description of the Data Structure origin like http://weap21.org/</Cm>
       </Cl>
-      <Cl au="0" df="" nm="DataStrcutureDescription" nu="1">
+      <Cl au="0" df="" nm="DataStructureDescription" nu="1">
         <DT arr="0" ds="Text" en="" id="703" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Full text description of the Data Structure </Cm>
       </Cl>
       <Fk deAc="3" nm="fk_DataStructures_DataStructureDomain" prLkCl="Term" upAc="3">
         <PrTb mn="0" nm="DataStructureDomain" oe="1" sch="CVs" zr="0"/>
-        <CdTb mn="1" nm="DataStructures" oe="0" sch="Core" zr="1"/>
+        <CdTb mn="1" nm="DataStructure" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="DataStructureDomainCV" prCl="Term"/>
       </Fk>
       <UniqueConstraints/>
@@ -175,32 +175,32 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a Data Storage record</Cm>
       </Cl>
-      <Fk deAc="3" nm="fk_MetadataMapping_AttributeTypeCode" prLkCl="Term" upAc="3">
+      <Fk deAc="3" nm="fk_Mapping_AttributeTypeCode" prLkCl="Term" upAc="3">
         <PrTb mn="0" nm="AttributeTypeCode" oe="1" sch="CVs" zr="1"/>
         <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="AttributeTypeCodeCV" prCl="Term"/>
       </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_DataStorage" prLkCl="DataStorageID" upAc="3">
+      <Fk deAc="3" nm="fk_Mapping_DataStorage" prLkCl="DataStorageID" upAc="3">
         <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="1"/>
         <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
       </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_Instances" prLkCl="InstanceID" upAc="3">
+      <Fk deAc="3" nm="fk_Mapping_Instances" prLkCl="InstanceID" upAc="3">
         <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="InstanceID" prCl="InstanceID"/>
       </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_Methods" prLkCl="MethodID" upAc="3">
+      <Fk deAc="3" nm="fk_Mapping_Methods" prLkCl="MethodID" upAc="3">
         <PrTb mn="0" nm="Methods" oe="1" sch="Metadata" zr="1"/>
         <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="MethodID" prCl="MethodID"/>
       </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_ObjectAttributes" prLkCl="ObjectAttributeID" upAc="3">
+      <Fk deAc="3" nm="fk_Mapping_ObjectAttributes" prLkCl="ObjectAttributeID" upAc="3">
         <PrTb mn="0" nm="ObjectAttributes" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="ObjectAttributeID" prCl="ObjectAttributeID"/>
       </Fk>
-      <Fk deAc="3" nm="fk_MetadataMapping_Sources" prLkCl="SourceID" upAc="3">
+      <Fk deAc="3" nm="fk_Mapping_Sources" prLkCl="SourceID" upAc="3">
         <PrTb mn="0" nm="Sources" oe="1" sch="Metadata" zr="1"/>
         <CdTb mn="1" nm="Mapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="SourceID" prCl="SourceID"/>
@@ -355,7 +355,7 @@
         <ClPr cdCl="CommonObjectTypeID" prCl="CommonObjectTypeID"/>
       </Fk>
       <Fk deAc="3" nm="fk_ObjectTypes_DataStructures" prLkCl="DataStructureID" upAc="3">
-        <PrTb mn="0" nm="DataStructures" oe="1" sch="Core" zr="0"/>
+        <PrTb mn="0" nm="DataStructure" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="ObjectTypes" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="DataStructureID" prCl="DataStructureID"/>
       </Fk>
@@ -383,12 +383,12 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a MetadataMapping record</Cm>
       </Cl>
-      <Fk deAc="3" nm="fk_SceanrioMetadata_MetadataMapping" prLkCl="MappingID" upAc="3">
+      <Fk deAc="3" nm="fk_ScenarioMapping_Mapping" prLkCl="MappingID" upAc="3">
         <PrTb mn="0" nm="Mapping" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="ScenarioMapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="MappingID" prCl="MappingID"/>
       </Fk>
-      <Fk deAc="3" nm="fk_SceanrioMetadata_Scenarios" prLkCl="ScenarioID" upAc="3">
+      <Fk deAc="3" nm="fk_ScenarioMapping_Scenarios" prLkCl="ScenarioID" upAc="3">
         <PrTb mn="0" nm="Scenarios" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="ScenarioMapping" oe="0" sch="Core" zr="1"/>
         <ClPr cdCl="ScenarioID" prCl="ScenarioID"/>
@@ -901,11 +901,19 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for an EndtNodeInstance</Cm>
       </Cl>
-      <Fk deAc="3" nm="fk_Connections_Instances" prLkCl="InstanceID" upAc="3">
+      <Fk deAc="3" nm="fk_Connections_Instances1" prLkCl="InstanceID" upAc="3">
         <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="Connections" oe="0" sch="Metadata" zr="1"/>
         <ClPr cdCl="LinkInstanceID" prCl="InstanceID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_Connections_Instances2" prLkCl="InstanceID" upAc="3">
+        <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
+        <CdTb mn="1" nm="Connections" oe="0" sch="Metadata" zr="1"/>
         <ClPr cdCl="StartNodeInstanceID" prCl="InstanceID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_Connections_Instances3" prLkCl="InstanceID" upAc="3">
+        <PrTb mn="0" nm="Instances" oe="1" sch="Core" zr="0"/>
+        <CdTb mn="1" nm="Connections" oe="0" sch="Metadata" zr="1"/>
         <ClPr cdCl="EndNodeInstanceID" prCl="InstanceID"/>
       </Fk>
       <UniqueConstraints/>
@@ -1386,10 +1394,14 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a Data Storage record</Cm>
       </Cl>
-      <Fk deAc="3" nm="fk_MultiColumnArray_DataStorage" prLkCl="DataStorageID" upAc="3">
+      <Fk deAc="3" nm="fk_MultiColumnArray_DataStorage1" prLkCl="DataStorageID" upAc="3">
         <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="MultiColumnArray" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_MultiColumnArray_DataStorage2" prLkCl="DataStorageID" upAc="3">
+        <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="0"/>
+        <CdTb mn="1" nm="MultiColumnArray" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="ColumnNameID" prCl="DataStorageID"/>
       </Fk>
       <UniqueConstraints/>
@@ -1465,15 +1477,15 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
       </Cl>
-      <Cl au="0" df="" nm="RuleVariableID" nu="0">
+      <Cl au="0" df="" nm="RuleVariableID" nu="1">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier that references the attributes that comprise the variables of the function</Cm>
       </Cl>
-      <Cl au="0" df="" nm="RuleVariableOrder" nu="1">
+      <Cl au="0" df="" nm="RuleVariableOrder" nu="0">
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>an integer that indicates the ascending order of the variables (i.e., attribiutes) of a function</Cm>
       </Cl>
-      <Cl au="0" df="" nm="SymbolCV" nu="0">
+      <Cl au="0" df="" nm="SymbolCV" nu="1">
         <DT arr="0" ds="VarChar" en="" id="12" ln="255" sc="null" sg="1" un="0"/>
         <Cm>CV term for function symbols like +, -, *, (, ) , [, ], ^ to be used to formulate a function </Cm>
       </Cl>
@@ -1484,14 +1496,18 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Foreign key identifier for a Data Storage record</Cm>
       </Cl>
-      <Fk deAc="3" nm="fk_Functions_DataStorage" prLkCl="DataStorageID" upAc="3">
+      <Fk deAc="3" nm="fk_Rules_DataStorage1" prLkCl="DataStorageID" upAc="3">
         <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="0"/>
         <CdTb mn="1" nm="Rules" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="DataStorageID" prCl="DataStorageID"/>
+      </Fk>
+      <Fk deAc="3" nm="fk_Rules_DataStorage2" prLkCl="DataStorageID" upAc="3">
+        <PrTb mn="0" nm="DataStorage" oe="1" sch="Core" zr="1"/>
+        <CdTb mn="1" nm="Rules" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="RuleVariableID" prCl="DataStorageID"/>
       </Fk>
-      <Fk deAc="3" nm="fk_Functions_Symbols" prLkCl="Term" upAc="3">
-        <PrTb mn="0" nm="Symbols" oe="1" sch="CVs" zr="0"/>
+      <Fk deAc="3" nm="fk_Rules_Symbols" prLkCl="Term" upAc="3">
+        <PrTb mn="0" nm="Symbols" oe="1" sch="CVs" zr="1"/>
         <CdTb mn="1" nm="Rules" oe="0" sch="Storage" zr="1"/>
         <ClPr cdCl="SymbolCV" prCl="Term"/>
       </Fk>
@@ -1506,11 +1522,11 @@
         <DT arr="0" ds="Integer" en="" id="4" ln="null" sc="null" sg="1" un="0"/>
         <Cm>Primary key identifier</Cm>
       </Cl>
-      <Cl au="0" df="" nm="SeasonStartDateTime" nu="0">
+      <Cl au="0" df="" nm="SeasonStartDateTime" nu="1">
         <DT arr="0" ds="VarChar" en="" id="12" ln="50" sc="null" sg="1" un="0"/>
         <Cm>it documents the start date or time that corresponds with the season (e.g., holiday)</Cm>
       </Cl>
-      <Cl au="0" df="" nm="SeasonEndDateTime" nu="0">
+      <Cl au="0" df="" nm="SeasonEndDateTime" nu="1">
         <DT arr="0" ds="VarChar" en="" id="12" ln="50" sc="null" sg="1" un="0"/>
         <Cm>it documents the start date or time that corresponds with the season (e.g., holiday)</Cm>
       </Cl>
@@ -1751,7 +1767,7 @@
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Attributes" x="1625" y="3230"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Scenarios" x="4171" y="1098"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStorage" x="4221" y="2732"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="136" y="665"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructure" x="136" y="665"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectTypes" x="102" y="2176"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4075" y="132"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Mapping" x="2914" y="2479"/>
@@ -1760,13 +1776,13 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_Instances" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Instances" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_ObjectAttributes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="" positioner="">
@@ -1784,10 +1800,10 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_DataStructures" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_ScenarioMapping_Mapping" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_ScenarioMapping_Scenarios" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="" positioner="">
@@ -1893,58 +1909,69 @@
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="BinaryValueMeaning" x="2624" y="256"/>
     <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.Binarys.fk_Binarys_BinaryValueMeaning" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="2624" x2="2374" y1="430" y2="430"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="2624" x2="2374" y1="389" y2="389"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.Binarys.fk_Binarys_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Storage.Binarys.fk_Binarys_DataStorage" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="156" x2="156" y1="2810" y2="300"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1520" x2="160" y1="296" y2="296"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1943" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1947" x2="1947" y1="523" y2="2911"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.FileBased.fk_FileBased_DataStorage" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.FileBased.fk_FileBased_DataStorage" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="743" x2="743" y1="3020" y2="3021"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1472" x2="747" y1="3025" y2="3025"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="748" x2="1472" y1="2915" y2="2915"/>
       </positionableLines>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.FileBased.fk_FileBased_FileFormate" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="2975" x2="2218" y1="3053" y2="3053"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="2975" x2="2218" y1="2912" y2="2912"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.MultiColumnArray.fk_MultiColumnArray_DataStorage" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.MultiColumnArray.fk_MultiColumnArray_DataStorage1" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="215" x2="215" y1="3020" y2="5012"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1397" x2="219" y1="5016" y2="5016"/>
+        <positionableLine lineRole="PARENT_LINE" x1="393" x2="393" y1="3020" y2="5012"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1397" x2="397" y1="5016" y2="5016"/>
+      </positionableLines>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.MultiColumnArray.fk_MultiColumnArray_DataStorage2" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
+      <positionableLines>
+        <positionableLine lineRole="PARENT_LINE" x1="393" x2="393" y1="3020" y2="5012"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1397" x2="397" y1="5016" y2="5016"/>
       </positionableLines>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.MultiColumnValues.fk_MultiColumnValues_MultiColumnArray" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="2441" x2="2736" y1="4835" y2="4835"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="2441" x2="2736" y1="5016" y2="5016"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.Parameters.fk_Parameters_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Storage.Parameters.fk_Parameters_DataStorage" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="274" x2="274" y1="2810" y2="820"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1525" x2="278" y1="816" y2="816"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1920" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1924" x2="1924" y1="1043" y2="2911"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.Rules.fk_Functions_DataStorage" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Storage.Rules.fk_Rules_DataStorage1" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="743" x2="743" y1="3020" y2="3549"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1447" x2="747" y1="3553" y2="3553"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1793" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1797" x2="1797" y1="3246" y2="2919"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.Rules.fk_Functions_Symbols" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Storage.Rules.fk_Rules_DataStorage2" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="2950" x2="2148" y1="3677" y2="3677"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1793" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1797" x2="1797" y1="3246" y2="2919"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.SeasonalParameters.fk_SeasonalParameters_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.Rules.fk_Rules_Symbols" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="392" x2="392" y1="2810" y2="1403"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1520" x2="396" y1="1399" y2="1399"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="2950" x2="2148" y1="3536" y2="3536"/>
+      </positionableLines>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Storage.SeasonalParameters.fk_SeasonalParameters_DataStorage" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
+      <positionableLines>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="2086" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="2090" x2="2090" y1="1707" y2="2911"/>
       </positionableLines>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.SeasonalParameters.fk_SeasonalParameters_SeasonName" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
@@ -1954,42 +1981,42 @@
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="EAST" nm="Storage.TextControlled.fk_ControlledText_ControlledTextValues" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="2637" x2="2401" y1="2330" y2="2330"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="2637" x2="2401" y1="2405" y2="2405"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TextControlled.fk_ControlledText_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Storage.TextControlled.fk_ControlledText_DataStorage" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="743" x2="743" y1="2810" y2="2409"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1481" x2="747" y1="2405" y2="2405"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1937" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1941" x2="1941" y1="2591" y2="2911"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TextFree.fk_FreeText_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Storage.TextFree.fk_FreeText_DataStorage" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="743" x2="743" y1="2810" y2="1953"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1504" x2="747" y1="1949" y2="1949"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1846" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1850" x2="1850" y1="2135" y2="2911"/>
       </positionableLines>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TimeSeries.fk_TimeSeries_DataStorage" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Storage.TimeSeries.fk_TimeSeries_DataStorage" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="PARENT_LINE" x1="392" x2="392" y1="3020" y2="4138"/>
-        <positionableLine lineRole="CHILD_LINE" x1="1411" x2="396" y1="4142" y2="4142"/>
+        <positionableLine lineRole="PARENT_LINE" x1="748" x2="1837" y1="2915" y2="2915"/>
+        <positionableLine lineRole="CHILD_LINE" x1="1841" x2="1841" y1="3829" y2="2919"/>
       </positionableLines>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TimeSeries.fk_TimeSeries_Units" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="966" x2="1411" y1="4413" y2="4413"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="966" x2="1411" y1="4543" y2="4543"/>
       </positionableLines>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TimeSeriesValues.fk_TimeSeriesValues_TimeSeries" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
       <positionableLines>
-        <positionableLine lineRole="SINGLE_LINE" x1="2271" x2="2730" y1="4315" y2="4315"/>
+        <positionableLine lineRole="SINGLE_LINE" x1="2271" x2="2730" y1="4392" y2="4392"/>
       </positionableLines>
     </FkGl>
     <Notes/>
     <Zones/>
   </Dgm>
   <Dgm nm="Full">
-    <RnCf ClkAct="true" FtSz="68" lkStgy="OffsetDirect" zm="0.15">
+    <RnCf ClkAct="true" FtSz="68" lkStgy="OffsetDirect" zm="0.2">
       <VbCfg>
         <Fg ky="Auto Number" vl="0"/>
         <Fg ky="Check" vl="0"/>
@@ -2012,7 +2039,7 @@
     </DiaProps>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectTypes" x="119" y="3316"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Attributes" x="1567" y="3918"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="80" y="1371"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructure" x="80" y="1371"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Instances" x="3579" y="2058"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Mapping" x="3607" y="3102"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4557" y="899"/>
@@ -2058,43 +2085,43 @@
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="FileFormat" x="7884" y="3240"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="BinaryValueMeaning" x="7868" y="172"/>
     <TbGl bkCl="ff6666ff" sch="CVs" tbl="CommonAttributeCategory" x="1364" y="5474"/>
-    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Core.Attributes.fk_Attributes_CommonAttributes" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_CommonAttributes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="EAST" nm="Core.Attributes.fk_Attributes_Units" parentEdge="WEST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_Units" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.DataStructures.fk_DataStructures_DataStructureDomain" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.DataStructure.fk_DataStructures_DataStructureDomain" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Core.Instances.fk_Instances_Instances" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_Instances" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_InstanceStatus" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_AttributeTypeCode" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_AttributeTypeCode" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Instances" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Methods" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Methods" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_ObjectAttributes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Sources" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Sources" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Core.MasterNetworks.fk_MasterNetworks_SpatialReference" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_SpatialReference" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_VerticalDatum" parentEdge="" positioner="">
@@ -2112,22 +2139,22 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectAttributes.fk_ObjectAttributes_ObjectTypes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Core.ObjectTypes.fk_ObjectTypes_CommonObjectTypes" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_CommonObjectTypes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Core.ObjectTypes.fk_ObjectTypes_DataStructures" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_DataStructures" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_NativeObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_ScenarioMapping_Mapping" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_ScenarioMapping_Scenarios" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributeCategory.fk_CommonAttributeCategory_CommonAttributeCategory" parentEdge="" positioner="">
@@ -2136,13 +2163,19 @@
     <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonAttributes.fk_CommonAttributes_CommonAttributeCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="CVs.CommonObjectCategory.fk_CommonObjectCategory_CommonObjectCategory" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectCategory.fk_CommonObjectCategory_CommonObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="CVs.CommonObjectTypes.fk_CommonObjectTypes_CommonObjectCategory" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectTypes.fk_CommonObjectTypes_CommonObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances1" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances2" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances3" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Methods" parentEdge="" positioner="">
@@ -2151,13 +2184,13 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_MethodType" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Metadata.Methods.fk_Methods_Models" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Models" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Metadata.Methods.fk_Methods_People" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_People" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Metadata.Models.fk_Models_Units" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Models.fk_Models_Units" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.NativeAttributeCategory.fk_NativeAttributeCategory_NativeAttributeCategory" parentEdge="" positioner="">
@@ -2166,16 +2199,16 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.NativeObjectCategory.fk_NativeObjectCategory_NativeObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="SOUTH" nm="Metadata.Organizations.fk_Organizations_Organizations" parentEdge="NORTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Organizations.fk_Organizations_Organizations" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Organizations.fk_Organizations_OrganizationType" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Metadata.People.fk_People_Organizations" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.People.fk_People_Organizations" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Metadata.Sources.fk_Sources_People" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Sources.fk_Sources_People" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Sources.fk_Sources_Sources" parentEdge="" positioner="">
@@ -2187,31 +2220,37 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Storage.Binarys.fk_Binarys_BinaryValueMeaning" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.Binarys.fk_Binarys_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.Binarys.fk_Binarys_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.FileBased.fk_FileBased_DataStorage" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.FileBased.fk_FileBased_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Storage.FileBased.fk_FileBased_FileFormate" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Storage.MultiColumnArray.fk_MultiColumnArray_DataStorage" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.MultiColumnArray.fk_MultiColumnArray_DataStorage1" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.MultiColumnValues.fk_MultiColumnValues_MultiColumnArray" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.MultiColumnArray.fk_MultiColumnArray_DataStorage2" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.Parameters.fk_Parameters_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.MultiColumnValues.fk_MultiColumnValues_MultiColumnArray" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.Rules.fk_Functions_DataStorage" parentEdge="SOUTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.Parameters.fk_Parameters_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Storage.Rules.fk_Functions_Symbols" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.Rules.fk_Rules_DataStorage1" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.SeasonalParameters.fk_SeasonalParameters_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.Rules.fk_Rules_DataStorage2" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.Rules.fk_Rules_Symbols" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.SeasonalParameters.fk_SeasonalParameters_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Storage.SeasonalParameters.fk_SeasonalParameters_SeasonName" parentEdge="" positioner="">
@@ -2220,22 +2259,22 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Storage.TextControlled.fk_ControlledText_ControlledTextValues" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TextControlled.fk_ControlledText_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.TextControlled.fk_ControlledText_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TextFree.fk_FreeText_DataStorage" parentEdge="NORTH" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.TextFree.fk_FreeText_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Storage.TimeSeries.fk_TimeSeries_AggregationStatistic" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Storage.TimeSeries.fk_TimeSeries_DataStorage" parentEdge="SOUTH" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.TimeSeries.fk_TimeSeries_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="NORTH" nm="Storage.TimeSeries.fk_TimeSeries_Units" parentEdge="EAST" positioner="TwoLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.TimeSeries.fk_TimeSeries_Units" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="WEST" nm="Storage.TimeSeriesValues.fk_TimeSeriesValues_TimeSeries" parentEdge="EAST" positioner="OneLineUserLinkPositioner">
+    <FkGl bkCl="ff000000" childEdge="" nm="Storage.TimeSeriesValues.fk_TimeSeriesValues_TimeSeries" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <Notes/>
@@ -2281,7 +2320,7 @@
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="MasterNetworks" x="4054" y="692"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Scenarios" x="4200" y="1460"/>
     <TbGl bkCl="ffe5b181" sch="Metadata" tbl="Connections" x="1948" y="964"/>
-    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructures" x="159" y="1027"/>
+    <TbGl bkCl="ff7ec3e5" sch="Core" tbl="DataStructure" x="159" y="1027"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="Mapping" x="2957" y="2460"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ScenarioMapping" x="4023" y="2059"/>
     <TbGl bkCl="ff7ec3e5" sch="Core" tbl="ObjectAttributes" x="1227" y="2368"/>
@@ -2300,7 +2339,7 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Attributes.fk_Attributes_Units" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.DataStructures.fk_DataStructures_DataStructureDomain" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.DataStructure.fk_DataStructures_DataStructureDomain" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_Instances" parentEdge="" positioner="">
@@ -2309,22 +2348,22 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Instances.fk_Instances_InstanceStatus" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_AttributeTypeCode" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_AttributeTypeCode" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_DataStorage" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_DataStorage" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Instances" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Instances" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Methods" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Methods" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_ObjectAttributes" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_ObjectAttributes" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_MetadataMapping_Sources" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.Mapping.fk_Mapping_Sources" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.MasterNetworks.fk_MasterNetworks_MasterNetworks" parentEdge="" positioner="">
@@ -2357,10 +2396,10 @@
     <FkGl bkCl="ff000000" childEdge="" nm="Core.ObjectTypes.fk_ObjectTypes_NativeObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_MetadataMapping" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_ScenarioMapping_Mapping" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_SceanrioMetadata_Scenarios" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Core.ScenarioMapping.fk_ScenarioMapping_Scenarios" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Core.Scenarios.fk_Scenarios_MasterNetworks" parentEdge="" positioner="">
@@ -2378,7 +2417,13 @@
     <FkGl bkCl="ff000000" childEdge="" nm="CVs.CommonObjectTypes.fk_CommonObjectTypes_CommonObjectCategory" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
-    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances" parentEdge="" positioner="">
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances1" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances2" parentEdge="" positioner="">
+      <positionableLines/>
+    </FkGl>
+    <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Connections.fk_Connections_Instances3" parentEdge="" positioner="">
       <positionableLines/>
     </FkGl>
     <FkGl bkCl="ff000000" childEdge="" nm="Metadata.Methods.fk_Methods_Methods" parentEdge="" positioner="">
@@ -2423,7 +2468,7 @@
     <Notes/>
     <Zones/>
   </Dgm>
-  <RnmMgr NxRnmId="878">
+  <RnmMgr NxRnmId="880">
     <RnmCh ObjCls="Schema" ParCls="Database" ParNme="newDb" SupCls="" SupNme="">
       <Rnm id="656" nNm="Core" oNm="WaMDaMCore"/>
       <Rnm id="307" nNm="WaMDaMCore" oNm="TestApril"/>
@@ -2434,7 +2479,7 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="PeopleProjects" SupCls="Schema" SupNme="WaMDaM">
       <Rnm id="2" nNm="UserID" oNm="Id"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaM">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaM">
       <Rnm id="3" nNm="ProjectID" oNm="Id"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="CommonObjectTypes" SupCls="Schema" SupNme="WaMDaM">
@@ -3013,7 +3058,7 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="LinkObjectAttributes" SupCls="Schema" SupNme="TestApril">
       <Rnm id="243" nNm="LinkAttributeCategotyID" oNm="LinkCategotyID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="TestApril">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="TestApril">
       <Rnm id="244" nNm="ProjectPurpose" oNm="Purpose"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="ScenariosAttributeBridge" SupCls="Schema" SupNme="TestApril">
@@ -3665,23 +3710,24 @@
       <Rnm id="520" nNm="ModelObjectTypes" oNm="ProjectObjectTypes"/>
       <Rnm id="517" nNm="ProjectObjectTypes" oNm="ObjectsGroupings"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Metadata">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Metadata">
       <Rnm id="521" nNm="ModelID" oNm="ProjectID"/>
       <Rnm id="518" nNm="ProjectID" oNm="Id"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Metadata">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Metadata">
       <Rnm id="522" nNm="ModelName" oNm="ProjectName"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="CommonObjectTypes" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="526" nNm="ObjectTypesParent" oNm="ObjectTypes_ObjectTypeID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="565" nNm="StrucutureID" oNm="DatasetID"/>
       <Rnm id="562" nNm="DatasetID" oNm="ProjectID"/>
       <Rnm id="540" nNm="ProjectID" oNm="ModelID"/>
       <Rnm id="531" nNm="ModelID" oNm="Id"/>
     </RnmCh>
     <RnmCh ObjCls="Table" ParCls="Schema" ParNme="Core" SupCls="" SupNme="">
+      <Rnm id="878" nNm="DataStructure" oNm="DataStructures"/>
       <Rnm id="710" nNm="DataStructures" oNm="DataStructure"/>
       <Rnm id="564" nNm="DataStructure" oNm="Dataset"/>
       <Rnm id="551" nNm="Dataset" oNm="Projects"/>
@@ -3689,13 +3735,13 @@
       <Rnm id="533" nNm="ObjectTypeGroups" oNm="Models"/>
       <Rnm id="532" nNm="Models" oNm="ModelObjectTypes"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="566" nNm="StructuretName" oNm="DatasetName"/>
       <Rnm id="561" nNm="DatasetName" oNm="ProjectName"/>
       <Rnm id="541" nNm="ProjectName" oNm="GroupName"/>
       <Rnm id="534" nNm="GroupName" oNm="ModelName"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="568" nNm="ParentStructure" oNm="ParentDataset"/>
       <Rnm id="563" nNm="ParentDataset" oNm="ParentProject"/>
       <Rnm id="542" nNm="ParentProject" oNm="ParentGroup"/>
@@ -3707,10 +3753,10 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Models" SupCls="Schema" SupNme="Metadata">
       <Rnm id="537" nNm="ModelName" oNm="ModelsName"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="538" nNm="Models" oNm="Models_ModelID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="571" nNm="StructureWebpage" oNm="DatasetWebpage"/>
       <Rnm id="559" nNm="DatasetWebpage" oNm="ProjectWebpage"/>
       <Rnm id="543" nNm="ProjectWebpage" oNm="SourceWebpage"/>
@@ -3746,7 +3792,7 @@
       <Rnm id="569" nNm="StructureID" oNm="DatasetID"/>
       <Rnm id="557" nNm="DatasetID" oNm="ProjectID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="WaMDaMCore">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="WaMDaMCore">
       <Rnm id="596" nNm="StructuretDomainCV" oNm="StructuretDomain"/>
       <Rnm id="567" nNm="StructuretDomain" oNm="DatasetDomain"/>
       <Rnm id="560" nNm="DatasetDomain" oNm="ProjectDomain"/>
@@ -4045,18 +4091,18 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStorage" SupCls="Schema" SupNme="Core">
       <Rnm id="709" nNm="ScenarioInstanceID" oNm="ScenarioInstanceDataID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Core">
       <Rnm id="783" nNm="DataStructureName" oNm="StructureName"/>
       <Rnm id="711" nNm="StructureName" oNm="StructuretName"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Core">
       <Rnm id="784" nNm="DataStructureDomainCV" oNm="StructureDomainCV"/>
       <Rnm id="712" nNm="StructureDomainCV" oNm="StructuretDomainCV"/>
     </RnmCh>
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="Instances" SupCls="Schema" SupNme="Core">
       <Rnm id="713" nNm="ObjectID" oNm="ObjectTypeID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Core">
       <Rnm id="782" nNm="DataStructureID" oNm="StructureID"/>
       <Rnm id="714" nNm="StructureID" oNm="StrucutureID"/>
     </RnmCh>
@@ -4207,10 +4253,11 @@
     <RnmCh ObjCls="Column" ParCls="Table" ParNme="CommonObjectCategory" SupCls="Schema" SupNme="CVs">
       <Rnm id="780" nNm="ParentCommonObjectCategoryID" oNm="ParentObjectCategoryID"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Core">
       <Rnm id="785" nNm="DataStructureWebpage" oNm="StructureWebpage"/>
     </RnmCh>
-    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructures" SupCls="Schema" SupNme="Core">
+    <RnmCh ObjCls="Column" ParCls="Table" ParNme="DataStructure" SupCls="Schema" SupNme="Core">
+      <Rnm id="879" nNm="DataStructureDescription" oNm="DataStrcutureDescription"/>
       <Rnm id="786" nNm="DataStrcutureDescription" oNm="Description"/>
     </RnmCh>
     <RnmCh ObjCls="Table" ParCls="Schema" ParNme="CVs" SupCls="" SupNme="">
