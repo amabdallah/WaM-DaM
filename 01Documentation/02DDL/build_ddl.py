@@ -1,4 +1,5 @@
 __author__ = 'tonycastronova'
+__AdapedBy__ = 'AdelAbdallah'
 
 import os, sys
 from os.path import join, dirname, basename
@@ -7,9 +8,9 @@ import translator
 import xml.etree.ElementTree as et
 from optparse import OptionParser
 
-input_file = 'WaMDaMAugust2015.xml'
+input_file = 'WaMDaMAugust19_2015.xml'
 use_schemas = True
-default_schema = 'August2015WaMDaM1.0'
+default_schema = 'WaMDaMAugust19_2015'
 
 def parse_xml(input_file):
     # parse the dbwrench file
