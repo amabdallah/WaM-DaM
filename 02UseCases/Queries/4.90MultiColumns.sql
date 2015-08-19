@@ -101,4 +101,6 @@ ON "Instances"."InstanceID"="Mapping"."InstanceID"
 
 WHERE "Instances"."InstanceName"='Hyrum (10)' 
 
+Order By ColumName asc
+
 -- how to join the three attributes along one line 

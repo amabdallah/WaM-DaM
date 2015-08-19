@@ -9,17 +9,15 @@ users can import the data values to their model. WaM-DaM keeps track of the mean
 to what instance they apply too.... 
 */
 
-
 SELECT NativeObjectName,
 InstanceName,
 Attributes.NativeAttributeName,
 "Units"."UnitName",
-"DataStructureName",
 Mapping.AttributeTypeCodeCV,
---NumConstant,
 RuleVariableOrder,
-SymbolCV,
 "AttributesRuleVariables"."NativeAttributeName" AS "RuleVariable",
+NumConstant,
+SymbolCV,
 "MetadataRuleVariables"."AttributeTypeCodeCV" AS RuleVariableTypeCodeCV,
 "RuleVariablesUnits"."UnitName" AS "RuleVariableUnitName"
 
@@ -79,3 +77,5 @@ ON "RuleVariablesUnits"."UnitID"="AttributesRuleVariables"."UnitID"
 /* Finishes here */
 
 WHERE  Attributes.NativeAttributeName='Loss to Groundwater'  AND InstanceName='Hyrum (10)' AND ScenarioName='BaseCaseLower'
+
+order by RuleVariableOrder ASC

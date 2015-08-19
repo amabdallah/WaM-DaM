@@ -10,8 +10,8 @@ to what instance they apply too....
 
 */
 
-SELECT NativeObjectName,MasterNetworkName,ScenarioName, 
-InstanceName,NativeAttributeName,UnitAbbreviation,AttributeTypeCodeCV,TextControlledValue,ValueDefinition	
+SELECT NativeObjectName, 
+InstanceName,NativeAttributeName,TextControlledValue,ValueDefinition	
 FROM DataStructures
 
 
@@ -52,6 +52,13 @@ LEFT JOIN TextControlledValues
 ON TextControlledValues.TextControlledValueID=TextControlled.TextControlledValueID
 
 WHERE AttributeTypeCodeCV='TC' AND 
-NativeAttributeName='PURPOSES'
+NativeAttributeName='PURPOSES' AND 
+
+-- specify the boundary of coordinates of the search domain in space 
+-- this Boundary is for the parts of the upper Bear River Watershed 
+("Instances"."Longitude">='-112.4424' 
+AND "Instances"."Longitude"<='-110.65833'
+AND "Instances"."Latitude">='42.00'
+AND "Instances"."Latitude"<='42.700') 
 
 

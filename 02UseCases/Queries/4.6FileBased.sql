@@ -57,5 +57,5 @@ ON "MasterNetworks"."MasterNetworkID"="Scenarios"."ScenarioID"
 Left JOIN "FileBased" 
 ON "FileBased"."DataStorageID"="DataStorage"."DataStorageID"
 
-WHERE AttributeTypeCodeCV='FB'
+WHERE  Attributes.NativeAttributeName='Headflow'  AND InstanceName='Little Bear River' AND ScenarioName='BaseCaseLower'
 

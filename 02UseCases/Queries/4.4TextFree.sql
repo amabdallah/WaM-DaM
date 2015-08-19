@@ -10,8 +10,8 @@ to what instance they apply too....
 
 */
 
-SELECT DataStructureName,ObjectTypes.NativeObjectName,MasterNetworkName,ScenarioName, 
-Instances.InstanceName,NativeAttributeName,UnitAbbreviation,AttributeTypeCodeCV,TextFreeValue
+SELECT DataStructureName,ObjectTypes.NativeObjectName, 
+Instances.InstanceName,NativeAttributeName,TextFreeValue
 --,MethodName,SourceName,
 FROM DataStructures
 
@@ -55,4 +55,11 @@ ON MasterNetworks.MasterNetworkID=Scenarios.ScenarioID
 LEFT JOIN TextFree
 ON TextFree.DataStorageID=DataStorage.DataStorageID
 
-WHERE AttributeTypeCodeCV='TF'
+WHERE AttributeTypeCodeCV='TF' AND 
+
+-- specify the boundary of coordinates of the search domain in space 
+-- this Boundary is for the parts of the upper Bear River Watershed 
+("Instances"."Longitude">='-112.4424' 
+AND "Instances"."Longitude"<='-110.65833'
+AND "Instances"."Latitude">='42.00'
+AND "Instances"."Latitude"<='42.700') 
