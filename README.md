@@ -22,7 +22,7 @@ WaM-DaM is implemented in a relational database and ready to load your data into
 
 
 ==============================
-### WaM-DaM Schema: See the Beautiful WaM-DaM!    
+### WaM-DaM Logical Model: See the Beautiful WaM-DaM!    
 This interactive WaM-DaM logical data model is at the <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">Logical Model</a> page. The schema shows WaM-DaM tables and their attributes, what they mean, and how they are connected with each other. You can see a simpler abstract design schematics and the full documentation of WaM-DaM design at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation" target="_blank">Documentation</a> page.   
 
 
