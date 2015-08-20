@@ -40,8 +40,7 @@ This interactive WaM-DaM logical data model is at the <a href="http://amabdallah
 
 ==============================
 ### Publications and Presentations 
-A preliminary WaM-DaM design was published at <a href="http://www.iemss.org/sites/iemss2014/" target="_blank">iEMSs 2014</a> as a peer-reviewed conference paper at the:
-<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> You can download the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/WaMDaM_AbdallahRosenberg.enw" target="_blank">EndNote citation </a>       
+A preliminary WaM-DaM design was published as a peer-reviewed conference paper:<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> at the <a href="http://www.iemss.org/sites/iemss2014/" target="_blank">iEMSs 2014</a> Here you can download the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/WaMDaM_AbdallahRosenberg.enw" target="_blank">EndNote citation </a>           
 You also can check out the professional and conference
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/ReadMe.md" target="_blank">presentations</a> along the way of WaM-DaM development 
 
