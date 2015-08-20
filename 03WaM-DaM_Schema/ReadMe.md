@@ -11,7 +11,7 @@ If you want to set up  a blank WaM-DaM database in any of the these four Relatio
 [MySQL](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_MySQL.sql)   
 [PostgreSQL](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_PostgreSQL.sql)  
 
-If you are a beginner in databases, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/SQLite_Instructions.md" target="_blank">instructions</a> that walks you through how to set up a WaM-DaM database in SQLite in less than 10 min using free reliable software.
+If you are a beginner in databases, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/SQLite_Instructions.md" target="_blank">instructions</a> that walks you through how to set up a WaM-DaM database in SQLite in less than 10 min using free reliable software.
 
 
 ### Got feedback or questions on WaM-DaM schema?    
