@@ -15,6 +15,5 @@ If you are a beginner in databases, we recommend you to use SQLite because it is
 
 
 ### Got feedback or questions on WaM-DaM schema?    
-Please let <a href="https://github.com/amabdallah/WaM-DaM#authors-and-contact" target="_blank">us</a>.    
-know and we're happy to help.
+Please let <a href="https://github.com/amabdallah/WaM-DaM#authors-and-contact" target="_blank">the developers</a> know and they're happy to help.
 
