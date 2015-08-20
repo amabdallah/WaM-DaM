@@ -2,8 +2,12 @@
 
 This is a smart way to create a DDL script for MySQL, MS SQL Server, SQLite, and PostgreSQL by forward engineer the XML WaM-DaM schema. We adapted these Python scripts to create blank database scheams for the four databases, all at once. 
 
-**How to create a WaM-DaM DDL from an XML schema?**       
-1. Download all this scripts    
+**How to create a WaM-DaM DDL from an XML schema?**  These steps are tested on Windows Machine      
+1. Download all this scripts (dont change their names) and place them in one folder    
+[build_ddl.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/build_ddl.py)   
+[base.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/base.py)   
+[data_mapping.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/data_mapping.py)   
+[translator.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/translator.py)   
 
 2. Open the CMD Terminal and navigate to the folder where all the Python scripts reside
 Windows>Start>Accessories>CMD
@@ -14,8 +18,8 @@ For example:
 input_file = 'WaMDaMAugust19_2015.xml.xml'
 default_schema = 'WaMDaMAugust19_2015'
 
-4. Execute this command line at the CMD terminal while still at the directory above
-% copy and past this line after you change the *WaM-DaM*.xml name below
+4. Execute this command line at the CMD terminal while still at the directory above   
+copy and past this line after you change the *WaM-DaM*.xml name below
 
         build_ddl.py -d all -x WaMDaMAugust19_2015.xml -o wamdam_ddl   
 
@@ -27,4 +31,4 @@ Upon executing this command, the DDL generator should build four DDL schemas....
 
 
 **Credit** 
-Thanks to [by Tony Castranova] at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/02DDL" target="_blank">DDL generator</a> script. We 
+Thanks to [by Tony Castranova] at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script. We 
