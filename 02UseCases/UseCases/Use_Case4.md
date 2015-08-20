@@ -76,7 +76,7 @@ First at 6.1, create a new table called *ScenarioComparision* which organizes al
 6.31 ScenarioDataValues
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.31ScenarioDataValues.sql)     
 [Result]()
-# update time stamp!!! 
+# update time stamp for 6.31, otherwise its good to go!!! 
 
 
 
