@@ -17,7 +17,7 @@ default_schema = 'WaMDaMAugust19_2015'
 4. Execute this command line at the CMD terminal while still at the directory above
 % copy and past this line after you change the *WaM-DaM*.xml name below
 
-    build_ddl.py -d all -x WaMDaMAugust19_2015.xml -o wamdam_ddl
+     build_ddl.py -d all -x WaMDaMAugust19_2015.xml -o wamdam_ddl
 
 
 Upon executing this command, the DDL generator should build four DDL schemas.......done as shown at this snapshot 
