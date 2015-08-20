@@ -39,7 +39,7 @@
 
 4.9 Multi-Column Array     
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.90MultiColumns.sql)  
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.90.csv)  
 
 
 
