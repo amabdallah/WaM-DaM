@@ -2,7 +2,7 @@
 
 You can view an interactive schema of the WaM-DaM Logical Data Model along with its description at this <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">GitHub Link</a>.  
 
-If you want to edit the the Logical Data Model of WaM-DaM, you can use <a href="http://www.dbwrench.com/" target="_blank">DbWrench</a> software and open this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/WaMDaMAugust19_2015.xml" target="_blank">WaM-DaM XML file</a>.    
+If you want to edit the the Logical Data Model of WaM-DaM, you can use <a href="http://www.dbwrench.com/" target="_blank">DbWrench</a> software and open this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/XML_Schema/WaMDaMAugust19_2015.xml" target="_blank">WaM-DaM XML file</a>.    
 
 If you want to set up  a blank WaM-DaM database in any of the these four Relational Database Systems: SQLite, Microsoft SQL Server, MySQL, and PostgreSQL, here are the SQL "Create" scripts that will generate a blank WaM-DaM database of 48 tables. 
 
