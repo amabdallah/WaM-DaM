@@ -2,7 +2,7 @@
 
 This is a smart way to create a DDL script for MySQL, MS SQL Server, SQLite, and PostgreSQL by forward engineer the XML WaM-DaM schema. We adapted these Python scripts to create blank database scheams for the four databases, all at once. 
 
-*How to create a WaM-DaM DDL from an XML schema?    
+**How to create a WaM-DaM DDL from an XML schema?**       
 1. Download all this scripts    
 
 2. Open the CMD Terminal and navigate to the folder where all the Python scripts reside
