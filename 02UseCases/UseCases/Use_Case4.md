@@ -39,4 +39,32 @@
 
 4.9 Multi-Column Array     
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.90MultiColumns.sql)  
+[Result]()  
+
+
+5 Sources/Methods/Organizations/People of data   
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/05SourcesMethodsOrganizationsPeople.sql)     
 [Result]()   
+
+**Scenario Comparison
+First at 6.1, create a new table called *ScenarioComparision* which organizes all the differnces between the Base Case (ID=4) and the Proposed (ID=5) Scenarios of the Lower Bear River Model in WEAP. This table is created based on queires on the ScenarioMapping Table as a combination of two other new tables called T4 and T5. We will only use the *ScenarioComparision* table to identify the differences in topology, metadata, and data values between the two scenarios. 
+
+6.1 Creat Scenario Comparision Table
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.0ScenarioComparisionCreatTable.sql)     
+[Result]()  
+
+6.2 Scenario Metadata
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.20ScenarioMetadata.sql)     
+[Result]()
+
+6.3 ScenarioDataTypes
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.30ScenarioDataTypes.sql)     
+[Result]()
+
+6.31 ScenarioDataValues
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.31ScenarioDataValues.sql)     
+[Result]()
+
+
+
+
