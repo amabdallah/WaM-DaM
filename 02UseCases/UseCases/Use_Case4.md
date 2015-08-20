@@ -1,6 +1,6 @@
 **Use case #4:** What are the data value(s) of an attribute of a system component?   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/04ComparSurfaceArea_Parameter.sql)     
-[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.csv)  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.0.csv)  
 
 
 4.1 Binarys  
@@ -9,27 +9,27 @@
 
 4.2 Parameters   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.2Parameters.sql)    
-[Result]() 
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.2.csv) 
 
 4.3 Seasonal Parameters   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.3SeasonalParameter.sql)   
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.30.csv)  
 
 4.4 Text Free    
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.4TextFree.sql)   
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.4.csv)  
 
 4.5 Text Controlled    
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.5TextControlled.sql)   
-[Result]()    
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.5.csv)    
 
 4.6 File Based    
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.6FileBased.sql)  
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.6.csv)  
 
 4.7 Rules    
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.7Rules.sql)   
-[Result]()    
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.70.csv)    
 
 4.80 Time Series      
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.80TimeSeries.sql)  
