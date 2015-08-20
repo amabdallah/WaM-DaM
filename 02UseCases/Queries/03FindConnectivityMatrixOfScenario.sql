@@ -1,7 +1,7 @@
-﻿-- 03.1 Find Connectivity Matrix of a scenario of a network
+﻿-- 03 Find Connectivity Matrix of a scenario of a network
 
 /*
-Use case #3.1: How are the water system components physically connected? Show directions of flow 
+Use case #3: How are the water system components physically connected? Show directions of flow 
 
 
 Users can use such query to understand how the water infrastructure is connected 

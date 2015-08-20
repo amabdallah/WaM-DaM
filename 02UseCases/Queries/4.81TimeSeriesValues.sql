@@ -1,4 +1,17 @@
-﻿SELECT InstanceName,
+﻿-- 4.81 TimeSeries
+
+/*
+This query shows time series data values, their time stamps and time series metadata
+
+Result:
+Time series data for a specific attribute 
+WaM-DaM keeps track of the meanings of data values, their units, to what instance they apply too.... 
+*/
+
+
+
+
+SELECT InstanceName,
 "NativeAttributeName",
 AggregationStatisticCV,
 Units.UnitName AS IntervalTimeUnitName,
