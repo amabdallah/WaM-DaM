@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><Db flnm="WaMDaMAugust19_2015" nm="WaM-DaM1.0" ver="1.3.4">
+
+<!-- This XML file represents the Logical Data Model of the Water Management Data Model (WaM-DaM) -->
+<!-- You can view and edit this WaM-DaM schema by using the DbWrench software http://www.dbwrench.com/ -->
+
+<!-- WaM-DaM All rights reserved. See Licence @ https://github.com/amabdallah/WaM-DaM --> 
+
+
+
   <VerLbl/>
   <VerNotes/>
   <DefTblOpts/>
