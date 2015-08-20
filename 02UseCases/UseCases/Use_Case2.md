@@ -3,7 +3,7 @@
 
 Use this [query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/02SearchSystemInfrastructureComponentsForModel.sql) and execute it against the prepopulated WaM-DaM SQLite database.  
 
-Here are the [results](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase2.csv) of the query
+Here are the [results](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase2.csv) of the query. the map below shows the Lower and the Upper Bear River basins and their data 
 
 
 
