@@ -24,14 +24,16 @@
 [Result]()    
 
 4.6 File Based    
-[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.6FileBased.sql)[Result]()  
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.6FileBased.sql)  
+[Result]()  
 
 4.7 Rules    
-[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.7Rules.sql)[Result]()    
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.7Rules.sql)   
+[Result]()    
 
 4.80 Time Series      
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.80TimeSeries.sql)  
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.80.csv)  
 
 4.81 TimeSeriesValues   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.81TimeSeriesValues.sql)   
