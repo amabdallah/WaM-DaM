@@ -1,6 +1,6 @@
 ##WaM-DaM Schema
 
-An interactive schema of the WaM-DaM Logical Data Model along its desciption can be veiwed at this <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">GitHub Link</a>.  
+An interactive schema of the WaM-DaM Logical Data Model along with its desciption can be veiwed at this <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">GitHub Link</a>.  
 
 If you want to veiw and edit the the Logical Data Model of WaM-Da, you can use <a href="http://www.dbwrench.com/" target="_blank">DbWrench</a> software using this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/WaMDaMAugust19_2015.xml" target="_blank">WaM-DaM XML file</a>.    
 
