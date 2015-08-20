@@ -51,19 +51,19 @@ First at 6.1, create a new table called *ScenarioComparision* which organizes al
 
 6.0 Create Scenario Comparision Table
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.0ScenarioComparisionCreatTable.sql)     
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase6.0.csv)  
 
-6.1 Identify additions to topology 
+6.10 Identify additions to topology 
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.10TopologicalDifferenceAdditions.sql)     
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase6.10.csv)  
 
-6.12 Identify removals to topology 
+6.11 Identify removals to topology 
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.11TopologicalDifferenceRemovals.sql)     
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase6.11.csv)  
 
 6.12 Create a table of topologies additions and removal for use in 6.2 and 6.3  
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.12TopologicalDifferenceCreateTable.sql)     
-[Result]()  
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase6.12.csv)  
 
 6.2 Scenario Metadata
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.20ScenarioMetadata.sql)     
