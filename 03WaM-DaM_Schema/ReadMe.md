@@ -6,15 +6,12 @@ If you want to edit the the Logical Data Model of WaM-DaM, you can use <a href="
 
 If you want to set up  a blank WaM-DaM database in any of the these four Relational Database Systems: SQLite, Microsoft SQL Server, MySQL, and PostgreSQL, here are the SQL "Create" scripts that will generate a blank WaM-DaM database of 48 tables. 
 
- <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql" target="_blank">SQLite</a>
- 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql" target="_blank">SQLite</a>
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_MSSQL.sql" target="_blank">Microsoft SQL Server</a>
-  
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_MySQL.sql" target="_blank">MySQL</a>
-
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_PostgreSQL.sql" target="_blank">PostgreSQL</a>
 
-If you are a beginner in databases, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/SQLite_Instructions.md" target="_blank">instructions</a> that walks you through how to set up a WaM-DaM database in SQLite in less than 10 min using free reliable software.
+If you are a beginner in databases, we recommend you to use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/SQLite_Instructions.md" target="_blank">instructions</a> that walks you through how to set up a WaM-DaM database in SQLite in less than 10 min using free and reliable software.
 
 
 #### Got feedback or questions on WaM-DaM schema?    
