@@ -14,15 +14,15 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 | Source name  | Dams | Waterbodies  | Streams  | HydroDesktop Time series  | WEAP Model |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |**Data provider and citation**  | USGS (U.S. Geological Survey, 2013) |USGS (National Atlas of the United States, 2013)  | USGS (U.S. Geological Survey, 2005)  | HydroDesktop (Ames et al., 2012) | David Rosenberg, unpublished  |
-| **Spatial coverage**  | Content Cell  || Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **Time span**  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-|**#Objects**   | Content Cell  || Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **Object topology**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **# Instances**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **#Attributes**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **Data types**   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-|**Scenarios**    | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **Connections (links)** | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| **Spatial coverage**  | United States  |United States  |United States  | Bear River Watershed, Utah-Idaho-Wyoming    | Lower Bear River Watershed, Utah  |
+| **Time span**  | 1800-2003  | 1995-2002 | 1995-2002 | 1900-2015  | 1966-2006  |
+|**#Objects**   | 1 | 1  | 2  | 3  | 12  |
+| **Object topology**   | node  | node | node and link  | node   | node and link  |
+| **# Instances**   | 8,121  |26,872  | 76,976 | 162  |111  |
+| **#Attributes**   | 23  | 15  | 22  | 32  | 200  |
+| **Data types**   | Text Controlled, text free, parameter  | Text controlled, text free, parameter  | Text controlled, text free, parameter  | Text controlled, parameter, time series  | Text controlled, multi-columns, parameter, seasonal parameters, time series, rules, file-based  |
+|**Scenarios**    | 1  | 1  | 1  | 1  | 2  |
+| **Connections (links)** | N/A  | N/A | cccccccccccc  | N/A | Content Cell  |
 
 
 
