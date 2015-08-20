@@ -1,8 +1,7 @@
 ## Presentations
 
 #### Upcoming:
-
-AGU Fall Meeting 2015: Use WaM-DaM to Move Data from Model A to Model B 
+We tentatively plan to present this WaM-DaM work in a workshop at the <a href="http://www.asce.org/templates/conferences-events-event-detail.aspx?id=9359" target="_blank">EWRI World Environmental Resources Congress 2016</a> page to demonstrate WaM-DaM capabilities and draw feedback form the Water Resources Systems Analysis Community.  
 
 #### Oral Presentations:
 
