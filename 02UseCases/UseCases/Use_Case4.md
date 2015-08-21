@@ -37,9 +37,9 @@ The query result lists the file location, name, and format on desk for the headf
 4.7 Rules    
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.7Rules.sql)   
 [Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.70.csv)    
-The query results show how a Loss to Groundwater attribute for Hyrum Reservoir has a rule that dependes on other attributes that are already defined in WaM-DaM. The rule reads as this: 
-%Loss to groundwater@HyrumReservoir=0.0001 X StorageCapacity + 0.00001 x SurfaceWaterHeadflow x 60.37    
-%Multiply by 60.37 to convert from CFS to AF/month.
+The query results show how a Loss to Groundwater attribute for Hyrum Reservoir has a rule that dependes on other attributes that are already defined in WaM-DaM. The rule reads as this:    
+%Loss to groundwater@HyrumReservoir=0.0001 X StorageCapacity + 0.00001 x SurfaceWaterHeadflow x 60.37       
+%Multiply by 60.37 to convert from CFS to AF/month.   
 The RuleVariableOrder preserves the order of variables, constants, and operations in the rule.  There always should be a SymboleCV (e.g., +, - , *) between the rule variables and constants. Thus a software busienss rule should inforce this poperty by not allowing a Rule Variable to be stored in the same line along with a constant or vice versa. Each variable of the rule must have a unit.
 
 4.80 Time Series      
