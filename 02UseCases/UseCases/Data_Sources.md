@@ -22,8 +22,8 @@ First, we compiled all the data into CSV files under four Excel workbooks where 
 | **#Attributes**   | 23  | 15  | 22  | 32  | 200  |
 | **Data types**   | Text Controlled, text free, parameter  | Text controlled, text free, parameter  | Text controlled, text free, parameter  | Text controlled, parameter, time series  | Text controlled, multi-columns, parameter, seasonal parameters, time series, rules, file-based  |
 |**Scenarios**    | 1  | 1  | 1  | 1  | 2  |
-| **Connections (links)** | N/A  | N/A | 76,976  | N/A | 72  |
-
+| **Connections (links)** | N/A  | N/A | 76,976  (start and end nodes are implicitly stored in ArcGIS) | N/A | 72 (Node and Arc shapefiles) |
+| **Format  ** | shapefile |shapefile | shapefile  | CSV | CSV, Paradox Database,  shapefile |
 
 
 
