@@ -1,4 +1,4 @@
-**Use case #6:** What are the data and metadata differences between two scenarios?   
+###Use case #6: What are the data and metadata differences between two scenarios?   
 
 **Scenario Comparison
 First at 6.1, create a new table called *ScenarioComparision* which organizes all the differnces between the Base Case (ID=4) and the Proposed (ID=5) Scenarios of the Lower Bear River Model in WEAP. This table is created based on queires on the ScenarioMapping Table as a combination of two other new tables called T4 and T5. We will only use the *ScenarioComparision* table to identify the differences in topology, metadata, and data values between the two scenarios. 
@@ -30,4 +30,3 @@ First at 6.1, create a new table called *ScenarioComparision* which organizes al
 6.31 ScenarioDataValues
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.31ScenarioDataValues.sql)     
 [Result]()
-# update time stamp for 6.31, otherwise its good to go!!! 
