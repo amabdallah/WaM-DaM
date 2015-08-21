@@ -4,8 +4,8 @@ The design of WaM-DaM is limited to experience drawn from the reviewed water dat
 
 ### A. Currently undertaken 
 
-#### 1. An Integrated Method to Couple Water Management Data and Serve to Models
-details are coming soon :)
+#### 1. An Integrated Method to Couple Water Management Data and Serve it to Models
+This is my second chapter of my Dissertation. details are coming soon :) 
 
 #### 2. Publish and Share Water Management Data through web services 
 Use WaM-DaM to publish water management data for models for the State of Utah using a standardized XML or Json web languages. Host integrated data using data in [7.2] in public servers. Benefit from  previous work that has been done to publish time series data (Goodall et al., 2008)
