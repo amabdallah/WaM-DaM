@@ -45,19 +45,19 @@ The RuleVariableOrder preserves the order of variables, constants, and operation
 4.80 Time Series      
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.80TimeSeries.sql)  
 [Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.80.csv)  
-
+The query result lists the attributes that have time series data along with their global metadata of AggregationStatisticCV, IntervalTimeUnitName, AggregationInterval, and UnitName. The next query lists data values and their time stamp for an example attribute. 
 
 
 4.81 TimeSeriesValues   
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.81TimeSeriesValues.sql)   
 [Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.81.csv)  
-
+The query lists data values and their time stamp for the headflow attribute at of the Bear River instance. This time series is represnts average monthly inflow data with a unit of cubic feet per second.
 
 
 4.9 Multi-Column Array     
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/4.90MultiColumns.sql)  
 [Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase4.90.csv)  
-
+The query result lists the data values of the three attributes that compose the Volume Elevation Curve attribute for Hyrum Reservoir. Each attribute has data values and their unit along with their order. The value order preserves the pairing among the data values of the three attributes.  	
 
 
 
