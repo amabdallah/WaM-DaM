@@ -8,7 +8,7 @@ The CI-WATER project includes researchers from Brigham Young University, the Uni
 
 Systems water management data lacks a standardized method to organize and communicate its diverse and disparate data. Developing a persistent data model for water management data is an important step to advance how we communicate such vital data across disciplines. So the C-WATER team at Utah State University took the task to develop WaM-DaM.
 
-**Paradigm shift**
+**Paradigm shift**   
 Most of existing models use the traditional architecture which incorporate three integrated and tight coupled components i) user interface, data management system, and the model engine of algorithms (Harou et al., 2010). There is an increasing interest to decouple the three components to allow the reuses of data and user interface across different models. WaM-DaM aims to provide a standard for the database component so other models can re-use the same data.
 
 
