@@ -1,4 +1,4 @@
-**Use case # 1:** What are the required types of water system components and their attributes for a WEAP model?   
+###**Use case # 1:** What are the required types of water system components and their attributes for a WEAP model?   
 
 Use this [query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/01DataStructures.sql) and execute it against the prepopulated WaM-DaM SQLite database. Here are the [results](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase1.csv) of the query in a CSV format.    
 
