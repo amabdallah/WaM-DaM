@@ -1,10 +1,8 @@
 
 **Use case #2:** What are the available water system infrastructure components to expand the Lower Bear River Model to the entire Bear River Watershed?    
 
-Use this [query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/02SearchSystemInfrastructureComponentsForModel.sql) and execute it against the prepopulated WaM-DaM SQLite database.  
+Use this [query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/02SearchSystemInfrastructureComponentsForModel.sql) and execute it against the prepopulated WaM-DaM SQLite database. Here are the [results](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase2.csv) of the query. The map below shows the Lower and the Upper Bear River basins and their data.   
 
-Here are the [results](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase2.csv) of the query. the map below shows the Lower and the Upper Bear River basins and their data 
-
-
+Given that WaM-DaM has data for the modeled Lower Bear River, suppose a user wants to expand the model to the entire watershed. The query result lists 44 Stream Gages, 20 Stream segments, 11 reservoirs, and seven water bodies that are available in WaM-DaM for the upper Bear River Basin boundary that matches the WEAP required Object Types (Figure below). WaM-DaM discovered these instances through the controlled vocabulary (i.e., reservoir) mediator between the WEAP native vocabulary reservoir (i.e., reservoir) and the original native vocabulary (i.e., dam, water body) of different data sources. Here controlled vocabulary happens to be similar to the native WEAP term. The user then can choose from these discovered instances to expand the Lower Bear River Model to the entire Watershed. Other data sources could be imported to WaM-DaM to complement the other data needs of WEAP. This query can be used to discover available data for WEAP models anywhere by changing the coordinates of search boundary of instances as in HydroDesktop (Ames et al., 2012).
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/ExpandBear.JPG)
