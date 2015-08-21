@@ -18,8 +18,9 @@ Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Fil
 #### 1. Controlled Vocabularies and Ontology for Water Resources Management Data   
 Develop comprehensive lists of controlled vocabularies and ontology for diverse water management data similar to the work by Piasecki and Beran (2009). The list can be complied by holding workshops at conferences and inviting interested people. Online tools also should be used to allow the water resources community to submit suggested vocabulary similar to the work by Horsburgh et al. (2014). The compiled vocabularies should be tested against larger data sets across different disciplines of water management.    
 
-#### 2. WaM-DaM HydroDesktop Plugin to Discover, Download, Visualize Water Management Data 
-Use the controlled vocabulary and ontology in [7.1] and the developed web-services in [7.3] to communicate with remote servers to discover instances of water management data and download it. Use DotSpatial open-source GIS libraries to visualize water management networks (e.g., different shapes and sizes for nodes and links). Adapt existing HydroDesktop tools to visualize and analyze water management time series data (Ames et al., 2012).
+#### 2. WaM-DaM HydroDesktop Plugin to Discover, Download, Visualize Water Management Data [Idea on hold]
+Use the controlled vocabulary and ontology in [B.1] and the developed web-services in [A.2] to communicate with remote servers to discover instances of water management data and download it. Use DotSpatial open-source GIS libraries to visualize water management networks (e.g., different shapes and sizes for nodes and links). Adapt existing HydroDesktop tools to visualize and analyze water management time series data (Ames et al., 2012).   
+There has been discussions to use a Web-based platform like Tythes instead of HydroDesktop. Updates will come whenever this idea mature enough.
 
 #### 3. Workflows to link WaM-DaM with Hydra and WaDE Web Services
 Link WaM-DaM web-services with WaDE web services for water use and availability in seventeen Western States in the US (Larsen and Young, 2014). Thus, WaDE can serve as important data source to WaM-DaM. Also link WaM-DaM web-services with HydraPlatform web-services to leverage the capabilities of HydraPlatform to visualize data and serve it to different models (Knox et al., 2014). HydraPlatform users also can use WaM-DaM metadata and semantic consistency to publish and share and publish their data with others according to WaM-DaM method.
@@ -28,7 +29,7 @@ The National Science Foundation (NSF) is calling for Critical Techniques and Tec
 
 #### 4. WaM-DaM to Organize Data for Water-Energy-Food Nexus 
 Energy generation, distribution, and use systems are analogous to water resources. Water and energy resources are inextricably linked from their generation to their consumption. Most energy sources need water for cooling and water resources need energy pump, supply, and treat water and wastewater. Water end-uses need energy to heat water for sanitation (Abdallah and Rosenberg, 2014). In addition, food production requires water and energy. Thus, WaM-DaM could be adapted and tested to organize energy and food resources data to help relate these three important resources together.
-The NSF is calling for Innovations at the Nexus of Food, Energy and Water Systems (INFEWS). WaM-DaM can serve as a basis to integrated and relate data across the three resources.     
+The NSF is calling for Innovations at the Nexus of Food, Energy and Water Systems (INFEWS). WaM-DaM can serve as a basis to integrate and relate data across the three resources.     
 
 
 #### 5. A Repository for the Great Salt Lake River Basins Models  
