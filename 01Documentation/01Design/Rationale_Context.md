@@ -9,7 +9,7 @@ The CI-WATER project includes researchers from Brigham Young University, the Uni
 Systems water management data lacks a standardized method to organize and communicate its diverse and disparate data. Developing a persistent data model for water management data is an important step to advance how we communicate such vital data across disciplines. So the C-WATER team at Utah State University took the task to develop WaM-DaM.
 
 **Paradigm shift**   
-Most of existing models use the traditional architecture which incorporate three integrated and tight coupled components i) user interface, data management system, and the model engine of algorithms (Harou et al., 2010). There is an increasing interest to decouple the three components to allow the reuses of data and user interface across different models. WaM-DaM aims to provide a standard for the database component so other models can re-use the same data.
+Most of existing models use the traditional architecture which incorporate three integrated and tight coupled components i) graphical user interface (GUI), data management system ii), and iii) the model engine of algorithms (Harou et al., 2010). There is an increasing interest to decouple the three components to allow the reuses of data and user interface across different models. WaM-DaM aims to provide a standard for the database component so other models can re-use the same data.
 
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/PradigmShift.jpg)
@@ -17,9 +17,9 @@ Most of existing models use the traditional architecture which incorporate three
 
 
 ###Context
-The timing, availability of funds, expertise, and passion for WaM-DaM development were incredible by all means. Along the way of WaM-DaM development, there has been an incredible interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.
+The timing, availability of funds, expertise, and passion for WaM-DaM development were incredible by all means. Along the way of WaM-DaM development, there has been a real interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.
 
-We were fortunate to discuss and the development of WaM-DaM with these research groups and agencies listed below. WaM-DaM and these projects complement each other and there is a big room for real future collaboration. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/edit/master/docs/Future_Work.md) with many of these groups. We hope that our discussions with them continue so we can achieve our common goal of having a standard to communicate systems water management data. 
+We were fortunate to discuss the development of WaM-DaM with these research groups and agencies listed below. WaM-DaM and these projects complement each other and there is a big room for real future collaboration. There are numerous opportunities for [future work](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Future_Work.md) with many of these groups. We hope that our discussions with them continue so we can achieve our common goal of having a standard to communicate systems water management data. 
 
 
 
@@ -38,7 +38,7 @@ We were fortunate to discuss and the development of WaM-DaM with these research 
 
 
 ### Acknowledgement 
-These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh,  Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis.
+These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis. Dan Ames at Brigham Young University, Utah.
 
 ### Disclaimer:
 The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. Any opinions, findings, and conclusions or recommendations expressed in this GitHub repository are those of the author(s) do not necessarily reflect the views of the National Science Foundation. Utah Water Research Laboratory and the Water Users Association provided financial support.
