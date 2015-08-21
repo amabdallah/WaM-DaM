@@ -8,11 +8,10 @@ The design of WaM-DaM is limited to experience drawn from the reviewed water dat
 This is my second chapter of my Dissertation. details are coming soon :) 
 
 #### 2. Publish and Share Water Management Data through web services 
-Use WaM-DaM to publish water management data for models for the State of Utah using a standardized XML or Json web languages. Host integrated data using data in [7.2] in public servers. Benefit from  previous work that has been done to publish time series data (Goodall et al., 2008)
-Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Publish_ShareData.docx) of the idea
+WaM-DaM specifications could be used to publish water management data using a standardized Json web language. We have been discussing several appproches and here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Publish_ShareData.docx) of one of the ideas.
 
 #### 3. Add a new Resoure Type to HydroShare 
-Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaM_DaM_HydroShare_Linkage.docx) of the idea 
+Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaM_DaM_HydroShare_Linkage.docx) of the rough idea.  
 
 ### B. Future Promosing opportunitues to build on WaM-DaM
 
