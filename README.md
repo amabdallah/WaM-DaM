@@ -58,6 +58,8 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 
 ==============================
 ### Authors and Contact
+You're welcome to leave an anonomus feedback on WaM-DaM through this quick <a href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank">survey</a> 
+
 For more info, contact Adel Abdallah @       
 amabdallah@aggiemail.usu.edu    
 <a  href="http://www.engr.usu.edu/cee/faculty/derosenberg/students.htm" target="_blank"><img 
