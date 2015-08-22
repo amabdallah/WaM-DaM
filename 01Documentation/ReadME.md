@@ -1,21 +1,21 @@
 ## WaM-DaM Documentation
 
 ### Scope
-WaM-DaM is specifically designed to support Systems water management data. We draw the [scope] (https://github.com/amabdallah/WaM-DaM/blob/master/docs/Scope.md)
+WaM-DaM is specifically designed to support Systems water management data. We draw the [scope] (https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md)
 of WaM-DaM and the list the types of data that it can handle 
 
 ### Reviewed Systems 
 To draw the common and needed data features for a generic design, we reviewed thirty common available systems models and data management systems. These systems are either used extensively in the literature, we have experience with them, or our collaborators are using them in their active research. These models or systems are not inclusive or necessarily representative of the vast inventory of models. However, these models represent a wide and diverse range of used methods to organize and model water management data. Additional probable features in other models can be accommodated in future improvements to WaM-DaM.
-Check out further details about the [Reviewed Systems](https://github.com/amabdallah/WaM-DaM/blob/master/docs/Reviewed_Systems.md)
+Check out further details about the [Reviewed Systems](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Reviewed_Systems.md)
 
 ## Software 
 I used <a href="http://www.dbwrench.com" target="_blank">DbWrench 3.3.1</a> to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
 
 **Credit** 
-I adapted and used this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/02DDL" target="_blank">DDL generator</a> script written in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MsSQL, MySQL, and PostgreSQL.
+I adapted and used this <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/02DDL" target="_blank">DDL generator</a> script written in Python [by Tony Castranova] that converts the DbWrench XML file of WaM-DaM to forward engineer to MSSQL, MySQL, SQLite, and PostgreSQL.
 
 ### WaM-DaM Design principles 
-We complied eight <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Design_principles.md" target="_blank">design principles</a> for WaM-DaM based on the reviewed systems, important questions, and uses cases. It is the key contribution of WaM-DaM to support all these principles together: flexible and extensible modular design, networks, scenarios, conditional query for subsets of data, dynamic controlled vocabulary, reusable descriptive and explicit metadata, multiple data formats for systems models, and open-source environment.
+We complied eight <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Design_principles.md" target="_blank">design principles</a> for WaM-DaM based on the reviewed systems, important questions, and uses cases. It is the key contribution of WaM-DaM to support all these principles together: flexible and extensible modular design, networks, scenarios, conditional query for subsets of data, dynamic controlled vocabulary, reusable descriptive and explicit metadata, multiple data formats for systems models, and open-source environment.
 
 
 ### WaM-DaM Architecture
