@@ -11,7 +11,7 @@ Other approaches use a mix of grids, triangulated networks, and node and links n
 
 
 So distributed water management data are out of the scope of WaM-DaM because WaM-DaM is specifically designed to support systems analysis water management data. A systems analysis model might represent the complex system of groundwater supply and recharge in a region by a node that aggregates supply and recharge variables to study their interactions with other system components like agricultural demand site (Figure 1)
-                        ![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/ExampleNetworksFinal.jpg)
+                        ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/ExampleNetworksFinal.jpg)
  
 Figure 1: Systems analysis schematic for a water supply network. Shapes and colors are used to distinguish different types of nodes. Links’ types are not shown here for simplicity.
 
