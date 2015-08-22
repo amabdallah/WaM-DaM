@@ -16,8 +16,6 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 •	[WaMDaMzip.zip](https://goo.gl/ZRBTSC) [30 MB] –requires WINZIP to unzip it   
 •	[WaMDaM.rar](https://goo.gl/KMVhXs ) [8 MB] – requires WINRAR to unzip it   
 
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/05Workshop/ExpandBear.JPG)
-
 
 ###4. Queries     
 #####A.	What are the required attributes for the WEAP model? [query](https://goo.gl/4L57yI )      
@@ -30,7 +28,7 @@ This query summarizes the required data that users need to find to populate a sp
 #####B. Discover available data to expand the Lower Bear River Model to the entire Basin [query](https://goo.gl/c0hkp7)      
 The search is based on a boundary of coordinates provided in the SQL script for instances in the upper Bear River Basin . Users need to only change these coordinates in the provided SQL script to discover data in other regions. 
 
- ![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/ExpandBear.JPG)
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/05Workshop/ExpandBear.JPG)
 
 #####C. Discover available data for a WEAP model in the Tuscaloosa Region, AL [query](https://goo.gl/BCPZoq)           
 This query discovers the available data to build a model in the Water and Evaluation and Assessment (WEAP) system for the Tuscaloosa region, Alabama. The search is based on a boundary of coordinates for instances in the Tuscaloosa region, Alabama     
