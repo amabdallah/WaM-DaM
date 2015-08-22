@@ -1,0 +1,16 @@
+NativeObjectName,InstanceName,NativeAttributeName,TextControlledValue,ValueDefinition
+Dam,LAMONT,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,FOSTER,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,GLENDALE,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,GLENDALE,PURPOSES,S,The reservoir contained by the dam is for water supply.
+Dam,WINDER,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,CROWTHER,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,DEEP CREEK,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,DEEP CREEK,PURPOSES,S,The reservoir contained by the dam is for water supply.
+Dam,ONEIDA,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,ONEIDA,PURPOSES,H,The dam is for hydroelectric power.
+Dam,DEVIL CREEK,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,DANIELS,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,MONTPELIER CREEK,PURPOSES,I,The reservoir contained by the dam is for irrigation.
+Dam,MONTPELIER CREEK,PURPOSES,C,The dam is for flood control and storm water management.
+Dam,SODA,PURPOSES,H,The dam is for hydroelectric power.

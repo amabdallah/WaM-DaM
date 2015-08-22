@@ -1,0 +1,169 @@
+NativeObjectName,InstanceName,NativeAttributeName,UnitName,ParameterValue,DataStructureName
+Dam,LAMONT,YR_COMPL,hour minute,1948,The Major Dams shapfile of the United States
+Dam,FOSTER,YR_COMPL,hour minute,1962,The Major Dams shapfile of the United States
+Dam,GLENDALE,YR_COMPL,hour minute,1930,The Major Dams shapfile of the United States
+Dam,WINDER,YR_COMPL,hour minute,1958,The Major Dams shapfile of the United States
+Dam,CROWTHER,YR_COMPL,hour minute,1948,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,YR_COMPL,hour minute,1952,The Major Dams shapfile of the United States
+Dam,ONEIDA,YR_COMPL,hour minute,1913,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,YR_COMPL,hour minute,1969,The Major Dams shapfile of the United States
+Dam,DANIELS,YR_COMPL,hour minute,1967,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,YR_COMPL,hour minute,1971,The Major Dams shapfile of the United States
+Dam,SODA,YR_COMPL,hour minute,1925,The Major Dams shapfile of the United States
+Dam,LAMONT,NID_HEIGHT,international foot,65,The Major Dams shapfile of the United States
+Dam,FOSTER,NID_HEIGHT,international foot,65,The Major Dams shapfile of the United States
+Dam,GLENDALE,NID_HEIGHT,international foot,69,The Major Dams shapfile of the United States
+Dam,WINDER,NID_HEIGHT,international foot,53,The Major Dams shapfile of the United States
+Dam,CROWTHER,NID_HEIGHT,international foot,85,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,NID_HEIGHT,international foot,81,The Major Dams shapfile of the United States
+Dam,ONEIDA,NID_HEIGHT,international foot,102,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,NID_HEIGHT,international foot,73,The Major Dams shapfile of the United States
+Dam,DANIELS,NID_HEIGHT,international foot,82,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,NID_HEIGHT,international foot,73,The Major Dams shapfile of the United States
+Dam,SODA,NID_HEIGHT,international foot,94,The Major Dams shapfile of the United States
+Dam,LAMONT,MAX_STOR,acre foot,2408,The Major Dams shapfile of the United States
+Dam,FOSTER,MAX_STOR,acre foot,3355,The Major Dams shapfile of the United States
+Dam,GLENDALE,MAX_STOR,acre foot,6000,The Major Dams shapfile of the United States
+Dam,WINDER,MAX_STOR,acre foot,2000,The Major Dams shapfile of the United States
+Dam,CROWTHER,MAX_STOR,acre foot,959,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,MAX_STOR,acre foot,4140,The Major Dams shapfile of the United States
+Dam,ONEIDA,MAX_STOR,acre foot,11400,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,MAX_STOR,acre foot,4464,The Major Dams shapfile of the United States
+Dam,DANIELS,MAX_STOR,acre foot,8700,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,MAX_STOR,acre foot,3840,The Major Dams shapfile of the United States
+Dam,SODA,MAX_STOR,acre foot,15760,The Major Dams shapfile of the United States
+Dam,LAMONT,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,FOSTER,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,GLENDALE,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,WINDER,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,CROWTHER,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,ONEIDA,NORMAL_STO,acre foot,10600,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,DANIELS,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,NORMAL_STO,acre foot,0,The Major Dams shapfile of the United States
+Dam,SODA,NORMAL_STO,acre foot,15200,The Major Dams shapfile of the United States
+Dam,LAMONT,SURF_AREA,acre,92,The Major Dams shapfile of the United States
+Dam,FOSTER,SURF_AREA,acre,145,The Major Dams shapfile of the United States
+Dam,GLENDALE,SURF_AREA,acre,230,The Major Dams shapfile of the United States
+Dam,WINDER,SURF_AREA,acre,96,The Major Dams shapfile of the United States
+Dam,CROWTHER,SURF_AREA,acre,33,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,SURF_AREA,acre,180,The Major Dams shapfile of the United States
+Dam,ONEIDA,SURF_AREA,acre,480,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,SURF_AREA,acre,142,The Major Dams shapfile of the United States
+Dam,DANIELS,SURF_AREA,acre,375,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,SURF_AREA,acre,120,The Major Dams shapfile of the United States
+Dam,SODA,SURF_AREA,acre,1223,The Major Dams shapfile of the United States
+Dam,LAMONT,DRAIN_AREA,acre,0.3,The Major Dams shapfile of the United States
+Dam,FOSTER,DRAIN_AREA,acre,1.2,The Major Dams shapfile of the United States
+Dam,GLENDALE,DRAIN_AREA,acre,15.2,The Major Dams shapfile of the United States
+Dam,WINDER,DRAIN_AREA,acre,1.1,The Major Dams shapfile of the United States
+Dam,CROWTHER,DRAIN_AREA,acre,1.2,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,DRAIN_AREA,acre,29.7,The Major Dams shapfile of the United States
+Dam,ONEIDA,DRAIN_AREA,acre,4456,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,DRAIN_AREA,acre,14.8,The Major Dams shapfile of the United States
+Dam,DANIELS,DRAIN_AREA,acre,107,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,DRAIN_AREA,acre,28,The Major Dams shapfile of the United States
+Dam,SODA,DRAIN_AREA,acre,4099,The Major Dams shapfile of the United States
+Dam,LAMONT,DAMS00X020,dimensionless,6164,The Major Dams shapfile of the United States
+Dam,FOSTER,DAMS00X020,dimensionless,6178,The Major Dams shapfile of the United States
+Dam,GLENDALE,DAMS00X020,dimensionless,6180,The Major Dams shapfile of the United States
+Dam,WINDER,DAMS00X020,dimensionless,6218,The Major Dams shapfile of the United States
+Dam,CROWTHER,DAMS00X020,dimensionless,6231,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,DAMS00X020,dimensionless,6237,The Major Dams shapfile of the United States
+Dam,ONEIDA,DAMS00X020,dimensionless,6269,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,DAMS00X020,dimensionless,6279,The Major Dams shapfile of the United States
+Dam,DANIELS,DAMS00X020,dimensionless,6302,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,DAMS00X020,dimensionless,6304,The Major Dams shapfile of the United States
+Dam,SODA,DAMS00X020,dimensionless,6440,The Major Dams shapfile of the United States
+Dam,LAMONT,FID,dimensionless,6163,The Major Dams shapfile of the United States
+Dam,FOSTER,FID,dimensionless,6177,The Major Dams shapfile of the United States
+Dam,GLENDALE,FID,dimensionless,6179,The Major Dams shapfile of the United States
+Dam,WINDER,FID,dimensionless,6217,The Major Dams shapfile of the United States
+Dam,CROWTHER,FID,dimensionless,6230,The Major Dams shapfile of the United States
+Dam,DEEP CREEK,FID,dimensionless,6236,The Major Dams shapfile of the United States
+Dam,ONEIDA,FID,dimensionless,6268,The Major Dams shapfile of the United States
+Dam,DEVIL CREEK,FID,dimensionless,6278,The Major Dams shapfile of the United States
+Dam,DANIELS,FID,dimensionless,6301,The Major Dams shapfile of the United States
+Dam,MONTPELIER CREEK,FID,dimensionless,6303,The Major Dams shapfile of the United States
+Dam,SODA,FID,dimensionless,6439,The Major Dams shapfile of the United States
+WaterBody,Alexander Reservoir,FID,dimensionless,12396,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Twin Lakes Reservoir,FID,dimensionless,12417,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12418,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Bear Lake,FID,dimensionless,12422,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Oneida Narrows Reservoir,FID,dimensionless,12423,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,17957,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Oxford Slough,FID,dimensionless,12401,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12402,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12407,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12408,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12409,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Dingle Swamp,FID,dimensionless,12410,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12419,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,FID,dimensionless,12424,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Alexander Reservoir,Area_mi,square mile,1.368719743,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Twin Lakes Reservoir,Area_mi,square mile,0.755309504,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,0.373299446,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Bear Lake,Area_mi,square mile,112.3163353,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Oneida Narrows Reservoir,Area_mi,square mile,0.512442633,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,1.198587437,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Oxford Slough,Area_mi,square mile,3.557820879,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,0.894800427,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,0.663233044,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,0.786438835,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,5.12506483,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Dingle Swamp,Area_mi,square mile,19.71409404,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,0.519197325,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Area_mi,square mile,0.796906905,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Alexander Reservoir,Perim_mi,international mile,7.879242931,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Twin Lakes Reservoir,Perim_mi,international mile,4.418974722,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,4.153457755,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Bear Lake,Perim_mi,international mile,56.52129579,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Oneida Narrows Reservoir,Perim_mi,international mile,4.366029912,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,5.817349464,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Oxford Slough,Perim_mi,international mile,14.70276784,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,4.418274911,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,3.511468298,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,4.794044098,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,13.49920334,Water Bodies and Wetlands shapfile of the United States
+WaterBody,Dingle Swamp,Perim_mi,international mile,27.83908807,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,3.381523997,Water Bodies and Wetlands shapfile of the United States
+WaterBody, ,Perim_mi,international mile,4.106768836,Water Bodies and Wetlands shapfile of the United States
+Stream,Crow Creek,LENGTH,degrees minutes seconds,0.138355,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.0860501,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.0982277,National Streams
+Stream,Portneuf River,LENGTH,degrees minutes seconds,0.7039,National Streams
+Stream,Slug Creek,LENGTH,degrees minutes seconds,0.224197,National Streams
+Stream,Salt River,LENGTH,degrees minutes seconds,0.394289,National Streams
+Stream,Crow Creek,LENGTH,degrees minutes seconds,0.239882,National Streams
+Stream,Marsh Creek,LENGTH,degrees minutes seconds,0.429013,National Streams
+Stream,Dairy Creek,LENGTH,degrees minutes seconds,0.173706,National Streams
+Stream,Marsh Creek,LENGTH,degrees minutes seconds,0.222058,National Streams
+Stream,Wright Creek,LENGTH,degrees minutes seconds,0.0678626,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.0221962,National Streams
+Stream,Preuss Creek,LENGTH,degrees minutes seconds,0.24717,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.561074,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.50845,National Streams
+Stream,Cottonwood Creek,LENGTH,degrees minutes seconds,0.315525,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.0828936,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.0807977,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.012936,National Streams
+Stream,Thomas Fork,LENGTH,degrees minutes seconds,0.195985,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.0446439,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.0628734,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.535426,National Streams
+Stream,Bear Lake Outlet,LENGTH,degrees minutes seconds,0.232698,National Streams
+Stream,Little Malad River,LENGTH,degrees minutes seconds,0.316056,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.222781,National Streams
+Stream,Smiths Fork,LENGTH,degrees minutes seconds,0.61968,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.13513,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.0663828,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.413457,National Streams
+Stream,Weston Creek,LENGTH,degrees minutes seconds,0.29931,National Streams
+Stream,Beaver Creek,LENGTH,degrees minutes seconds,0.123155,National Streams
+Stream,Malad River,LENGTH,degrees minutes seconds,0.187265,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.170409,National Streams
+Stream,N/A,LENGTH,degrees minutes seconds,0.177068,National Streams
+Stream,Cub River,LENGTH,degrees minutes seconds,0.249516,National Streams
+Stream,Bear River,LENGTH,degrees minutes seconds,0.0338039,National Streams
+Stream,Jenkins Hollow,LENGTH,degrees minutes seconds,0.0478517,National Streams

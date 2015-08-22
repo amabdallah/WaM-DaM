@@ -1,0 +1,4 @@
+CommonAttributeName,NativeAttributeName,UnitName,ParameterValue,SourceName
+"surafce area","SURF_AREA","acre","480","The Major Dams shapfile of the United States"
+"surafce area","Area_mi","square mile","0.705559389466","Water Bodies and Wetlands shapfile of the United States"
+"surafce area","Area","acre",,"WEAP"

@@ -1,0 +1,3 @@
+InstanceName,NativeObjectName,ObjectTopology,NativeAttributeName,SourceName,MethodName,DataStorageID,AttributeTypeCodeCV,ScenarioName
+Bear River,River,Link,Headflow,CUAHSI HydroDesktop,CUAHSI,783369,T,Proposed
+Bear River,River,Link,Headflow,WEAP Model for the Lower Bear River ,Water Evaluation And Planning System,782204,T,BaseCaseLower

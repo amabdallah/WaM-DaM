@@ -1,0 +1,7 @@
+InstanceName,NativeObjectName,ObjectTopology,ScenarioName,MasterNetwrokName
+Barrens (20),local reservoir,Node,BaseCaseLower,Lower Bear River Network
+Transmition Link from Withdrawal Node 8 to Barrens,Transmission Link,Link,BaseCaseLower,Lower Bear River Network
+Transmition Link from Withdrawal Node 5 to Barrens,Transmission Link,Link,BaseCaseLower,Lower Bear River Network
+Transmition Link from Barrens to Dummy Junction 2,Transmission Link,Link,BaseCaseLower,Lower Bear River Network
+Above Cutler,Reservoir,Node,Proposed,Lower Bear River Network
+Below Cutler,Reservoir,Node,Proposed,Lower Bear River Network
