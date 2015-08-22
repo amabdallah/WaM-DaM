@@ -1,17 +1,18 @@
 ## Data Definition Lanaguge (DDL)
 
-This is a smart way to create a DDL script for MySQL, MS SQL Server, SQLite, and PostgreSQL by forward engineer the XML WaM-DaM schema. We adapted these Python scripts to create blank database scheams for the four databases, all at once. 
+You only need to use this DDL generator if you edit the XML schema of WaM-DaM and then want to create blank WaM-DaM database schemas. Otherwise you can use the exisitng blank database schemas. 
+You can use this smart way to create a DDL script (can create empty database) for MySQL, MS SQL Server, SQLite, and PostgreSQL by forwarding engineer any XML WaM-DaM schema. We adapted these Python scripts below to create blank database scheams for the four databases, all at once. 
 
 **How to create a WaM-DaM DDL from an XML schema?**  These steps are tested on Windows Machine      
-1. Download all this scripts (dont change their names) and place them in one folder    
+1. Download all these scripts  and place them in one folder at your machine (don't change their names)   
 [build_ddl.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/build_ddl.py)   
 [base.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/base.py)   
 [data_mapping.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/data_mapping.py)   
 [translator.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/translator.py)   
 
-2. Open the CMD Terminal and navigate to the folder where all the Python scripts reside
+2. The DDL generator is called from the CMD terminal. Open the CMD Terminal and navigate to the folder where all the Python scripts reside at
 Windows>Start>Accessories>CMD
-You can use the commad *cd then space then the name of the folder 
+You can use the commad *cd* then space then the name of the folder that contains these scripts 
 
 3. Edit the name of XML Schema in the build_ddl.py python file and the default schema name to be the same as your XML file name
 For example:
@@ -31,4 +32,4 @@ Upon executing this command, the DDL generator should build four DDL schemas....
 
 
 **Credit** 
-Thanks to [by Tony Castranova] at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script. We 
+Thanks to Tony Castranova at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script.
