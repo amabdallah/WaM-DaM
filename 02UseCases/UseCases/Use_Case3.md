@@ -1,4 +1,4 @@
-**Use case #3:** How are the water system components physically connected? Show directions of flow    
+### Use case #3: How are the water system components physically connected? Show directions of flow       
 Use this [query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/03FindConnectivityMatrixOfScenario.sql) and execute it against the prepopulated WaM-DaM SQLite database.
 
 Here are the [Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase3.csv) of the query
