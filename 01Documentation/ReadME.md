@@ -37,7 +37,7 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 
 
 
-Check out the current WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/" target="_blank">schema</a>
+Check out the current WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">schema</a>
 
 ### WaM-DaM Core Entities
 The <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Core.md" target="_blank">Core entities</a> in WaM-DaM comprise ten configuring entities that are needed to infer the context of and relationship between water management data values in a water system. These core entities are Data Structure, Object Type, Attribute, Instance, Master Network, Scenario, and Data Storage, and MetadataMapping (blue boxes in Figure 2). ObjectAttributes and ScenarioMetadata are bridge tables that allow associating many records of each side with the other. 
