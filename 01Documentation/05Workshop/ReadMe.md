@@ -16,7 +16,7 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 •	[WaMDaMzip.zip](https://goo.gl/ZRBTSC) [30 MB] –requires WINZIP to unzip it   
 •	[WaMDaM.rar](https://goo.gl/KMVhXs ) [8 MB] – requires WINRAR to unzip it   
 
-![](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Figures/WaM-DaM_workflowExample.JPG)
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/05Workshop/ExpandBear.JPG)
 
 
 ###4. Queries     
