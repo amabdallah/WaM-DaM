@@ -1,6 +1,0 @@
-NativeObjectName,InstanceName,NativeAttributeName,UnitName,AttributeTypeCodeCV,RuleVariableOrder,RuleVariable,NumConstant,SymbolCV,RuleVariableTypeCodeCV,RuleVariableUnitName
-Reservoir,Hyrum (10),Loss to Groundwater,percent,R,1,,0.0001,*,,
-Reservoir,Hyrum (10),Loss to Groundwater,percent,R,2,Storage Capacity,,+,T,cubic meter
-Reservoir,Hyrum (10),Loss to Groundwater,percent,R,3,,0.00001,*,,
-Reservoir,Hyrum (10),Loss to Groundwater,percent,R,4,Headflow,,*,T,cubic feet per second
-Reservoir,Hyrum (10),Loss to Groundwater,percent,R,5,,60.37,,,

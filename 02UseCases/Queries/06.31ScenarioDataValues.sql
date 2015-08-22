@@ -14,8 +14,8 @@ AggregationStatisticCV,
 Units.UnitName AS IntervalTimeUnitName,
 AggregationInterval,
 UnitInterval.UnitName,
-DateTimeStamp,
 ScenarioName,
+DateTimeStamp,
 Value
 
 FROM "DataStructures"
@@ -61,4 +61,3 @@ Left JOIN "Units" AS UnitInterval
 ON UnitInterval.UnitID="TimeSeries"."IntervalTimeUnitID"
 
 WHERE  InstanceName='Bear River'  AND AttributeTypeCodeCV='T' AND NativeAttributeName='Headflow'
-

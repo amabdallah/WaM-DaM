@@ -1,3 +1,0 @@
-NativeAttributeName,UnitName,InstanceName,MasterNetworkName,ScenarioName,AttributeTypeCodeCV,BinaryValue,BinaryAttribute,ValueDefinition
-"Maximum Hydraulic Outflow","cubic feet per second","Hyrum (10)","Lower Bear River Network","BaseCaseLower","P","0","Z1: Maximum Hydraulic Outflow","if the MHO constraint is not binding (outflow < MHO or Storage = Total Storage)"
-"Maximum Hydraulic Outflow","cubic feet per second","Hyrum (10)","Lower Bear River Network","BaseCaseLower","P","1","Z2: Maximum Hydraulic Outflow","if Storage = Total Storage"

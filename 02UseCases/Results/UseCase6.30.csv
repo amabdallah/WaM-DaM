@@ -1,3 +1,0 @@
-NativeObjectName,InstanceName,NativeAttributeName,AggregationStatisticCV,IntervalTimeUnitName,AggregationInterval,SourceName,MethodName,UnitName,ScenarioName,AttributeTypeCodeCV
-River,Bear River,Headflow,Average,cubic feet per second,1,WEAP Model for the Lower Bear River ,Water Evaluation And Planning System,month,BaseCaseLower,T
-River,Bear River,Headflow,Average,cubic feet per second,1,CUAHSI HydroDesktop,CUAHSI,month,Proposed,T

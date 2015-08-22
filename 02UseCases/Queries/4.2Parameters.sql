@@ -54,5 +54,11 @@ ON "MasterNetworks"."MasterNetworkID"="Scenarios"."ScenarioID"
 Left JOIN "Parameters" 
 ON "Parameters"."DataStorageID"="DataStorage"."DataStorageID"
 
-WHERE AttributeTypeCodeCV='P'
+WHERE AttributeTypeCodeCV='P' AND 
 
+-- specify the boundary of coordinates of the search domain in space 
+-- this Boundary is for the parts of the upper Bear River Watershed 
+("Instances"."Longitude">='-112.4424' 
+AND "Instances"."Longitude"<='-110.65833'
+AND "Instances"."Latitude">='42.00'
+AND "Instances"."Latitude"<='42.700') 
