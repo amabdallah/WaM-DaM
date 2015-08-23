@@ -2,7 +2,7 @@
 
 Here we present the six uses cases that demonstrate how WaM-DaM can help users of scientists and practitioners to search for data for their models, keep track of important metadata, and compare similarities and differences across their data. We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/Data_Sources.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilities.
 
-For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/SQLite_Instructions.md" target="_blank"> populated SQLite WaM-DaM database </a>   
+For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/WaMDaM_August19_2015.sqlite" target="_blank"> populated SQLite WaM-DaM database </a>   
 
 ===========================================================
 
