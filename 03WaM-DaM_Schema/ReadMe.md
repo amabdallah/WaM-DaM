@@ -13,9 +13,11 @@
 
 4. If you are a beginner in databases, we recommend that you use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCases/SQLite_Instructions.md" target="_blank">instructions</a> that walks you through how to set up a WaM-DaM database in SQLite in less than 10 min using free and reliable software.
 
-5. Setup your WaM-DaM database and load with your data!    
+**5. Setup your WaM-DaM database and load with your data!**    
 Here we provide the instructions on how to <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/InputData_Workbooks/Setup_My_Database.md
 " target="_blank">load your data into your WaM-DaM</a>
+
+
 
 #### Got feedback or questions on WaM-DaM schema?    
 You're welcome to leave an anonomus feedback on WaM-DaM through this quick <a href="https://drive.google.com/open?id=1fUTPeygdPfkPfZGjud0vO3yAZiDKIrq-i_886lqIins" target="_blank">survey</a> 
