@@ -47,7 +47,7 @@ The <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Metadata.md"
 
 ### WaM-DaM Controlled Vocabulary Entities
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Controlled_vocabularies.md" target="_blank">Controlled Vocabulary (CV)</a> imposes semantics consistency for important fields in WaM-DaM. There are 18 CV tables in WaM-DaM. We populated these tables with test data. Users can adopt the CV entries or add new terms. 
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Future_Work.md" target="_blank">Future work</a> can develop complete lists of CV terms for water management data.    
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Future_Work.md" target="_blank">Future work</a> can develop complete lists of CV terms for water management data.    
 
 ### WaM-DaM storage Entities
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Storage.md" target="_blank">Data Storage</a> in WaM-DaM holds data values of different types based on the user’s choice (e.g., time series and text).
