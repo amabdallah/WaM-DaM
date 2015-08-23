@@ -40,14 +40,14 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 Check out the current WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">schema</a>
 
 ### WaM-DaM Core Entities
-The <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Core.md" target="_blank">Core entities</a> in WaM-DaM comprise ten configuring entities that are needed to infer the context of and relationship between water management data values in a water system. These core entities are Data Structure, Object Type, Attribute, Instance, Master Network, Scenario, and Data Storage, and MetadataMapping (blue boxes in Figure 2). ObjectAttributes and ScenarioMetadata are bridge tables that allow associating many records of each side with the other. 
+The <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Core.md" target="_blank">Core entities</a> in WaM-DaM comprise ten configuring entities that are needed to infer the context of and relationship between water management data values in a water system. These core entities are Data Structure, Object Type, Attribute, Instance, Master Network, Scenario, and Data Storage, and MetadataMapping (blue boxes in Figure 2). ObjectAttributes and ScenarioMetadata are bridge tables that allow associating many records of each side with the other. 
 
 ### WaM-DaM Metadata Entities
-The <a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Metadata.md" target="_blank">Metadata entities</a> in WaM-DaM comprise nine key tables that help uses define descriptive and explicit metadata to support the correct and unambiguous interpretation of the core entities
+The <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Metadata.md" target="_blank">Metadata entities</a> in WaM-DaM comprise nine key tables that help uses define descriptive and explicit metadata to support the correct and unambiguous interpretation of the core entities
 
 ### WaM-DaM Controlled Vocabulary Entities
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Controlled_vocabularies.md" target="_blank">Controlled Vocabulary (CV)</a> imposes semantics consistency for important fields in WaM-DaM. There are 18 CV tables in WaM-DaM. We populated these tables with test data. Users can adopt the CV entries or add new terms. 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Controlled_vocabularies.md" target="_blank">Controlled Vocabulary (CV)</a> imposes semantics consistency for important fields in WaM-DaM. There are 18 CV tables in WaM-DaM. We populated these tables with test data. Users can adopt the CV entries or add new terms. 
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Future_Work.md" target="_blank">Future work</a> can develop complete lists of CV terms for water management data.    
 
 ### WaM-DaM storage Entities
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/docs/Storage.md" target="_blank">Data Storage</a> in WaM-DaM holds data values of different types based on the user’s choice (e.g., time series and text).
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Storage.md" target="_blank">Data Storage</a> in WaM-DaM holds data values of different types based on the user’s choice (e.g., time series and text).
