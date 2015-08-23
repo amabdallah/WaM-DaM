@@ -18,11 +18,7 @@ WaM-DaM capabilities are demonstrated through six generic use cases that follow 
 
 ==============================
 ### Getting Started with WaM-DaM: Get a Copy of WaM-DaM!    
-WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Sqlite.jpg)
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/MSSQLServer.jpg)
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/PostgreSql.png)
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Icons/Mysql.png)     
-You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
+WaM-DaM is implemented in a relational database and ready to load your data into it in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server database systems. You can get a copy of WaM-DaM XML schema, blank copies for the four database systems, and instructions on how to set up a SQLite database at the <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03WaM-DaM_Schema" target="_blank">WaM-DaM Schema</a> page.    
 
 
 ==============================
