@@ -8,7 +8,7 @@ We tentatively plan to present this WaM-DaM work in a workshop at the <a href="h
 
 7. Adel Abdallah, David E. Rosenberg (2014).[WaM-DaM: A Data Model to Organize and Synthesize Water Management Data](http://www.engr.usu.edu/cee/faculty/derosenberg/documents/WaM-DaM_UWUG.pptx)  Utah Water Data Users Group 2nd Meeting, Salt Lake City, Utah: Jan. 27, 2015.
 
-6. Adel Abdallah, David E. Rosenberg (2014). [WaM-DaM: A Data Model to Synthesize and Organize Water Management Data](http://www.engr.usu.edu/cee/faculty/derosenberg/documents/AbdallahRosenberg-WaMDaM-EWRI-June2014.pptx) World Environmental & Water Resources Congress, Portland, OR: June 1-5, 2014.
+6. Adel Abdallah, David E. Rosenberg (2014). [WaM-DaM: A Data Model to Synthesize and Organize Water Management Data](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/Water_Management_Data_Model.pdf) World Environmental & Water Resources Congress, Portland, OR: June 1-5, 2014.
 
 
 5. Adel M. Abdallah and David E. Rosenberg (2014). [WaM-DaM: A Data Model to Organize, Share, and Publish Water Management Data](http://www.awra.org/meetings/SnowBird2014/doc/powerpoint/SPR_S8A_Abdallah_Adel.pdf) American Water Resources Association (AWRA) Spring Specialty Conference". Snowbird, Utah, USA.   May 12-14, 2014
