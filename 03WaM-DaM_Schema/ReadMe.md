@@ -16,9 +16,9 @@
 **5. Setup your WaM-DaM database and load with your data!**    
 Here we provide the instructions on how to <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/InputData_Workbooks/Setup_My_Database.md
 " target="_blank">load your data into your WaM-DaM</a>     
-
-
-
+    
+   
+  
 #### Got feedback or questions on WaM-DaM schema?    
 You're welcome to leave an anonomus feedback on WaM-DaM through this quick <a href="https://drive.google.com/open?id=1fUTPeygdPfkPfZGjud0vO3yAZiDKIrq-i_886lqIins" target="_blank">survey</a> 
 
