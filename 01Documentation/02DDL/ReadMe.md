@@ -14,6 +14,8 @@ You can use this smart way to create a DDL script (can create empty database) fo
 Windows>Start>Accessories>CMD
 You can use the commad *cd* then space then the name of the folder that contains these scripts 
 
+~[](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDL_Generator.jpg)
+
 3. Edit the name of XML Schema in the build_ddl.py python file and the default schema name to be the same as your XML file name
 For example:
 input_file = 'WaMDaMAugust19_2015.xml.xml'
