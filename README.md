@@ -34,7 +34,7 @@ This interactive WaM-DaM logical data model is at the <a href="http://amabdallah
 **and you want to**   
 
 1.	Manage and organize all of your data for different models in a central standardized database
-2.	Automate the process to discover and prepare your input data to models, and  
+2.	Automate the process to discover and prepare your input data to models, and/ or  
 3.	Share and publish your data. WaM-DaM supports important contextual metadata like sources, methods, and units to help others correctly interpret the meanings of your data. 
 
 
