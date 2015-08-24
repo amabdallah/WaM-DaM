@@ -22,6 +22,7 @@ We complied eight <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01D
 
 
 Conceptual Data Model 
+WaM-DaM is organized into four schemas: i) core concepts (blue) which represent the key configuring concepts of WaM-DaM modular design, ii) metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) controlled vocabulary (purple) which enforces the consistent use of terms across disparate data sources, and iv) data storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
 
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaM-DaM_Conceptual.jpg)
@@ -39,9 +40,6 @@ The logical data model uses the Relational Model Theory to implement the concept
 **Mapping:** it is the centeral table in WaM-DaM where data values for different formats are connected to their attributes, metadata, instances, and scenarios.    
 **ScenarioMapping:**The ScenarioMapping table maps out the relationships of many instances that belong to many scenarios and vice versa.    
 **Data Storage:** maps out the many to many relationships identified in Section 3.6 between a data value and many instances and vice versa.   
-
-
-WaM-DaM is organized into four schemas: i) core concepts (blue) which represent the key configuring concepts of WaM-DaM modular design, ii) metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) controlled vocabulary (purple) which enforces the consistent use of terms across disparate data sources, and iv) data storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
