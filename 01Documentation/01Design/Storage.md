@@ -5,7 +5,7 @@ WaM-DaM supports nine different data values formats that are frequently used wat
 
 Separating data values based on their format reinforces the integrity of the data model and guides users to only populate or query relevant data values. Integrity here means that data values are stored in and then accessed only from one place based on their attribute data type. For example, WaM-DaM stores numeric data values (e.g., parameter) separately from text data values (e.g., text controlled of free). Each data value’s table is connected to the Data Storage Table in the WaM-DaM based on the attribute format that the user chooses. 
 
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/DataStorage.jpg)
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
 
 ###Binary
