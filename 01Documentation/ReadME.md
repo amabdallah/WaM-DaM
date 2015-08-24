@@ -44,7 +44,6 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 * Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, 
 * Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and 
 * Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)   
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
 
 
