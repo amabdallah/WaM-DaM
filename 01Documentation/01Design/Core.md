@@ -10,7 +10,7 @@ The conceptual design of WaM-DaM then was implemented as an entity-relationship 
 
 Below are the entities in the [WaM-DaM Storage schema](http://amabdallah.github.io/WaM-DaM/diagrams/Core.html). Here is the WaM-DaM conceptual design diagram shows how the Storage Schema fitst in WaM-DaM desing
 
-![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/WIKI/WaMDaM%20core%20flowchart.jpg)
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 
 
 ####Data Structures
