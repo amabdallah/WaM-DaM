@@ -33,11 +33,12 @@ Changes to the conceptual model
 
 The logical data model uses the Relational Model Theory to implement the conceptual model so it can be used in RDBSMS. The logical model specifies the concepts identified in the conceptual model into entities (or tables) with fields, and connects their relationships through primary and foreign keys. The relationship between entities has a cardinality which refers to the count of relationships that each entity can have with another like one to many, one to one, and many to many. 
 
-**Added these bridge tables to mapp out many to many relationships and resolve the circular reference**        
-ObjectAttributes: an Object Type can have many attributes (e.g., Reservoir can have Capacity, Inflow, Release) and vice versa (e.g., inflow can apply to Demand Site, Reservoir)   
-Mapping: it is the centeral table in WaM-DaM where data values for different formats are connected to their attributes, metadata, instances, and scenarios.    
-ScenarioMapping:The ScenarioMapping table maps out the relationships of many instances that belong to many scenarios and vice versa.    
-Data Storage: maps out the many to many relationships identified in Section 3.6 between a data value and many instances and vice versa.   
+**Added these bridge tables to mapp out many to many relationships and resolve the circular reference**           
+
+**ObjectAttributes:** an Object Type can have many attributes (e.g., Reservoir can have Capacity, Inflow, Release) and vice versa (e.g., inflow can apply to Demand Site, Reservoir)   
+**Mapping:** it is the centeral table in WaM-DaM where data values for different formats are connected to their attributes, metadata, instances, and scenarios.    
+**ScenarioMapping:**The ScenarioMapping table maps out the relationships of many instances that belong to many scenarios and vice versa.    
+**Data Storage:** maps out the many to many relationships identified in Section 3.6 between a data value and many instances and vice versa.   
 
 
 WaM-DaM is organized into four schemas: i) core concepts (blue) which represent the key configuring concepts of WaM-DaM modular design, ii) metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, iii) controlled vocabulary (purple) which enforces the consistent use of terms across disparate data sources, and iv) data storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)
@@ -51,10 +52,6 @@ WaM-DaM is a set of related database tables that are organized into four groups 
 * Metadata (orange) which represents key metadata that help users correctly and unambiguously interpret their data, 
 * Controlled Vocabularies (CVs) (purple) which enforces the consistent use of terms across disparate data sources (only one CV box is shown for simplicity), and 
 * Data Storage (red) which holds data values of different types based on the user’s choice (e.g., time series and text)   
-
-
-
-
 
 
 Check out the current WaM-DaM logical data model <a href="http://amabdallah.github.io/WaM-DaM/diagrams/Full.html" target="_blank">schema</a>
