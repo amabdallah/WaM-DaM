@@ -2,6 +2,15 @@
 
 The design pinciples of WaM-DaM are compiled based on the reviewed systems, important questions, and uses cases. It is the key contribution of WaM-DaM to support all these principles together: flexible and extensible modular design, networks, scenarios, conditional query for subsets of data, dynamic controlled vocabulary, reusable descriptive and explicit metadata, multiple data formats for systems models, and open-source environment.
 
+| First Header  | Second Header |Second Header |Second Header |Second Header |Second Header |Second Header |Second Header |Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+
+
+
 #### 1. Flexible and extensible modular design
 Modularity is a fundamental principle to achieve a flexible and extensible data model design (Connolly and Begg, 2010; Goodall et al., 2011; Kokkonen et al., 2003; Pokorný, 2006). The objected-oriented database systems use modules (Connolly and Begg, 2010) to create generic objects (also known as classes) of data. These object of data can represent virtual or physical components of the water resources system (e.g., a physical reservoir or a virtual water loss node). Users can then use the objects to create instances that are specific to a location and can take data values as in HydroPlatform (Harou et al., 2010). 
 
