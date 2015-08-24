@@ -2,8 +2,7 @@
 
 The design pinciples of WaM-DaM are compiled based on the reviewed systems, important questions, and uses cases. It is the key contribution of WaM-DaM to support all these principles together: flexible and extensible modular design, networks, scenarios, conditional query for subsets of data, dynamic controlled vocabulary, reusable descriptive and explicit metadata, multiple data formats for systems models, and open-source environment.
 
-| **Data management system**  | Flexible and extensible |Supports 
-networks |Supports scenarios |Dynamic controlled vocabulary |Reusable descriptive and explicit metadata |Multiple data formats for systems models |Conditional query|Open source environment |
+| **Data management system**  | Flexible and extensible |Supports networks |Supports scenarios |Dynamic controlled vocabulary |Reusable descriptive and explicit metadata |Multiple data formats for systems models |Conditional query| Open source environment |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
