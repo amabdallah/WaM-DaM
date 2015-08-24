@@ -66,8 +66,7 @@ Additional or more complex data types can be incorporated in future improvements
 | Rule       | relates attributes in an algebraic form | addition=Inflow + precipitation
 withdrawal rate=outflow + evap. |
 | Time series       | regular or irregular  numerical values with time stamps | stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  |
-| Multi Column Array      | a set of paired numeric values for two or more attributes (i.e., columns)
-| reservoir volume and surface area that change with elevation or water cost that changes with demand and time (e.g., month of the year)|
+| Multi Column Array     | a set of paired numeric values for two or more attributes (i.e., columns)| reservoir volume and surface area that change with elevation or water cost that changes with demand and time (e.g., month of the year)|
 
 
 
