@@ -55,17 +55,19 @@ Here we discuss time series data because it is very common in hydrologic and sys
 WaM-DaM uses the time scale triplet in time series data which represents i) extent which is the full time range over of measurements, ii) spacing which is the time spacing between measurements, and iii) support which is the time interval when statistical aggregation applies to a set of measurement and then the aggregated value is reported (e.g., hourly measurement values are averaged over a day to report daily values). Refer to (Tarboton et al., 2008) for further details on time scale triplet. In the GitHub repository we provide examples on the time scale triplet in the context of water management data at https://github.com/amabdallah/WaM-DaM/wiki/Documentation
 Additional or more complex data types can be incorporated in future improvements to WaM-DaM. Details on each data type are posted at the GitHub repository.
 
-| Data type         | Definition   | 
+| Data type         | Definition   | Example |
 | ------------- |:-------------|
-| Binary      | 0 or 1 numerical values that refer to a canal gate being “close” or “open” | 
-| Parameters      | Discrete numerical variables. For example, a dam elevation is 45.5 feet | 
-| Seasonal parameter      | Parameter that changes with categorical time. For example,  water right variable can have 20 acre-feet in winter and 5 acre-feet in summer or a water demand parameter can take 10 cfs at day and 5 cfs at night | 
-| Text Controlled      | Categorical variables that are re-used across instances. For example, land use attribute has a value of “Grass_Pasture” or irrigation type attribute has a value of “Flood” | 
-| Text Free      | Descriptive variables that can have any text data value. For example, a dam release rule could be stored as block of text  | 
-| File based      | Files with several formats. For example, images, PDF documents, NetCDF and shape-files stored with a link to their location on disk | 
-| Rule       |Relates attributes in an algebraic form. System dynamic models like GoldSim (GoldSim, 2014) represent mass balance equations that aggregate other attributes for water system objects. For example, these aggregate attributes contribute to “addition rate” or withdrawal rate” from a reservoir, e.g., addition=Inflow + precipitation| 
-| Time series       | Numerical variables with a time stamp. Time series can be regular or irregular  stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  | 
-| Multi Column Array      | Pared numeric values. water cost that changes with demand and time (e.g., month of the year), and reservoir volume and corresponding surface area that change with pool elevation | 
+| Binary      | numerical values that refer to categorical duel status of an attribute |0 or 1 to a canal gate being “close” or “open” |
+| Parameters      | parameter that changes with categorical time | dam elevation is 45.5 feet |
+| Seasonal parameter      | categorical descriptive values that are re-used across instances. Each data value is a controlled vocabulary term | water right variable can have 20 acre-feet in winter and 5 acre-feet in summer or a water demand parameter can take 10 cfs at day and 5 cfs at night |
+| Text Controlled      | descriptive value that can have any text data value | reservoir purpose “irrigation” and “flood control”|
+| Text Free      | descriptive value that can have any text data value | a dam release rule could be stored as block of text |
+| File based      | images, PDF documents, NetCDF and shape-files | images, PDF documents, NetCDF and shape-files |
+| Rule       | relates attributes in an algebraic form | addition=Inflow + precipitation
+withdrawal rate=outflow + evap. |
+| Time series       | regular or irregular  numerical values with time stamps | stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  |
+| Multi Column Array      | a set of paired numeric values for two or more attributes (i.e., columns)
+| reservoir volume and surface area that change with elevation or water cost that changes with demand and time (e.g., month of the year)|
 
 
 #### 8.	Open-source and free software environment
