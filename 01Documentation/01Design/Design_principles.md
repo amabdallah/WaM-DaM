@@ -1,5 +1,12 @@
 ### WaM-DaM Design principles
 
+
+We elaborate on each of the eight common features identified in the previous section as design principles as the basis for a generic WaM-DaM design based on these motivating research questions: 
+•	What are the basic attributes that are needed to describe the data values of different types (e.g., time series, multi-column arrays) for diverse water management systems and models? 
+•	How to overcome semantic and syntactic heterogeneity in these attributes for disparate water management data for various domains?
+•	How these identified attributes can be organized to answer the important data questions for users for to automate discovering data for models? 
+
+
 The design pinciples of WaM-DaM are compiled based on the reviewed systems, important questions, and uses cases. It is the key contribution of WaM-DaM to support all these principles together: flexible and extensible modular design, networks, scenarios, conditional query for subsets of data, dynamic controlled vocabulary, reusable descriptive and explicit metadata, multiple data formats for systems models, and open-source environment.
 
 |**Data management system**|Flexible and extensible|Supports networks|Supports scenarios|Dynamic controlled vocabulary |Reusable descriptive and explicit metadata|Multiple data formats for sys. models|Conditional query| Open source environment|
