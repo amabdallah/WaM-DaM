@@ -4,17 +4,19 @@ The design pinciples of WaM-DaM are compiled based on the reviewed systems, impo
 
 | **Data management system**  | Flexible and extensible |Supports networks |Supports scenarios |Dynamic controlled vocabulary |Reusable descriptive and explicit metadata |Multiple data formats for systems models |Conditional query| Open source environment |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ODM | x | | |  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| HydroPlatform | x |  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| HEC-DSS | | x  |x   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+
+
+| ODM | x | | | x | x  | | x  | x  |
+| HydroPlatform | x | x |  |  |  | x  |  | x   |
+
+| HEC-DSS | | x  |x   | Content Cell  | Content Cell  | Content Cell  | Content Cell  |  |
 | Modeling Software  |   |
-| RiverWare | | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Arc Hydro | | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| WEAP | | x | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| WaM-DaM | | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 
-
+| RiverWare | | x  | x | Content Cell  | Content Cell  | Content Cell  | Content Cell  |   |
+| Arc Hydro | | x  |   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | |
+| WEAP | | x | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |   |
+| WaM-DaM | | x  | x  | x | x | x |x | x  |
 
 
 #### 1. Flexible and extensible modular design
