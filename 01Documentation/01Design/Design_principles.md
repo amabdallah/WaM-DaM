@@ -6,12 +6,13 @@ The design pinciples of WaM-DaM are compiled based on the reviewed systems, impo
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | ODM | x | | | x | x  | | x  | x  |
 | HydroPlatform | x | x |  |  |  | x  |  | x   |
-| HEC-DSS | | x  |x   | Content Cell  | Content Cell  | Content Cell  | Content Cell  |  |
+| HEC-DSS | | x  |x   | | | x | |  |
 | Modeling Software  |   |
-| RiverWare | | x  | x | Content Cell  | Content Cell  | Content Cell  | Content Cell  |   |
-| Arc Hydro | | x  |   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | |
-| WEAP | | x | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |   |
+| RiverWare | | x  | x | | | x | |   |
+| Arc Hydro | | x  |   | x  | | | | |
+| WEAP | | x | x  | | | x | |   |
 | WaM-DaM | x | x  | x  | x | x | x |x | x  |
+
 
 
 
