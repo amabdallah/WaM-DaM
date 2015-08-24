@@ -7,7 +7,7 @@ The design pinciples of WaM-DaM are compiled based on the reviewed systems, impo
 | ODM | x | | | x | x  | | x  | x  |
 | HydroPlatform | x | x |  |  |  | x  |  | x   |
 | HEC-DSS | | x  |x   | | | x | |  |
-|** Modeling Software**|   |
+|**Modeling Software**|   |
 | RiverWare | | x  | x | | | x | |   |
 | Arc Hydro | | x  |   | x  | | | | |
 | WEAP | | x | x  | | | x | |   |
