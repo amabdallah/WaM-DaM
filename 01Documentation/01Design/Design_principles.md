@@ -70,6 +70,7 @@ withdrawal rate=outflow + evap. |
 | reservoir volume and surface area that change with elevation or water cost that changes with demand and time (e.g., month of the year)|
 
 
+
 #### 8.	Open-source and free software environment
 Public open-source software environment and code, promotes reproducibility and helps others to adopt and advance the development of models (Easterbrook, 2014; Goodman et al., 2014). Most of the reviewed data systems were either proprietary or they privately kept their source-code and data schema. WaM-DaM, its source-code, and documentation are available to the public at the GitHub collaboration repository github.com/amabdallah/WaM-DaM in an open-source environment under the New Berkeley Software Distribution (BSD) License, which allows for liberal reuse of the software and code. 
 
