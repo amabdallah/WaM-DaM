@@ -56,7 +56,7 @@ WaM-DaM uses the time scale triplet in time series data which represents i) exte
 Additional or more complex data types can be incorporated in future improvements to WaM-DaM. Details on each data type are posted at the GitHub repository.
 
 | Data type         | Definition   | Example |
-| ------------- |:-------------|
+| ------------- |:-------------|:-------------|
 | Binary      | numerical values that refer to categorical duel status of an attribute |0 or 1 to a canal gate being “close” or “open” |
 | Parameters      | parameter that changes with categorical time | dam elevation is 45.5 feet |
 | Seasonal parameter      | categorical descriptive values that are re-used across instances. Each data value is a controlled vocabulary term | water right variable can have 20 acre-feet in winter and 5 acre-feet in summer or a water demand parameter can take 10 cfs at day and 5 cfs at night |
@@ -68,6 +68,7 @@ withdrawal rate=outflow + evap. |
 | Time series       | regular or irregular  numerical values with time stamps | stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  |
 | Multi Column Array      | a set of paired numeric values for two or more attributes (i.e., columns)
 | reservoir volume and surface area that change with elevation or water cost that changes with demand and time (e.g., month of the year)|
+
 
 
 
