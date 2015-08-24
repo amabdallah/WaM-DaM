@@ -4,14 +4,14 @@ The design pinciples of WaM-DaM are compiled based on the reviewed systems, impo
 
 | **Data management system**  | Flexible and extensible |Supports networks |Supports scenarios |Dynamic controlled vocabulary |Reusable descriptive and explicit metadata |Multiple data formats for systems models |Conditional query| Open source environment |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ODM | x | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| HydroPlatform | x | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| HEC-DSS | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Modeling Software  | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| RiverWare | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Arc Hydro | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| WEAP | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| WaM-DaM | | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| ODM | x | | |  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| HydroPlatform | x |  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| HEC-DSS | | x  |x   | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Modeling Software  | |  |   |   |   |   |  |  |
+| RiverWare | | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Arc Hydro | | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| WEAP | | x | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| WaM-DaM | | x  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 
 
