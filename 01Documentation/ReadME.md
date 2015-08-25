@@ -4,6 +4,11 @@
 WaM-DaM is specifically designed to support Systems water management data. We draw the [scope] (https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md)
 of WaM-DaM and the list the types of data that it can handle 
 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md
+" target="_blank">Rationale and Context</a> 
+
+
+
 ### Reviewed Systems 
 To draw the common and needed data features for a generic design, we reviewed thirty common available systems models and data management systems. These systems are either used extensively in the literature, we have experience with them, or our collaborators are using them in their active research. These models or systems are not inclusive or necessarily representative of the vast inventory of models. However, these models represent a wide and diverse range of used methods to organize and model water management data. Additional probable features in other models can be accommodated in future improvements to WaM-DaM.
 Check out further details about the [Reviewed Systems](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Reviewed_Systems.md)
