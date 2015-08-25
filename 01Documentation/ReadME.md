@@ -1,11 +1,11 @@
 ## WaM-DaM Documentation
 
 ### Scope
-WaM-DaM is specifically designed to support Systems water management data. We draw the [scope] (https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md)
-of WaM-DaM and the list the types of data that it can handle 
+WaM-DaM is specifically designed to support Systems water management data. We draw the 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md
+" target="_blank">scope</a> of WaM-DaM and the list the types of data that it can handle 
 
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md
-" target="_blank">Rationale and Context</a> 
+You may check out the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md" target="_blank">Rationale and Context</a> of WaM-DaM develpment for a better undestranding of why WaM-DaM limits the scope to systems analysis water management data. 
 
 
 
