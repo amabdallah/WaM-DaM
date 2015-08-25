@@ -16,7 +16,9 @@ The Matlab script to load data is generic to any data source but mapping foreign
 follow these <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/SQLite_Instructions.md
 " target="_blank"> instructions </a> to set up WaM-DaM in SQlite.    
 
-![](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite1.JPG {width=400px height=400px})   
+<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite1.JPG" alt="alt text" width="400" height="400">
+
+![]( {width=400px height=400px})   
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite2.JPG {width=400px height=400px})   
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite3.JPG)   
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite4.png)   
