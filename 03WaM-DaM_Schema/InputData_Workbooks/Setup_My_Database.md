@@ -16,20 +16,20 @@ The Matlab script to load data is generic to any data source but mapping foreign
 follow these <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/SQLite_Instructions.md
 " target="_blank"> instructions </a> to set up WaM-DaM in SQlite.    
 
-1. Install SQLite Manager <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/SQLite_Instructions.md
-" target="_blank"> Add-On </a> to Firefox (only works if you open this link in Mozilla Firefox)
+1. Install SQLite Manager   
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/SQLite_Instructions.md" target="_blank"> Add-On </a> to Firefox (only works if you open this link in Mozilla Firefox)
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite1.JPG" alt="alt text" width="450" height="320">   
 
-2. Add SQLite Manager botton to Firefox    
+2. Add SQLite Manager botton to Firefox       
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite2.JPG" alt="alt text" width="450" height="320">
 
-3. Launch SQLite Manager   
+3. Launch SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite3.JPG" alt="alt text" width="450" height="320">
 
-4. Add your new Database in SQLite Manager 
+4. Add your new Database in SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite4.png" alt="alt text" width="350" height="280"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite5.png" alt="alt text" width="350" height="280">   
 
-5. Create blank WaM-DaM database    
+5. Create blank WaM-DaM database     
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite6.png" alt="alt text" width="450" height="320"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite7.png" alt="alt text" width="450" height="320">   
 
 ##B. Connect Matlab with SQLite through the JDBC driver 
