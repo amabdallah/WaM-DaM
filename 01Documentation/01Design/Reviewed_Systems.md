@@ -1,6 +1,6 @@
 ### Reviewed Systems
 
-Download spreadsheet of the [ReviewedSystems](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/ReviewedDataManagementSystems.xlsx).
+Download spreadsheet of the [ReviewedSystems](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/ReviewedDataManagementSystems.xlsx?raw=true).
 For each data management system and model software, we identified its common use and application, data formats, data types, technology of the data management system (e.g., text files, database), availability data schema, how data is represented in time and space (Table belew). The term data format is used here to mean the physical or digital means of storing data (DCMI, 2013). The term data type is used here to mean how data is organized within the data format type (DCMI, 2013).
 
 If the schema is not available, we reverse engineered the conceptual data schema for many models by using third party software or through the model user interface and its published User Manual or journal articles. Reverse engineering models and data systems gave us an insight on how the data is organized in state of the art systems. For example, we used SQLite Manager Add-on extension in Firefox-Mozilla [https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager] to reverse engineer the schema of HydroPlatform (Harou et al., 2010) and we used “Paradox dBase Reader” [http://download.cnet.com/Paradox-dbase-Reader/3000-2065_4-10860264.html] to reverse engineer the schema of the WEAP model (Yates et al., 2005).
