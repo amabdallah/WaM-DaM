@@ -3,11 +3,11 @@
 Once you have a blank database of WaM-DaM tables in SQLite, here we provide the instructions on how you could load your own data to your WaM-DaM. 
 
 *There are many ways of how users could interact with databases.* 
-1.Enter your data into the database manually, one recored at a time. Obviiosuly this is a tredious process but it could be used to learn how the database works.
+1. Enter your data into the database manually, one recored at a time. Obviiosuly this is a tredious process but it could be used to learn how the database works.
 
-2.Import your data to each table from a speadsheet. Many of the relational database systems like Microsoft SQL Serve support this "Import Function". This is a good method to import lots of records at once but we need to automate this process and reused it for the same data.  
+2. Import your data to each table from a speadsheet. Many of the relational database systems like Microsoft SQL Serve support this "Import Function". This is a good method to import lots of records at once but we need to automate this process and reused it for the same data.  
 
-3.Load your data using a scripting language like Python and Matlab to read and parse your data from spreadsheets or text files into your database. You need to use the Open Database Connectivity (ODBC) library which allows your scripting languate to talke to the database. ODBC usually and supported by your machine. Otherwise, if ODBC is not supported, you need to install and use the Java Database Connectivity (JDBC) software. 
+3. Load your data using a scripting language like Python and Matlab to read and parse your data from spreadsheets or text files into your database. You need to use the Open Database Connectivity (ODBC) library which allows your scripting languate to talke to the database. ODBC usually and supported by your machine. Otherwise, if ODBC is not supported, you need to install and use the Java Database Connectivity (JDBC) software. 
 
 We used Matlab [...because we're familur with it] to load the data sources into WaM-DaM database. We organized four Excel workbooks that reflect the four groups of tables in WaM-DaM: Core Module, Metadata, CVs, and Data Storage. Each Workbook contains spreadsheets with headlines that correspond to tables and their fields in WaM-DaM. 
 
