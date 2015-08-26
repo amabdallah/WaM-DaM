@@ -30,7 +30,7 @@ This use cases show how WaM-DaM compares the differences in Topology, Metadata, 
 ========================================================================
 ### Workshop
 
-We demonstrated the first two uses cases in a workshop at the 2014 CUAHSI conference at Tuscaloosa, AL. Here is the detailed instructions of the 20 minutes <a href="https://github.com/amabdallah/WaM-DaM/tree/master/01Documentation/05Workshop" target="_blank"> workshop </a>  activity to discover water management data for a WEAP model. 
+We demonstrated the first two uses cases in a workshop at the 2014 CUAHSI conference at Tuscaloosa, AL. Here is the detailed instructions of the 20 minutes <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02UseCases/NeededFiles/Workshop" target="_blank"> workshop </a>  activity to discover water management data for a WEAP model. 
 
 
 
