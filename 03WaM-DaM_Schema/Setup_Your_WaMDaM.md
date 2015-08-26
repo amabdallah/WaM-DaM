@@ -29,11 +29,12 @@ For Windows machines (32 or 64 bits), download the “sqlite-shell-win32-x86-308
 
 ##A. Setup a SQLite database with a blank WaM-DaM instance
 
+If you dont have SQLite Add-on Manager installed on Firefox, first, follow the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a> to set up SQLite manager.
 
-4. Add your new Database in SQLite Manager    
+1. Add your new Database in SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite4.png" alt="alt text" width="350" height="280"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite5.png" alt="alt text" width="350" height="280">   
 
-5. Create blank WaM-DaM database     
+2. Create blank WaM-DaM database     
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite6.png" alt="alt text" width="350" height="280"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite7.png" alt="alt text" width="350" height="280">   
 
 ##B. Connect Matlab with SQLite through the JDBC driver 
