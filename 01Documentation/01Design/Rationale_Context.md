@@ -27,7 +27,7 @@ We were fortunate to discuss the development of WaM-DaM with these research grou
 | --- | :-------------| :-----|
 |  1 |Hydra Platform: web-services to linking water resource network models, share data in an open data management platform| University of Manchester, United Kingdom|
 |  2 |<a href="http://hobbes.ucdavis.edu" target="_blank">HOBBES</a>:  a bottom up approach to improve and organize the data for water modeling efforts in California| University of California, Davis|
-|  3 |ADHydro: A Large-scale High-resolution Multi-physics Distributed Water Resources Model for Water Resources Simulations      |University of Wyoming|
+|  3 |<a href="http://www.uwyo.edu/cchh/adhydro.html" target="_blank">ADHydro</a>: A Large-scale High-resolution Multi-physics Distributed Water Resources Model for Water Resources Simulations      |University of Wyoming|
 |  4 |<a href="http://www.weap21.org/index.asp" target="_blank">WEAP</a>: Water Evaluation And Planning System| Stockholm Environment Institute|
 |  5 |<a href="http://www.riverware.org/index.html" target="_blank">RiverWare</a>: a river system modeling tool| Center for Advanced Decision Support for Water and Environmental Systems (CADSWES). University of Colorado at Boulder|
 |  6 |<a href="http://www.hec.usace.army.mil/software/hec-ressim" target="_blank">HEC-ResSim</a>: The Reservoir System Simulation software |U.S. Army Corps of Engineers, Institute for Water Resources, Hydrologic Engineering Center|
