@@ -59,7 +59,7 @@ Systems modeling uses a variety of data types from simple binary, to categorical
 
 Here we discuss time series data because it is very common in hydrologic and systems data. However, WaM-DaM is designed to organize processed (i.e., aggregated) time series data. ODM can be used to complement WaM-DaM to organize original detailed and near real-time time series data (Horsburgh et al., 2008). So WaM-DaM supports metadata that is attached to the block of time series rather than every individual data value. Thus, WaM-DaM supports the important metadata that are necessary to unambiguously interpret time series data within the context of water management modeling. 
 
-WaM-DaM uses the time scale triplet in time series data which represents i) extent which is the full time range over of measurements, ii) spacing which is the time spacing between measurements, and iii) support which is the time interval when statistical aggregation applies to a set of measurement and then the aggregated value is reported (e.g., hourly measurement values are averaged over a day to report daily values). Refer to (Tarboton et al., 2008) for further details on time scale triplet. In the GitHub repository we provide examples on the time scale triplet in the context of water management data at https://github.com/amabdallah/WaM-DaM/wiki/Documentation
+WaM-DaM uses the time scale triplet in time series data which represents i) extent which is the full time range over of measurements, ii) spacing which is the time spacing between measurements, and iii) support which is the time interval when statistical aggregation applies to a set of measurement and then the aggregated value is reported (e.g., hourly measurement values are averaged over a day to report daily values). Refer to (Tarboton et al., 2008) for further details on time scale triplet.
 Additional or more complex data types can be incorporated in future improvements to WaM-DaM. Details on each data type are posted at the GitHub repository.
 
 | Data type         | Definition   | Example |
@@ -73,8 +73,6 @@ Additional or more complex data types can be incorporated in future improvements
 | Rule       | relates attributes in an algebraic form | addition=Inflow + precipitation; withdrawal rate=outflow + evap. |
 | Time series       | regular or irregular  numerical values with time stamps | stream discharge, evaporation, inflow, demand, supply, and model calibration sporadic time series data  |
 | Multi Column Array     | a set of paired numeric values for two or more attributes (i.e., columns)| reservoir volume and surface area that change with elevation or water cost that changes with demand and time (e.g., month of the year)|
-
-
 
 
 #### 8.	Open-source and free software environment
