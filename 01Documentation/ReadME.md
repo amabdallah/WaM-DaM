@@ -5,13 +5,13 @@ WaM-DaM is specifically designed to support Systems water management data. We dr
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md
 " target="_blank">scope</a> of WaM-DaM and the list the types of data that it can handle 
 
-You may check out the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md" target="_blank">Rationale and Context</a> of WaM-DaM develpment for a better undestranding of why WaM-DaM limits the scope to systems analysis water management data. 
+You may check out the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md" target="_blank"> Rationale and Context</a> of WaM-DaM develpment for a better undestranding of why WaM-DaM limits the scope to systems analysis water management data. 
 
 
 
 ### Reviewed Systems 
 To draw the common and needed data features for a generic design, we reviewed thirty common available systems models and data management systems. These systems are either used extensively in the literature, we have experience with them, or our collaborators are using them in their active research. These models or systems are not inclusive or necessarily representative of the vast inventory of models. However, these models represent a wide and diverse range of used methods to organize and model water management data. Additional probable features in other models can be accommodated in future improvements to WaM-DaM.
-Check out further details about the [Reviewed Systems](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Reviewed_Systems.md)
+Check out further details about the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Reviewed_Systems.md" target="_blank"> Reviewed Systems</a>
 
 ## Software 
 I used <a href="http://www.dbwrench.com" target="_blank">DbWrench 3.3.1</a> to draw the Entity-Relationship (ER) diagram of WaM-DaM logical Data Model
