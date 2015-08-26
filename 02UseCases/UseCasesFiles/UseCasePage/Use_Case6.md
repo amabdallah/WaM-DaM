@@ -20,8 +20,8 @@ First at 6.1, create a new table called *ScenarioComparision* which organizes al
 [Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Results/UseCase6.12.csv)  
 
 6.2 Scenario Metadata
-[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Queries/06.20ScenarioMetadata.sql)     
-[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Results/UseCase6.20.csv)
+[Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Queries/06.20ScenarioMetadata.sql)     
+[Result](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Results/UseCase6.20.csv)
 
 6.3 ScenarioDataTypes
 [Query](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Queries/06.30ScenarioDataTypes.sql)     
