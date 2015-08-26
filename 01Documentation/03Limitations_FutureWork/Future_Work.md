@@ -8,10 +8,10 @@ The design of WaM-DaM is limited to experience drawn from the reviewed water dat
 This is my second chapter of my Dissertation. details are coming soon :) 
 
 #### 2. Publish and Share Water Management Data through web services 
-WaM-DaM specifications could be used to publish water management data using a standardized Json web language. We have been discussing several appproches and here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/Publish_ShareData.docx) of one of the ideas.
+WaM-DaM specifications could be used to publish water management data using a standardized Json web language. We have been discussing several appproches and here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Publish_ShareData.docx) of one of the ideas.
 
 #### 3. Add a new Resoure Type to HydroShare 
-Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WaM_DaM_HydroShare_Linkage.docx) of the rough idea. 
+Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/WaM_DaM_HydroShare_Linkage.docx) of the rough idea. 
 
 #### 4. Organize water management data for the AdHydo Model    
 The AdHydro team at the University of Wyoming needs a "static" database that can organize water management data for the Upper Colorado watershed model. This work is underway....   
