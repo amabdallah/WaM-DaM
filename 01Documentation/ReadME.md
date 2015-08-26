@@ -5,7 +5,7 @@ WaM-DaM is specifically designed to support Systems water management data. We dr
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Scope.md
 " target="_blank">scope</a> of WaM-DaM and the list the types of data that it can handle 
 
-You may check out the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md" target="_blank"> Rationale and Context</a> of WaM-DaM develpment for a better undestranding of why WaM-DaM limits the scope to systems analysis water management data. 
+You may check out the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/Rationale_Context.md" target="_blank"> Rationale and Context</a> of WaM-DaM development for a better understanding of why WaM-DaM limits the scope to systems analysis water management data. 
 
 
 
@@ -40,7 +40,7 @@ Changes to the conceptual model
 
 The logical data model uses the Relational Model Theory to implement the conceptual model so it can be used in RDBSMS. The logical model specifies the concepts identified in the conceptual model into entities (or tables) with fields, and connects their relationships through primary and foreign keys. The relationship between entities has a cardinality which refers to the count of relationships that each entity can have with another like one to many, one to one, and many to many. 
 
-#### We Added these bridge tables to mapp out many to many relationships and resolve the circular reference**           
+#### We added these bridge tables to map out many to many relationships and resolve the circular reference**           
 
 **ObjectAttributes:** an Object Type can have many attributes (e.g., Reservoir can have Capacity, Inflow, Release) and vice versa (e.g., inflow can apply to Demand Site, Reservoir)   
 **Mapping:** it is the centeral table in WaM-DaM where data values for different formats are connected to their attributes, metadata, instances, and scenarios.    

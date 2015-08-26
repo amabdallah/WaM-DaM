@@ -1,22 +1,22 @@
 ## Future Work
 
-The design of WaM-DaM is limited to experience drawn from the reviewed water data systems, used data sources, and demonstrated use cases. Future work can incorporate complex and unanticipated aspects of water management data as an improvement to the current design. There are several opportunities for future work that can build on WaM-DaM specifications. We are already undertaking many of the opportunities and there are several promossing ideas.
+The design of WaM-DaM is limited to experience drawn from the reviewed water data systems, used data sources, and demonstrated use cases. Future work can incorporate complex and unanticipated aspects of water management data as an improvement to the current design. There are several opportunities for future work that can build on WaM-DaM specifications. We are already undertaking many of the opportunities and there are several promising ideas.
 
 ### A. Currently undertaken 
 
 #### 1. An Integrated Method to Couple Water Management Data and Serve it to Models
-This is my second chapter of my Dissertation. details are coming soon :) 
+This is my second chapter of my Dissertation. **Details are coming soon** :) 
 
 #### 2. Publish and Share Water Management Data through web services 
-WaM-DaM specifications could be used to publish water management data using a standardized Json web language. We have been discussing several appproches and here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Publish_ShareData.docx) of one of the ideas.
+WaM-DaM specifications could be used to publish water management data using a standardized Json web language. We have been discussing several approaches and here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Publish_ShareData.docx) of one of the ideas.
 
-#### 3. Add a new Resoure Type to HydroShare 
+#### 3. Add a new Resource Type to HydroShare 
 Here is a short [proposal](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/WaM_DaM_HydroShare_Linkage.docx) of the rough idea. 
 
 #### 4. Organize water management data for the AdHydo Model    
 The AdHydro team at the University of Wyoming needs a "static" database that can organize water management data for the Upper Colorado watershed model. This work is underway....   
 
-### B. Future Promosing opportunitues to build on WaM-DaM
+### B. Future Promising opportunities to build on WaM-DaM
 
 #### 1. Controlled Vocabularies and Ontology for Water Resources Management Data   
 Develop comprehensive lists of controlled vocabularies and ontology for diverse water management data similar to the work by Piasecki and Beran (2009). The list can be complied by holding workshops at conferences and inviting interested people. Online tools also should be used to allow the water resources community to submit suggested vocabulary similar to the work by Horsburgh et al. (2014). The compiled vocabularies should be tested against larger data sets across different disciplines of water management.    
@@ -44,4 +44,4 @@ To solicit WaM-DaM as a community standard, WaM-DaM should be further tested wit
 
 Further developments and refinement to WaM-DaM needs the engagement from the larger water resources community that is involved in the fields of systems analysis and hydroinformatics. This community is mostly represented at the Environmental & Water Resources Institute <a href="http://www.asce.org/environmental-and-water-resources-engineering/environmental-and-water-resources-institute/" target="_blank">(EWRI)</a> of the American Society of Civil Engineers, the Consortium of Universities for the Advancement of the Hydrologic Science Inc., <a href="https://www.cuahsi.org/" target="_blank">(CUAHSI)</a>, and the International Environmental Modelling & Software Society <a href="http://www.iemss.org/society/" target="_blank">(iEMSs)</a>
 
-We invite these communities of scientists and users to engage in further testing to WaM-DaM and provide feedback to improve it. WaM-DaM can serve as a first step towards a standard to organize and communicate systems analysis water management data.
+We invite these communities of scientists and users to engage in further testing to WaM-DaM and provide feedback to improve it. WaM-DaM can serve as a first step towards a standard to organize and communicate systems analysis water management data. 

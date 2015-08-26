@@ -18,19 +18,19 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 
 ###4. Queries     
-#####A.	What are the required attributes for the WEAP model? [query](https://goo.gl/4L57yI )      
+#####A.	What are the required attributes for the WEAP model? [query]()      
 This query shows the data structure of Object Types and their Attributes for Water Evaluation and Assessment 
 <a href="http://www.weap21.org/index.asp" target="_blank">(WEAP)</a>.  
 Users can see the Objects, their topology, and their Attributes that WEAP uses to model water systems. These Object and Attributes are used as input to queries to search and discover water management data in other data structures.      
 
 This query summarizes the required data that users need to find to populate a specific instance of a WEAP model. For example, users need to look for data values of attributes like buffer coefficient that describe reservoirs and cost values for return flows in their model. WaM-DaM stores these objects and their attributes and associates them with the WEAP model.   
  
-#####B. Discover available data to expand the Lower Bear River Model to the entire Basin [query](https://goo.gl/c0hkp7)      
+#####B. Discover available data to expand the Lower Bear River Model to the entire Basin [query]()      
 The search is based on a boundary of coordinates provided in the SQL script for instances in the upper Bear River Basin . Users need to only change these coordinates in the provided SQL script to discover data in other regions. 
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Workshop/ExpandBear.JPG)
 
-#####C. Discover available data for a WEAP model in the Tuscaloosa Region, AL [query](https://goo.gl/BCPZoq)           
+#####C. Discover available data for a WEAP model in the Tuscaloosa Region, AL [query]()           
 This query discovers the available data to build a model in the Water and Evaluation and Assessment (WEAP) system for the Tuscaloosa region, Alabama. The search is based on a boundary of coordinates for instances in the Tuscaloosa region, Alabama     
 
 Please provide your <a href="https://goo.gl/SLS8vD" target="_blank">feedback</a> to help us understand and then better serve your needs. 

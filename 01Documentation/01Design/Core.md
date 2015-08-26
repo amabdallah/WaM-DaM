@@ -8,7 +8,7 @@ The relationships between these entities are as follows: a Data Structure can ha
 A MasterNetwork can have many scenarios. A Scenario can have many Instances. An Instance inherits all the Attributes of an Object Type. An Attribute that belongs to the chain of Data Structure, Master Network, Scenario, Object Type, and Instance should have a source and method and can have many data values based on a data type selected by the user. The DataStorage table allows users to relate the same data value to many instances for the same attribute. For example, an evaporation time series can be related to many reservoir or demand site instances. The table also allows users to define many data values for the same attribute. For example, reservoir purpose has irrigation and hydropower text data values. 
 The conceptual design of WaM-DaM then was implemented as an entity-relationship diagram as a logical data model maps out the relations between concepts as tables and fields in a relational data model (Figure 3). This section defines each Core entity, explains why WaM-DaM includes the entity, and how including the entity benefits WaM-DaM users.
 
-Below are the entities in the [WaM-DaM Storage schema](http://amabdallah.github.io/WaM-DaM/diagrams/Core.html). Here is the WaM-DaM conceptual design diagram shows how the Storage Schema fitst in WaM-DaM desing
+Below are the entities in the [WaM-DaM Storage schema](http://amabdallah.github.io/WaM-DaM/diagrams/Core.html). Here is the WaM-DaM conceptual design diagram shows how the Storage Schema fits in WaM-DaM design
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/01Design/WaMDaM_Logical.jpg)
 

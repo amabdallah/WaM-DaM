@@ -1,10 +1,10 @@
-## Data Definition Lanaguge (DDL)
+## Data Definition Language (DDL)
 
-You only need to use this DDL generator if you edit the XML schema of WaM-DaM and then want to create blank WaM-DaM database schemas. Otherwise you can use the exisitng blank database schemas. 
-You can use this smart way to create a DDL script (can create empty database) for MySQL, MS SQL Server, SQLite, and PostgreSQL by forwarding engineer any XML WaM-DaM schema. We adapted these Python scripts below to create blank database scheams for the four databases, all at once. 
+You only need to use this DDL generator if you edit the XML schema of WaM-DaM and then want to create blank WaM-DaM database schemas. Otherwise you can use the existing blank database schemas. 
+You can use this smart way to create a DDL script (can create empty database) for MySQL, MS SQL Server, SQLite, and PostgreSQL by forwarding engineer any XML WaM-DaM schema. We adapted these Python scripts below to create blank database schemas for the four databases, all at once. 
 
 **How to create a WaM-DaM DDL from an XML schema?**  These steps are tested on Windows Machine      
-1. Download all these scripts  and place them in one folder at your machine (don't change their names)   
+1. Download all these scripts and place them in one folder at your machine (don't change their names)   
 [build_ddl.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/build_ddl.py)   
 [base.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/base.py)   
 [data_mapping.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/data_mapping.py)   
@@ -12,7 +12,7 @@ You can use this smart way to create a DDL script (can create empty database) fo
 
 2. The DDL generator is called from the CMD terminal. Open the CMD Terminal and navigate to the folder where all the Python scripts reside at
 Windows>Start>Accessories>CMD
-You can use the commad *cd* then space then the name of the folder that contains these scripts 
+You can use the command *cd* then space then the name of the folder that contains these scripts 
 
 ![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDL_Generator.jpg)
 
@@ -34,4 +34,4 @@ Upon executing this command, the DDL generator should build four DDL schemas....
 
 
 **Credit** 
-Thanks to Tony Castranova at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script.
+Thanks to Tony Castranova at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script. 

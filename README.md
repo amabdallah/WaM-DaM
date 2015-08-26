@@ -40,7 +40,7 @@ This interactive WaM-DaM logical data model is at the <a href="http://amabdallah
 
 ==============================
 ### Publications and Presentations 
-A preliminary WaM-DaM design was published as a peer-reviewed conference paper:<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> at the <a href="http://www.iemss.org/sites/iemss2014/" target="_blank">iEMSs 2014</a> Here you can download the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/WaMDaM_AbdallahRosenberg.enw" target="_blank">EndNote citation </a> of this confernce paper.        
+A preliminary WaM-DaM design was published as a peer-reviewed conference paper:<a href="http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_406.pdf" target="_blank">WaM-DaM:A Data Model to Organize and Synthesize Water Management Data</a> at the <a href="http://www.iemss.org/sites/iemss2014/" target="_blank">iEMSs 2014</a> Here you can download the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/WaMDaM_AbdallahRosenberg.enw" target="_blank">EndNote citation </a> of this conference paper.        
 You also can check out the professional and conference
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/ReadMe.md" target="_blank">presentations</a> along the way of WaM-DaM development 
 
@@ -58,7 +58,7 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 
 ==============================
 ### Authors and Contact
-You're welcome to leave an anonomus feedback on WaM-DaM through this quick <a href="https://drive.google.com/open?id=1fUTPeygdPfkPfZGjud0vO3yAZiDKIrq-i_886lqIins" target="_blank">survey</a> 
+You're welcome to leave an anonymous feedback on WaM-DaM through this quick <a href="https://drive.google.com/open?id=1fUTPeygdPfkPfZGjud0vO3yAZiDKIrq-i_886lqIins" target="_blank">survey</a> 
 
 For more info, contact Adel Abdallah @       
 amabdallah@aggiemail.usu.edu    

@@ -45,4 +45,4 @@ The <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeAttribute
 
 
 ##### NativeAttributeCategory
- <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeAttributeCategory.html" target="_blank">Native Attribute Category</a> orgnaizes native attributes into hierarchal categories in their original data source like hydropower category which groups all attributes that belong to hydropower	
+ <a href="http://amabdallah.github.io/WaM-DaM/tables/Metadata_NativeAttributeCategory.html" target="_blank">Native Attribute Category</a> organizes native attributes into hierarchal categories in their original data source like hydropower category which groups all attributes that belong to hydropower	

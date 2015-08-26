@@ -16,7 +16,7 @@ So distributed water management data are out of the scope of WaM-DaM because WaM
 Figure 1: Systems analysis schematic for a water supply network. Shapes and colors are used to distinguish different types of nodes. Links’ types are not shown here for simplicity.
 
 
-##### Referneces:
+##### References:
 Jackson, S.R., 2014. RiverML: A Harmonized Transfer Language for River Hydraulic Models, Civil, Architectural, and Environmental Engineering. University of Texas at Austin.  
 
 Kim, D., Muste, M., Merwade, V., 2015. A GIS-based relational data model for multi-dimensional representation of river hydrodynamics and morphodynamics. Environmental Modelling & Software 65(0) 79-93.  
@@ -28,4 +28,4 @@ Loucks, D.P., Van Beek, E., Stedinger, J.R., Dijkman, J.P., Villars, M.T., 2005.
 Maidment, D.R., 2002. Arc hydro : GIS for water resources. ESRI Press, Redlands, Calif.  
 Loucks, D.P., Van Beek, E., Stedinger, J.R., Dijkman, J.P., Villars, M.T., 2005. Water resources systems planning and management: an introduction to methods, models and applications. Paris: UNESCO.
 
-Olivera, F., Valenzuela, M., Srinivasan, R., Choi, J., Cho, H., Koka, S., Agrawal, A., 2006. ARCGIS-SWAT: A Geodata Model And GIS Interface For SWAT. JAWRA Journal of the American Water Resources Association 42(2) 295-309.   
+Olivera, F., Valenzuela, M., Srinivasan, R., Choi, J., Cho, H., Koka, S., Agrawal, A., 2006. ARCGIS-SWAT: A Geodata Model And GIS Interface For SWAT. JAWRA Journal of the American Water Resources Association 42(2) 295-309.    

@@ -1,6 +1,6 @@
 #### Important design questions 
 
-**i.Integrate disparate water management data for the Bear River Basin, Utah to search and discover data universally**
+**i. Integrate disparate water management data for the Bear River Basin, Utah to search and discover data universally**
 This use case is demonstrated by searching data across the sources from questions 1 to 10. These questions are organized from generic in asking about water system components, their connectivity, metadata, and specific asking about attribute data values. This use case demonstrates how the users can use WaM-DaM to generate a synthetic view of the data available within a watershed, organize various different data types (e.g., time series, parameters) with appropriate metadata, identify discrepancies among data sources and consider them in preparing a model input data, track data provenance (e.g., sources, methods), relate synonymous data by overcoming sematic heterogeneity, identify relationship between nodes and links, organize models structures of object and their attributes
    
 1.What are the available water management components in the Lower Bear River Watershed, Utah? 
@@ -36,7 +36,7 @@ This use case is demonstrated by searching data across the sources from question
 11.What are the available networks and scenarios in the Lower Bear River, and what are their spatial reference and vertical datum?
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/Q11.png)
 
-**ii.Compare differences in topology, metadata, and data values between two scenarios in the Lower Bear River watershed, Utah**
+**ii. Compare differences in topology, metadata, and data values between two scenarios in the Lower Bear River watershed, Utah**
 12.How do two scenarios differ in topology in a master network?
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/q12.png)
 
@@ -47,7 +47,7 @@ This use case is demonstrated by searching data across the sources from question
 14.How do two scenarios differ in data values in a master network?
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/q14.png)
 
-**iii.Identify available and missing data to expand the Lower Bear River Model to the Bear River Watershed**
+**iii. Identify available and missing data to expand the Lower Bear River Model to the Bear River Watershed**
 
 15.What are the available instances and their data of Object Types used in WEAP in the upper Bear River Watershed?
 ![](https://github.com/amabdallah/WaM-DaM1.0/blob/master/Files/Q16.png)
