@@ -19,10 +19,6 @@ We provide the instructions on how a user can set up a SQLite instance of WaM-Da
 
 #### Software needed:
 
-1. Download <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank"> Mozilla FireFox </a> web browser
-
-2. Download <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/" target="_blank"> SQLite Manager </a>Add-on to Mozilla FireFox
-
 3. Use the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql" target="_blank"> SQLite DDL </a> script to creat blank WaM-DaM database 
 
 4. Matlab. You need to install the Database Toolbox which doesnt come with the standartd Matlab software. Alternatively, you also can use Python, R, or any scripting language that supports ODBC/JDBC to load data to your database. 
@@ -33,16 +29,6 @@ For Windows machines (32 or 64 bits), download the “sqlite-shell-win32-x86-308
 
 ##A. Setup a SQLite database with a blank WaM-DaM instance
 
-
-1. Install SQLite Manager   
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/SQLite_Instructions.md" target="_blank"> Add-On </a> to Firefox (only works if you open this link in Mozilla Firefox)
-<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite1.JPG" alt="alt text" width="450" height="320">   
-
-2. Add SQLite Manager botton to Firefox       
-<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite2.JPG" alt="alt text" width="450" height="320">
-
-3. Launch SQLite Manager    
-<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite3.JPG" alt="alt text" width="450" height="320">
 
 4. Add your new Database in SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite4.png" alt="alt text" width="350" height="280"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite5.png" alt="alt text" width="350" height="280">   
