@@ -33,16 +33,13 @@ follow these <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCas
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite6.png" alt="alt text" width="350" height="280"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite7.png" alt="alt text" width="350" height="280">   
 
 ##B. Connect Matlab with SQLite through the JDBC driver 
-Follow the instructions at this Matlab webpage
-http://www.mathworks.com/help/database/ug/sqlite-jdbc-windows.html
+Follow these <a href="http://www.mathworks.com/help/database/ug/sqlite-jdbc-windows.html" target="_blank"> Matlab instructions </a> to set up a JDBC driver in Matlab so it can communicate with any SQLite database.   
 
 1. Launch the Database Toolbox in Matalb     
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab1.JPG" alt="alt text" width="450" height="320">
 
-
 2. Set up the JDBC connection    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab2.JPG" alt="alt text" width="450" height="320">
-
 
 2. Connect Matlab with SQLite    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab3.JPG" alt="alt text" width="450" height="320">
