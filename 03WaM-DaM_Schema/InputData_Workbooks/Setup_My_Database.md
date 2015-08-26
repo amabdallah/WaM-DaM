@@ -19,17 +19,15 @@ We provide the instructions on how a user can set up a SQLite instance of WaM-Da
 
 #### Software needed:
 
-1. Download Mozilla FireFox web browser
-https://www.mozilla.org/en-US/firefox/new/
+1. Download <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank"> Mozilla FireFox </a> web browser
 
-2.	SQLite Manager Add-on to Mozilla FireFox
-https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
+2. Download <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/" target="_blank"> SQLite Manager </a>Add-on to Mozilla FireFox
 
-3. DDL script to creat blank WaM-DaM database for [SQLite](https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql)
+3. Use the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql" target="_blank"> SQLite DDL </a> script to creat blank WaM-DaM database 
 
-4. Matlab. You need to install the Database Toolbox which doesnt come with the standartd Matlab software. You also can use Python, R, or any scripting language to load data to your database. 
+4. Matlab. You need to install the Database Toolbox which doesnt come with the standartd Matlab software. Alternatively, you also can use Python, R, or any scripting language that supports ODBC/JDBC to load data to your database. 
 
-5. Download SQLite *[Optional]* You could use this SQLite engine to create databases and load them with data through the CMD terminal  
+5. Download SQLite *[Optional...Not needed here]* You could use this SQLite engine to create databases and load them with data through the CMD terminal  
 https://www.sqlite.org/index.html
 For Windows machines (32 or 64 bits), download the “sqlite-shell-win32-x86-3081002” instance
 
