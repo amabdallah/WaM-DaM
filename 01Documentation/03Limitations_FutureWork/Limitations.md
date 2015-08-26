@@ -1,6 +1,5 @@
-## Limitations of current WaM-DaM design (draft)
+## Limitations of current WaM-DaM design   
 
-### Overall limitations 
 The design of WaM-DaM is based on experience drawn from the thirty reviewed water data systems, five used data sources, six demonstrated use cases, personal experience, and time spent. Additional data sources and models to further test WaM-DaM capabilities and improve its design. We developed limited lists of controlled vocabularies and ontology for water resources management data as examples. 
 
 User’s experiences, opinions, and feedback are needed to reflect on a broader and more robust design. Hold workshops and surveys 
