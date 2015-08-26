@@ -12,9 +12,9 @@ https://www.mozilla.org/en-US/firefox/new/
 https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 3. Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
-•	[WaMDaM.sqlite](https://goo.gl/KPEO2Z  ) [67 MB] – best if you have a fast internet connection  
-•	[WaMDaMzip.zip](https://goo.gl/ZRBTSC) [30 MB] –requires WINZIP to unzip it   
-•	[WaMDaM.rar](https://goo.gl/KMVhXs ) [8 MB] – requires WINRAR to unzip it   
+•	[WaMDaM.sqlite](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/NeededFiles/Populated_Database/WaMDaM_August19_2015.sqlite?raw=true) [57 MB] – best if you have a fast internet connection  
+•	[WaMDaMzip.zip](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/NeededFiles/Populated_Database/WaMDaM_August19_2015.zip?raw=true) [50 MB] –requires WINZIP to unzip it   
+•	[WaMDaM.rar](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/NeededFiles/Populated_Database/WaMDaM_August19_2015.rar?raw=true) [27 MB] – requires WINRAR to unzip it   
 
 
 ###4. Queries     
