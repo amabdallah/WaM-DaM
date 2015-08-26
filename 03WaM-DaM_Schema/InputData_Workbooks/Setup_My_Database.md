@@ -40,6 +40,14 @@ http://www.mathworks.com/help/database/ug/sqlite-jdbc-windows.html
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab1.JPG" alt="alt text" width="450" height="320">
 
 
+2. Set up the JDBC connection 
+<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab2.JPG.JPG" alt="alt text" width="450" height="320">
+
+
+2. Connect Matlab with SQLite 
+<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab3.JPG.JPG" alt="alt text" width="450" height="320">
+
+
 
 
 
