@@ -37,7 +37,7 @@ Follow the instructions at this Matlab webpage
 http://www.mathworks.com/help/database/ug/sqlite-jdbc-windows.html
 
 1. Launch the Database Toolbox in Matalb   
-<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite3.JPG" alt="alt text" width="450" height="320">
+<img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/Matlab1.JPG" alt="alt text" width="450" height="320">
 
 
 
