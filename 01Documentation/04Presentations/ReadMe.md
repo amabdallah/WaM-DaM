@@ -18,7 +18,7 @@ We tentatively plan to present this WaM-DaM work in a workshop at the <a href="h
 
 3. Adel M. Abdallah. [Investigate the Capability of Arc Hydro Framework to Represent Water Management Data](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/03ArcHydro_Project.pdf) Term Project Final Report, GIS in Water Resources Class, USU: Nov 6, 2013.
 
-2. Adel M. Abdallah, Jason Randall, Jason Smith, and Maxwell Barrus (2013). [Water Management Data Model](https://github.com/amabdallah/WaM-DaM/blob/master/Files/WIKI/Water_Management_Data_Model.pdf) Final Class Project Report, Management Information Systems Class, USU: April 25, 2013.
+2. Adel M. Abdallah, Jason Randall, Jason Smith, and Maxwell Barrus (2013). [Water Management Data Model](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/Water_Management_Data_Model.pdf) Final Class Project Report, Management Information Systems Class, USU: April 25, 2013.
 
 1. Adel M. Abdallah and David E. Rosenberg (2013). [Design Reservoir Conceptual Data Model](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/04Presentations/Files/01Design_Reservoir_Conceptual_Data_Model_Adel.pdf) Final Term Project Paper, Hydroinformatics Class, USU: Dec 13, 2012.
 
