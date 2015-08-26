@@ -12,7 +12,7 @@
   <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_PostgreSQL.sql"   target="_blank">PostgreSQL</a>   
 
 **5. Setup your WaM-DaM database and load with your data!**    
-If you are a **beginner in databases**, we recommend that you use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the instructions that walk you through how to<a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/InputData_Workbooks/Setup_My_Database.md" target="_blank">set up a WaM-DaM database </a>  in SQLite in less than 15 min using free and reliable software.
+If you are a beginner in databases, we recommend that you use SQLite because it is very simple to use and set up, doesn’t require a server, and you can use the free Mozilla Firefox Manager to interact with its data. Here are the instructions that walk you through how to <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/InputData_Workbooks/Setup_My_Database.md" target="_blank">set up a WaM-DaM database </a> in SQLite in less than 15 min using free and reliable software.
     
     
       
