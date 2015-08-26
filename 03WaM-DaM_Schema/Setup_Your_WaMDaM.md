@@ -14,13 +14,12 @@ You need to organize your data to fit into these four workbooks, and then you ca
 
 The Matlab script to load data is generic to any data source but mapping foreign keys in the script is specific to the used data sources. The Matlab script is used to demonstrate loading data to WaM-DaM but future software work based on WaM-DaM specifications can automate mapping foreign keys like in the Mapping table seemingly through a friendly and interactive graphical user interface.
 
-
 We provide the instructions on how a user can set up a SQLite instance of WaM-DaM and use Firefox SQLite Manager to visualize and interact with the WaM-DaM database. I explain the how to set up a SQLite database in this Youtube demonstration video. if you follow the instructions, the estimated time to setup a SQLite instance and create WaM-DaM blank instance is less than 15 miutes.
 
 #### Software needed:
 
-1. Use Firefox SQLite Manager to interact with your database as described at the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/UseCasePage/SQLite_Instructions.md" target="_blank"> SQLite Instructions </a>page.
-[Optional...Not needed here]* You could use this SQLite engine to create databases and load them with data through the CMD terminal https://www.sqlite.org/index.html   
+1. Use Firefox SQLite Manager to interact with your database as described at the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/UseCasePage/SQLite_Instructions.md" target="_blank"> SQLite Instructions </a>page.    
+*[Optional...Not needed here]* You could use this SQLite engine to create databases and load them with data through the CMD terminal https://www.sqlite.org/index.html   
 For Windows machines (32 or 64 bits), download the “sqlite-shell-win32-x86-3081002” instance
 
 2. Use the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql" target="_blank"> SQLite DDL </a> script to creat blank WaM-DaM database 
