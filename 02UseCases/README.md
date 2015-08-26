@@ -4,9 +4,9 @@ Here we present the six uses cases that demonstrate how WaM-DaM can help users o
 
 For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the populated SQLite WaM-DaM database 
 Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
-•	[WaMDaM_August19_2015.sqlite](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/WaMDaM_August19_2015.sqlite?raw=true) [57 MB] – best if you have a fast internet connection  
-•	[WaMDaM_August19_2015.zip](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/WaMDaM_August19_2015.zip?raw=true) [50 MB] –requires WINZIP software to unzip it   
-•	[WaMDaM_August19_2015.rar](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/WaMDaM_August19_2015.rar?raw=true) [27 MB] – requires WINRAR software to unzip it   
+•	[WaMDaM_August19_2015.sqlite](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/NeededFiles/Populated_Database/WaMDaM_August19_2015.sqlite?raw=true) [57 MB] – best if you have a fast internet connection  
+•	[WaMDaM_August19_2015.zip](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/NeededFiles/Populated_Database/WaMDaM_August19_2015.zip?raw=true) [50 MB] –requires WINZIP software to unzip it   
+•	[WaMDaM_August19_2015.rar](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/NeededFiles/Populated_Database/WaMDaM_August19_2015.rar?raw=true) [27 MB] – requires WINRAR software to unzip it   
 
 
 ===========================================================
