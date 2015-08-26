@@ -29,7 +29,7 @@ For Windows machines (32 or 64 bits), download the “sqlite-shell-win32-x86-308
 
 ##A. Setup a SQLite database with a blank WaM-DaM instance
 
-If you dont have SQLite Add-on Manager installed on Firefox, first, follow the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a> to set up SQLite manager.
+If you dont have SQLite Add-on Manager installed on Firefox, first, follow the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a> to set up SQLite manager. Then follow these steps to create a new blank WaM-DaM database and load your data into it using Matlab and the Excel blank workbooks. 
 
 1. Add your new Database in SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite4.png" alt="alt text" width="350" height="280"><img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite5.png" alt="alt text" width="350" height="280">   
