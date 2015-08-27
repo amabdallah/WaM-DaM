@@ -1,6 +1,6 @@
 ## Future Work
 
-The design of WaM-DaM is limited to experience drawn from the reviewed water data systems, used data sources, and demonstrated use cases. Future work can incorporate complex and unanticipated aspects of water management data as an improvement to the current design and overcome current <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Limitations.md" target="_blank">limitations<a\>. There are several opportunities for future work that can build on WaM-DaM specifications. We are already undertaking many of the opportunities and there are several promising ideas.
+The design of WaM-DaM is limited to experience drawn from the reviewed water data systems, used data sources, and demonstrated use cases. Future work can incorporate complex and unanticipated aspects of water management data as an improvement to the current design and overcome current <a href="https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/03Limitations_FutureWork/Limitations.md" target="_blank">limitations</a>. There are several opportunities for future work that can build on WaM-DaM specifications. We are already undertaking many of the opportunities and there are several promising ideas.
 
 ### A. Currently undertaken 
 
