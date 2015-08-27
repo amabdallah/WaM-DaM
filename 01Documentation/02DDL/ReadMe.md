@@ -4,18 +4,18 @@ You only need to use this DDL generator if you edit the XML schema of WaM-DaM an
 You can use this smart way to create a DDL script (can create empty database) for MySQL, MS SQL Server, SQLite, and PostgreSQL by forwarding engineer any XML WaM-DaM schema. We adapted these Python scripts below to create blank database schemas for the four databases, all at once. 
 
 **How to create a WaM-DaM DDL from an XML schema?**  These steps are tested on Windows Machine      
-1. Download all these [DDL generator scripts](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDLGenerator.rar?raw=true) and place them in one folder at your machine (don't change their names)
+1. Download all these [DDL generator scripts](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDLGenerator.rar?raw=true) and place them in one folder at your machine (don't change their names)   
 
 2. The DDL generator is called from the CMD terminal. Open the CMD Terminal and navigate to the folder where all the Python scripts reside at
 Windows>Start>Accessories>CMD
 You can use the command *cd* then space then the name of the folder that contains these scripts 
 
-![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDL_Generator.jpg)
+![](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDL_Generator.jpg)   
 
-3. Edit the name of XML Schema in the build_ddl.py python file and the default schema name to be the same as your XML file name
+3. Edit the name of XML Schema in the build_ddl.py python file and the default schema name to be the same as your XML file name 
 For example:
 input_file = 'WaMDaMAugust19_2015.xml.xml'
-default_schema = 'WaMDaMAugust19_2015'
+default_schema = 'WaMDaMAugust19_2015'   
 
 4. Execute this command line at the CMD terminal while still at the directory above   
 copy and past this line after you change the *WaM-DaM*.xml name below
