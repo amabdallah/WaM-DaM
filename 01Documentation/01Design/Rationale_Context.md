@@ -39,7 +39,7 @@ We were fortunate to discuss the development of WaM-DaM with these research grou
 ### Acknowledgement 
 These people provided valuable feedback and insights into earlier designs and materials of WaM-DaM: David Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova at the Utah Water Research Laboratory and Utah State University, Julien Harou, Stephen Knox, and Philipp Meier at Manchester University, Josue Medellin-Azuara and Quinn Hart at the University of California, Davis. Dan Ames at Brigham Young University, Utah.
 
-Adel Abdallah appreciates the hospitability of Steve Burian and his <a href="http://urbanwater.utah.edu/home"> Urban Water Research Group <a\> at the <a href="http://www.utah.edu/"> University of Utah <a\> , Salt Lake City for hosting him as a Visiting Scholar during 2014/2015 while developing WaM-DaM.
+Adel Abdallah appreciates the hospitability of Steve Burian and his <a href="http://urbanwater.utah.edu/home"> Urban Water Research Group <\a> at the <a href="http://www.utah.edu/"> University of Utah <\a>, Salt Lake City for hosting him as a Visiting Scholar during 2014/2015 while developing WaM-DaM.
 
 ### Disclaimer:
 The CI-WATER Project is funded by the National Science Foundation through grants EPS-1135482 and EPS-1135483. Any opinions, findings, and conclusions or recommendations expressed in this GitHub repository are those of the author(s) do not necessarily reflect the views of the National Science Foundation. Utah Water Research Laboratory and the Water Users Association provided financial support.
