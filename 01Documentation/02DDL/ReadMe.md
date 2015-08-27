@@ -4,11 +4,8 @@ You only need to use this DDL generator if you edit the XML schema of WaM-DaM an
 You can use this smart way to create a DDL script (can create empty database) for MySQL, MS SQL Server, SQLite, and PostgreSQL by forwarding engineer any XML WaM-DaM schema. We adapted these Python scripts below to create blank database schemas for the four databases, all at once. 
 
 **How to create a WaM-DaM DDL from an XML schema?**  These steps are tested on Windows Machine      
-1. Download all these scripts and place them in one folder at your machine (don't change their names)   
-[build_ddl.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/build_ddl.py)   
-[base.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/base.py)   
-[data_mapping.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/data_mapping.py)   
-[translator.py](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/translator.py)   
+1. Download all these [DDL generator scripts](https://github.com/amabdallah/WaM-DaM/blob/master/01Documentation/02DDL/DDLGenerator.rar?raw=true) and place them in one folder at your machine (don't change their names)   
+
 
 2. The DDL generator is called from the CMD terminal. Open the CMD Terminal and navigate to the folder where all the Python scripts reside at
 Windows>Start>Accessories>CMD
