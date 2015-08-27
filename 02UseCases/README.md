@@ -1,14 +1,9 @@
 ### Use Cases to Demonstrate the Capabilities and Benefits of WaM-DaM
 
 To test the use cases mentioned in the **WaM-DaM paper**, download this
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/TestUseCases.rar?raw=true" target="_blank"> TestUseCases.rar </a> folder and follow the instructions on how to use SQLite Manager in Mozilla Firefox to execute the SQL queries against the provided populated WaM-DaM database. 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/TestUseCases.rar?raw=true" target="_blank"> TestUseCases.rar </a> folder and follow the href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a>  on how to use SQLite Manager in Mozilla Firefox to execute the SQL queries against the provided populated WaM-DaM database. 
 
-Here we present the six uses cases that demonstrate how WaM-DaM can help users of scientists and practitioners to search for data for their models, keep track of important metadata, and compare similarities and differences across their data. We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Data_Sources.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilities.
-
-To examine these use cases by yourself, follow <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a> on how to use SQLite Manager Add-On to Firefox to interact with WaM-DaM database below.
-
-Matlab Script and Excel Workbooks 
-https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Setup_Your_WaMDaM.md
+Here we present the six uses cases that demonstrate how WaM-DaM can help users of scientists and practitioners to search for data for their models, keep track of important metadata, and compare similarities and differences across their data. We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Data_Sources.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilities. we used this Matlab Script and Excel Workbooks to load the data into WaM-DaM https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Setup_Your_WaMDaM.md
 
 For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the populated SQLite WaM-DaM database 
 Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
@@ -35,6 +30,7 @@ This use cases show how WaM-DaM compares the differences in Topology, Metadata, 
 ### Workshop
 
 We demonstrated the first two uses cases in a workshop at the 2014 CUAHSI conference at Tuscaloosa, AL. Here is the detailed instructions of the 20 minutes <a href="https://github.com/amabdallah/WaM-DaM/tree/master/02UseCases/UseCasesDocs/Workshop" target="_blank"> workshop </a>  activity to discover water management data for a WEAP model. 
+
 
 
 
