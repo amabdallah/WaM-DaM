@@ -1,7 +1,7 @@
 ### Use Cases to Demonstrate the Capabilities and Benefits of WaM-DaM
 
 To test the use cases mentioned in the **WaM-DaM paper**, download this
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Data_Sources.md" target="_blank"> TestUseCases.rar </a> folder and follow the instructions on how to use SQLite Manager in Mozilla Firefox to execute the SQL queries against the provided populated WaM-DaM database. 
+<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/TestUseCases.rar" target="_blank"> TestUseCases.rar </a> folder and follow the instructions on how to use SQLite Manager in Mozilla Firefox to execute the SQL queries against the provided populated WaM-DaM database. 
 
 Here we present the six uses cases that demonstrate how WaM-DaM can help users of scientists and practitioners to search for data for their models, keep track of important metadata, and compare similarities and differences across their data. We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Data_Sources.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilities.
 
