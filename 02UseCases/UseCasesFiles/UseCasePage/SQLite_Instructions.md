@@ -28,10 +28,10 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 3. Launch SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite3.JPG" alt="alt text" width="450" height="320">
 
-4. Open WaM-DaM database and execute the SQL commands for use cases 
-a    
+4. Open WaM-DaM database and execute the SQL commands for use cases   
+a       
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Screenshots/SQLite1.JPG" alt="alt text" width="350" height="280">
 
-b    
+b     
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Screenshots/SQLite2.JPG" alt="alt text" width="350" height="280">   
 
