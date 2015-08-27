@@ -7,21 +7,17 @@ We provide the instructions on how a user can set up a SQLite instance of WaM-Da
 1. Download Mozilla Firefox web browser
 https://www.mozilla.org/en-US/firefox/new/
 
-2.	SQLite Manager Add-on to Mozilla Firefox
-https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
-
-
-1. Install SQLite Manager   
-<a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/Populated_Database/SQLite_Instructions.md" target="_blank"> Add-On </a> to Firefox (only works if you open this link in Mozilla Firefox)
+2.	Install SQLite Manager Add-on to Mozilla Firefox
+https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite1.JPG" alt="alt text" width="450" height="320">   
 
-2. Add SQLite Manager button to Firefox       
+3. Add SQLite Manager button to Firefox       
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite2.JPG" alt="alt text" width="450" height="320">
 
-3. Launch SQLite Manager    
+4. Launch SQLite Manager    
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Sceenshots/SQLite3.JPG" alt="alt text" width="450" height="320">
 
-4. Open WaM-DaM database and execute the SQL commands for use cases   
+5. Open WaM-DaM database and execute the SQL commands for use cases   
 a   
 <img src="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Screenshots/SQLite1.JPG" alt="alt text" width="350" height="280">   
 
