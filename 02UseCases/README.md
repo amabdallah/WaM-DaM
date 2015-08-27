@@ -4,6 +4,9 @@ Here we present the six uses cases that demonstrate how WaM-DaM can help users o
 
 To examine these use cases by yourself, follow <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a> on how to use SQLite Manager Add-On to Firefox to interact with WaM-DaM database below.
 
+Matlab Script and Excel Workbooks 
+https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Setup_Your_WaMDaM.md
+
 For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the populated SQLite WaM-DaM database 
 Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
 •	[WaMDaM_August19_2015.sqlite](https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesFiles/Populated_Database/WaMDaM_August19_2015.sqlite?raw=true) [57 MB] – best if you have a fast internet connection  
