@@ -24,7 +24,7 @@ For Windows machines (32 or 64 bits), download the “sqlite-shell-win32-x86-308
 
 2. Use the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/Blank_Database/WaM-DaM_for_SQLite.sql" target="_blank"> SQLite DDL </a> script to create blank WaM-DaM database 
 
-3. Fill your data into these <a href="https://github.com/amabdallah/WaM-DaM/tree/master/03WaM-DaM_Schema/Blank_Database" target="_blank"> blank Excel Workbooks </a> 
+3. Fill your data into these <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/BlankInputData_Workbooks/BlankInputData_Workbooks.rar?raw=true" target="_blank"> blank Excel Workbooks </a> 
 
 4. Use this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/MatlabScript/AutomateLoadingDataToWaMDaM_08_24_2015.m" target="_blank"> Matlab script </a> to automate loading your data into your SQLite WaM-DaM database.    
 **Note** You need to install the Database Toolbox which doesn’t come with the standard Matlab software. Alternatively, you also can use Python, R, or any scripting language that supports ODBC/JDBC to load data to your database. 
