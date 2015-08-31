@@ -4,10 +4,6 @@ To test the use cases mentioned in the **WaM-DaM paper**, download this
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/TestUseCases.rar?raw=true" target="_blank"> TestUseCases.rar </a> folder and follow the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a>  on how to use SQLite Manager in Mozilla Firefox to execute the SQL queries against the provided populated WaM-DaM database.    
 **Otherwise, we ran the query resuls for you and you can inspect them below** 
 
-Here we present the six uses cases that demonstrate how WaM-DaM can help users of scientists and practitioners to search for data for their models, keep track of important metadata, and compare similarities and differences across their data. We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Data_Sources.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilities. we used this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/MatlabScript/AutomateLoadingDataToWaMDaM_08_24_2015.m" target="_blank"> Matlab Script </a> and these <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/InputData_Workbooks/InputData_Workbooks.rar?raw=true" target="_blank"> Excel Workbooks </a> to load the data into WaM-DaM.
-
-For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the populated SQLite WaM-DaM database 
-Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
 
 ===========================================================
 
@@ -25,6 +21,13 @@ This use case shows the data values of all the types of data that WaM-DaM suppor
 
 **Use case # 6:** <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/UseCasePage/Use_Case6.md" target="_blank"> What are the data and metadata differences between two scenarios? </a>  
 This use cases show how WaM-DaM compares the differences in Topology, Metadata, and Data Values between two scenarios of the Lower Bear River model in WEAP.   
+ 
+ 
+These six uses cases demonstrate how WaM-DaM can help users of scientists and practitioners to search for data for their models, keep track of important metadata, and compare similarities and differences across their data. We use diverse water management <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/Data_Sources.md" target="_blank"> data sources </a> to demonstrate and verify WaM-DaM capabilities. we used this <a href="https://github.com/amabdallah/WaM-DaM/blob/master/03WaM-DaM_Schema/MatlabScript/AutomateLoadingDataToWaMDaM_08_24_2015.m" target="_blank"> Matlab Script </a> and these <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/InputData_Workbooks/InputData_Workbooks.rar?raw=true" target="_blank"> Excel Workbooks </a> to load the data into WaM-DaM.
+
+For each use case, we provide the SQL command that is needed to execute the use case question and then we provide the answer. The reader is encouraged to execute the use case against the populated SQLite WaM-DaM database 
+Download one of these pre-populated WaM-DaM SQLite database instance at your convenience and save it to a place that you can later navigate to, like the Desktop    
+
  
 
 ========================================================================
