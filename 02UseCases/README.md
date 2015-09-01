@@ -2,8 +2,8 @@
 
 To test the use cases mentioned in the **WaM-DaM paper**, download this
 <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/TestUseCases.rar?raw=true" target="_blank"> TestUseCases.rar </a> folder and follow the <a href="https://github.com/amabdallah/WaM-DaM/blob/master/02UseCases/UseCasesDocs/UseCasePage/SQLite_Instructions.md" target="_blank"> instructions </a>  on how to use SQLite Manager in Mozilla Firefox to execute the SQL queries against the provided populated WaM-DaM database.    
-**Otherwise, we ran the query resuls for you and you can inspect them below** 
 
+**Otherwise, we ran the query resuls for you and you can inspect them below** 
 
 ===========================================================
 
