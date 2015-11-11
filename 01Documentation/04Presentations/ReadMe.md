@@ -1,7 +1,7 @@
 ## Presentations
 
 #### Upcoming:
-We tentatively plan to present this WaM-DaM work in a workshop at the <a href="http://www.ewricongress.org/" target="_blank">EWRI World Environmental Resources Congress 2016</a> in Florida to demonstrate WaM-DaM capabilities and draw feedback form the Water Resources Systems Community.  
+
 
 
 #### Oral Presentations:
