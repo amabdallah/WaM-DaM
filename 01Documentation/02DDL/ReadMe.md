@@ -30,4 +30,4 @@ Upon executing this command, the DDL generator should build four DDL schemas....
 
 
 **Credit** 
-Thanks to Tony Castranova at Utah State University who wrote and shared this DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script. 
+Thanks to Tony Castranova at Utah State University who wrote and shared the orignal DDL generator. You can access the original <a href="https://github.com/ODM2/ODM2/tree/7e488d762812b07be4669b5b95a69539ae2239a4/src/build_schemas" target="_blank">DDL generator</a> script. 
