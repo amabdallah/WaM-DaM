@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 06.1 TopologicalDifference
 
 Use case #6: What are the data and metadata differences between two scenarios?
