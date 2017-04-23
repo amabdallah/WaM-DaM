@@ -1,4 +1,4 @@
-﻿-- 6.31 Data Values of TimeSeries
+-- 6.31 Data Values of TimeSeries
 
 /*
 This query shows data values for a particular time series their attributes, units, object names, and instances, and data source 
