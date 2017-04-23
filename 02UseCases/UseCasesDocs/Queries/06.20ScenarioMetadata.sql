@@ -1,4 +1,4 @@
-﻿/*
+*
 06.3 ScenarioDataValues
 
 This query summarizes the difference of metadata between two scenarios of the Lower Bear River 
