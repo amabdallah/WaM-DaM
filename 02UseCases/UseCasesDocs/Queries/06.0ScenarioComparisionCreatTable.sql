@@ -1,4 +1,4 @@
-﻿-- Logic of comparison
+-- Logic of comparison
 -- create a table that shows the differences between the two scenarios 
  
 -- differences can come from three sources:
