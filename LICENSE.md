@@ -1,6 +1,6 @@
 ## License
 
-Copyright (c) 2015, Utah State University and WaM-DaM development team: Adel M. Abdallah and David E. Rosenberg
+Copyright (c) 2017, Utah State University and WaM-DaM development team: Adel M. Abdallah and David E. Rosenberg
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
