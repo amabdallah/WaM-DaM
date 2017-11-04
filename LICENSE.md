@@ -1,6 +1,6 @@
-## License
+BSD 3-Clause License
 
-Copyright (c) 2017, Utah State University and WaM-DaM development team: Adel M. Abdallah and David E. Rosenberg
+Copyright (c) 2017, WaMDaM Project 
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -13,7 +13,9 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of Utah State University, WaM-DaM, nor its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
